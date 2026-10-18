@@ -5,6 +5,8 @@ description: Free date and time tools. Calculate your exact age, count days betw
 # set url: "https://agedatecalc.com" and baseurl: "" again.
 url: ""
 baseurl: "/agedatecalc"
+# Publish posts dated in the future immediately (all 6 articles go live now)
+future: true
 
 # Build settings
 markdown: kramdown
