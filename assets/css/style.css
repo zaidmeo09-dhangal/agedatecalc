@@ -209,17 +209,28 @@ a{color:var(--teal)}
   .hero{padding:48px 0 40px}
 }
 
-/* Dark mode */
-@media(prefers-color-scheme:dark){
-  :root{
-    --paper:#0d1f23;--white:#12282d;--ink:#eef4f3;--muted:#9db3b6;
-    --border:#1e3a40;--teal-soft:#123b35;--amber-soft:#3a2c12;
-  }
-  .site-header{background:rgba(13,31,35,.92)}
-  .field input,.field select{background:#0d1f23;color:var(--ink)}
-  .prose p,.prose li{color:#c8d6d4}
-  .tool-card p,.guide-card p,.calc-card p.sub,.result-note{color:var(--muted)}
+/* Dark mode: manual toggle via html[data-theme="dark"]; JS defaults to system preference */
+html[data-theme="dark"]{
+  --paper:#0d1f23;--white:#12282d;--ink:#eef4f3;--muted:#9db3b6;
+  --border:#1e3a40;--teal-soft:#123b35;--amber-soft:#3a2c12;
 }
+html[data-theme="dark"] .site-header{background:rgba(13,31,35,.92)}
+html[data-theme="dark"] .field input,html[data-theme="dark"] .field select{background:#0d1f23;color:var(--ink)}
+html[data-theme="dark"] .prose p,html[data-theme="dark"] .prose li{color:#c8d6d4}
+html[data-theme="dark"] .tool-card p,html[data-theme="dark"] .guide-card p,html[data-theme="dark"] .calc-card p.sub,html[data-theme="dark"] .result-note{color:var(--muted)}
+html[data-theme="dark"] .legal-card p,html[data-theme="dark"] .legal-card li{color:#c8d6d4}
+
+/* Theme toggle button */
+.theme-toggle{
+  background:none;border:1px solid var(--border);border-radius:10px;
+  width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;
+  cursor:pointer;color:var(--ink);flex:none;margin-left:12px;
+}
+.theme-toggle:hover{border-color:var(--teal)}
+.theme-toggle svg{width:20px;height:20px}
+.theme-toggle .icon-sun{display:none}
+html[data-theme="dark"] .theme-toggle .icon-sun{display:block}
+html[data-theme="dark"] .theme-toggle .icon-moon{display:none}
 
 /* Inner pages: hero + legal cards */
 .page-hero{padding:60px 0 44px;text-align:center;position:relative;overflow:hidden}
