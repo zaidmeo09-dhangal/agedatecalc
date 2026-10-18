@@ -90,6 +90,8 @@ schema: |
 
 <div class="prose" markdown="1">
 
+<p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
+
 ## How to use this calculator
 
 **Date difference mode:** pick a start date and an end date, then click Calculate Difference. You get the gap in days, weeks, months, and years.
@@ -138,6 +140,46 @@ This is the mode people reach for with searches like "90 days from today" or "30
 - **Forgetting month lengths:** "one month from January 31" is not a fixed number of days. The calculator resolves it against the real calendar.
 - **Leap years:** any period crossing February 2024 includes a 29th that 2025 and 2026 do not have.
 - **Times in different zones:** this tool counts whole calendar days. If your dates come with times in different time zones, convert them first with the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}), then count the days.
+
+## US federal holidays 2026 and 2027
+
+Business-day math lives or dies on the holiday list. These are the US federal holidays under 5 U.S.C. 6103. When a holiday falls on a weekend, federal offices observe it on the nearest weekday (Friday for Saturday, Monday for Sunday), which is the date most US employers actually close.
+
+### 2026 federal holidays
+
+| Holiday | Date | Observed |
+|---|---|---|
+| New Year's Day | Thursday, January 1 | Jan 1 |
+| Martin Luther King Jr. Day | Monday, January 19 | Jan 19 |
+| Presidents' Day | Monday, February 16 | Feb 16 |
+| Memorial Day | Monday, May 25 | May 25 |
+| Juneteenth | Friday, June 19 | Jun 19 |
+| Independence Day | Saturday, July 4 | Friday, July 3 |
+| Labor Day | Monday, September 7 | Sep 7 |
+| Columbus Day | Monday, October 12 | Oct 12 |
+| Veterans Day | Wednesday, November 11 | Nov 11 |
+| Thanksgiving | Thursday, November 26 | Nov 26 |
+| Christmas Day | Friday, December 25 | Dec 25 |
+
+### 2027 federal holidays
+
+| Holiday | Date | Observed |
+|---|---|---|
+| New Year's Day | Friday, January 1 | Jan 1 |
+| Martin Luther King Jr. Day | Monday, January 18 | Jan 18 |
+| Presidents' Day | Monday, February 15 | Feb 15 |
+| Memorial Day | Monday, May 31 | May 31 |
+| Juneteenth | Saturday, June 19 | Friday, June 18 |
+| Independence Day | Sunday, July 4 | Monday, July 5 |
+| Labor Day | Monday, September 6 | Sep 6 |
+| Columbus Day | Monday, October 11 | Oct 11 |
+| Veterans Day | Thursday, November 11 | Nov 11 |
+| Thanksgiving | Thursday, November 25 | Nov 25 |
+| Christmas Day | Saturday, December 25 | Friday, December 24 |
+
+**Business days shortcut:** count the weekdays in your range with the calculator, then subtract the observed holidays that fall inside it. Example: a project running Monday, November 23 to Friday, December 4, 2026 spans 10 weekdays, minus Thanksgiving (Nov 26), giving 9 business days.
+
+**Sources:** holiday dates and observed-date rules follow the US Office of Personnel Management (OPM.gov) federal holiday schedule and 5 U.S.C. 6103.
 
 ## Frequently asked questions
 
@@ -194,7 +236,24 @@ Yes, use the add/subtract section. Enter a positive number to go forward or a ne
       '<div class="result-box"><span class="num">' + weeks + 'w ' + remDays + 'd</span><span class="lbl">Weeks</span></div>' +
       '<div class="result-box"><span class="num">' + y + 'y ' + mo + 'm ' + dd + 'd</span><span class="lbl">Years / months / days</span></div>' +
       '</div>' +
-      '<p class="result-note">From <strong>' + fmtDate(d1) + '</strong> to <strong>' + fmtDate(d2) + '</strong>.</p>';
+      '<p class="result-note">From <strong>' + fmtDate(d1) + '</strong> to <strong>' + fmtDate(d2) + '</strong>.</p>' +
+      '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="dd-share-btn">Copy share link</button> <span id="dd-share-msg" style="font-size:.85rem"></span></p>';
+    try{
+      var u = new URL(window.location.href);
+      u.searchParams.set("from", s); u.searchParams.set("to", e);
+      u.searchParams.delete("base"); u.searchParams.delete("days");
+      window.history.replaceState(null, "", u.toString());
+    }catch(e2){}
+    var dshare = document.getElementById("dd-share-btn");
+    if(dshare){
+      dshare.addEventListener("click", function(){
+        var msg = document.getElementById("dd-share-msg");
+        function done(t){ if(msg){ msg.textContent = t; } }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+        }else{ done("Copy this page URL to share."); }
+      });
+    }
   });
 
   document.getElementById("dd-add-btn").addEventListener("click", function(){
@@ -206,6 +265,28 @@ Yes, use the add/subtract section. Enter a positive number to go forward or a ne
     if(isNaN(d)){ out.innerHTML = '<p class="result-note">Please enter a valid date.</p>'; return; }
     d.setDate(d.getDate() + n);
     out.innerHTML = '<p class="result-note">Result: <strong>' + fmtDate(d) + '</strong></p>';
+    try{
+      var u2 = new URL(window.location.href);
+      u2.searchParams.set("base", b); u2.searchParams.set("days", String(n));
+      u2.searchParams.delete("from"); u2.searchParams.delete("to");
+      window.history.replaceState(null, "", u2.toString());
+    }catch(e3){}
   });
+
+  try{
+    var qp = new URLSearchParams(window.location.search);
+    var qfrom = qp.get("from"), qto = qp.get("to");
+    var qbase = qp.get("base"), qdays = qp.get("days");
+    var dateRe = /^\d{4}-\d{2}-\d{2}$/;
+    if(qfrom && qto && dateRe.test(qfrom) && dateRe.test(qto)){
+      document.getElementById("dd-start").value = qfrom;
+      document.getElementById("dd-end").value = qto;
+      document.getElementById("dd-btn").click();
+    }else if(qbase && qdays && dateRe.test(qbase) && /^-?\d+$/.test(qdays)){
+      document.getElementById("dd-base").value = qbase;
+      document.getElementById("dd-days").value = qdays;
+      document.getElementById("dd-add-btn").click();
+    }
+  }catch(e4){}
 })();
 </script>
