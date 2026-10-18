@@ -145,12 +145,34 @@ The remaining time is recalculated from your target date whenever the page loads
 
 No, the timer needs a future date. For a date that already passed, it shows that the moment has arrived.
 
-## Related tools
+</div>
 
-- [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): how many days until any date
-- [Age Calculator]({{ '/age-calculator/' | relative_url }}): your exact age and next birthday countdown
-- [Stopwatch]({{ '/stopwatch/' | relative_url }}): time things happening right now
-
+<h2 style="margin-top:8px">Related tools</h2>
+<div class="tools-grid">
+  <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
+    <div class="tool-icon">🎂</div>
+    <h3>Age Calculator</h3>
+    <p>Your exact age in years, months, and days.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/date-difference-calculator/' | relative_url }}">
+    <div class="tool-icon">📅</div>
+    <h3>Date Difference Calculator</h3>
+    <p>Days, weeks, months between any two dates.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/stopwatch/' | relative_url }}">
+    <div class="tool-icon">⏱️</div>
+    <h3>Stopwatch</h3>
+    <p>Online stopwatch with lap times.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/time-zone-converter/' | relative_url }}">
+    <div class="tool-icon">🌍</div>
+    <h3>Time Zone Converter</h3>
+    <p>Convert times across world time zones.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
 </div>
 
 <script>
