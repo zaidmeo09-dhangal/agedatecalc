@@ -98,7 +98,7 @@ For everyday purposes, UTC and GMT show the same clock time. GMT is a time zone 
 
 The world runs on offsets from UTC. UTC+5 means five hours ahead of the UTC baseline; UTC-4 means four hours behind it.
 
-Daylight saving complicates the picture: many Northern Hemisphere zones jump forward one hour in summer (roughly March to October) and fall back in winter. Southern Hemisphere zones do the reverse (roughly October to April). Plenty of zones never change at all: Karachi (UTC+5) and Dubai (UTC+4) stay put all year, which is exactly why they make good reference points.
+Daylight saving complicates the picture: many Northern Hemisphere zones jump forward one hour in summer (roughly March to October) and fall back in winter. Southern Hemisphere zones do the reverse (roughly October to April). Plenty of zones never change at all: Phoenix, Arizona (UTC-7) skips daylight saving entirely, which is exactly why it makes a good reference point.
 
 The converter uses your browser's built-in time zone database, so the correct rules for any date, past or future, are applied automatically. You never have to look up when DST starts.
 
@@ -113,24 +113,24 @@ So a standing meeting at 3:00 PM London time is 10:00 AM in New York most of the
 - **Name the zone, not just the time.** "3 PM" is meaningless across zones. "3 PM London time" works.
 - **Put the recipient's local time first** in the invite, with yours in parentheses.
 - **Write UTC for international groups.** "14:00 UTC" cannot be misread the way "2 PM EST" can (and EST vs EDT is itself a DST trap).
-- **Confirm the date, not just the time.** A 9:00 PM meeting in New York is already the next day in London and Karachi. Date mix-ups cause more missed meetings than hour mix-ups.
+- **Confirm the date, not just the time.** A 9:00 PM meeting in New York is already the next day in London. Date mix-ups cause more missed meetings than hour mix-ups.
 - **For recurring meetings, expect a twice-yearly shift** and announce it, rather than letting half the team show up an hour off.
 - **When in doubt, send a calendar invite.** It carries the time zone with it and renders in each recipient's local time, which beats even the clearest written time.
 
-## What noon in Karachi means around the world
+## What noon in New York means around the world
 
 | City | January | July | Daylight saving? |
 |---|---|---|---|
-| New York | 2:00 AM | 3:00 AM | Yes |
-| London | 7:00 AM | 8:00 AM | Yes |
-| Dubai | 11:00 AM | 11:00 AM | No |
-| Sydney | 6:00 PM | 5:00 PM | Yes |
+| Los Angeles | 9:00 AM | 9:00 AM | Yes |
+| Chicago | 11:00 AM | 11:00 AM | Yes |
+| London | 5:00 PM | 5:00 PM | Yes |
+| Phoenix | 10:00 AM | 9:00 AM | No |
 
-Notice how Dubai never moves while the others slide by an hour between seasons. That is daylight saving at work.
+Notice how Phoenix slides by an hour between seasons while the others stay fixed relative to New York. That is daylight saving at work: most of the US moves together, and the zones that skip it drift.
 
 ## Quick mental-math shortcut
 
-For a rough conversion without the tool: subtract Karachi's offset to reach UTC, then add the target offset. 3:00 PM in Karachi is 10:00 UTC (15 minus 5). London in July is UTC+1, so that is 11:00 AM London time. It works for any pair of zones once you know both offsets, but for exact answers, especially near DST switches, use the converter above.
+For a rough conversion without the tool: add New York's offset to reach UTC, then apply the target offset. 3:00 PM in New York in winter (EST, UTC-5) is 8:00 PM UTC (15 plus 5). London in July is UTC+1, so that is 9:00 PM London time. It works for any pair of zones once you know both offsets, but for exact answers, especially near DST switches, use the converter above.
 
 ## Frequently asked questions
 
@@ -159,23 +159,22 @@ Yes. Conversions use the built-in time zone database in your browser, which incl
   "use strict";
   var zones = [
     ["UTC", "UTC"],
-    ["Karachi (PKT)", "Asia/Karachi"],
-    ["Dubai (GST)", "Asia/Dubai"],
-    ["Mumbai (IST)", "Asia/Kolkata"],
-    ["Dhaka (BST)", "Asia/Dhaka"],
-    ["Bangkok (ICT)", "Asia/Bangkok"],
-    ["Singapore (SGT)", "Asia/Singapore"],
-    ["Tokyo (JST)", "Asia/Tokyo"],
-    ["Sydney (AEDT/AEST)", "Australia/Sydney"],
+    ["New York (EST/EDT)", "America/New_York"],
+    ["Chicago (CST/CDT)", "America/Chicago"],
+    ["Denver (MST/MDT)", "America/Denver"],
+    ["Los Angeles (PST/PDT)", "America/Los_Angeles"],
+    ["Phoenix (MST, no DST)", "America/Phoenix"],
+    ["Toronto (EST/EDT)", "America/Toronto"],
+    ["Sao Paulo (BRT)", "America/Sao_Paulo"],
     ["London (GMT/BST)", "Europe/London"],
     ["Paris (CET/CEST)", "Europe/Paris"],
     ["Berlin (CET/CEST)", "Europe/Berlin"],
     ["Moscow (MSK)", "Europe/Moscow"],
-    ["New York (EST/EDT)", "America/New_York"],
-    ["Chicago (CST/CDT)", "America/Chicago"],
-    ["Los Angeles (PST/PDT)", "America/Los_Angeles"],
-    ["Toronto (EST/EDT)", "America/Toronto"],
-    ["Sao Paulo (BRT)", "America/Sao_Paulo"]
+    ["Dubai (GST)", "Asia/Dubai"],
+    ["Mumbai (IST)", "Asia/Kolkata"],
+    ["Singapore (SGT)", "Asia/Singapore"],
+    ["Tokyo (JST)", "Asia/Tokyo"],
+    ["Sydney (AEDT/AEST)", "Australia/Sydney"]
   ];
 
   var fromSel = document.getElementById("tz-from");
@@ -184,7 +183,8 @@ Yes. Conversions use the built-in time zone database in your browser, which incl
     var o1 = document.createElement("option"); o1.value = z[1]; o1.textContent = z[0]; fromSel.appendChild(o1);
     var o2 = document.createElement("option"); o2.value = z[1]; o2.textContent = z[0]; toSel.appendChild(o2);
   });
-  toSel.selectedIndex = 9; // London default
+  fromSel.selectedIndex = 1; // New York default
+  toSel.selectedIndex = 8; // London default
 
   // Pre-fill with current local time
   (function(){
