@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <script>
 /* Set theme before paint: saved choice wins, otherwise system preference */
-(function(){try{var t=localStorage.getItem("agedatecalc-theme");if(!t){t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+(function(){try{var t=localStorage.getItem("agedatecalc-theme");if(!t){t="light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
 </script>
 {% if page.schema %}
 <script type="application/ld+json">
