@@ -136,12 +136,34 @@ It uses your device clock with centisecond precision, accurate enough for traini
 
 Yes. Elapsed time is tracked from the start moment, so no time is lost when the tab is in the background.
 
-## Related tools
+</div>
 
-- [Countdown Timer]({{ '/countdown-timer/' | relative_url }}): count down to a future moment
-- [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): days between dates
-- [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}): convert times across zones
-
+<h2 style="margin-top:8px">Related tools</h2>
+<div class="tools-grid">
+  <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
+    <div class="tool-icon">🎂</div>
+    <h3>Age Calculator</h3>
+    <p>Your exact age in years, months, and days.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/date-difference-calculator/' | relative_url }}">
+    <div class="tool-icon">📅</div>
+    <h3>Date Difference Calculator</h3>
+    <p>Days, weeks, months between any two dates.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/countdown-timer/' | relative_url }}">
+    <div class="tool-icon">⏳</div>
+    <h3>Countdown Timer</h3>
+    <p>Live countdown to any future date and time.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/time-zone-converter/' | relative_url }}">
+    <div class="tool-icon">🌍</div>
+    <h3>Time Zone Converter</h3>
+    <p>Convert times across world time zones.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
 </div>
 
 <script>
