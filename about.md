@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
-description: Learn what AgeDateCalc is, why it exists, and how our free date and time tools work.
+title: About AgeDateCalc | Free Date and Time Tools
+description: Learn what AgeDateCalc is, who builds it, and how our five free date and time tools work. No sign-up, private by design.
 permalink: /about/
 ---
 
