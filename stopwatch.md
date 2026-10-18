@@ -124,22 +124,26 @@ Switching tabs or locking the screen loses no time: elapsed time is computed fro
 
 ## Frequently asked questions
 
-### How do I record a lap time?
-
-Press Lap while the stopwatch is running. Each lap shows its split time and the total elapsed time.
-
-### Is this stopwatch accurate?
-
-It uses your device clock with centisecond precision, accurate enough for training, studying, and casual races. For professional athletics, use certified equipment.
-
-### Does it work if I switch tabs?
-
-Yes. Elapsed time is tracked from the start moment, so no time is lost when the tab is in the background.
-
 </div>
 
-<h2 style="margin-top:8px">Related tools</h2>
-<div class="tools-grid">
+<div class="faq">
+<details>
+<summary>How do I record a lap time?</summary>
+<p>Press Lap while the stopwatch is running. Each lap shows its split time and the total elapsed time.</p>
+</details>
+<details>
+<summary>Is this stopwatch accurate?</summary>
+<p>It uses your device clock with centisecond precision, accurate enough for training, studying, and casual races. For professional athletics, use certified equipment.</p>
+</details>
+<details>
+<summary>Does it work if I switch tabs?</summary>
+<p>Yes. Elapsed time is tracked from the start moment, so no time is lost when the tab is in the background.</p>
+</details>
+</div>
+
+<div class="wrap">
+<h2>Related tools</h2>
+<div class="tools-grid tools-grid-4">
   <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
     <div class="tool-icon">🎂</div>
     <h3>Age Calculator</h3>
@@ -164,6 +168,7 @@ Yes. Elapsed time is tracked from the start moment, so no time is lost when the 
     <p>Convert times across world time zones.</p>
     <span class="go">Use tool &rarr;</span>
   </a>
+</div>
 </div>
 
 <script>
