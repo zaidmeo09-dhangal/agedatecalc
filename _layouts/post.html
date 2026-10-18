@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="wrap">
+    {% if page.category %}<span class="badge">{{ page.category }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.description }}</p>
+    <span class="update-badge">{{ page.date | date: "%B %-d, %Y" }}</span>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    {{ content }}
+    {% if page.tool_url %}
+    <div class="wrap" style="max-width:760px;margin:0 auto;padding:0 20px">
+      <div class="legal-card">
+        <h2><span class="licon">🧮</span> Try it yourself</h2>
+        <p>Skip the manual math. Our free {{ page.tool_name }} does this instantly, no sign-up needed.</p>
+        <a class="btn btn-primary" href="{{ page.tool_url | relative_url }}">Open {{ page.tool_name }}</a>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
