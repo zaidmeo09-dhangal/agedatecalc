@@ -201,7 +201,7 @@ A countdown is more than a ticking clock. A few ways to get real value out of it
     var s = Math.floor(diff % 60000 / 1000);
     out.innerHTML =
       (name ? '<p class="result-note" style="text-align:center"><strong>' + name + '</strong></p>' : '') +
-      '<div class="result-grid" style="grid-template-columns:repeat(4,1fr)">' +
+      '<div class="countdown-grid">' +
       '<div class="result-box"><span class="num">' + d + '</span><span class="lbl">Days</span></div>' +
       '<div class="result-box"><span class="num">' + pad(h) + '</span><span class="lbl">Hours</span></div>' +
       '<div class="result-box"><span class="num">' + pad(m) + '</span><span class="lbl">Minutes</span></div>' +
