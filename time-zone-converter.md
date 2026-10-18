@@ -82,6 +82,8 @@ schema: |
 
 <div class="prose" markdown="1">
 
+<p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
+
 ## How to use the converter
 
 1. Enter the date and time you want to convert.
@@ -208,12 +210,39 @@ Yes. Conversions use the built-in time zone database in your browser, which incl
     var from = fromSel.value, to = toSel.value;
     var fromName = fromSel.options[fromSel.selectedIndex].text;
     var toName = toSel.options[toSel.selectedIndex].text;
+    try{
+      var u = new URL(window.location.href);
+      u.searchParams.set("from", from); u.searchParams.set("to", to);
+      if(val){ u.searchParams.set("at", val); }
+      window.history.replaceState(null, "", u.toString());
+    }catch(e){}
     out.innerHTML =
       '<div class="result-box" style="margin-top:16px;text-align:left">' +
       '<p style="margin-bottom:8px"><strong>' + convertInZone(d, from) + '</strong><br><span style="color:var(--muted);font-size:.9rem">' + fromName + '</span></p>' +
       '<p style="font-size:1.4rem;text-align:center;margin:4px 0">↓</p>' +
       '<p><strong>' + convertInZone(d, to) + '</strong><br><span style="color:var(--muted);font-size:.9rem">' + toName + '</span></p>' +
-      '</div>';
+      '</div>' +
+      '<p class="result-note" style="margin-top:12px"><button type="button" class="btn btn-outline btn-sm" id="tz-share-btn">Copy share link</button> <span id="tz-share-msg" style="font-size:.85rem"></span></p>';
+    var tzShare = document.getElementById("tz-share-btn");
+    if(tzShare){
+      tzShare.addEventListener("click", function(){
+        var msg = document.getElementById("tz-share-msg");
+        function done(t){ if(msg){ msg.textContent = t; } }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+        }else{ done("Copy this page URL to share."); }
+      });
+    }
   });
+
+  try{
+    var qsp = new URLSearchParams(window.location.search);
+    var qfrom = qsp.get("from"), qto = qsp.get("to"), qat = qsp.get("at");
+    var validZones = zones.map(function(z){ return z[1]; });
+    if(qfrom && validZones.indexOf(qfrom) !== -1){ fromSel.value = qfrom; }
+    if(qto && validZones.indexOf(qto) !== -1){ toSel.value = qto; }
+    if(qat && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(qat)){ document.getElementById("tz-datetime").value = qat; }
+    if(qfrom || qto){ document.getElementById("tz-btn").click(); }
+  }catch(e2){}
 })();
 </script>
