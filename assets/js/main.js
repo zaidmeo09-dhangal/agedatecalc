@@ -7,6 +7,16 @@
   var yearEl = document.getElementById("year");
   if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
 
+  /* ---------- Dark mode toggle ---------- */
+  var themeBtn = document.getElementById("theme-toggle");
+  if(themeBtn){
+    themeBtn.addEventListener("click", function(){
+      var next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try{ localStorage.setItem("agedatecalc-theme", next); }catch(e){}
+    });
+  }
+
   /* ---------- Age calculator ---------- */
   function isLeapYear(y){ return (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0); }
 
