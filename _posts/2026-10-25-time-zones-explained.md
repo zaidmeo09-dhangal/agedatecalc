@@ -17,22 +17,22 @@ schema: |
 
 <div class="prose" markdown="1">
 
-The world is divided into 24 main time zones, each roughly 15 degrees of longitude wide. As Earth rotates, different regions face the sun at different times, so noon in Karachi is morning in London and night in New York.
+The world is divided into 24 main time zones, each roughly 15 degrees of longitude wide. As Earth rotates, different regions face the sun at different times, so noon in New York is morning in Los Angeles and evening in London.
 
 ## UTC: the global reference
 
-**UTC (Coordinated Universal Time)** is the standard every time zone is measured against. Zones are written as offsets: UTC+5 (Karachi), UTC+0 (London in winter), UTC-5 (New York in winter).
+**UTC (Coordinated Universal Time)** is the standard every time zone is measured against. Zones are written as offsets: UTC-5 (New York in winter), UTC+0 (London in winter), UTC+9 (Tokyo).
 
 ## How offsets work: a worked example
 
 Converting between zones is just addition and subtraction through UTC.
 
-**Example:** it is 3:00 PM in Karachi (UTC+5) in January. What time is it in New York?
+**Example:** it is 3:00 PM in Los Angeles (UTC-8) in January. What time is it in New York?
 
-1. Convert Karachi to UTC: 15:00 minus 5 hours = **10:00 UTC**.
-2. Convert UTC to New York: in January, New York is on standard time (UTC-5), so 10:00 minus 5 hours = **5:00 AM**.
+1. Convert Los Angeles to UTC: 15:00 plus 8 hours = **11:00 PM UTC**.
+2. Convert UTC to New York: in January, New York is on standard time (UTC-5), so 23:00 minus 5 hours = **6:00 PM**.
 
-So 3 PM in Karachi is 5 AM the same day in New York. In July the answer changes: New York observes daylight saving (UTC-4), so the same 3 PM in Karachi becomes 6 AM in New York. Same cities, different answer, which is exactly why fixed offset tables go stale.
+So 3 PM in Los Angeles is 6 PM the same day in New York. In July the answer shifts with daylight saving: Los Angeles moves to UTC-7 and New York to UTC-4, so the same 3 PM in Los Angeles becomes 6 PM in New York again, three hours apart either way. Same cities, different offsets, which is exactly why fixed offset tables go stale.
 
 ## GMT vs UTC
 
@@ -63,11 +63,11 @@ For scheduling, the rule is simple: whenever a conversion crosses the Pacific, c
 
 ## Practical conversion tips
 
-1. **Always name the zone, not just the time.** "3 PM" is meaningless globally; "3 PM PKT" is exact.
+1. **Always name the zone, not just the time.** "3 PM" is meaningless globally; "3 PM EST" is exact.
 2. **Watch the date line.** Converting across the Pacific can land you on a different calendar day.
 3. **Recheck near DST changes.** Meetings scheduled across a DST transition weekend often shift by an hour.
 4. **Use a converter.** Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) applies current DST rules automatically.
-5. **Put the time zone in the invite title.** "Team sync, 3 PM PKT / 10 AM GMT" survives forwarding and screenshots. A bare "3 PM" does not.
+5. **Put the time zone in the invite title.** "Team sync, 3 PM EST / 8 PM GMT" survives forwarding and screenshots. A bare "3 PM" does not.
 6. **Schedule in UTC when the group is large.** One reference time plus a converter link beats five separate conversions in a chat thread.
 7. **Send calendar invites, not chat messages.** Calendar files carry time zone data, so the invite lands at the right local hour on every device automatically.
 8. **Confirm the day for far-apart zones.** Anything spanning more than about 8 hours of offset can flip the calendar date. A one-line "that is Tuesday your time, right?" prevents the classic miss.
