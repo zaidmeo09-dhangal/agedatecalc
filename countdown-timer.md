@@ -133,22 +133,26 @@ A countdown is more than a ticking clock. A few ways to get real value out of it
 
 ## Frequently asked questions
 
-### How do I start a countdown?
-
-Pick the target date and time and click Start Countdown. The display ticks live.
-
-### Does the countdown keep running if I close the tab?
-
-The remaining time is recalculated from your target date whenever the page loads, so it is always correct when you return. It does not send notifications while closed.
-
-### Can I count down to a past date?
-
-No, the timer needs a future date. For a date that already passed, it shows that the moment has arrived.
-
 </div>
 
-<h2 style="margin-top:8px">Related tools</h2>
-<div class="tools-grid">
+<div class="faq">
+<details>
+<summary>How do I start a countdown?</summary>
+<p>Pick the target date and time and click Start Countdown. The display ticks live.</p>
+</details>
+<details>
+<summary>Does the countdown keep running if I close the tab?</summary>
+<p>The remaining time is recalculated from your target date whenever the page loads, so it is always correct when you return. It does not send notifications while closed.</p>
+</details>
+<details>
+<summary>Can I count down to a past date?</summary>
+<p>No, the timer needs a future date. For a date that already passed, it shows that the moment has arrived.</p>
+</details>
+</div>
+
+<div class="wrap">
+<h2>Related tools</h2>
+<div class="tools-grid tools-grid-4">
   <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
     <div class="tool-icon">🎂</div>
     <h3>Age Calculator</h3>
@@ -173,6 +177,7 @@ No, the timer needs a future date. For a date that already passed, it shows that
     <p>Convert times across world time zones.</p>
     <span class="go">Use tool &rarr;</span>
   </a>
+</div>
 </div>
 
 <script>
