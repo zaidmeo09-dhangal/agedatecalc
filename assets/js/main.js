@@ -86,11 +86,11 @@
 
   /* ---------- World clocks ---------- */
   var zones = [
-    ["Karachi", "Asia/Karachi"],
-    ["Dubai", "Asia/Dubai"],
-    ["London", "Europe/London"],
     ["New York", "America/New_York"],
-    ["Sydney", "Australia/Sydney"]
+    ["Chicago", "America/Chicago"],
+    ["Denver", "America/Denver"],
+    ["Los Angeles", "America/Los_Angeles"],
+    ["London", "Europe/London"]
   ];
   var clocksWrap = document.getElementById("world-clocks");
 
