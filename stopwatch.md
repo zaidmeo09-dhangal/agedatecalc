@@ -75,6 +75,8 @@ schema: |
 
 <div class="prose" markdown="1">
 
+<p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
+
 ## How to use the stopwatch
 
 1. Click **Start** to begin timing.
@@ -109,6 +111,8 @@ Two honest limits:
 - **Your reaction time is inside the measurement.** Pressing Start and Stop by hand adds roughly 0.15 to 0.3 seconds of human delay at each end. For comparing your own laps against each other this cancels out, which is why lap-to-lap comparison is the most reliable use.
 
 Switching tabs or locking the screen loses no time: elapsed time is computed from start timestamps, not from counting ticks while you watch.
+
+**Sources:** timing accuracy discussion follows the principles in NIST Special Publication 960-12 (time and frequency measurement). Browser timers are software clocks, not atomic references.
 
 ## Tips for cleaner timing
 
