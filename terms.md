@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Terms of Service
-description: The terms for using AgeDateCalc's free date and time tools.
+title: Terms of Service | AgeDateCalc
+description: The terms for using AgeDateCalc's free date and time tools, including acceptable use, accuracy limits, and advertising disclosure.
 permalink: /terms/
 ---
 
