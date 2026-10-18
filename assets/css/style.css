@@ -220,3 +220,55 @@ a{color:var(--teal)}
   .prose p,.prose li{color:#c8d6d4}
   .tool-card p,.guide-card p,.calc-card p.sub,.result-note{color:var(--muted)}
 }
+
+/* Inner pages: hero + legal cards */
+.page-hero{padding:60px 0 44px;text-align:center;position:relative;overflow:hidden}
+.page-hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(600px 300px at 85% 10%,rgba(233,161,59,.14),transparent 70%),
+    radial-gradient(700px 340px at 10% 20%,rgba(14,107,98,.12),transparent 70%);
+}
+.page-hero .wrap{position:relative}
+.page-hero h1{font-size:2.6rem;margin:.7rem 0}
+.page-hero .lead{max-width:42rem;margin:0 auto}
+.legal-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:1.75rem;margin-bottom:1.25rem;
+}
+.legal-card h2{margin:0 0 .8rem;font-size:1.3rem;display:flex;align-items:center;gap:.65rem}
+.legal-card h2 .licon{
+  width:42px;height:42px;border-radius:12px;background:var(--teal-soft);
+  display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;flex:none;
+}
+.legal-card p:last-child,.legal-card ul:last-child{margin-bottom:0}
+.legal-card ul{padding-left:1.3rem;margin:.6rem 0}
+.legal-card li{margin-bottom:.5rem;color:var(--ink)}
+.legal-card p{color:var(--ink)}
+.legal-summary{border-left:4px solid var(--amber)}
+.mail-card{
+  background:var(--teal-deep);color:#fff;border-radius:var(--radius);
+  padding:2.5rem 2rem;text-align:center;margin-bottom:2rem;position:relative;overflow:hidden;
+}
+.mail-card::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(500px 240px at 80% 0%,rgba(233,161,59,.25),transparent 70%);
+}
+.mail-card h2{color:#fff;margin-bottom:.5rem;position:relative}
+.mail-card p{color:rgba(255,255,255,.82);position:relative}
+.mail-card .mail-addr{
+  display:inline-block;font-family:var(--font-mono);font-size:1.25rem;font-weight:600;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);
+  color:#fff;padding:.8rem 1.6rem;border-radius:12px;margin:1.1rem 0;text-decoration:none;position:relative;
+}
+.mail-card .mail-addr:hover{background:rgba(255,255,255,.2)}
+.update-badge{
+  display:inline-block;font-size:.8rem;font-weight:600;color:var(--muted);
+  border:1px solid var(--border);border-radius:999px;padding:.35rem 1rem;margin-top:.8rem;
+  background:var(--white);
+}
+@media(max-width:520px){
+  .page-hero{padding:44px 0 32px}
+  .page-hero h1{font-size:2rem}
+  .legal-card{padding:1.3rem}
+}
