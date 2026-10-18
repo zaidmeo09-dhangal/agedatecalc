@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Privacy Policy
-description: How AgeDateCalc handles your data, cookies, and advertising.
+title: Privacy Policy | AgeDateCalc
+description: How AgeDateCalc handles your data, cookies, and advertising. Our tools run in your browser; we do not collect or sell your inputs.
 permalink: /privacy-policy/
 ---
 
