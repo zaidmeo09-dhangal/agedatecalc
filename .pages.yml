@@ -1,0 +1,63 @@
+media:
+  - name: images
+    label: Images
+    input: assets/images
+    output: /assets/images
+    extensions: [jpg, jpeg, png, webp]
+    rename: safe
+
+content:
+  - name: posts
+    label: Blog Posts
+    type: collection
+    path: _posts
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{slug}.md"
+    view:
+      primary: title
+      sort: date
+      order: desc
+      fields: [title, date, permalink]
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        default: default
+        hidden: true
+      - name: title
+        label: Blog Title
+        type: string
+        required: true
+      - name: description
+        label: Meta Description
+        type: text
+        required: true
+      - name: permalink
+        label: URL Permalink
+        type: string
+        required: true
+        description: "Example: /how-to-calculate-age/ (leading and trailing slash)"
+      - name: date
+        label: Publish Date
+        type: date
+        required: true
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - Date Guides
+            - Time Guides
+            - How-To Guides
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: schema
+        label: "JSON-LD Schema (optional)"
+        type: text
+        description: "Paste Article schema JSON here. Leave empty if none."
+      - name: body
+        label: Blog Content
+        type: rich-text
+        required: true
