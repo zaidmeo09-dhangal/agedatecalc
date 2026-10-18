@@ -195,12 +195,34 @@ By default, no. The count is exclusive of the end date. Add one day if you need 
 
 Yes, use the add/subtract section. Enter a positive number to go forward or a negative number to go back.
 
-## Related tools
+</div>
 
-- [Age Calculator]({{ '/age-calculator/' | relative_url }}): your exact age from your date of birth
-- [Countdown Timer]({{ '/countdown-timer/' | relative_url }}): live countdown to any future date
-- [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}): convert times across the world
-
+<h2 style="margin-top:8px">Related tools</h2>
+<div class="tools-grid">
+  <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
+    <div class="tool-icon">🎂</div>
+    <h3>Age Calculator</h3>
+    <p>Your exact age in years, months, and days.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/countdown-timer/' | relative_url }}">
+    <div class="tool-icon">⏳</div>
+    <h3>Countdown Timer</h3>
+    <p>Live countdown to any future date and time.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/stopwatch/' | relative_url }}">
+    <div class="tool-icon">⏱️</div>
+    <h3>Stopwatch</h3>
+    <p>Online stopwatch with lap times.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/time-zone-converter/' | relative_url }}">
+    <div class="tool-icon">🌍</div>
+    <h3>Time Zone Converter</h3>
+    <p>Convert times across world time zones.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
 </div>
 
 <script>
