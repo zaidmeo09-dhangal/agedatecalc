@@ -72,11 +72,14 @@ schema: |
       </div>
       <button class="btn btn-primary btn-block" id="cd-btn" type="button">Start Countdown</button>
       <div id="cd-result" style="margin-top:20px"></div>
+      <div id="cd-share" style="margin-top:12px;text-align:center"></div>
     </div>
   </div>
 </section>
 
 <div class="prose" markdown="1">
+
+<p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
 
 ## How to use the Countdown Timer
 
@@ -190,6 +193,36 @@ No, the timer needs a future date. For a date that already passed, it shows that
     if(timer){ clearInterval(timer); }
     render(target, name);
     timer = setInterval(function(){ render(target, name); }, 1000);
+    try{
+      var u = new URL(window.location.href);
+      u.searchParams.set("to", val);
+      if(name){ u.searchParams.set("label", document.getElementById("cd-name").value.trim().slice(0, 60)); }
+      else{ u.searchParams.delete("label"); }
+      window.history.replaceState(null, "", u.toString());
+      var shareBox = document.getElementById("cd-share");
+      shareBox.innerHTML = '<button type="button" class="btn btn-outline btn-sm" id="cd-share-btn">Copy share link</button> <span id="cd-share-msg" style="font-size:.85rem"></span>';
+      document.getElementById("cd-share-btn").addEventListener("click", function(){
+        var msg = document.getElementById("cd-share-msg");
+        function done(t){ if(msg){ msg.textContent = t; } }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+        }else{ done("Copy this page URL to share."); }
+      });
+    }catch(e){}
   });
+
+  try{
+    var qp = new URLSearchParams(window.location.search);
+    var qto = qp.get("to");
+    if(qto){
+      var qt = new Date(qto);
+      if(!isNaN(qt.getTime()) && qt > new Date()){
+        document.getElementById("cd-target").value = qto.slice(0, 16);
+        var ql = qp.get("label");
+        if(ql){ document.getElementById("cd-name").value = ql.slice(0, 60); }
+        document.getElementById("cd-btn").click();
+      }
+    }
+  }catch(e2){}
 })();
 </script>
