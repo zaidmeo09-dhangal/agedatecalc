@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Update this line with the real domain after purchase
-Sitemap: https://agedatecalc.com/sitemap.xml
+Sitemap: https://zaidmeo09-dhangal.github.io/agedatecalc/sitemap.xml
