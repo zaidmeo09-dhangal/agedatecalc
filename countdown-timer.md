@@ -91,11 +91,11 @@ Tip: if you leave and come back, the page recalculates from your target date, so
 The display ticks every second, showing days, hours, minutes, and seconds left. Two details are worth knowing:
 
 - **No drift, ever.** The remaining time is recalculated from your target date every time the page loads. Close the tab, come back next week, and the number is still right, because the math runs fresh from the target instead of ticking away in the background.
-- **Your time zone rules.** The date picker uses your device's local time zone. If you pick "December 25, 9:00 AM" while sitting in Karachi, the timer counts down to 9:00 AM Karachi time.
+- **Your time zone rules.** The date picker uses your device's local time zone. If you pick "December 25, 9:00 AM" while sitting in Chicago, the timer counts down to 9:00 AM Chicago time.
 
 ## The time zone trap (and how to dodge it)
 
-Counting down to an event in another time zone? Convert first. A product launch at 9:00 AM New York time is 6:00 PM the same day in Karachi. If you set the countdown to 9:00 AM without converting, you will be hours early or late. Run the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) first, then enter the converted local time here.
+Counting down to an event in another time zone? Convert first. A product launch at 9:00 AM New York time is 6:00 AM the same day in Los Angeles. If you set the countdown to 9:00 AM without converting, you will be hours early or late. Run the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) first, then enter the converted local time here.
 
 ## More ideas worth counting down to
 
@@ -114,7 +114,7 @@ Counting down to an event in another time zone? Convert first. A product launch 
 
 ## Tips for a better countdown
 
-- **Name the event.** "Ayesha's wedding" on the display beats a bare ticking clock, especially if you share a screenshot with friends.
+- **Name the event.** "Sarah's wedding" on the display beats a bare ticking clock, especially if you share a screenshot with friends.
 - **Set an exact time, not just a date.** Picking only a date usually means midnight, which reads as "1 day left" at 11 PM the night before. An exact time keeps the countdown honest.
 - **For long countdowns, check in weekly.** Watching months tick by is motivating for savings goals, fitness plans, and big trips.
 - **What happens at zero?** The timer stops and shows that the moment has arrived. It does not play a sound or send a notification, so keep the tab open if you want to catch the exact second.
