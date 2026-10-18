@@ -136,22 +136,26 @@ For a rough conversion without the tool: add New York's offset to reach UTC, the
 
 ## Frequently asked questions
 
-### How do I convert time between zones?
-
-Enter the time, pick the source zone and the target zone, then convert. The math and daylight saving rules are applied for you.
-
-### What is the difference between UTC and GMT?
-
-In daily use, none on the clock. GMT is a zone, UTC is the standard behind all zones.
-
-### Does it handle daylight saving time?
-
-Yes. Conversions use the built-in time zone database in your browser, which includes daylight saving rules.
-
 </div>
 
-<h2 style="margin-top:8px">Related tools</h2>
-<div class="tools-grid">
+<div class="faq">
+<details>
+<summary>How do I convert time between zones?</summary>
+<p>Enter the time, pick the source zone and the target zone, then convert. The math and daylight saving rules are applied for you.</p>
+</details>
+<details>
+<summary>What is the difference between UTC and GMT?</summary>
+<p>In daily use, none on the clock. GMT is a zone, UTC is the standard behind all zones.</p>
+</details>
+<details>
+<summary>Does it handle daylight saving time?</summary>
+<p>Yes. Conversions use the built-in time zone database in your browser, which includes daylight saving rules.</p>
+</details>
+</div>
+
+<div class="wrap">
+<h2>Related tools</h2>
+<div class="tools-grid tools-grid-4">
   <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
     <div class="tool-icon">🎂</div>
     <h3>Age Calculator</h3>
@@ -176,6 +180,7 @@ Yes. Conversions use the built-in time zone database in your browser, which incl
     <p>Online stopwatch with lap times.</p>
     <span class="go">Use tool &rarr;</span>
   </a>
+</div>
 </div>
 
 <script>
