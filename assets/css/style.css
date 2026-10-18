@@ -1,0 +1,222 @@
+/* AgeDateCalc design system: teal + amber on warm paper */
+
+:root{
+  --teal:#0E6B62;
+  --teal-deep:#0A3F46;
+  --teal-soft:#E2EFEc;
+  --amber:#E9A13B;
+  --amber-soft:#FBF1DC;
+  --ink:#14353B;
+  --muted:#5C6F74;
+  --paper:#FAF6EF;
+  --white:#FFFFFF;
+  --border:#E7DFCC;
+  --radius:16px;
+  --shadow:0 12px 32px rgba(10,63,70,.10);
+  --font-head:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;
+  --font-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-body);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--font-head);line-height:1.2;letter-spacing:-.01em}
+img{max-width:100%}
+a{color:var(--teal)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--font-mono)}
+
+/* Header */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,246,239,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-text{font-family:var(--font-head);font-weight:700;font-size:1.35rem;color:var(--ink)}
+.site-nav{display:flex;gap:28px}
+.site-nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+.site-nav a:hover{color:var(--teal)}
+.nav-toggle{display:none}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.nav-burger span{display:block;width:24px;height:2.5px;background:var(--ink);border-radius:2px}
+
+/* Hero */
+.hero{padding:72px 0 56px;position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(600px 300px at 85% 10%,rgba(233,161,59,.14),transparent 70%),
+    radial-gradient(700px 340px at 10% 20%,rgba(14,107,98,.12),transparent 70%);
+}
+.hero-inner{position:relative;text-align:center;max-width:760px;margin:0 auto}
+.badge{
+  display:inline-block;background:var(--teal-soft);color:var(--teal-deep);
+  font-weight:700;font-size:.8rem;padding:6px 14px;border-radius:999px;margin-bottom:18px;
+}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:16px}
+.hero h1 .accent{color:var(--teal)}
+.lead{font-size:1.12rem;color:var(--muted);max-width:620px;margin:0 auto 28px}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:13px 28px;border-radius:12px;font-weight:700;
+  text-decoration:none;font-size:1rem;transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn-primary{background:var(--teal);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-outline{border:2px solid var(--teal);color:var(--teal);background:transparent}
+.btn-outline:hover{background:var(--teal-soft)}
+
+/* Calculator card */
+.calc-card{
+  background:var(--white);border:1px solid var(--border);border-radius:20px;
+  box-shadow:var(--shadow);padding:28px;max-width:640px;margin:40px auto 0;text-align:left;
+}
+.calc-card h2{font-size:1.4rem;margin-bottom:6px}
+.calc-card p.sub{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.field input,.field select{
+  width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:10px;
+  font-size:1rem;font-family:var(--font-body);background:#fff;color:var(--ink);
+}
+.field input:focus,.field select:focus{outline:2px solid var(--teal);border-color:var(--teal)}
+.btn-block{width:100%;border:0;cursor:pointer;font-size:1.05rem}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.result-box{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.result-box .num{font-family:var(--font-mono);font-weight:600;font-size:1.5rem;color:var(--teal-deep);display:block}
+.result-box .lbl{font-size:.8rem;color:var(--muted)}
+.result-note{margin-top:14px;font-size:.92rem;color:var(--muted)}
+.result-note strong{color:var(--ink)}
+
+/* World clock band */
+.clock-band{background:var(--teal-deep);color:#fff;padding:34px 0;margin:56px 0}
+.clock-band h2{color:#fff;text-align:center;margin-bottom:4px;font-size:1.3rem}
+.clock-band p{text-align:center;color:rgba(255,255,255,.72);font-size:.92rem;margin-bottom:22px}
+.clocks{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.clock{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:14px 8px;text-align:center}
+.clock .city{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--amber);font-weight:700}
+.clock .time{font-family:var(--font-mono);font-size:1.25rem;font-weight:600;display:block;margin-top:4px}
+
+/* Sections */
+.section{padding:56px 0}
+.section-title{text-align:center;font-size:clamp(1.5rem,3.5vw,2.1rem);margin-bottom:8px}
+.section-sub{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 36px}
+
+/* Tool cards */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.tool-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:26px 22px;text-decoration:none;color:var(--ink);display:block;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.tool-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.tool-icon{
+  width:48px;height:48px;border-radius:14px;background:var(--teal-soft);
+  display:flex;align-items:center;justify-content:center;margin-bottom:16px;
+  font-size:1.4rem;
+}
+.tool-card h3{font-size:1.12rem;margin-bottom:6px}
+.tool-card p{font-size:.92rem;color:var(--muted)}
+.tool-card .go{display:inline-block;margin-top:12px;font-weight:700;color:var(--teal);font-size:.92rem}
+
+/* Feature strip */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.feature{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:24px;text-align:center}
+.feature h3{font-size:1.05rem;margin:10px 0 6px}
+.feature p{font-size:.92rem;color:var(--muted)}
+
+/* Guide cards */
+.guides-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.guide-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;text-decoration:none;color:var(--ink);display:block}
+.guide-card:hover{box-shadow:var(--shadow)}
+.guide-body{padding:20px}
+.guide-tag{display:inline-block;background:var(--amber-soft);color:#8a5c14;font-size:.75rem;font-weight:700;padding:4px 10px;border-radius:999px;margin-bottom:10px}
+.guide-card h3{font-size:1.05rem;margin-bottom:6px}
+.guide-card p{font-size:.9rem;color:var(--muted)}
+
+/* FAQ */
+.faq{max-width:720px;margin:0 auto}
+.faq details{background:var(--white);border:1px solid var(--border);border-radius:12px;margin-bottom:10px;padding:16px 20px}
+.faq summary{font-weight:700;cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--teal);font-size:1.2rem}
+.faq details[open] summary::after{content:"-"}
+.faq details p{margin-top:10px;color:var(--muted);font-size:.95rem}
+
+/* CTA banner */
+.cta-banner{
+  background:linear-gradient(120deg,var(--teal) 0%,var(--teal-deep) 100%);
+  border-radius:24px;padding:48px 32px;text-align:center;color:#fff;margin:56px 0;
+}
+.cta-banner h2{color:#fff;margin-bottom:10px;font-size:clamp(1.4rem,3vw,2rem)}
+.cta-banner p{color:rgba(255,255,255,.82);margin-bottom:24px}
+.btn-amber{background:var(--amber);color:var(--teal-deep)}
+.btn-amber:hover{transform:translateY(-2px)}
+
+/* Footer */
+.site-footer{background:var(--teal-deep);color:rgba(255,255,255,.78);padding:48px 0 0;margin-top:64px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:36px}
+.footer-brand .logo-text{color:#fff}
+.footer-brand p{font-size:.9rem;margin-top:10px;max-width:280px}
+.footer-col h4{color:#fff;font-size:.95rem;margin-bottom:14px}
+.footer-col a{display:block;color:rgba(255,255,255,.72);text-decoration:none;font-size:.9rem;margin-bottom:9px}
+.footer-col a:hover{color:var(--amber)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:18px 0;text-align:center;font-size:.85rem}
+
+/* Article / prose pages */
+.prose{max-width:760px;margin:0 auto;padding:48px 20px}
+.prose h1{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px}
+.prose h2{font-size:1.45rem;margin:36px 0 12px}
+.prose h3{font-size:1.15rem;margin:24px 0 8px}
+.prose p,.prose li{color:#2c4449}
+.prose p{margin-bottom:16px}
+.prose ul,.prose ol{margin:0 0 16px 22px}
+.prose li{margin-bottom:8px}
+.prose .meta{color:var(--muted);font-size:.9rem;margin-bottom:24px}
+.prose table{width:100%;border-collapse:collapse;margin:20px 0;font-size:.92rem}
+.prose th,.prose td{border:1px solid var(--border);padding:10px 12px;text-align:left}
+.prose th{background:var(--teal-soft)}
+
+/* Responsive */
+@media(max-width:860px){
+  .clocks{grid-template-columns:repeat(2,1fr)}
+  .clock:last-child{grid-column:span 2}
+  .features{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .nav-burger{display:flex}
+  .site-nav{
+    display:none;position:absolute;top:68px;left:0;right:0;
+    background:var(--paper);flex-direction:column;gap:0;
+    border-bottom:1px solid var(--border);padding:8px 20px 16px;
+  }
+  .site-nav a{padding:10px 0;border-top:1px solid var(--border)}
+  .nav-toggle:checked ~ .site-nav{display:flex}
+  .result-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:520px){
+  .result-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .hero{padding:48px 0 40px}
+}
+
+/* Dark mode */
+@media(prefers-color-scheme:dark){
+  :root{
+    --paper:#0d1f23;--white:#12282d;--ink:#eef4f3;--muted:#9db3b6;
+    --border:#1e3a40;--teal-soft:#123b35;--amber-soft:#3a2c12;
+  }
+  .site-header{background:rgba(13,31,35,.92)}
+  .field input,.field select{background:#0d1f23;color:var(--ink)}
+  .prose p,.prose li{color:#c8d6d4}
+  .tool-card p,.guide-card p,.calc-card p.sub,.result-note{color:var(--muted)}
+}
