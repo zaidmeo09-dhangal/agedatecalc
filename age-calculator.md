@@ -82,6 +82,8 @@ schema: |
 
 <div class="prose" markdown="1">
 
+<p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
+
 ## How to use the Age Calculator
 
 1. Pick your date of birth using the date picker above.
@@ -101,6 +103,19 @@ Most of the time, "I'm 26" is enough. But plenty of real situations need the exa
 - **School admissions:** many schools set a cutoff date for the coming year. Parents use exact age to check whether a child makes it.
 - **Retirement planning:** pensions and benefits often depend on months of age, not just years. A few months can move the payout date.
 - **Medical dosing for children:** pediatric doses are frequently based on exact age in months for infants, where every month counts.
+
+## US retirement and benefit ages
+
+For US readers, exact age gates real money. The key thresholds:
+
+- **62:** earliest age to claim Social Security retirement benefits (reduced permanently).
+- **65:** Medicare eligibility begins.
+- **66 to 67:** full retirement age, depending on birth year (1943-1954: 66; 1955-1959: 66 plus 2 months per year; 1960 and later: 67).
+- **70:** maximum delayed-retirement credits; no reason to wait longer.
+
+Someone born in 1960 turns 62 in 2022 and reaches full retirement age at 67 in 2027. Because the exact month matters for the benefit calculation, use the calculator above with your birth date to see precisely where you stand.
+
+**Sources:** full retirement age schedule per the US Social Security Administration (SSA.gov).
 
 ## How the three-pass calculation works
 
@@ -195,8 +210,35 @@ Simpler calculators ignore leap years or round months. This tool uses full calen
       '<div class="result-box"><span class="num">' + weekday + '</span><span class="lbl">Day you were born</span></div>' +
       '<div class="result-box"><span class="num">' + daysTo + '</span><span class="lbl">Days to next birthday</span></div>' +
       '</div>' +
-      '<p class="result-note">Your next birthday is on <strong>' + nextStr + '</strong>.</p>';
+      '<p class="result-note">Your next birthday is on <strong>' + nextStr + '</strong>.</p>' +
+      '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="age-share-btn">Copy share link</button> <span id="age-share-msg" style="font-size:.85rem"></span></p>';
+    try{
+      var u = new URL(window.location.href);
+      u.searchParams.set("dob", input.value);
+      window.history.replaceState(null, "", u.toString());
+    }catch(e){}
+    var shareBtn = document.getElementById("age-share-btn");
+    if(shareBtn){
+      shareBtn.addEventListener("click", function(){
+        var link = window.location.href;
+        var msg = document.getElementById("age-share-msg");
+        function done(t){ if(msg){ msg.textContent = t; } }
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+        }else{ done("Copy this page URL to share."); }
+      });
+    }
   }
-  document.getElementById("tool-calc-btn").addEventListener("click", run);
+  document.getElementById("tool-calc-btn").addEventListener("click", function(){ run(); });
+  try{
+    var qp = new URLSearchParams(window.location.search);
+    var qdob = qp.get("dob");
+    if(qdob && /^\d{4}-\d{2}-\d{2}$/.test(qdob)){
+      var di = document.getElementById("tool-dob");
+      di.value = qdob;
+      var test = new Date(qdob + "T00:00:00");
+      if(!isNaN(test.getTime()) && test <= new Date()){ run(); }
+    }
+  }catch(e){}
 })();
 </script>
