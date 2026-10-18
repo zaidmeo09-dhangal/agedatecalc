@@ -100,6 +100,13 @@ a{color:var(--teal)}
 .result-box{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
 .result-box .num{font-family:var(--font-mono);font-weight:600;font-size:1.5rem;color:var(--teal-deep);display:block}
 .result-box .lbl{font-size:.8rem;color:var(--muted)}
+/* Countdown 4-unit grid */
+.countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}
+@media(max-width:520px){.countdown-grid{grid-template-columns:repeat(2,1fr)}}
+/* Tables scroll safely on small screens */
+@media(max-width:600px){
+  .prose table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
 .result-note{margin-top:14px;font-size:.92rem;color:var(--muted)}
 .result-note strong{color:var(--ink)}
 
