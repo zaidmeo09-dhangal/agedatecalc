@@ -161,12 +161,34 @@ No. Everything runs in your browser. Nothing is sent to a server or saved.
 
 Simpler calculators ignore leap years or round months. This tool uses full calendar math, so a day of difference against basic tools is normal.
 
-## Related tools
+</div>
 
-- [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): count days between any two dates
-- [Countdown Timer]({{ '/countdown-timer/' | relative_url }}): track time until an upcoming event
-- [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}): convert times across the world
-
+<h2 style="margin-top:8px">Related tools</h2>
+<div class="tools-grid">
+  <a class="tool-card" href="{{ '/date-difference-calculator/' | relative_url }}">
+    <div class="tool-icon">📅</div>
+    <h3>Date Difference Calculator</h3>
+    <p>Days, weeks, months between any two dates.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/countdown-timer/' | relative_url }}">
+    <div class="tool-icon">⏳</div>
+    <h3>Countdown Timer</h3>
+    <p>Live countdown to any future date and time.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/stopwatch/' | relative_url }}">
+    <div class="tool-icon">⏱️</div>
+    <h3>Stopwatch</h3>
+    <p>Online stopwatch with lap times.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
+  <a class="tool-card" href="{{ '/time-zone-converter/' | relative_url }}">
+    <div class="tool-icon">🌍</div>
+    <h3>Time Zone Converter</h3>
+    <p>Convert times across world time zones.</p>
+    <span class="go">Use tool &rarr;</span>
+  </a>
 </div>
 
 <script>
