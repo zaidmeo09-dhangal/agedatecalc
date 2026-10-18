@@ -145,26 +145,30 @@ Result: 26 years, 4 months, 3 days, with 9,621 total days lived.
 
 ## Frequently asked questions
 
-### How is exact age calculated?
-
-By comparing your date of birth with today's date: full years first, then remaining months, then remaining days, with leap years and varying month lengths accounted for.
-
-### What happens if I was born on February 29?
-
-Your birthday is counted on March 1 in non-leap years. Your total days lived stay exact.
-
-### Is my date of birth stored anywhere?
-
-No. Everything runs in your browser. Nothing is sent to a server or saved.
-
-### Why does my age differ across websites?
-
-Simpler calculators ignore leap years or round months. This tool uses full calendar math, so a day of difference against basic tools is normal.
-
 </div>
 
-<h2 style="margin-top:8px">Related tools</h2>
-<div class="tools-grid">
+<div class="faq">
+<details>
+<summary>How is exact age calculated?</summary>
+<p>By comparing your date of birth with today's date: full years first, then remaining months, then remaining days, with leap years and varying month lengths accounted for.</p>
+</details>
+<details>
+<summary>What happens if I was born on February 29?</summary>
+<p>Your birthday is counted on March 1 in non-leap years. Your total days lived stay exact.</p>
+</details>
+<details>
+<summary>Is my date of birth stored anywhere?</summary>
+<p>No. Everything runs in your browser. Nothing is sent to a server or saved.</p>
+</details>
+<details>
+<summary>Why does my age differ across websites?</summary>
+<p>Simpler calculators ignore leap years or round months. This tool uses full calendar math, so a day of difference against basic tools is normal.</p>
+</details>
+</div>
+
+<div class="wrap">
+<h2>Related tools</h2>
+<div class="tools-grid tools-grid-4">
   <a class="tool-card" href="{{ '/date-difference-calculator/' | relative_url }}">
     <div class="tool-icon">📅</div>
     <h3>Date Difference Calculator</h3>
@@ -189,6 +193,7 @@ Simpler calculators ignore leap years or round months. This tool uses full calen
     <p>Convert times across world time zones.</p>
     <span class="go">Use tool &rarr;</span>
   </a>
+</div>
 </div>
 
 <script>
