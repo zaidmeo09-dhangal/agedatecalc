@@ -183,22 +183,26 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 
 ## Frequently asked questions
 
-### How do you count days between two dates?
-
-Subtract the earlier date from the later date. This calculator also breaks the gap into weeks, months, and years for easy reading.
-
-### Is the end date included in the count?
-
-By default, no. The count is exclusive of the end date. Add one day if you need both endpoints counted.
-
-### Can I add days to a date?
-
-Yes, use the add/subtract section. Enter a positive number to go forward or a negative number to go back.
-
 </div>
 
-<h2 style="margin-top:8px">Related tools</h2>
-<div class="tools-grid">
+<div class="faq">
+<details>
+<summary>How do you count days between two dates?</summary>
+<p>Subtract the earlier date from the later date. This calculator also breaks the gap into weeks, months, and years for easy reading.</p>
+</details>
+<details>
+<summary>Is the end date included in the count?</summary>
+<p>By default, no. The count is exclusive of the end date. Add one day if you need both endpoints counted.</p>
+</details>
+<details>
+<summary>Can I add days to a date?</summary>
+<p>Yes, use the add/subtract section. Enter a positive number to go forward or a negative number to go back.</p>
+</details>
+</div>
+
+<div class="wrap">
+<h2>Related tools</h2>
+<div class="tools-grid tools-grid-4">
   <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
     <div class="tool-icon">🎂</div>
     <h3>Age Calculator</h3>
@@ -223,6 +227,7 @@ Yes, use the add/subtract section. Enter a positive number to go forward or a ne
     <p>Convert times across world time zones.</p>
     <span class="go">Use tool &rarr;</span>
   </a>
+</div>
 </div>
 
 <script>
