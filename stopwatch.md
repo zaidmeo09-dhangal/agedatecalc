@@ -6,31 +6,52 @@ permalink: /stopwatch/
 schema: |
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "How do I record a lap time?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Start the stopwatch, then click Lap whenever you want to record a split. Each lap shows its own time and the total elapsed time."
+        "@type": "WebApplication",
+        "name": "Stopwatch | AgeDateCalc",
+        "url": "https://agedatecalc.com/stopwatch/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AgeDateCalc"
         }
       },
       {
-        "@type": "Question",
-        "name": "Is this stopwatch accurate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It measures with centisecond precision using your device clock, which is accurate enough for workouts, study timing, and casual races."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does it work if I switch tabs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The stopwatch tracks elapsed time from the start moment, so switching tabs does not lose time, though the display updates when you return."
-        }
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I record a lap time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start the stopwatch, then click Lap whenever you want to record a split. Each lap shows its own time and the total elapsed time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this stopwatch accurate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It measures with centisecond precision using your device clock, which is accurate enough for workouts, study timing, and casual races."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work if I switch tabs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The stopwatch tracks elapsed time from the start moment, so switching tabs does not lose time, though the display updates when you return."
+            }
+          }
+        ]
       }
     ]
   }
@@ -52,7 +73,7 @@ schema: |
   </div>
 </section>
 
-<div class="prose">
+<div class="prose" markdown="1">
 
 ## How to use the stopwatch
 
@@ -60,11 +81,42 @@ schema: |
 2. Click **Lap** to record a split without stopping the clock. Each lap lists its own time and the running total.
 3. Click **Start** again to pause, and **Reset** to clear everything and start over.
 
-## Tips for better timing
+## Lap vs split: what each number means
 
-- **Workouts:** record a lap per set or per kilometer to spot your pace drifting.
-- **Study sessions:** time focused blocks and compare them day to day.
-- **Cooking and experiments:** lap each stage so you know exactly how long each step took.
+Each lap shows two numbers, and they answer different questions:
+
+- **Lap time** answers "how long did that segment take?" It is the time since you last pressed Lap (or since Start, for the first lap).
+- **Total time** answers "how much time has passed overall?" It is the running total at the moment you pressed Lap.
+
+Example: you press Lap at 1:30, then again at 3:00. Lap 1 shows 1:30 with a total of 1:30. Lap 2 shows a lap time of 1:30 with a total of 3:00. Runners watch lap times for pace; coaches watch totals for race position.
+
+## Where a stopwatch earns its keep
+
+- **Running and cycling:** lap every kilometer or mile. When lap times start climbing, your pace is drifting, and you see it in numbers instead of just feeling it.
+- **Cooking:** lap each stage (sear, simmer, rest) so you know exactly how long each step took, and can repeat the good version next time.
+- **Pomodoro productivity:** 25-minute focus blocks with 5-minute breaks. Time four blocks, then take a longer break. Comparing block counts day to day shows whether you are actually focusing more.
+- **Studying:** time focused sessions and compare them across the week. Shorter, consistent sessions usually beat one giant cram.
+- **Classroom and lab work:** timing experiments where each phase needs a logged duration.
+- **Games and puzzles:** speedcubing, speedrunning, or timing how fast the kids can tidy a room.
+
+## Accuracy: what to expect
+
+The display shows centiseconds (hundredths of a second), driven by your device's own clock. That is plenty for training, studying, cooking, and casual races.
+
+Two honest limits:
+
+- **It is not certified equipment.** Professional athletics uses dedicated timing systems. Do not settle a photo finish with a phone stopwatch.
+- **Your reaction time is inside the measurement.** Pressing Start and Stop by hand adds roughly 0.15 to 0.3 seconds of human delay at each end. For comparing your own laps against each other this cancels out, which is why lap-to-lap comparison is the most reliable use.
+
+Switching tabs or locking the screen loses no time: elapsed time is computed from start timestamps, not from counting ticks while you watch.
+
+## Tips for cleaner timing
+
+- **Lap early and often.** Extra laps cost nothing and you can ignore the ones you do not need. A lap you forgot to record is the real loss.
+- **Reset between sessions.** Yesterday's workout laps will only confuse today's timing.
+- **For intervals, watch the line, not the phone.** If you are coaching, press Lap exactly as the runner crosses, not a second later when you look down.
+- **Keep the device still and the screen awake** during critical timing, so a notification or auto-lock does not cover the display at the wrong moment.
+- **Calibrate once against a known interval.** Time a 60-second video or a microwave minute. If the stopwatch reads 60.00, you know your device clock is honest, and every future session inherits that trust.
 
 ## Frequently asked questions
 
@@ -82,9 +134,9 @@ Yes. Elapsed time is tracked from the start moment, so no time is lost when the 
 
 ## Related tools
 
-- [Countdown Timer](/countdown-timer/): count down to a future moment
-- [Date Difference Calculator](/date-difference-calculator/): days between dates
-- [Time Zone Converter](/time-zone-converter/): convert times across zones
+- [Countdown Timer]({{ '/countdown-timer/' | relative_url }}): count down to a future moment
+- [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): days between dates
+- [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}): convert times across zones
 
 </div>
 
