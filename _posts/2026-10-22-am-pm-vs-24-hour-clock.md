@@ -92,4 +92,8 @@ When scheduling anything important across time zones, write the time in 24-hour 
 - [Time Zones Explained]({{ '/time-zones-explained/' | relative_url }})
 - [How to Count Days Between Two Dates]({{ '/how-to-count-days-between-dates/' | relative_url }})
 
+## Sources
+
+- National Institute of Standards and Technology: [Time and Frequency Division](https://www.nist.gov/pml/time-and-frequency-division)
+
 </div>
