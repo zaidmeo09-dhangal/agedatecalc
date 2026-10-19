@@ -28,38 +28,70 @@ schema: |
         "@type": "FAQPage",
         "mainEntity": [
           {
-            "@type": "Question",
-            "name": "How is exact age calculated?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Exact age is calculated by comparing your date of birth with today's date. Years are counted first, then remaining months, then remaining days, while accounting for leap years and months of different lengths."
-            }
+                    "@type": "Question",
+                    "name": "How is exact age calculated?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "What happens if I was born on February 29?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "If you were born on February 29, this calculator counts your birthday on March 1 in non-leap years, which is the most common convention."
-            }
+                    "@type": "Question",
+                    "name": "Can I find my age on a specific past or future date?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Yes. Enter your birth date and change the target date from today to any date you choose. The same borrowing math applies; only the reference date changes."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "Is my date of birth stored anywhere?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. The calculation happens entirely in your browser. Your date of birth is never sent to a server or stored."
-            }
+                    "@type": "Question",
+                    "name": "Which day of the week was I born on?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "The calculator shows the weekday of your birth date automatically. For example, June 15, 1990 was a Friday."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "Why does my age differ across websites?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Some calculators ignore leap years or count only completed years. This calculator uses full calendar math, so small differences of a day can appear against simpler tools."
-            }
+                    "@type": "Question",
+                    "name": "Why do two age calculators show different ages?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Three causes explain nearly every disagreement. First, month-end handling. Second, February 29 birthdays. Third, time-zone effects near midnight when a tool uses timestamps instead of calendar dates."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "What happens if I was born on February 29?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Your age still increases every year, not every four years. In non-leap years this calculator counts your birthday on March 1, the most common legal convention. Example: born February 29, 2012, you are still 12 on February 28, 2025, turning 13 on March 1."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Why does subtracting birth years give the wrong age?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Because it ignores whether the birthday has happened yet this year. If this year's birthday has not arrived yet, subtract one from the year difference."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Is my date of birth stored anywhere?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How do I calculate age by hand in years, months, and days?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year."
+                    }
           }
-        ]
+]
       }
     ]
   }
@@ -76,6 +108,7 @@ schema: |
       </div>
       <button class="btn btn-primary btn-block" id="tool-calc-btn" type="button">Calculate My Age</button>
       <div id="tool-age-result"></div>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Calendar dates only. No time-zone effects. Your birth date never leaves your browser.</p>
     </div>
   </div>
 </section>
@@ -84,64 +117,86 @@ schema: |
 
 <p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
 
+## What is your exact age?
+
+Your exact age is the time from your date of birth to today, counted in full years, then full months, then leftover days. It is more precise than subtracting birth years, because it accounts for whether your birthday has happened yet this year, plus leap years and varying month lengths.
+
 ## How to use the Age Calculator
 
 1. Pick your date of birth using the date picker above.
 2. Click **Calculate My Age**.
 3. Read your exact age, total days lived, the weekday you were born on, and how many days remain until your next birthday.
 
+Want to save or share the result? Use the Copy share link button to get a link that reopens your exact calculation.
+
+## How the calculator counts your age
+
+The tool uses the borrowing method, the same one taught for manual age math:
+
+1. Count full years from the birth date first.
+2. Then count full months from where the years stopped.
+3. Then count the leftover days.
+4. If the day of the month would go negative, borrow days from the previous month's actual length (28, 29, 30, or 31, never an average).
+
+No approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method with harder cases, see our guide on [how to calculate your exact age]({{ '/how-to-calculate-age/' | relative_url }}).
+
+## Worked example, step by step
+
+Born **June 15, 1990**, measured **October 19, 2026**:
+
+1. 36 full years reach June 15, 2026.
+2. 4 full months reach October 15, 2026.
+3. 4 leftover days reach October 19, 2026.
+
+The answer is **36 years, 4 months, 4 days**, or **13,275 days** in total. June 15, 1990 was a Friday.
+
+Notice the borrow in action if we measured one day earlier, on October 14: the day subtraction (14 minus 15) goes negative, so we borrow September's 30 days, giving 3 months and 29 days instead.
+
 ## Born on February 29?
 
 Leap day birthdays are handled with the most common convention: in non-leap years, your birthday is counted on March 1. Your total days lived remain exact regardless.
 
-## Why exact age matters
+Example: born February 29, 2012, you are still 12 on February 28, 2025, and turn 13 on March 1. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. Learn more in [what is a leap year]({{ '/what-is-a-leap-year/' | relative_url }}).
 
-Most of the time, "I'm 26" is enough. But plenty of real situations need the exact number:
+## Why age calculators sometimes disagree
 
-- **Forms and applications:** job applications, visas, and government forms often ask for age in years and months. Being off by a month can bounce a form back.
-- **Eligibility cutoffs:** voting, driving licenses, and senior discounts switch on at an exact date. Knowing you turn 18 in 23 days is more useful than knowing you are 17.
-- **School admissions:** many schools set a cutoff date for the coming year. Parents use exact age to check whether a child makes it.
-- **Retirement planning:** pensions and benefits often depend on months of age, not just years. A few months can move the payout date.
-- **Medical dosing for children:** pediatric doses are frequently based on exact age in months for infants, where every month counts.
+Three causes explain nearly every disagreement:
 
-## US retirement and benefit ages
+1. **Month-end handling.** January 31 to February 28 is counted as one month by some tools and 28 days by others.
+2. **February 29 birthdays.** Some tools advance the birthday on February 28 in non-leap years, others on March 1.
+3. **Time-zone effects near midnight.** Tools that use timestamps instead of calendar dates can flip the result by a day around midnight. This calculator uses calendar dates only, so time zones cannot move its answers.
 
-For US readers, exact age gates real money. The key thresholds:
+## Your age and US retirement milestones
 
-- **62:** earliest age to claim Social Security retirement benefits (reduced permanently).
-- **65:** Medicare eligibility begins.
-- **66 to 67:** full retirement age, depending on birth year (1943-1954: 66; 1955-1959: 66 plus 2 months per year; 1960 and later: 67).
-- **70:** maximum delayed-retirement credits; no reason to wait longer.
+Your birth date also determines your Social Security timeline. Under current law ([SSA.gov](https://www.ssa.gov/benefits/retirement/planner/ageincrease.html)):
 
-Someone born in 1960 turns 62 in 2022 and reaches full retirement age at 67 in 2027. Because the exact month matters for the benefit calculation, use the calculator above with your birth date to see precisely where you stand.
+| Birth year | Full retirement age |
+|---|---|
+| 1943-1954 | 66 |
+| 1955-1959 | 66 and 2-10 months (graduated) |
+| 1960 or later | 67 |
 
-**Sources:** full retirement age schedule per the US Social Security Administration (SSA.gov).
+Key ages: **62** is the earliest you can claim (with a permanent reduction), **67** is full retirement age for anyone born in 1960 or later, and **70** is the maximum benefit age, with benefits growing about 8 percent per year past full retirement age. Born in 1990? Your full retirement age is 67, landing in 2057.
 
-## How the three-pass calculation works
+## US legal age milestones at a glance
 
-The calculator does not divide your days lived by 365.25 and round the result. Averages drift. Instead it walks the calendar in three passes:
+| Age | Milestone |
+|---|---|
+| 16 | Driving age in most states |
+| 18 | Legal majority, voting age |
+| 21 | Alcohol purchase age |
+| 62 | Earliest Social Security claiming age |
+| 65 | Medicare eligibility |
+| 67 | Full Social Security retirement age (born 1960+) |
+| 70 | Maximum Social Security benefit age |
 
-1. **Years:** it counts how many full birthdays have passed since your birth date.
-2. **Months:** starting from your last birthday, it counts full months. If today's day-of-month is smaller than your birth day-of-month, it borrows the days of the previous month first, then counts the month.
-3. **Days:** whatever is left over becomes the day count.
+## Calculate age in Excel or Google Sheets
 
-Because every step uses the real calendar, leap years and short months are handled exactly. February 2024 had 29 days, February 2025 had 28, and the calculator knows the difference without any fudge factors.
+For a spreadsheet, the DATEDIF function does the same borrowing math:
 
-## Worked example, step by step
+`=DATEDIF(birth_date, TODAY(), "Y") & " years, " & DATEDIF(birth_date, TODAY(), "YM") & " months, " & DATEDIF(birth_date, TODAY(), "MD") & " days"`
 
-Take someone born June 15, 2000, checking on October 18, 2026:
-
-1. Full birthdays passed: June 15, 2026 was the 26th birthday, so 26 years.
-2. From June 15 to October 15 is 4 full months. October 18 is past the 15th, so no borrowing is needed.
-3. October 18 minus October 15 leaves 3 days.
-
-Result: 26 years, 4 months, 3 days, with 9,621 total days lived.
-
-## Tips for accurate results
-
-- **Double-check the year.** The most common input mistake is picking the wrong birth year in the date picker, especially on phones where the year selector is easy to miss.
-- **Mind the midnight edge.** The calculator uses your device's current date. If you check right around midnight, the result can differ by a day from someone in another time zone. That is normal.
-- **Need your age on a future date?** This tool compares against today. To find your age on a specific future date, like a wedding or a planned retirement day, run the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) between your birth date and that date instead.
+Replace birth_date with the cell holding the date of birth. Note that Excel intentionally treats 1900 as a leap year for old compatibility reasons, so avoid dates before March 1, 1900 in spreadsheets.
 
 ## Frequently asked questions
 
@@ -150,19 +205,35 @@ Result: 26 years, 4 months, 3 days, with 9,621 total days lived.
 <div class="faq">
 <details>
 <summary>How is exact age calculated?</summary>
-<p>By comparing your date of birth with today's date: full years first, then remaining months, then remaining days, with leap years and varying month lengths accounted for.</p>
+<p>Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total.</p>
+</details>
+<details>
+<summary>Can I find my age on a specific past or future date?</summary>
+<p>Yes. Enter your birth date and change the target date from today to any date you choose. This answers questions like "how old will I be on June 1, 2030?" or "how old was I when I graduated?" The same borrowing math applies; only the reference date changes. For the gap between any two dates, the <a href="/agedatecalc/date-difference-calculator/">Date Difference Calculator</a> is the faster tool.</p>
+</details>
+<details>
+<summary>Which day of the week was I born on?</summary>
+<p>The calculator shows the weekday of your birth date automatically. For example, June 15, 1990 was a Friday. The weekday comes from the proleptic Gregorian calendar, the same system your phone's calendar app uses, so it matches any standard calendar.</p>
+</details>
+<details>
+<summary>Why do two age calculators show different ages?</summary>
+<p>Three causes explain nearly every disagreement. First, month-end handling: January 31 to February 28 is counted as one month by some tools and 28 days by others. Second, February 29 birthdays, which some tools advance on February 28 and others on March 1. Third, time-zone effects near midnight when a tool uses timestamps instead of calendar dates.</p>
 </details>
 <details>
 <summary>What happens if I was born on February 29?</summary>
-<p>Your birthday is counted on March 1 in non-leap years. Your total days lived stay exact.</p>
+<p>Your age still increases every year, not every four years. In non-leap years this calculator counts your birthday on March 1, the most common legal convention (some regions use February 28, so check local rules for official documents). Example: born February 29, 2012, you are still 12 on February 28, 2025, turning 13 on March 1.</p>
+</details>
+<details>
+<summary>Why does subtracting birth years give the wrong age?</summary>
+<p>Because it ignores whether the birthday has happened yet this year. Someone born in October 1990 asking in March 2026 gets 36 by subtraction but is actually 35. Always check the month and day: if this year's birthday has not arrived yet, subtract one from the year difference.</p>
 </details>
 <details>
 <summary>Is my date of birth stored anywhere?</summary>
-<p>No. Everything runs in your browser. Nothing is sent to a server or saved.</p>
+<p>No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page. Closing the tab erases it.</p>
 </details>
 <details>
-<summary>Why does my age differ across websites?</summary>
-<p>Simpler calculators ignore leap years or round months. This tool uses full calendar math, so a day of difference against basic tools is normal.</p>
+<summary>How do I calculate age by hand in years, months, and days?</summary>
+<p>Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our <a href="/agedatecalc/how-to-calculate-age/">step-by-step guide</a> walks through harder cases like month ends.</p>
 </details>
 </div>
 
