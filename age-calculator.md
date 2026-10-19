@@ -309,7 +309,33 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
       '<div class="result-box"><span class="num">' + daysTo + '</span><span class="lbl">Days to next birthday</span></div>' +
       '</div>' +
       '<p class="result-note">Your next birthday is on <strong>' + nextStr + '</strong>.</p>' +
+      '<h3 style="margin:20px 0 4px;font-size:1.05rem">Your life in numbers</h3>' +
+      '<div class="stat-grid">' +
+      '<div class="stat-box"><span class="num" data-count="' + (totalDays * 24).toLocaleString() + '">0</span><span class="lbl">Hours lived</span></div>' +
+      '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 24 * 60 / 1000) + 'k">0</span><span class="lbl">Minutes lived (thousands)</span></div>' +
+      '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 100800 / 1000000) + 'M">0</span><span class="lbl">Heartbeats (millions)</span></div>' +
+      '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 23040 / 1000000) + 'M">0</span><span class="lbl">Breaths (millions)</span></div>' +
+      '</div>' +
       '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="age-share-btn">Copy share link</button> <span id="age-share-msg" style="font-size:.85rem"></span></p>';
+    /* Animated count-up for life-in-numbers */
+    setTimeout(function(){
+      var nums = out.querySelectorAll('.stat-box .num');
+      nums.forEach(function(el){
+        var target = el.getAttribute('data-count');
+        var numEnd = parseFloat(target.replace(/[^0-9.]/g, ''));
+        var suffix = target.replace(/[0-9.,]/g, '');
+        var start = null, dur = 1200;
+        function step(ts){
+          if(!start) start = ts;
+          var p = Math.min((ts - start) / dur, 1);
+          var eased = 1 - Math.pow(1 - p, 3);
+          var val = Math.round(numEnd * eased);
+          el.textContent = val.toLocaleString() + suffix;
+          if(p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }, 50);
     try{
       var u = new URL(window.location.href);
       u.searchParams.set("dob", input.value);
