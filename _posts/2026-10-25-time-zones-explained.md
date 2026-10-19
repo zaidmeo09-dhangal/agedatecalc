@@ -77,4 +77,9 @@ For scheduling, the rule is simple: whenever a conversion crosses the Pacific, c
 - [AM/PM vs 24-Hour Clock]({{ '/am-pm-vs-24-hour-clock/' | relative_url }})
 - [Countdown Timer]({{ '/countdown-timer/' | relative_url }}): track events across zones
 
+## Sources
+
+- National Institute of Standards and Technology: [Time and Frequency Division](https://www.nist.gov/pml/time-and-frequency-division)
+- IANA: [Time Zone Database](https://www.iana.org/time-zones)
+
 </div>
