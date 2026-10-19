@@ -17,6 +17,11 @@ permalink: /about/
   <div class="wrap">
 
     <div class="legal-card legal-summary">
+      <h2><span class="licon">👋</span> Who builds this</h2>
+      <p>AgeDateCalc is built and maintained by Zaid, an SEO specialist from Pakistan who creates free online tools. It started as a companion project to <a href="https://studentcalctools.com" rel="noopener">StudentCalcTools</a>, his free calculator site for students. Every tool on this site is hand-built, tested with real inputs, and kept free on purpose.</p>
+    </div>
+
+    <div class="legal-card legal-summary">
       <h2><span class="licon">💡</span> Why we exist</h2>
       <p>AgeDateCalc started with a simple observation: questions like "how old am I exactly?" or "how many days until my exam?" come up all the time, and the answers should be one click away. So we built a small collection of focused tools that do exactly that, nothing more, nothing less.</p>
     </div>
