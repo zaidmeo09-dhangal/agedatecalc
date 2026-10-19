@@ -90,4 +90,8 @@ Doing this by hand is good practice once, but tedious every time. Our [Age Calcu
 - [How to Count Days Between Two Dates]({{ '/how-to-count-days-between-dates/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/how-many-days-in-a-year/' | relative_url }})
 
+## Sources
+
+- US Social Security Administration: [full retirement age by birth year](https://www.ssa.gov/benefits/retirement/planner/ageincrease.html)
+
 </div>
