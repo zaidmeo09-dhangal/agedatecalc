@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Date Difference Calculator - Days Between Two Dates
-description: Count the exact days, weeks, months, and years between any two dates, or add and subtract days from a date. Free date duration calculator, no sign-up.
+title: Age Calculator Between Two Dates - Date Difference Tool
+description: Find the age between two dates in years, months, and days. Count exact days, weeks, and months between any two dates, or add days to a date. Free.
 permalink: /date-difference-calculator/
 schema: |
   {
@@ -29,10 +29,10 @@ schema: |
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "How do you count days between two dates?",
+            "name": "How do I calculate age between two dates in years, months, and days?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Subtract the earlier date from the later date. The result is the number of full 24-hour days between them. This calculator also breaks the gap into weeks, months, and years."
+              "text": "Count full years from the earlier date first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: August 22, 1985 to May 15, 1990 is 4 years, 8 months, 23 days."
             }
           },
           {
@@ -40,15 +40,55 @@ schema: |
             "name": "Is the end date included in the count?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "By default the count is exclusive of the end date, which is the standard convention. Add one day if you need an inclusive count."
+              "text": "The end date is counted but the start date is not. This is the standard exclusive convention: March 1 to March 2 is 1 day. If you need both days counted, add 1 to the result. The two answers always differ by exactly one day."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I add days to a date?",
+            "name": "Why do two date calculators give different answers?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Use the add/subtract mode below: pick a start date, enter a number of days, and get the resulting date."
+              "text": "Two causes explain nearly every disagreement. First, the counting basis: some tools count the start day and some do not, which shifts every answer by exactly one. Second, the time zone: a days-until count can differ by a full day depending on where the tool thinks today is."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are February 29 birthdays handled?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In non-leap years this calculator counts a February 29 birthday on March 1. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. So 2024 and 2000 were leap years, but 1900 was not and 2100 will not be."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is an age gap calculator the same as an age difference calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Age gap and age difference mean the same thing: the time between two people's birth dates. This calculator also works for any two calendar dates, so you can find someone's age on a specific day or measure the time between two events."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I find out who is older and by how much?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enter both birth dates in any order. The person born on the earlier date is older, and the result shows exactly how much older in years, months, and days. For example, January 1, 1985 and June 15, 1990 give a gap of 5 years, 5 months, and 14 days."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I add days or months to a date?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. Months follow calendar logic in most tools: adding one month to January 31 lands at the end of February, not in March."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my time zone change the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This calculator works on calendar days only, so the result is identical everywhere in the world. Time zones only matter when a specific time of day is involved. If another tool shows a different answer, its time zone or counting basis is the likely cause."
             }
           }
         ]
@@ -60,7 +100,7 @@ schema: |
 <section class="hero" style="padding:48px 0 24px">
   <div class="wrap hero-inner">
     <h1>Date Difference <span class="accent">Calculator</span></h1>
-    <p class="lead">Find the exact time between any two dates, or add and subtract days from a date.</p>
+    <p class="lead">Calculate the age between two dates, or count the exact days, weeks, and months between any dates.</p>
     <div class="calc-card">
       <div class="field">
         <label for="dd-start">Start date</label>
@@ -72,6 +112,7 @@ schema: |
       </div>
       <button class="btn btn-primary btn-block" id="dd-btn" type="button">Calculate Difference</button>
       <div id="dd-result"></div>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Counts the end date, not the start date. Uses calendar days only, so time zones never affect the result.</p>
       <hr style="border:0;border-top:1px solid var(--border);margin:24px 0">
       <h2 style="font-size:1.15rem;margin-bottom:12px">Add or subtract days</h2>
       <div class="field">
@@ -92,21 +133,44 @@ schema: |
 
 <p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
 
+## What does "age between two dates" mean?
+
+The age between two dates is the exact calendar time from the earlier date to the later one, expressed in years, months, and days. The same gap can also be read as total days, weeks, or business days. Use it for age gaps between two people, someone's age on a specific day, tenure, or the time between any two events.
+
 ## How to use this calculator
 
-**Date difference mode:** pick a start date and an end date, then click Calculate Difference. You get the gap in days, weeks, months, and years.
+**Date difference mode:** pick a start date and an end date, then click Calculate Difference. You get the gap in days, weeks, and years/months/days.
 
 **Add/subtract mode:** pick a starting date, enter how many days to add (or a negative number to subtract), and get the resulting date. Handy for questions like "what date is 90 days from today?"
 
-## How the counting works
+## How the calculator counts years, months, and days
 
-The calculator subtracts the earlier date from the later one and reports full 24-hour days between them. The count is exclusive of the end date, which is the standard convention used by most date tools. If you need an inclusive count (counting both the start and end day), add one to the result.
+The tool uses the borrowing method, the same one taught for manual age math:
 
-**Worked example:** from January 1, 2026 to October 18, 2026 is 290 days, which is 41 weeks and 3 days.
+1. Count full years from the earlier date first.
+2. Then count full months from where the years stopped.
+3. Then count the leftover days.
+4. If the day of the month would go negative, borrow days from the previous month's actual length (28, 29, 30, or 31, never an average).
+
+It never uses approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method, see our guide on [how to count days between two dates]({{ '/how-to-count-days-between-dates/' | relative_url }}).
+
+## Worked example: August 22, 1985 to May 15, 1990
+
+Four years from August 22, 1985 reach August 22, 1989. Eight more months reach April 22, 1990. Then 23 days reach May 15, 1990. The answer is **4 years, 8 months, 23 days**, or 1,727 days in total.
+
+More verified examples:
+
+| Earlier date | Later date | Years, months, days | Total days |
+|---|---|---|---|
+| January 15, 1990 | October 19, 2026 | 36 years, 9 months, 4 days | 13,426 |
+| February 29, 2000 | February 29, 2024 | 24 years exactly | 8,766 |
+| December 25, 2019 | July 4, 2026 | 6 years, 6 months, 9 days | 2,383 |
+| January 1, 2026 | December 31, 2026 | 11 months, 30 days | 364 |
+| January 1, 1985 | June 15, 1990 | 5 years, 5 months, 14 days | 1,991 |
 
 ## Inclusive vs exclusive: the one-day trap
 
-The calculator counts exclusive of the end date: January 1 to January 2 is 1 day. This is the standard convention in most date tools.
+This calculator counts exclusive of the start date: January 1 to January 2 is 1 day, and the same date twice is 0 days. This is the standard convention in spreadsheets and most date tools, and it matches how US federal courts count time periods. Federal Rule of Civil Procedure 6(a)(1) directs courts to "exclude the day of the event that triggers the period" and "count every day, including intermediate Saturdays, Sundays, and legal holidays" ([uscode.house.gov](https://uscode.house.gov/view.xhtml?path=&req=granuleid%3AUSC-1999-title28a-node79-node85-rule6&f=&fq=&num=0&hl=false&edition=1999)).
 
 When does it bite? Whenever you count calendar days touched rather than gaps:
 
@@ -114,7 +178,25 @@ When does it bite? Whenever you count calendar days touched rather than gaps:
 - A "7-day challenge" starting Monday ends Sunday: the gap is 6 days, but the challenge covers 7.
 - A plan for "5 working days starting Monday" means Monday through Friday inclusive.
 
-Rule of thumb: if you are measuring a gap, use the result as is. If you are counting days you will be somewhere or doing something, add 1.
+Rule of thumb: measuring a gap, use the result as is. Counting days you will be somewhere or doing something, add 1.
+
+## Why two calculators can show different answers
+
+Nearly every disagreement comes down to two causes:
+
+1. **Counting basis.** Some tools count the start day, some do not. That shifts every answer by exactly one day, nothing more.
+2. **Time zone of "today."** If it is 9 PM Tuesday in New York, it is already Wednesday in London. A "days until" count can differ by a full day depending on where the tool thinks today is.
+
+Before trusting any number, check both. This page states its basis directly under the tool, and because it counts whole calendar days, time zones cannot move its answers.
+
+## Edge cases the calculator handles
+
+- **Leap years:** fully included in day counts. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. So 2024 and 2000 were leap years, but 1900 was not and 2100 will not be. Learn more in [what is a leap year]({{ '/what-is-a-leap-year/' | relative_url }}).
+- **February 29 birthdays:** counted on March 1 in non-leap years, the most common legal convention.
+- **Month ends:** January 31 to March 1 resolves against the real calendar, not a fixed 30-day month.
+- **Same date twice:** returns 0 days, 0 weeks, 0 years.
+- **Reversed dates:** entering the later date first still gives the correct gap.
+- **Spreadsheet warning:** Microsoft Excel intentionally treats 1900 as a leap year (it was not) for compatibility with Lotus 1-2-3, so day counts from spreadsheets can be off by one for dates between January 1, 1900 and March 1, 1900. A dedicated calculator does not have this bug.
 
 ## Add and subtract mode, explained
 
@@ -124,10 +206,11 @@ The second mode answers "what date is X days from here?" Enter a positive number
 - 30 days from October 18, 2026 is November 17, 2026.
 - 45 days before October 18, 2026 is September 3, 2026.
 
-This is the mode people reach for with searches like "90 days from today" or "30 days from today". Month and year boundaries, including leap years, are handled automatically.
+This is the mode people reach for with searches like "90 days from today" or "30 days from today." Month and year boundaries, including leap years, are handled automatically.
 
 ## Where day counts actually get used
 
+- **Age gaps:** the age difference between two people, or anyone's age on a specific date like a wedding or retirement day. For age from birth to today, the [Age Calculator]({{ '/age-calculator/' | relative_url }}) is faster.
 - **Project deadlines:** a contract signed October 18 with "delivery in 45 days" lands on December 2, 2026. Checking that in the calculator takes ten seconds and prevents an embarrassing miss.
 - **Anniversaries:** days since a wedding, a company founding, or any milestone. Round numbers like 100 days or 1,000 days make good excuses to celebrate.
 - **Pregnancy:** the standard estimate is 280 days (40 weeks) from the first day of the last period. Counted from January 1, 2026, that gives an estimated due date of October 8, 2026.
@@ -187,16 +270,36 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 
 <div class="faq">
 <details>
-<summary>How do you count days between two dates?</summary>
-<p>Subtract the earlier date from the later date. This calculator also breaks the gap into weeks, months, and years for easy reading.</p>
+<summary>How do I calculate age between two dates in years, months, and days?</summary>
+<p>Count full years from the earlier date first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: August 22, 1985 to May 15, 1990. Four years reach August 22, 1989, eight more months reach April 22, 1990, and 23 days reach May 15, 1990. The answer is 4 years, 8 months, 23 days.</p>
 </details>
 <details>
 <summary>Is the end date included in the count?</summary>
-<p>By default, no. The count is exclusive of the end date. Add one day if you need both endpoints counted.</p>
+<p>Yes, the end date is counted but the start date is not. This is the standard exclusive convention used by spreadsheets and most date tools: March 1 to March 2 is 1 day. If your situation needs both days counted, for example a hotel stay priced per day or a period described as "from the 11th to the 25th inclusive," add 1 to the result. The two answers always differ by exactly one day.</p>
 </details>
 <details>
-<summary>Can I add days to a date?</summary>
-<p>Yes, use the add/subtract section. Enter a positive number to go forward or a negative number to go back.</p>
+<summary>Why do two date calculators give different answers?</summary>
+<p>Two causes explain nearly every disagreement. First, the counting basis: some tools count the start day and some do not, which shifts every answer by exactly one. Second, the time zone: if it is 9 PM Tuesday in New York it is already Wednesday in London, so a "days until" count can differ by a full day depending on where the tool thinks "today" is. Check both before trusting a number.</p>
+</details>
+<details>
+<summary>How are February 29 birthdays handled?</summary>
+<p>In non-leap years this calculator counts a February 29 birthday on March 1, which is the most common legal convention. Leap years are fully included in day counts: a leap year is any year divisible by 4, except century years, which must also be divisible by 400. So 2024 and 2000 were leap years, but 1900 was not and 2100 will not be.</p>
+</details>
+<details>
+<summary>Is an age gap calculator the same as an age difference calculator?</summary>
+<p>Yes. Age gap and age difference mean the same thing: the time between two people's birth dates. This calculator also works for any two calendar dates, so you can use it to find someone's age on a specific day or to measure the time between two events.</p>
+</details>
+<details>
+<summary>How do I find out who is older and by how much?</summary>
+<p>Enter both birth dates in any order. The person born on the earlier date is older, and the result shows exactly how much older in years, months, and days. For example, birth dates of January 1, 1985 and June 15, 1990 give a gap of 5 years, 5 months, and 14 days.</p>
+</details>
+<details>
+<summary>How do I add days or months to a date?</summary>
+<p>Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. Months follow calendar logic in most tools: adding one month to January 31 lands at the end of February, not in March.</p>
+</details>
+<details>
+<summary>Does my time zone change the result?</summary>
+<p>No. This calculator works on calendar days only, so the result is identical everywhere in the world. Time zones only matter when a specific time of day is involved, such as a countdown that flips to the next day at midnight. If another tool shows a different answer for the same dates, its time zone or its counting basis is the likely cause.</p>
 </details>
 </div>
 
