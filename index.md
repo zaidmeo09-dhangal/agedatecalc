@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Free Date and Time Tools
-description: Calculate your exact age, count days between dates, run countdown timers, use a stopwatch, and convert time zones. Free online date and time tools, no sign-up needed.
+description: Calculate your exact age, count days between dates, run countdowns, use a stopwatch, and convert time zones. Free date and time tools.
 schema: |
   {
     "@context": "https://schema.org",
