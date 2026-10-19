@@ -100,7 +100,7 @@ schema: |
 <section class="hero" style="padding:48px 0 24px">
   <div class="wrap hero-inner">
     <h1>Date Difference <span class="accent">Calculator</span></h1>
-    <p class="lead">Calculate the age between two dates, or count the exact days, weeks, and months between any dates.</p>
+    <p class="lead">An age calculator between two dates: find the exact years, months, and days between any two dates, or count total days, weeks, and months.</p>
     <div class="calc-card">
       <div class="field">
         <label for="dd-start">Start date</label>
@@ -133,13 +133,13 @@ schema: |
 
 <p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
 
-## What does "age between two dates" mean?
+## Age calculator between two dates: what does it mean?
 
 The age between two dates is the exact calendar time from the earlier date to the later one, expressed in years, months, and days. The same gap can also be read as total days, weeks, or business days. Use it for age gaps between two people, someone's age on a specific day, tenure, or the time between any two events.
 
 ## How to use this calculator
 
-**Date difference mode:** pick a start date and an end date, then click Calculate Difference. You get the gap in days, weeks, and years/months/days.
+**Date difference mode:** pick a start date and an end date, then click Calculate Difference. As an age calculator between two dates, it shows the gap in years, months, and days, plus total days and weeks.
 
 **Add/subtract mode:** pick a starting date, enter how many days to add (or a negative number to subtract), and get the resulting date. Handy for questions like "what date is 90 days from today?"
 
