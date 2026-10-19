@@ -73,4 +73,8 @@ Manual counting works, but month lengths and leap years make it error-prone. Our
 - [What Is a Leap Year?]({{ '/what-is-a-leap-year/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/how-many-days-in-a-year/' | relative_url }})
 
+## Sources
+
+- US House of Representatives, Office of the Law Revision Counsel: [Federal Rule of Civil Procedure 6, Computing and Extending Time](https://uscode.house.gov/view.xhtml?path=&req=granuleid%3AUSC-1999-title28a-node79-node85-rule6&f=&fq=&num=0&hl=false&edition=1999)
+
 </div>
