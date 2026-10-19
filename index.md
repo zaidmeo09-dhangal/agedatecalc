@@ -21,6 +21,20 @@ schema: |
       <a class="btn btn-primary" href="{{ '/age-calculator/' | relative_url }}">Calculate Your Age</a>
       <a class="btn btn-outline" href="#tools">Browse All Tools</a>
     </div>
+    <div class="live-clock-wrap" title="Your local time, ticking live">
+      <span class="live-dot"></span>
+      <span class="live-clock" id="hero-clock">--:--:--</span>
+    </div>
+    <script>
+    (function(){
+      function tick(){
+        var el = document.getElementById('hero-clock');
+        if(!el) return;
+        el.textContent = new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+      }
+      tick(); setInterval(tick, 1000);
+    })();
+    </script>
 
     <div class="calc-card">
       <h2>Try it now: Age Calculator</h2>
