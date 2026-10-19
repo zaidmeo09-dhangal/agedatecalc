@@ -76,4 +76,8 @@ Over each 400-year cycle, the Gregorian rules produce exactly 97 leap years, whi
 - [How to Calculate Your Exact Age]({{ '/how-to-calculate-age/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/how-many-days-in-a-year/' | relative_url }})
 
+## Sources
+
+- timeanddate.com: [leap year rules and list of leap years](https://www.timeanddate.com/date/leapyear.html)
+
 </div>
