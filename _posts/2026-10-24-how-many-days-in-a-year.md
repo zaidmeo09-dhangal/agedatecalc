@@ -74,4 +74,8 @@ Astronomers use several different "years." The tropical year (365.2422 days) is 
 - [What Is a Leap Year?]({{ '/what-is-a-leap-year/' | relative_url }})
 - [How to Calculate Your Exact Age]({{ '/how-to-calculate-age/' | relative_url }})
 
+## Sources
+
+- timeanddate.com: [leap year rules](https://www.timeanddate.com/date/leapyear.html) and [common years](https://www.timeanddate.com/date/common-year.html)
+
 </div>
