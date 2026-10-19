@@ -1,26 +1,92 @@
 ---
 layout: default
 ---
-<section class="page-hero">
+<div class="reading-progress" id="reading-progress"></div>
+
+<section class="page-hero post-hero">
   <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> <span>/</span>
+      <a href="{{ '/blog/' | relative_url }}">Blog</a> <span>/</span>
+      <span>{{ page.title }}</span>
+    </nav>
     {% if page.category %}<span class="badge">{{ page.category }}</span>{% endif %}
     <h1>{{ page.title }}</h1>
     <p class="lead">{{ page.description }}</p>
-    <span class="update-badge">{{ page.date | date: "%B %-d, %Y" }}</span>
+    <div class="post-meta-pills">
+      <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
+      {% assign words = content | number_of_words %}
+      <span class="meta-pill">{{ words | divided_by: 200 | plus: 1 }} min read</span>
+      <span class="meta-pill">By {{ page.author | default: "Zaid" }}</span>
+    </div>
   </div>
 </section>
 
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    {{ content }}
-    {% if page.tool_url %}
-    <div class="wrap" style="max-width:760px;margin:0 auto;padding:0 20px">
-      <div class="legal-card">
-        <h2><span class="licon">🧮</span> Try it yourself</h2>
-        <p>Skip the manual math. Our free {{ page.tool_name }} does this instantly, no sign-up needed.</p>
-        <a class="btn btn-primary" href="{{ page.tool_url | relative_url }}">Open {{ page.tool_name }}</a>
+<section class="section post-section">
+  <div class="wrap post-layout">
+    <aside class="post-sidebar">
+      <div class="author-card">
+        <div class="author-avatar">Z</div>
+        <div class="author-name">{{ page.author | default: "Zaid" }}</div>
+        <div class="author-role">Founder, AgeDateCalc</div>
+        <p class="author-bio">Zaid builds free date and time tools at AgeDateCalc. Every guide is checked against official sources like NIST, the U.S. Naval Observatory, and timeanddate.com so the math you read here matches the math the tools do.</p>
       </div>
-    </div>
-    {% endif %}
+      <nav class="toc-card" aria-label="Table of contents">
+        <div class="toc-title">Table of Contents</div>
+        <ul class="toc-list" id="toc-list"></ul>
+      </nav>
+    </aside>
+    <article class="post-content prose" id="post-content">
+      {{ content }}
+    </article>
   </div>
+  {% if page.tool_url %}
+  <div class="wrap" style="max-width:760px;margin:40px auto 0;padding:0 20px">
+    <div class="legal-card cta-card">
+      <h2>Try it yourself</h2>
+      <p>Skip the manual math. Our free {{ page.tool_name }} does this instantly, no sign-up needed.</p>
+      <a class="btn btn-primary" href="{{ page.tool_url | relative_url }}">Open {{ page.tool_name }}</a>
+    </div>
+  </div>
+  {% endif %}
 </section>
+
+<script>
+(function(){
+  "use strict";
+  /* Reading progress bar */
+  var bar = document.getElementById("reading-progress");
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var p = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    if(bar) bar.style.width = p + "%";
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* Auto table of contents from h2/h3 */
+  var content = document.getElementById("post-content");
+  var toc = document.getElementById("toc-list");
+  if(content && toc){
+    var heads = content.querySelectorAll("h2, h3");
+    heads.forEach(function(h, i){
+      if(!h.id){
+        h.id = "sec-" + i + "-" + h.textContent.trim().toLowerCase()
+          .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40);
+      }
+      var li = document.createElement("li");
+      if(h.tagName === "H3") li.className = "toc-sub";
+      var a = document.createElement("a");
+      a.href = "#" + h.id;
+      a.textContent = h.textContent.trim();
+      li.appendChild(a);
+      toc.appendChild(li);
+    });
+    if(!heads.length){
+      var card = toc.closest(".toc-card");
+      if(card) card.style.display = "none";
+    }
+  }
+})();
+</script>
