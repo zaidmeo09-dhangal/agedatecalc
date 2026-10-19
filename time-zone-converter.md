@@ -103,7 +103,7 @@ schema: |
     <p class="lead">This time zone converter instantly converts any time between world time zones. Never miss a meeting across borders again.</p>
     <div class="calc-card">
       <div class="field">
-        <label for="tz-datetime">Date and time</label>
+        <label for="tz-datetime">Date and time <span style="font-weight:400;color:var(--muted)">(in the From time zone)</span></label>
         <input type="datetime-local" id="tz-datetime">
       </div>
       <div class="field">
@@ -315,15 +315,41 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
     });
   }
 
+  /* Offset of a zone (minutes) at a given instant, via Intl */
+  function zoneOffsetMinutes(tz, date){
+    var dtf = new Intl.DateTimeFormat("en-US", {
+      timeZone: tz, year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false
+    });
+    var parts = {};
+    dtf.formatToParts(date).forEach(function(p){ parts[p.type] = p.value; });
+    var asUtc = Date.UTC(+parts.year, +parts.month - 1, +parts.day, (+parts.hour) % 24, +parts.minute, +parts.second);
+    return (asUtc - date.getTime()) / 60000;
+  }
+
+  /* Interpret wall-clock components as being IN the given zone -> UTC instant */
+  function wallInZoneToUtc(y, mo, d, h, mi, tz){
+    var guess = Date.UTC(y, mo - 1, d, h, mi);
+    var off = zoneOffsetMinutes(tz, new Date(guess));
+    var utc = guess - off * 60000;
+    /* second pass for DST-edge correctness */
+    var off2 = zoneOffsetMinutes(tz, new Date(utc));
+    if(off2 !== off){ utc = guess - off2 * 60000; }
+    return new Date(utc);
+  }
+
   document.getElementById("tz-btn").addEventListener("click", function(){
     var out = document.getElementById("tz-result");
     var val = document.getElementById("tz-datetime").value;
     if(!val){ out.innerHTML = '<p class="result-note">Please pick a date and time.</p>'; return; }
-    var d = new Date(val);
-    if(isNaN(d.getTime())){ out.innerHTML = '<p class="result-note">Please enter a valid date and time.</p>'; return; }
+    var m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/.exec(val);
+    if(!m){ out.innerHTML = '<p class="result-note">Please enter a valid date and time.</p>'; return; }
     var from = fromSel.value, to = toSel.value;
     var fromName = fromSel.options[fromSel.selectedIndex].text;
     var toName = toSel.options[toSel.selectedIndex].text;
+    /* The entered time is in the FROM zone, not the device zone */
+    var d = wallInZoneToUtc(+m[1], +m[2], +m[3], +m[4], +m[5], from);
+    if(isNaN(d.getTime())){ out.innerHTML = '<p class="result-note">Please enter a valid date and time.</p>'; return; }
     try{
       var u = new URL(window.location.href);
       u.searchParams.set("from", from); u.searchParams.set("to", to);
