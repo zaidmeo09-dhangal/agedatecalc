@@ -357,3 +357,48 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:none}
 /* Prevent any horizontal overflow sitewide */
 html,body{overflow-x:hidden}
 img,video,iframe{max-width:100%}
+
+/* ---- Blog post design: matches StudentCalcTools structure, AgeDateCalc branding ---- */
+/* Reading progress bar */
+.reading-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--teal),var(--amber));z-index:100}
+/* Breadcrumb */
+.breadcrumb{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+.breadcrumb a{color:var(--teal);text-decoration:none}
+.breadcrumb span{margin:0 6px}
+/* Meta pills */
+.post-meta-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.meta-pill{background:var(--white);border:1px solid var(--border);border-radius:999px;padding:6px 14px;font-size:.82rem;font-weight:600;color:var(--muted)}
+/* Post layout: sidebar + content */
+.post-layout{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:start;max-width:1120px}
+.post-content{min-width:0}
+.post-content h2,.post-content h3{scroll-margin-top:96px}
+/* Author card */
+.author-card{background:linear-gradient(135deg,var(--teal) 0%,var(--teal-deep) 100%);border-radius:var(--radius);padding:24px 20px;color:#fff;text-align:center;margin-bottom:20px}
+.author-avatar{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:700;font-size:1.6rem;margin:0 auto 12px}
+.author-name{font-family:var(--font-head);font-weight:700;font-size:1.1rem}
+.author-role{font-size:.8rem;color:var(--amber);font-weight:600;margin-bottom:10px}
+.author-bio{font-size:.85rem;color:rgba(255,255,255,.85);line-height:1.6}
+/* TOC card */
+.toc-card{background:var(--teal-deep);border-radius:var(--radius);padding:22px 20px;position:sticky;top:88px;max-height:calc(100vh - 110px);overflow-y:auto}
+.toc-title{color:#fff;font-family:var(--font-head);font-weight:700;font-size:1rem;margin-bottom:14px}
+.toc-list{list-style:none}
+.toc-list li{margin-bottom:8px}
+.toc-list li.toc-sub{margin-left:14px}
+.toc-list a{color:rgba(255,255,255,.78);text-decoration:none;font-size:.86rem;line-height:1.45;display:block;padding-left:14px;position:relative}
+.toc-list a::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--amber)}
+.toc-list a:hover{color:#fff}
+/* Branded tables inside posts */
+.post-content table{width:100%;border-collapse:separate;border-spacing:0;margin:20px 0;border:1px solid var(--border);border-radius:12px;overflow:hidden;font-size:.92rem}
+.post-content thead th{background:linear-gradient(135deg,var(--teal),var(--teal-deep));color:#fff;font-weight:700;text-align:left;padding:12px 14px}
+.post-content tbody td{padding:11px 14px;border-top:1px solid var(--border)}
+.post-content tbody tr:nth-child(even){background:#F4EFE2}
+.post-content tbody tr:nth-child(odd){background:var(--white)}
+/* CTA card */
+.cta-card{text-align:center}
+/* Mobile: sidebar stacks above content */
+@media(max-width:860px){
+  .post-layout{grid-template-columns:1fr}
+  .toc-card{position:static;max-height:none}
+  .post-sidebar{order:2}
+  .post-content{order:1}
+}
