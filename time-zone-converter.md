@@ -91,7 +91,7 @@ schema: |
                               "text": "Europe and the US end daylight saving in different weeks. From October 26 to 31, 2026 the gap is 4 hours instead of 5."
                     }
           }
-]
+  ]
       }
     ]
   }
