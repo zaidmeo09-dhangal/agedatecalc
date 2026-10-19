@@ -91,7 +91,7 @@ schema: |
                               "text": "The page shows a clear time's up state, but browsers cannot reliably play alarms after the tab is closed or the device sleeps."
                     }
           }
-]
+  ]
       }
     ]
   }
