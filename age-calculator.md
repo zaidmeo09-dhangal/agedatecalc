@@ -91,7 +91,7 @@ schema: |
                               "text": "Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year."
                     }
           }
-]
+  ]
       }
     ]
   }
