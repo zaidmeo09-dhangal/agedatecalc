@@ -91,7 +91,7 @@ schema: |
                               "text": "Start and stop on the same kind of cue every time, compare splits within one session, and have the same person press the button for every attempt."
                     }
           }
-]
+  ]
       }
     ]
   }
