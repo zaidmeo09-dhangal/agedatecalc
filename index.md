@@ -21,9 +21,9 @@ schema: |
       <a class="btn btn-primary" href="{{ '/age-calculator/' | relative_url }}">Calculate Your Age</a>
       <a class="btn btn-outline" href="#tools">Browse All Tools</a>
     </div>
-    <div class="live-clock-wrap" title="Your local time, ticking live" style="flex-direction:column;gap:2px;border-radius:20px">
+    <div class="live-clock-wrap" title="Your local time, ticking live" style="flex-direction:column;gap:2px;border-radius:20px;overflow:hidden;max-width:100%">
       <span style="display:inline-flex;align-items:center;gap:10px"><span class="live-dot"></span><span class="live-clock" id="hero-clock">--:--:--</span></span>
-      <span id="hero-tz-label" style="font-size:.8rem;color:var(--muted);font-weight:500"></span>
+      <span class="ticker"><span id="hero-tz-label"></span></span>
     </div>
     <script>
     (function(){
