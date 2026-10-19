@@ -21,9 +21,9 @@ schema: |
       <a class="btn btn-primary" href="{{ '/age-calculator/' | relative_url }}">Calculate Your Age</a>
       <a class="btn btn-outline" href="#tools">Browse All Tools</a>
     </div>
-    <div class="live-clock-wrap" title="Your local time, ticking live">
-      <span class="live-dot"></span>
-      <span class="live-clock" id="hero-clock">--:--:--</span>
+    <div class="live-clock-wrap" title="Your local time, ticking live" style="flex-direction:column;gap:2px;border-radius:20px">
+      <span style="display:inline-flex;align-items:center;gap:10px"><span class="live-dot"></span><span class="live-clock" id="hero-clock">--:--:--</span></span>
+      <span id="hero-tz-label" style="font-size:.8rem;color:var(--muted);font-weight:500"></span>
     </div>
     <script>
     (function(){
@@ -32,6 +32,12 @@ schema: |
         if(!el) return;
         el.textContent = new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
       }
+      try{
+        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+        var city = tz.split('/').pop().replace(/_/g, ' ');
+        var lbl = document.getElementById('hero-tz-label');
+        if(lbl && city) lbl.textContent = 'Time in ' + city + ' now';
+      }catch(e){}
       tick(); setInterval(tick, 1000);
     })();
     </script>
