@@ -100,7 +100,7 @@ schema: |
 <section class="hero" style="padding:48px 0 24px">
   <div class="wrap hero-inner">
     <h1>Time Zone <span class="accent">Converter</span></h1>
-    <p class="lead">Convert any time between world time zones. Never miss a meeting across borders again.</p>
+    <p class="lead">This time zone converter instantly converts any time between world time zones. Never miss a meeting across borders again.</p>
     <div class="calc-card">
       <div class="field">
         <label for="tz-datetime">Date and time</label>
@@ -134,13 +134,13 @@ Pick the source time zone and the time, pick the target zone, and the converter 
 1. Enter the date and time you want to convert.
 2. Choose the time zone that time is currently in.
 3. Choose the target time zone and click **Convert Time**.
-4. Copy the share link to send the exact conversion to anyone.
+4. Copy the share link to send the exact conversion to anyone. The link reopens this time zone converter with your conversion ready.
 
 ## How to convert time zones by hand
 
 Use UTC as a pivot. First convert your time to UTC by reversing your zone's offset, then apply the target zone's offset.
 
-Worked example: 2:00 PM in California in January (PST, UTC-8) to Berlin. Add 8 hours to reach 10:00 PM UTC, then add 1 hour for Berlin (CET, UTC+1). The answer is 11:00 PM the same day. Going through UTC avoids the sign errors of direct subtraction.
+Worked example with this time zone converter's logic: 2:00 PM in California in January (PST, UTC-8) to Berlin. Add 8 hours to reach 10:00 PM UTC, then add 1 hour for Berlin (CET, UTC+1). The answer is 11:00 PM the same day. Going through UTC avoids the sign errors of direct subtraction.
 
 ## US time zones at a glance
 
@@ -183,7 +183,7 @@ In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7
 
 ## Why time zone conversions go wrong
 
-Three causes cover almost every bad conversion:
+Three causes cover almost every bad time zone converter result:
 
 1. **Wrong abbreviation displayed.** Many sites show "PST" during daylight months when they mean PDT. The 3-hour math still holds, but the label confuses.
 2. **DST mismatch weeks.** The US and Europe switch on different dates, shifting transatlantic gaps by an hour for a few days.
