@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://zaidmeo09-dhangal.github.io/agedatecalc/sitemap.xml
+Disallow: /
