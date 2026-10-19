@@ -28,30 +28,70 @@ schema: |
         "@type": "FAQPage",
         "mainEntity": [
           {
-            "@type": "Question",
-            "name": "How do I record a lap time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Start the stopwatch, then click Lap whenever you want to record a split. Each lap shows its own time and the total elapsed time."
-            }
+                    "@type": "Question",
+                    "name": "How accurate is an online stopwatch?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Very accurate for everyday use. This stopwatch measures elapsed time from real timestamps using the browser high-resolution clock, not by counting ticks, so it does not drift. Display resolution is hundredths of a second. Your button press adds 150-300 milliseconds of reaction time, far more than the timer itself."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "Is this stopwatch accurate?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "It measures with centisecond precision using your device clock, which is accurate enough for workouts, study timing, and casual races."
-            }
+                    "@type": "Question",
+                    "name": "What is the difference between lap time and split time?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Lap time is how long one segment took. Split time is the total elapsed time at that checkpoint."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "Does it work if I switch tabs?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. The stopwatch tracks elapsed time from the start moment, so switching tabs does not lose time, though the display updates when you return."
-            }
+                    "@type": "Question",
+                    "name": "Does the stopwatch keep running if I switch tabs?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Yes. Elapsed time is computed from timestamps, so switching tabs loses no time. The display resyncs instantly on return."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "What is the difference between a stopwatch and a timer?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "A stopwatch counts up from zero to measure duration. A timer counts down from a set duration to zero."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Can I use an online stopwatch for official sports timing?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "No. Official competition requires certified hardware. The Olympics use photo-finish cameras resolving to 1/1000th of a second."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "What is the smallest time unit this stopwatch measures?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Hundredths of a second (0.01 s)."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How do I save my lap times?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Copy the lap list into a spreadsheet before hitting Reset, because clearing erases them."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How do I time something accurately by hand?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Start and stop on the same kind of cue every time, compare splits within one session, and have the same person press the button for every attempt."
+                    }
           }
-        ]
+]
       }
     ]
   }
@@ -69,6 +109,7 @@ schema: |
         <button class="btn btn-outline" id="sw-reset" type="button">Reset</button>
       </div>
       <div id="sw-laps" style="margin-top:20px;text-align:left"></div>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Hundredth-second precision. Runs entirely in your browser, nothing uploaded.</p>
     </div>
   </div>
 </section>
@@ -77,50 +118,54 @@ schema: |
 
 <p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
 
+## What is an online stopwatch?
+
+An online stopwatch counts up from zero to measure how long something takes, with lap recording for splits along the way. It runs in your browser with hundredth-second precision, needs no app install, and works for workouts, cooking, study sessions, presentations, and experiments.
+
 ## How to use the stopwatch
 
 1. Click **Start** to begin timing.
 2. Click **Lap** to record a split without stopping the clock. Each lap lists its own time and the running total.
 3. Click **Start** again to pause, and **Reset** to clear everything and start over.
 
-## Lap vs split: what each number means
+Tip: write down or copy your laps before hitting Reset, because clearing erases them.
 
-Each lap shows two numbers, and they answer different questions:
+## How this stopwatch keeps accurate time
 
-- **Lap time** answers "how long did that segment take?" It is the time since you last pressed Lap (or since Start, for the first lap).
-- **Total time** answers "how much time has passed overall?" It is the running total at the moment you pressed Lap.
+This stopwatch measures elapsed time from real timestamps using the browser's high-resolution clock. It does not count ticks, so it cannot drift: even if the browser slows the visible display in a background tab to save battery, the readout jumps to the correct elapsed time the moment you return.
 
-Example: you press Lap at 1:30, then again at 3:00. Lap 1 shows 1:30 with a total of 1:30. Lap 2 shows a lap time of 1:30 with a total of 3:00. Runners watch lap times for pace; coaches watch totals for race position.
+The browser's `performance.now()` clock resolves down to 100 microseconds in standard browsing (finer in isolated contexts), which is far more precise than the hundredth-second display. The approach follows the same measurement principles documented in NIST Special Publication 960-12 on time and frequency measurement.
 
-## Where a stopwatch earns its keep
+## Lap times vs split times
 
-- **Running and cycling:** lap every kilometer or mile. When lap times start climbing, your pace is drifting, and you see it in numbers instead of just feeling it.
-- **Cooking:** lap each stage (sear, simmer, rest) so you know exactly how long each step took, and can repeat the good version next time.
-- **Pomodoro productivity:** 25-minute focus blocks with 5-minute breaks. Time four blocks, then take a longer break. Comparing block counts day to day shows whether you are actually focusing more.
-- **Studying:** time focused sessions and compare them across the week. Shorter, consistent sessions usually beat one giant cram.
-- **Classroom and lab work:** timing experiments where each phase needs a logged duration.
-- **Games and puzzles:** speedcubing, speedrunning, or timing how fast the kids can tidy a room.
+**Lap time** is how long one segment took. **Split time** is the total elapsed time at that checkpoint.
 
-## Accuracy: what to expect
+Worked example: your laps land at 1:05.200 and 2:12.700. The split at lap 2 is 2:12.700, but lap 2 itself took 1:07.500 (2:12.700 minus 1:05.200). Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish time.
 
-The display shows centiseconds (hundredths of a second), driven by your device's own clock. That is plenty for training, studying, cooking, and casual races.
+## Your finger is the real limit
 
-Two honest limits:
+Here is the honest truth about hand timing: your own reaction time adds 150-300 milliseconds of error every time you press the button, which dwarfs the timer's precision. The IAAF false-start rule treats any reaction under 100 milliseconds as a false start, which shows how seriously sports takes this.
 
-- **It is not certified equipment.** Professional athletics uses dedicated timing systems. Do not settle a photo finish with a phone stopwatch.
-- **Your reaction time is inside the measurement.** Pressing Start and Stop by hand adds roughly 0.15 to 0.3 seconds of human delay at each end. For comparing your own laps against each other this cancels out, which is why lap-to-lap comparison is the most reliable use.
+Practical tips for cleaner timing:
 
-Switching tabs or locking the screen loses no time: elapsed time is computed from start timestamps, not from counting ticks while you watch.
+- Start and stop on the same kind of cue every time, so your reaction delay cancels out.
+- Compare splits within one session rather than treating any single absolute time as exact.
+- Have the same person press the button for every attempt.
 
-**Sources:** timing accuracy discussion follows the principles in NIST Special Publication 960-12 (time and frequency measurement). Browser timers are software clocks, not atomic references.
+## How this compares to professional timing
 
-## Tips for cleaner timing
+The Olympics use photo-finish cameras resolving to 1/1000th of a second, and Omega has been the official Olympic timekeeper since 1932. Even so, swimming records are kept to 1/100th of a second because pool lanes cannot be built exactly identical in length. This stopwatch is excellent for training, practice, and personal records, but official competition needs certified hardware.
 
-- **Lap early and often.** Extra laps cost nothing and you can ignore the ones you do not need. A lap you forgot to record is the real loss.
-- **Reset between sessions.** Yesterday's workout laps will only confuse today's timing.
-- **For intervals, watch the line, not the phone.** If you are coaching, press Lap exactly as the runner crosses, not a second later when you look down.
-- **Keep the device still and the screen awake** during critical timing, so a notification or auto-lock does not cover the display at the wrong moment.
-- **Calibrate once against a known interval.** Time a 60-second video or a microwave minute. If the stopwatch reads 60.00, you know your device clock is honest, and every future session inherits that trust.
+## Common uses
+
+- **Running:** interval splits, 5K pacing, track workouts.
+- **Gym:** rest periods between sets, circuit timing.
+- **Cooking:** multi-stage recipes where each stage needs its own lap.
+- **Study and work:** Pomodoro-style focus blocks, presentation rehearsals.
+- **Classroom:** science experiments, timed quizzes.
+- **Games:** speedrun attempts, puzzle timing.
+
+Need to count down to a moment instead of timing up from zero? The [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) is the right tool.
 
 ## Frequently asked questions
 
@@ -128,16 +173,36 @@ Switching tabs or locking the screen loses no time: elapsed time is computed fro
 
 <div class="faq">
 <details>
-<summary>How do I record a lap time?</summary>
-<p>Press Lap while the stopwatch is running. Each lap shows its split time and the total elapsed time.</p>
+<summary>How accurate is an online stopwatch?</summary>
+<p>Very accurate for everyday use. This stopwatch measures elapsed time from real timestamps using the browser high-resolution clock, not by counting ticks, so it does not drift when the tab slows down. Display resolution is hundredths of a second. The bigger error source is your own finger: pressing the button adds 150-300 milliseconds of reaction time, far more than the timer itself.</p>
 </details>
 <details>
-<summary>Is this stopwatch accurate?</summary>
-<p>It uses your device clock with centisecond precision, accurate enough for training, studying, and casual races. For professional athletics, use certified equipment.</p>
+<summary>What is the difference between lap time and split time?</summary>
+<p>Lap time is how long one segment took. Split time is the total elapsed time at that checkpoint. If your laps land at 1:05.200 and 2:12.700, the split at lap 2 is 2:12.700 but lap 2 itself took 1:07.500. Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish.</p>
 </details>
 <details>
-<summary>Does it work if I switch tabs?</summary>
-<p>Yes. Elapsed time is tracked from the start moment, so no time is lost when the tab is in the background.</p>
+<summary>Does the stopwatch keep running if I switch tabs?</summary>
+<p>Yes. The elapsed time is computed from start and end timestamps, so switching tabs or minimizing the window does not lose any time. Browsers may slow the visible display updates in background tabs to save battery, but when you return, the readout jumps to the correct elapsed time instantly.</p>
+</details>
+<details>
+<summary>What is the difference between a stopwatch and a timer?</summary>
+<p>A stopwatch counts up from zero to measure how long something took. A timer counts down from a set duration to zero and usually alerts you at the end. Use a stopwatch for races, workouts, and experiments where the length is unknown. Use a timer for cooking, Pomodoro sessions, and anything with a fixed deadline.</p>
+</details>
+<details>
+<summary>Can I use an online stopwatch for official sports timing?</summary>
+<p>No. It is excellent for training, practice, and personal records, but official competition requires certified hardware. The Olympics use photo-finish cameras resolving to 1/1000th of a second, and even then swimming records are kept to 1/100th because pool lanes cannot be built identical. For anything with prizes or records on the line, use approved timing equipment.</p>
+</details>
+<details>
+<summary>What is the smallest time unit this stopwatch measures?</summary>
+<p>Hundredths of a second (0.01 s). That is finer than you can usefully read while timing by hand, since your button-press reaction alone varies by 150-300 milliseconds. Chasing smaller display units does not make hand timing more accurate; it only makes the numbers look more precise than they are.</p>
+</details>
+<details>
+<summary>How do I save my lap times?</summary>
+<p>Copy the lap list into a spreadsheet to chart pace or find your slowest segment. Write down or export laps before hitting Reset, because clearing the stopwatch erases them.</p>
+</details>
+<details>
+<summary>How do I time something accurately by hand?</summary>
+<p>Start and stop on the same kind of cue every time, for example the flash of a light or the exact moment a foot crosses a line, so your reaction delay cancels out. Compare splits within one session rather than treating any single absolute time as exact. For the fairest comparison, have the same person press the button for every attempt.</p>
 </details>
 </div>
 
