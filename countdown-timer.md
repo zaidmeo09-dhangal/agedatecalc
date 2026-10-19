@@ -28,30 +28,70 @@ schema: |
         "@type": "FAQPage",
         "mainEntity": [
           {
-            "@type": "Question",
-            "name": "How do I start a countdown?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pick the target date and time, give your countdown a name if you like, and click Start Countdown. The timer ticks live in days, hours, minutes, and seconds."
-            }
+                    "@type": "Question",
+                    "name": "Does the countdown keep running if I close the tab?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "The live ticking display needs the page open, but you lose nothing by closing it. The countdown is anchored to the exact target moment stored in the link, so reopening the link recalculates the remaining time instantly."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "Does the countdown keep running if I close the tab?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The countdown is calculated from your target date each time the page loads, so reopening the page shows the correct remaining time. It does not send alerts while closed."
-            }
+                    "@type": "Question",
+                    "name": "How accurate is an online countdown timer?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Accurate to about one second. The page records your target as an exact timestamp and recomputes the remaining time from your device clock on every tick. Your device clock stays correct through NTP, the protocol NIST uses to distribute official US time."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "Can I count down to a past date?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The timer needs a future date. If the date has already passed, it will tell you the moment has arrived instead of showing negative time."
-            }
+                    "@type": "Question",
+                    "name": "What time zone does the countdown use?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Your device's local time zone. The share link stores the absolute moment, so a recipient in another time zone counts down to the same instant."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Why does the countdown show fewer days than I expected?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "A countdown to a bare date assumes midnight at the start of that date. If the hour matters, set an explicit time along with the date."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Can I share a countdown with other people?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Yes. The share link carries the date and your custom label. No account is needed and nothing is stored on a server."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Does Google have a countdown timer?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Google's built-in timer counts down minutes from the moment you start it, but cannot point at a specific date like a wedding or New Year's Eve."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "What is the difference between a countdown timer and a regular timer?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "A countdown targets a calendar moment. A regular timer counts down a duration from now."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Will it notify me when the countdown finishes?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "The page shows a clear time's up state, but browsers cannot reliably play alarms after the tab is closed or the device sleeps."
+                    }
           }
-        ]
+]
       }
     ]
   }
@@ -73,6 +113,7 @@ schema: |
       <button class="btn btn-primary btn-block" id="cd-btn" type="button">Start Countdown</button>
       <div id="cd-result" style="margin-top:20px"></div>
       <div id="cd-share" style="margin-top:12px;text-align:center"></div>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Counts down to the exact moment you set, in your device's time zone. The share link holds everything; nothing is stored on a server.</p>
     </div>
   </div>
 </section>
@@ -81,55 +122,60 @@ schema: |
 
 <p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
 
-## How to use the Countdown Timer
+## What is an online countdown timer?
+
+An online countdown timer counts down to a future date and time you choose, showing the remaining days, hours, minutes, and seconds ticking live. Set it for a birthday, exam, holiday, or product launch, then share the link so anyone can watch the same countdown.
+
+## How to set a countdown
 
 1. Enter your event name (optional, it just makes the display nicer).
 2. Pick the target date and time.
-3. Click **Start Countdown**. The timer updates every second with days, hours, minutes, and seconds remaining.
+3. Click **Start Countdown**. The timer updates every second.
+4. Click **Copy share link** to send the live countdown to anyone. The link carries the date and your label, so it works for the recipient too.
 
-Tip: if you leave and come back, the page recalculates from your target date, so the remaining time is always correct.
+## Popular countdowns
 
-## How the live timer works
+Jump straight in with a pre-built countdown. Each link opens the timer already set:
 
-The display ticks every second, showing days, hours, minutes, and seconds left. Two details are worth knowing:
+- [Halloween 2026, October 31]({{ '/countdown-timer/' | relative_url }}?to=2026-10-31T00:00&label=Halloween%202026)
+- [Thanksgiving 2026, November 26]({{ '/countdown-timer/' | relative_url }}?to=2026-11-26T00:00&label=Thanksgiving%202026)
+- [Christmas 2026, December 25]({{ '/countdown-timer/' | relative_url }}?to=2026-12-25T00:00&label=Christmas%202026)
+- [New Year 2027, January 1]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027)
+- [Valentine's Day 2027, February 14]({{ '/countdown-timer/' | relative_url }}?to=2027-02-14T00:00&label=Valentine%27s%20Day%202027)
+- [Independence Day 2027, July 4]({{ '/countdown-timer/' | relative_url }}?to=2027-07-04T00:00&label=Independence%20Day%202027)
 
-- **No drift, ever.** The remaining time is recalculated from your target date every time the page loads. Close the tab, come back next week, and the number is still right, because the math runs fresh from the target instead of ticking away in the background.
-- **Your time zone rules.** The date picker uses your device's local time zone. If you pick "December 25, 9:00 AM" while sitting in Chicago, the timer counts down to 9:00 AM Chicago time.
+## How the countdown stays accurate
 
-## The time zone trap (and how to dodge it)
+The timer records your target as an exact timestamp, then recomputes the remaining time from your device clock on every tick. Because it never counts ticks, display errors cannot accumulate, and reopening the page or refocusing the tab resyncs instantly.
 
-Counting down to an event in another time zone? Convert first. A product launch at 9:00 AM New York time is 6:00 AM the same day in Los Angeles. If you set the countdown to 9:00 AM without converting, you will be hours early or late. Run the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) first, then enter the converted local time here.
+Your device clock itself stays correct through NTP, the protocol the National Institute of Standards and Technology uses to distribute official US time with accuracy around one millisecond ([NIST Internet Time Service](https://data.nist.gov/od/id/25C39B1D2C1549AFE0531A5706812CBC1445/pdr:v/1.0.1)). Practical precision of this countdown is about one second, which is more than enough for any event.
 
-## More ideas worth counting down to
+What to expect in each situation:
 
-- Weddings and engagements
-- Baby due dates
-- New Year at midnight
-- Sports finals and big matches
-- Concerts and movie releases
-- Exam day, and result day
-- A job interview, or the first day at a new job
-- Marathon or race day
-- Holiday departures and flights home
-- Sale drops and restocks you do not want to miss
-- Graduation day
-- Retirement day
+| Situation | Display | Alarm/finish signal |
+|---|---|---|
+| Tab visible | Ticks every second | Shows on time |
+| Tab in background | May update slower to save battery | Resyncs on return |
+| Page reloaded | Recalculates instantly from the link | Shows on time |
+| Tab closed | No live display | Reopen the share link to check |
 
-## Tips for a better countdown
+## Countdown vs timer: which do you need?
 
-- **Name the event.** "Sarah's wedding" on the display beats a bare ticking clock, especially if you share a screenshot with friends.
-- **Set an exact time, not just a date.** Picking only a date usually means midnight, which reads as "1 day left" at 11 PM the night before. An exact time keeps the countdown honest.
-- **For long countdowns, check in weekly.** Watching months tick by is motivating for savings goals, fitness plans, and big trips.
-- **What happens at zero?** The timer stops and shows that the moment has arrived. It does not play a sound or send a notification, so keep the tab open if you want to catch the exact second.
+A **countdown** targets a calendar moment: Christmas morning, a launch at 9 AM, a flight departure. A **timer** counts down a duration from now: 25 minutes, 2 hours. This page does the first. For the second, a duration timer or the [Stopwatch]({{ '/stopwatch/' | relative_url }}) page's timing features are the right tools.
 
-## Make the countdown work harder
+## Common uses
 
-A countdown is more than a ticking clock. A few ways to get real value out of it:
+- **Weddings and parties:** share one link with every guest instead of answering "how long now?" fifty times.
+- **Exams and deadlines:** a visible number makes the remaining study time concrete.
+- **Product launches:** put the share link on your launch page for a live public countdown.
+- **Holiday trips:** count down to Thanksgiving, Christmas, or the summer vacation.
+- **Due dates and milestones:** pregnancy due dates, project milestones, anniversaries.
 
-- **Build anticipation in public.** For launches and events, screenshot the timer for social posts. "12 days to go" beats a plain date announcement every time. Pair it with the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) to double-check the day count in your copy.
-- **Turn vague goals into visible pressure.** "Get fit someday" drifts. "Marathon in 147 days" with a timer you see daily does not. Put the tab on your bookmarks bar.
-- **Coordinate a group.** Share the exact target date and time in writing (with the time zone named) so everyone sets the same countdown on their own device. No confusion about which midnight you meant.
-- **Use it as a decision deadline.** "If not done by Friday 5 PM, we ship what we have." A visible countdown makes the cutoff feel real to the whole team.
+For the raw number of days until an event without the live ticking, the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) is faster.
+
+## Daylight saving note
+
+If your countdown crosses a daylight saving change, the day count stays correct but the hour display shifts by one. The timer handles this automatically because it works from absolute timestamps, not wall-clock arithmetic.
 
 ## Frequently asked questions
 
@@ -137,16 +183,36 @@ A countdown is more than a ticking clock. A few ways to get real value out of it
 
 <div class="faq">
 <details>
-<summary>How do I start a countdown?</summary>
-<p>Pick the target date and time and click Start Countdown. The display ticks live.</p>
-</details>
-<details>
 <summary>Does the countdown keep running if I close the tab?</summary>
-<p>The remaining time is recalculated from your target date whenever the page loads, so it is always correct when you return. It does not send notifications while closed.</p>
+<p>The live ticking display needs the page open, but you lose nothing by closing it. The countdown is anchored to the exact target moment stored in the link, so reopening the link recalculates the remaining time from the real clock instantly. For long countdowns, bookmark the share link and open it whenever you want to check.</p>
 </details>
 <details>
-<summary>Can I count down to a past date?</summary>
-<p>No, the timer needs a future date. For a date that already passed, it shows that the moment has arrived.</p>
+<summary>How accurate is an online countdown timer?</summary>
+<p>Accurate to about one second. The page records your target as an exact timestamp and recomputes the remaining time from your device clock on every tick, so display errors cannot accumulate. Your device clock itself stays correct through NTP, the protocol NIST uses to distribute official US time with accuracy around one millisecond.</p>
+</details>
+<details>
+<summary>What time zone does the countdown use?</summary>
+<p>Your device's local time zone. Set a countdown to December 25 at midnight and it hits zero at midnight where you are. The share link stores the absolute moment, so if you send it to someone in another time zone, their page converts it and counts down to the same instant. Learn more in <a href="/agedatecalc/time-zones-explained/">Time Zones Explained</a>.</p>
+</details>
+<details>
+<summary>Why does the countdown show fewer days than I expected?</summary>
+<p>A countdown to a bare date assumes midnight at the start of that date. Counting to "Friday" on a Thursday afternoon gives less than one full day, not one day, because Friday begins at 00:00. If the hour matters, set an explicit time along with the date.</p>
+</details>
+<details>
+<summary>Can I share a countdown with other people?</summary>
+<p>Yes. Click "Copy share link" and send it anywhere: messages, email, social media. The link carries the date and your custom label, so anyone who opens it sees the same live countdown. No account is needed and nothing is stored on a server; the link itself holds everything.</p>
+</details>
+<details>
+<summary>Does Google have a countdown timer?</summary>
+<p>Google's built-in timer counts down a number of minutes from the moment you start it, which is handy for cooking but cannot point at a specific date like a wedding or New Year's Eve. For a countdown to a chosen date and time, you need a dedicated countdown tool.</p>
+</details>
+<details>
+<summary>What is the difference between a countdown timer and a regular timer?</summary>
+<p>A countdown targets a calendar moment (Christmas morning, a launch at 9 AM). A regular timer counts down a duration from now (25 minutes, 2 hours). This page does the first; for the second, a stopwatch or duration timer is the right tool.</p>
+</details>
+<details>
+<summary>Will it notify me when the countdown finishes?</summary>
+<p>The page shows a clear "time's up" state when the moment arrives, but browser pages cannot reliably play alarms after the tab is closed or the device sleeps: operating systems suspend background pages and may block the sound. Keep the tab open if you need the on-screen finish signal.</p>
 </details>
 </div>
 
