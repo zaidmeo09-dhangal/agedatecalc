@@ -28,30 +28,70 @@ schema: |
         "@type": "FAQPage",
         "mainEntity": [
           {
-            "@type": "Question",
-            "name": "How do I convert time between zones?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Enter the time, choose the zone it is in, choose the zone you want, and click Convert. The tool handles daylight saving automatically."
-            }
+                    "@type": "Question",
+                    "name": "How many hours ahead is EST compared to PST?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "EST (UTC-5) is 3 hours ahead of PST (UTC-8). The gap stays at 3 hours year-round because both zones start and end daylight saving on the same dates."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "What is the difference between UTC and GMT?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "For everyday use they show the same time. GMT is a time zone, while UTC is the precise time standard the world coordinates by."
-            }
+                    "@type": "Question",
+                    "name": "Does the time difference change during daylight saving time?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Between US zones, no. Eastern and Pacific switch clocks on the same federally mandated dates, so the 3-hour gap never moves."
+                    }
           },
           {
-            "@type": "Question",
-            "name": "Does it handle daylight saving time?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Conversions use your browser's built-in time zone database, which includes current daylight saving rules."
-            }
+                    "@type": "Question",
+                    "name": "What about Arizona and Hawaii, which skip daylight saving?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Arizona stays on MST (UTC-7) all year and Hawaii on HST (UTC-10) all year. Phoenix matches Los Angeles in summer but runs one hour ahead in winter."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How do I convert time zones manually?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Use UTC as a pivot: convert to UTC first, then apply the target zone's offset."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "What happens during a daylight saving transition weekend?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "In spring the 2:00 AM hour does not exist; in fall the 1:00 AM hour happens twice."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How do I handle recurring meetings across daylight saving changes?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Modern calendars store recurring meetings in UTC and adjust automatically, but verify in the week after each transition."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "What is the difference between UTC and GMT?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "UTC is the atomic-clock standard. GMT is now simply the name of the UK winter time zone at UTC+0."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "Why was my New York to London meeting off by an hour this week?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Europe and the US end daylight saving in different weeks. From October 26 to 31, 2026 the gap is 4 hours instead of 5."
+                    }
           }
-        ]
+]
       }
     ]
   }
@@ -76,6 +116,7 @@ schema: |
       </div>
       <button class="btn btn-primary btn-block" id="tz-btn" type="button">Convert Time</button>
       <div id="tz-result"></div>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Uses your browser's built-in time zone data (the IANA database), so daylight saving is always handled correctly.</p>
     </div>
   </div>
 </section>
@@ -84,55 +125,81 @@ schema: |
 
 <p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
 
+## How do I convert a time between zones?
+
+Pick the source time zone and the time, pick the target zone, and the converter applies each zone's current UTC offset, including daylight saving. For example, 2:00 PM in New York in January becomes 11:00 AM the same day in Los Angeles, a 3-hour difference that never changes between US zones.
+
 ## How to use the converter
 
 1. Enter the date and time you want to convert.
 2. Choose the time zone that time is currently in.
 3. Choose the target time zone and click **Convert Time**.
+4. Copy the share link to send the exact conversion to anyone.
 
-Daylight saving is handled automatically using your browser's time zone database.
+## How to convert time zones by hand
 
-## UTC vs GMT, quickly
+Use UTC as a pivot. First convert your time to UTC by reversing your zone's offset, then apply the target zone's offset.
 
-For everyday purposes, UTC and GMT show the same clock time. GMT is a time zone (used in the UK in winter), while UTC is the global time standard everything else is measured against. Time zones are usually written as offsets like UTC+5 or UTC-4.
+Worked example: 2:00 PM in California in January (PST, UTC-8) to Berlin. Add 8 hours to reach 10:00 PM UTC, then add 1 hour for Berlin (CET, UTC+1). The answer is 11:00 PM the same day. Going through UTC avoids the sign errors of direct subtraction.
 
-## How offsets and daylight saving work
+## US time zones at a glance
 
-The world runs on offsets from UTC. UTC+5 means five hours ahead of the UTC baseline; UTC-4 means four hours behind it.
+| Zone | Standard | Daylight | DST observed |
+|---|---|---|---|
+| Eastern (New York) | EST, UTC-5 | EDT, UTC-4 | Yes |
+| Central (Chicago) | CST, UTC-6 | CDT, UTC-5 | Yes |
+| Mountain (Denver) | MST, UTC-7 | MDT, UTC-6 | Yes |
+| Pacific (Los Angeles) | PST, UTC-8 | PDT, UTC-7 | Yes |
+| Arizona (Phoenix) | MST, UTC-7 | MST, UTC-7 | No |
+| Hawaii (Honolulu) | HST, UTC-10 | HST, UTC-10 | No |
+| London | GMT, UTC+0 | BST, UTC+1 | Yes |
 
-Daylight saving complicates the picture: many Northern Hemisphere zones jump forward one hour in summer (roughly March to October) and fall back in winter. Southern Hemisphere zones do the reverse (roughly October to April). Plenty of zones never change at all: Phoenix, Arizona (UTC-7) skips daylight saving entirely, which is exactly why it makes a good reference point.
+Phoenix stays on MST (UTC-7) year-round, so it matches Los Angeles in summer but runs one hour ahead in winter. Hawaii stays on HST (UTC-10) all year.
 
-The converter uses your browser's built-in time zone database, so the correct rules for any date, past or future, are applied automatically. You never have to look up when DST starts.
+## The tricky week: when the US and Europe disagree
 
-## The DST scheduling trap: a real example
+Europe and the US end daylight saving in different weeks, and the gap between them shifts for a few days twice a year. In fall 2026, Europe fell back on October 25 while the US falls back on November 1. From October 26 to 31, New York to London is 4 hours instead of the usual 5, and Los Angeles to Berlin is 8 hours instead of 9.
 
-Here is the trap that catches teams every year. New York and London are normally 5 hours apart. But the US starts daylight saving on March 8, 2026, while the UK follows on March 29, 2026. In the three weeks between, the gap shrinks to 4 hours.
+This mismatch is the most common cause of transatlantic scheduling errors. If a meeting feels off by an hour in late October or late March, check which side has switched.
 
-So a standing meeting at 3:00 PM London time is 10:00 AM in New York most of the year, but 11:00 AM in New York from March 8 to March 29, 2026. If nobody recalculates, someone misses the call. Recheck recurring cross-zone meetings twice a year, around each DST switch.
+## Best meeting hours across US time zones
 
-## Best practices for scheduling across zones
+The shared work window between coasts is **9:00 AM to 2:00 PM Pacific**, which is **12:00 PM to 5:00 PM Eastern**. Schedule inside it and nobody suffers.
 
-- **Name the zone, not just the time.** "3 PM" is meaningless across zones. "3 PM London time" works.
-- **Put the recipient's local time first** in the invite, with yours in parentheses.
-- **Write UTC for international groups.** "14:00 UTC" cannot be misread the way "2 PM EST" can (and EST vs EDT is itself a DST trap).
-- **Confirm the date, not just the time.** A 9:00 PM meeting in New York is already the next day in London. Date mix-ups cause more missed meetings than hour mix-ups.
-- **For recurring meetings, expect a twice-yearly shift** and announce it, rather than letting half the team show up an hour off.
-- **When in doubt, send a calendar invite.** It carries the time zone with it and renders in each recipient's local time, which beats even the clearest written time.
+| Pacific | Eastern | Verdict |
+|---|---|---|
+| 9:00 AM | 12:00 PM | Good for everyone |
+| 11:00 AM | 2:00 PM | Ideal overlap |
+| 2:00 PM | 5:00 PM | Fine, end of East Coast day |
+| 3:00 PM | 6:00 PM | Too late for the East Coast |
+
+And never schedule 8:00 AM Eastern unless it is an emergency: that is 5:00 AM in Los Angeles.
+
+## Daylight saving time in the US, the legal version
+
+US daylight saving is federal law. The Uniform Time Act of 1966 (15 U.S.C. 260a) requires clocks to spring forward at 2:00 AM on the second Sunday of March and fall back at 2:00 AM on the first Sunday of November. States may only exempt themselves to observe permanent standard time, which is what Arizona (except the Navajo Nation) and Hawaii do.
+
+In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7. For the full schedule and which states skip it, see our guide on [when daylight saving time ends in 2026]({{ '/when-does-daylight-saving-time-end-2026/' | relative_url }}).
+
+## Why time zone conversions go wrong
+
+Three causes cover almost every bad conversion:
+
+1. **Wrong abbreviation displayed.** Many sites show "PST" during daylight months when they mean PDT. The 3-hour math still holds, but the label confuses.
+2. **DST mismatch weeks.** The US and Europe switch on different dates, shifting transatlantic gaps by an hour for a few days.
+3. **Fixed-offset mental math.** Memorizing "New York is 5 hours behind London" breaks during the weeks above. Always convert through the actual date.
 
 ## What noon in New York means around the world
 
 | City | January | July | Daylight saving? |
 |---|---|---|---|
-| Los Angeles | 9:00 AM | 9:00 AM | Yes |
-| Chicago | 11:00 AM | 11:00 AM | Yes |
-| London | 5:00 PM | 5:00 PM | Yes |
+| Los Angeles | 9:00 AM | 9:00 AM | Yes, same dates as NY |
+| Chicago | 11:00 AM | 11:00 AM | Yes, same dates as NY |
+| Denver | 10:00 AM | 10:00 AM | Yes, same dates as NY |
+| London | 5:00 PM | 5:00 PM | Yes, different weeks |
 | Phoenix | 10:00 AM | 9:00 AM | No |
 
-Notice how Phoenix slides by an hour between seasons while the others stay fixed relative to New York. That is daylight saving at work: most of the US moves together, and the zones that skip it drift.
-
-## Quick mental-math shortcut
-
-For a rough conversion without the tool: add New York's offset to reach UTC, then apply the target offset. 3:00 PM in New York in winter (EST, UTC-5) is 8:00 PM UTC (15 plus 5). London in July is UTC+1, so that is 9:00 PM London time. It works for any pair of zones once you know both offsets, but for exact answers, especially near DST switches, use the converter above.
+Note how Phoenix shifts relative to New York between seasons while Los Angeles does not: that is the no-DST effect in action.
 
 ## Frequently asked questions
 
@@ -140,16 +207,36 @@ For a rough conversion without the tool: add New York's offset to reach UTC, the
 
 <div class="faq">
 <details>
-<summary>How do I convert time between zones?</summary>
-<p>Enter the time, pick the source zone and the target zone, then convert. The math and daylight saving rules are applied for you.</p>
+<summary>How many hours ahead is EST compared to PST?</summary>
+<p>EST (UTC-5) is 3 hours ahead of PST (UTC-8). When it is 12:00 PM in New York, it is 9:00 AM in Los Angeles. The gap stays at 3 hours year-round because both zones start and end daylight saving time on the same dates, shifting together to EDT (UTC-4) and PDT (UTC-7).</p>
+</details>
+<details>
+<summary>Does the time difference change during daylight saving time?</summary>
+<p>Between US zones, no. Eastern and Pacific time switch clocks on the same federally mandated dates (second Sunday of March, first Sunday of November), so the 3-hour gap never moves. The zone names change (EST becomes EDT, PST becomes PDT) but the math does not. Differences only shift against places that switch on different dates, like Europe.</p>
+</details>
+<details>
+<summary>What about Arizona and Hawaii, which skip daylight saving?</summary>
+<p>Arizona (except the Navajo Nation) stays on Mountain Standard Time (UTC-7) all year, and Hawaii stays on HST (UTC-10) all year, as federal law allows. That means Phoenix matches Los Angeles in summer (both effectively UTC-7) but runs one hour ahead of it in winter. Always confirm the local time for participants in these states.</p>
+</details>
+<details>
+<summary>How do I convert time zones manually?</summary>
+<p>Use UTC as a pivot. First convert your time to UTC by reversing your zone's offset (for UTC-5, add 5 hours). Then apply the target zone's offset (for UTC+1, add 1 hour). Example: 2:00 PM in California in January (PST, UTC-8) becomes 10:00 PM UTC, then 11:00 PM in Berlin (CET, UTC+1). Going through UTC avoids the sign errors of direct subtraction.</p>
+</details>
+<details>
+<summary>What happens during a daylight saving transition weekend?</summary>
+<p>In spring, clocks jump from 2:00 AM to 3:00 AM, so that hour does not exist. In fall, clocks fall back from 2:00 AM to 1:00 AM, so that hour happens twice. Conversions for times inside those windows are ambiguous, and most calendar tools resolve them automatically. If you schedule manually, avoid the 1:00-3:00 AM window on transition Sundays.</p>
+</details>
+<details>
+<summary>How do I handle recurring meetings across daylight saving changes?</summary>
+<p>Modern calendars (Google Calendar, Outlook) store recurring meetings in UTC and redisplay them in each participant's local zone, so they adjust automatically. Still, verify the meeting time in the week after each transition, especially if times were entered manually or through a third-party scheduler, because the US and Europe change clocks in different weeks.</p>
 </details>
 <details>
 <summary>What is the difference between UTC and GMT?</summary>
-<p>In daily use, none on the clock. GMT is a zone, UTC is the standard behind all zones.</p>
+<p>UTC (Coordinated Universal Time) is the atomic-clock standard the whole world measures against, maintained from labs including NIST in Boulder, Colorado. GMT (Greenwich Mean Time) is now simply the name of the UK winter time zone at UTC+0. For everyday conversions the two are interchangeable; the distinction only matters at sub-second precision.</p>
 </details>
 <details>
-<summary>Does it handle daylight saving time?</summary>
-<p>Yes. Conversions use the built-in time zone database in your browser, which includes daylight saving rules.</p>
+<summary>Why was my New York to London meeting off by an hour this week?</summary>
+<p>Because Europe and the US end daylight saving in different weeks. Europe fell back on October 25, 2026 while the US falls back on November 1, so from October 26 to 31 the New York-London gap is 4 hours instead of the usual 5. This mismatch happens twice a year (spring and fall) and is the most common cause of transatlantic scheduling errors.</p>
 </details>
 </div>
 
