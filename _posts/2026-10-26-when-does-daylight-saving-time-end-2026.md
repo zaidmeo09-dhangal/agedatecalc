@@ -85,4 +85,8 @@ No. Arizona stays on Mountain Standard Time (UTC-7) year-round, except the Navaj
 
 Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM.
 
+## Sources
+
+- timeanddate.com: [daylight saving time schedule](https://www.timeanddate.com/time/dst/)
+
 </div>
