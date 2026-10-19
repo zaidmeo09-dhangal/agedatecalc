@@ -309,3 +309,25 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:none}
   .page-hero h1{font-size:2rem}
   .legal-card{padding:1.3rem}
 }
+
+/* ---- Premium micro-interactions (CSS only, no JS cost) ---- */
+.tool-card,.guide-card{transition:transform .25s ease,box-shadow .25s ease}
+.tool-card:hover,.guide-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(14,107,98,.14)}
+.btn{transition:transform .15s ease,box-shadow .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-primary:hover{box-shadow:0 6px 18px rgba(14,107,98,.35)}
+/* Live clock */
+.live-clock{font-family:var(--font-mono);font-size:clamp(1.6rem,4vw,2.2rem);font-weight:600;color:var(--teal-deep);letter-spacing:.04em}
+.live-clock-wrap{display:inline-flex;align-items:center;gap:10px;background:var(--white);border:1px solid var(--border);border-radius:999px;padding:10px 22px;margin-top:18px;box-shadow:0 4px 14px rgba(14,107,98,.08)}
+.live-dot{width:10px;height:10px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+@media(prefers-reduced-motion:reduce){.live-dot{animation:none}.tool-card:hover,.guide-card:hover{transform:none}}
+/* Animated stat counters */
+.stat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:16px}
+@media(min-width:560px){.stat-grid{grid-template-columns:repeat(4,1fr)}}
+.stat-box{background:var(--paper);border:1px solid var(--border);border-radius:12px;padding:14px 10px;text-align:center}
+.stat-box .num{font-family:var(--font-mono);font-weight:600;font-size:1.25rem;color:var(--teal-deep);display:block}
+.stat-box .lbl{font-size:.78rem;color:var(--muted)}
+/* Smooth accordion */
+.faq details{transition:background .2s ease}
+.faq details[open]{background:var(--teal-soft)}
