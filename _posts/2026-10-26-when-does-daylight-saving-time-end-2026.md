@@ -2,7 +2,7 @@
 layout: post
 title: When Does Daylight Saving Time End in 2026?
 description: Daylight saving time ends on Sunday, November 1, 2026 at 2:00 AM. Here is what changes, which states skip it, and the 2027 schedule.
-permalink: /when-does-daylight-saving-time-end-2026/
+permalink: /blog/when-does-daylight-saving-time-end-2026/
 category: Time Guides
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
