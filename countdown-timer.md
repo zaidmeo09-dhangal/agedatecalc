@@ -95,6 +95,10 @@ schema: |
       }
     ]
   }
+related_posts:
+  - /blog/when-does-daylight-saving-time-end-2026/
+  - /blog/how-many-days-in-a-year/
+  - /blog/how-to-count-days-between-dates/
 ---
 
 <section class="hero" style="padding:48px 0 24px">
@@ -319,3 +323,5 @@ If your countdown crosses a daylight saving change, the day count stays correct 
   }catch(e2){}
 })();
 </script>
+
+{% include related-guides.html %}
