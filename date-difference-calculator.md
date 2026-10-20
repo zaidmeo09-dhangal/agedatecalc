@@ -95,6 +95,11 @@ schema: |
       }
     ]
   }
+related_posts:
+  - /blog/how-to-count-days-between-dates/
+  - /blog/how-many-days-in-a-year/
+  - /blog/what-is-a-leap-year/
+  - /blog/how-to-calculate-age/
 ---
 
 <section class="hero" style="padding:48px 0 24px">
@@ -420,3 +425,5 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
   }catch(e4){}
 })();
 </script>
+
+{% include related-guides.html %}
