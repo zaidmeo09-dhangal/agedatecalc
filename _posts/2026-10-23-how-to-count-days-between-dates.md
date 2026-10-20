@@ -2,7 +2,7 @@
 layout: post
 title: How to Count Days Between Two Dates (Manual Method)
 description: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
-permalink: /how-to-count-days-between-dates/
+permalink: /blog/how-to-count-days-between-dates/
 category: How-To Guides
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
