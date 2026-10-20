@@ -138,7 +138,7 @@ The tool uses the borrowing method, the same one taught for manual age math:
 3. Then count the leftover days.
 4. If the day of the month would go negative, borrow days from the previous month's actual length (28, 29, 30, or 31, never an average).
 
-No approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method with harder cases, see our guide on [how to calculate your exact age]({{ '/how-to-calculate-age/' | relative_url }}).
+No approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method with harder cases, see our guide on [how to calculate your exact age]({{ '/blog/how-to-calculate-age/' | relative_url }}).
 
 ## Worked example, step by step
 
@@ -156,7 +156,7 @@ Notice the borrow in action if we measured one day earlier, on October 14: the d
 
 Leap day birthdays are handled with the most common convention: in non-leap years, your birthday is counted on March 1. Your total days lived remain exact regardless.
 
-Example: born February 29, 2012, you are still 12 on February 28, 2025, and turn 13 on March 1. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. Learn more in [what is a leap year]({{ '/what-is-a-leap-year/' | relative_url }}).
+Example: born February 29, 2012, you are still 12 on February 28, 2025, and turn 13 on March 1. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. Learn more in [what is a leap year]({{ '/blog/what-is-a-leap-year/' | relative_url }}).
 
 ## Why age calculators sometimes disagree
 
@@ -233,7 +233,7 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
 </details>
 <details>
 <summary>How do I calculate age by hand in years, months, and days?</summary>
-<p>Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our <a href="/agedatecalc/how-to-calculate-age/">step-by-step guide</a> walks through harder cases like month ends.</p>
+<p>Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our <a href="/agedatecalc/blog/how-to-calculate-age/">step-by-step guide</a> walks through harder cases like month ends.</p>
 </details>
 </div>
 
