@@ -95,6 +95,10 @@ schema: |
       }
     ]
   }
+related_posts:
+  - /blog/time-zones-explained/
+  - /blog/when-does-daylight-saving-time-end-2026/
+  - /blog/am-pm-vs-24-hour-clock/
 ---
 
 <section class="hero" style="padding:48px 0 24px">
@@ -386,3 +390,5 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
   }catch(e2){}
 })();
 </script>
+
+{% include related-guides.html %}
