@@ -95,6 +95,10 @@ schema: |
       }
     ]
   }
+related_posts:
+  - /blog/am-pm-vs-24-hour-clock/
+  - /blog/time-zones-explained/
+  - /blog/how-many-days-in-a-year/
 ---
 
 <section class="hero" style="padding:48px 0 24px">
@@ -297,3 +301,5 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
   });
 })();
 </script>
+
+{% include related-guides.html %}
