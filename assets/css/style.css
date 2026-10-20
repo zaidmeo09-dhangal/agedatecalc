@@ -245,6 +245,19 @@ html[data-theme="dark"] .field input,html[data-theme="dark"] .field select{backg
 html[data-theme="dark"] .prose p,html[data-theme="dark"] .prose li{color:#c8d6d4}
 html[data-theme="dark"] .tool-card p,html[data-theme="dark"] .guide-card p,html[data-theme="dark"] .calc-card p.sub,html[data-theme="dark"] .result-note{color:var(--muted)}
 html[data-theme="dark"] .legal-card p,html[data-theme="dark"] .legal-card li{color:#c8d6d4}
+/* Dark mode contrast fixes: elements that use teal-deep/teal text on light backgrounds */
+html[data-theme="dark"] .badge{background:#173f38;color:#7fd1c0}
+html[data-theme="dark"] .live-clock{color:#7fd1c0}
+html[data-theme="dark"] .stat-box .num{color:#7fd1c0}
+html[data-theme="dark"] .result-box .num{color:#7fd1c0}
+html[data-theme="dark"] .live-clock-wrap{background:var(--white);border-color:var(--border)}
+html[data-theme="dark"] .btn-outline{color:#7fd1c0;border-color:#2a9d8f}
+html[data-theme="dark"] .btn-outline:hover{background:#173f38}
+html[data-theme="dark"] h1 .accent,html[data-theme="dark"] a{color:#7fd1c0}
+html[data-theme="dark"] .site-nav a:hover{color:#7fd1c0}
+html[data-theme="dark"] .toc-list a::before{background:var(--amber)}
+html[data-theme="dark"] .post-content tbody tr:nth-child(even){background:#0d2a2e}
+html[data-theme="dark"] .post-content tbody tr:nth-child(odd){background:var(--white)}
 
 /* Theme toggle button */
 .theme-toggle{
