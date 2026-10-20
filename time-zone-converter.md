@@ -179,7 +179,7 @@ And never schedule 8:00 AM Eastern unless it is an emergency: that is 5:00 AM in
 
 US daylight saving is federal law. The Uniform Time Act of 1966 (15 U.S.C. 260a) requires clocks to spring forward at 2:00 AM on the second Sunday of March and fall back at 2:00 AM on the first Sunday of November. States may only exempt themselves to observe permanent standard time, which is what Arizona (except the Navajo Nation) and Hawaii do.
 
-In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7. For the full schedule and which states skip it, see our guide on [when daylight saving time ends in 2026]({{ '/when-does-daylight-saving-time-end-2026/' | relative_url }}).
+In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7. For the full schedule and which states skip it, see our guide on [when daylight saving time ends in 2026]({{ '/blog/when-does-daylight-saving-time-end-2026/' | relative_url }}).
 
 ## Why time zone conversions go wrong
 
