@@ -2,7 +2,7 @@
 layout: post
 title: AM/PM vs 24-Hour Clock - Complete Conversion Guide
 description: Confused by 12-hour and 24-hour time? Learn how AM/PM works, how to convert between the two systems, and the tricky cases like 12 AM and 12 PM.
-permalink: /am-pm-vs-24-hour-clock/
+permalink: /blog/am-pm-vs-24-hour-clock/
 category: Time Guides
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
