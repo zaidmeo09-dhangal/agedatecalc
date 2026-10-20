@@ -95,6 +95,10 @@ schema: |
       }
     ]
   }
+related_posts:
+  - /blog/how-to-calculate-age/
+  - /blog/what-is-a-leap-year/
+  - /blog/how-to-count-days-between-dates/
 ---
 
 <section class="hero" style="padding:48px 0 24px">
@@ -366,3 +370,5 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
   }catch(e){}
 })();
 </script>
+
+{% include related-guides.html %}
