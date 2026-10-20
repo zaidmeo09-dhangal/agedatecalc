@@ -135,42 +135,42 @@ schema: |
     <h2 class="section-title">Learn How It Works</h2>
     <p class="section-sub">Short guides that explain the math behind the tools.</p>
     <div class="guides-grid">
-      <a class="guide-card" href="{{ '/how-to-calculate-age/' | relative_url }}">
+      <a class="guide-card" href="{{ '/blog/how-to-calculate-age/' | relative_url }}">
         <div class="guide-body">
           <span class="guide-tag">Guide</span>
           <h3>How to Calculate Your Exact Age</h3>
           <p>The manual method, step by step, with a worked example.</p>
         </div>
       </a>
-      <a class="guide-card" href="{{ '/what-is-a-leap-year/' | relative_url }}">
+      <a class="guide-card" href="{{ '/blog/what-is-a-leap-year/' | relative_url }}">
         <div class="guide-body">
           <span class="guide-tag">Guide</span>
           <h3>What Is a Leap Year?</h3>
           <p>Why February sometimes has 29 days, and the simple divisibility rules.</p>
         </div>
       </a>
-      <a class="guide-card" href="{{ '/am-pm-vs-24-hour-clock/' | relative_url }}">
+      <a class="guide-card" href="{{ '/blog/am-pm-vs-24-hour-clock/' | relative_url }}">
         <div class="guide-body">
           <span class="guide-tag">Guide</span>
           <h3>AM/PM vs 24-Hour Clock</h3>
           <p>Convert between 12-hour and 24-hour time without confusion.</p>
         </div>
       </a>
-      <a class="guide-card" href="{{ '/how-to-count-days-between-dates/' | relative_url }}">
+      <a class="guide-card" href="{{ '/blog/how-to-count-days-between-dates/' | relative_url }}">
         <div class="guide-body">
           <span class="guide-tag">Guide</span>
           <h3>How to Count Days Between Two Dates</h3>
           <p>The manual counting method, plus common mistakes to avoid.</p>
         </div>
       </a>
-      <a class="guide-card" href="{{ '/how-many-days-in-a-year/' | relative_url }}">
+      <a class="guide-card" href="{{ '/blog/how-many-days-in-a-year/' | relative_url }}">
         <div class="guide-body">
           <span class="guide-tag">Guide</span>
           <h3>How Many Days Are in a Year?</h3>
           <p>365 or 366? When each applies, and why it matters.</p>
         </div>
       </a>
-      <a class="guide-card" href="{{ '/time-zones-explained/' | relative_url }}">
+      <a class="guide-card" href="{{ '/blog/time-zones-explained/' | relative_url }}">
         <div class="guide-body">
           <span class="guide-tag">Guide</span>
           <h3>Time Zones Explained</h3>
