@@ -2,7 +2,7 @@
 layout: post
 title: How to Calculate Your Exact Age (Manual Method)
 description: Learn how to calculate your exact age by hand. Step-by-step method with a worked example, plus how leap years and month lengths affect the result.
-permalink: /how-to-calculate-age/
+permalink: /blog/how-to-calculate-age/
 category: How-To Guides
 tool_url: /age-calculator/
 tool_name: Age Calculator
