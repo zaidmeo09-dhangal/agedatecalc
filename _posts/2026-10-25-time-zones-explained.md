@@ -2,7 +2,7 @@
 layout: post
 title: Time Zones Explained - UTC, GMT, and Daylight Saving
 description: What are time zones, how do UTC and GMT differ, and what is daylight saving? A plain-language guide with practical conversion tips.
-permalink: /time-zones-explained/
+permalink: /blog/time-zones-explained/
 category: Time Guides
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
