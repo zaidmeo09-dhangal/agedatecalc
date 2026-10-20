@@ -152,7 +152,7 @@ The tool uses the borrowing method, the same one taught for manual age math:
 3. Then count the leftover days.
 4. If the day of the month would go negative, borrow days from the previous month's actual length (28, 29, 30, or 31, never an average).
 
-It never uses approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method, see our guide on [how to count days between two dates]({{ '/how-to-count-days-between-dates/' | relative_url }}).
+It never uses approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method, see our guide on [how to count days between two dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }}).
 
 ## Worked example: August 22, 1985 to May 15, 1990
 
@@ -191,7 +191,7 @@ Before trusting any number, check both. This page states its basis directly unde
 
 ## Edge cases the calculator handles
 
-- **Leap years:** fully included in day counts. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. So 2024 and 2000 were leap years, but 1900 was not and 2100 will not be. Learn more in [what is a leap year]({{ '/what-is-a-leap-year/' | relative_url }}).
+- **Leap years:** fully included in day counts. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. So 2024 and 2000 were leap years, but 1900 was not and 2100 will not be. Learn more in [what is a leap year]({{ '/blog/what-is-a-leap-year/' | relative_url }}).
 - **February 29 birthdays:** counted on March 1 in non-leap years, the most common legal convention.
 - **Month ends:** January 31 to March 1 resolves against the real calendar, not a fixed 30-day month.
 - **Same date twice:** returns 0 days, 0 weeks, 0 years.
