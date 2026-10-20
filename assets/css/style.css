@@ -345,9 +345,9 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:none}
 .faq details{transition:background .2s ease}
 .faq details[open]{background:var(--teal-soft)}
 /* Ticker tape for hero timezone label (seamless loop, works on all devices) */
-.ticker{display:block;overflow:hidden;max-width:240px;width:100%}
-.ticker-track{display:inline-flex;white-space:nowrap;animation:ticker-scroll 9s linear infinite;will-change:transform}
-.ticker-text{padding-right:48px;font-size:.8rem;color:var(--muted);font-weight:500;flex-shrink:0}
+.ticker{display:block;overflow:hidden;max-width:170px;width:100%;margin:0 auto}
+.ticker-track{display:inline-flex;white-space:nowrap;animation:ticker-scroll 7s linear infinite;will-change:transform}
+.ticker-text{padding-right:70px;font-size:.8rem;color:var(--muted);font-weight:500;flex-shrink:0}
 @keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 
@@ -356,7 +356,7 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:none}
   /* Hero live clock: fit narrow screens */
   .live-clock-wrap{padding:8px 16px;max-width:calc(100vw - 40px)}
   .live-clock{font-size:1.4rem}
-  .ticker{max-width:200px}
+  .ticker{max-width:150px}
   /* Tool input grids stack cleanly */
   .calc-card{padding:20px 16px}
   .field input,.field select{font-size:16px} /* stops iOS auto-zoom on focus */
