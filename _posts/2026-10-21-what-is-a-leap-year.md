@@ -2,7 +2,7 @@
 layout: post
 title: What Is a Leap Year? Simple Rules Explained
 description: Why does February sometimes have 29 days? Learn the three leap year rules, why leap years exist, and how they affect age and date calculations.
-permalink: /what-is-a-leap-year/
+permalink: /blog/what-is-a-leap-year/
 category: Date Guides
 tool_url: /age-calculator/
 tool_name: Age Calculator
