@@ -1,0 +1,31 @@
+{% if page.related_posts %}
+<section class="related-guides">
+  <div class="wrap">
+    <div class="related-guides-head">
+      <h2>Related Guides</h2>
+      <a class="btn btn-outline btn-sm" href="{{ '/blog/' | relative_url }}">See All Guides</a>
+    </div>
+  </div>
+  <div class="guides-strip-viewport">
+    <div class="guides-strip">
+      {% for set in (1..2) %}
+      <div class="guides-strip-set" {% if set == 2 %}aria-hidden="true"{% endif %}>
+        {% for url in page.related_posts %}
+          {% assign post = site.posts | where: "url", url | first %}
+          {% if post %}
+          <a class="guide-card strip-card" href="{{ post.url | relative_url }}">
+            <div class="guide-body">
+              <span class="guide-tag">{{ post.category | default: "Guide" }}</span>
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.description }}</p>
+              <span class="guide-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+            </div>
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
