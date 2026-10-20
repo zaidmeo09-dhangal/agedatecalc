@@ -399,6 +399,6 @@ img,video,iframe{max-width:100%}
 @media(max-width:860px){
   .post-layout{grid-template-columns:1fr}
   .toc-card{position:static;max-height:none}
-  .post-sidebar{order:2}
-  .post-content{order:1}
+  .post-sidebar{order:1}
+  .post-content{order:2}
 }
