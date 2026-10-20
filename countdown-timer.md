@@ -192,7 +192,7 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 </details>
 <details>
 <summary>What time zone does the countdown use?</summary>
-<p>Your device's local time zone. Set a countdown to December 25 at midnight and it hits zero at midnight where you are. The share link stores the absolute moment, so if you send it to someone in another time zone, their page converts it and counts down to the same instant. Learn more in <a href="/agedatecalc/time-zones-explained/">Time Zones Explained</a>.</p>
+<p>Your device's local time zone. Set a countdown to December 25 at midnight and it hits zero at midnight where you are. The share link stores the absolute moment, so if you send it to someone in another time zone, their page converts it and counts down to the same instant. Learn more in <a href="/agedatecalc/blog/time-zones-explained/">Time Zones Explained</a>.</p>
 </details>
 <details>
 <summary>Why does the countdown show fewer days than I expected?</summary>
