@@ -21,32 +21,6 @@ schema: |
       <a class="btn btn-primary" href="{{ '/age-calculator/' | relative_url }}">Calculate Your Age</a>
       <a class="btn btn-outline" href="#tools">Browse All Tools</a>
     </div>
-    <div class="live-clock-wrap" title="Your local time, ticking live" style="flex-direction:column;gap:2px;border-radius:20px;overflow:hidden;max-width:100%">
-      <span style="display:inline-flex;align-items:center;gap:10px"><span class="live-dot"></span><span class="live-clock" id="hero-clock">--:--:--</span></span>
-      <span class="ticker" aria-live="off"><span class="ticker-track"><span class="ticker-text" id="hero-tz-label"></span><span class="ticker-text" id="hero-tz-label2" aria-hidden="true"></span></span></span>
-    </div>
-    <script>
-    (function(){
-      function tick(){
-        var el = document.getElementById('hero-clock');
-        if(!el) return;
-        el.textContent = new Date().toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
-      }
-      try{
-        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-        var city = tz.split('/').pop().replace(/_/g, ' ');
-        /* Friendly names where the IANA city is misleading */
-        var friendly = { 'Karachi': 'Pakistan', 'Kolkata': 'India', 'Dhaka': 'Bangladesh' };
-        if(friendly[city]) city = friendly[city];
-        var label = city ? 'Time in ' + city + ' now' : '';
-        var lbl = document.getElementById('hero-tz-label');
-        var lbl2 = document.getElementById('hero-tz-label2');
-        if(lbl) lbl.textContent = label;
-        if(lbl2) lbl2.textContent = label;
-      }catch(e){}
-      tick(); setInterval(tick, 1000);
-    })();
-    </script>
 
     <div class="calc-card">
       <h2>Try it now: Age Calculator</h2>
