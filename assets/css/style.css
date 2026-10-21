@@ -434,3 +434,23 @@ img,video,iframe{max-width:100%}
   .strip-card{width:270px}
   .guides-strip{animation-duration:24s}
 }
+
+/* ---- Hero analog clock card ---- */
+.hero-clock-card{display:inline-flex;align-items:center;gap:20px;background:var(--white);border:1px solid var(--border);border-radius:20px;padding:16px 26px 16px 18px;margin-top:20px;box-shadow:0 4px 14px rgba(14,107,98,.08);text-align:left}
+.analog-clock{width:104px;height:104px;flex-shrink:0}
+.clock-face{fill:var(--paper);stroke:var(--teal);stroke-width:2.5}
+.clock-ticks line{stroke:var(--muted);stroke-width:2;stroke-linecap:round}
+.hand-hour{stroke:var(--teal-deep);stroke-width:5;stroke-linecap:round}
+.hand-minute{stroke:var(--teal);stroke-width:3.5;stroke-linecap:round}
+.hand-second{stroke:var(--amber);stroke-width:1.6;stroke-linecap:round}
+.clock-center{fill:var(--amber);stroke:var(--white);stroke-width:1.5}
+.hero-clock-info{display:flex;flex-direction:column;gap:2px}
+.hero-clock-digital{font-family:var(--font-mono);font-size:1.7rem;font-weight:600;color:var(--teal-deep);letter-spacing:.03em;line-height:1.15}
+.hero-clock-city{font-size:.85rem;color:var(--muted);font-weight:600}
+html[data-theme="dark"] .hero-clock-digital{color:#7fd1c0}
+html[data-theme="dark"] .clock-face{fill:#0d1f23}
+@media(max-width:520px){
+  .hero-clock-card{gap:14px;padding:12px 18px 12px 12px;max-width:calc(100vw - 40px)}
+  .analog-clock{width:84px;height:84px}
+  .hero-clock-digital{font-size:1.3rem}
+}
