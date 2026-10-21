@@ -22,6 +22,62 @@ schema: |
       <a class="btn btn-outline" href="#tools">Browse All Tools</a>
     </div>
 
+    <div class="hero-clock-card" title="Your local time, live">
+      <svg class="analog-clock" viewBox="0 0 120 120" role="img" aria-label="Analog clock showing your local time">
+        <circle cx="60" cy="60" r="56" class="clock-face"/>
+        <g class="clock-ticks">
+          <line x1="60" y1="8" x2="60" y2="14"/>
+          <line x1="86" y1="15" x2="83" y2="20"/>
+          <line x1="105" y1="34" x2="100" y2="37"/>
+          <line x1="112" y1="60" x2="106" y2="60"/>
+          <line x1="105" y1="86" x2="100" y2="83"/>
+          <line x1="86" y1="105" x2="83" y2="100"/>
+          <line x1="60" y1="112" x2="60" y2="106"/>
+          <line x1="34" y1="105" x2="37" y2="100"/>
+          <line x1="15" y1="86" x2="20" y2="83"/>
+          <line x1="8" y1="60" x2="14" y2="60"/>
+          <line x1="15" y1="34" x2="20" y2="37"/>
+          <line x1="34" y1="15" x2="37" y2="20"/>
+        </g>
+        <line id="hand-hour" x1="60" y1="60" x2="60" y2="36" class="hand-hour"/>
+        <line id="hand-minute" x1="60" y1="60" x2="60" y2="24" class="hand-minute"/>
+        <line id="hand-second" x1="60" y1="68" x2="60" y2="18" class="hand-second"/>
+        <circle cx="60" cy="60" r="4" class="clock-center"/>
+      </svg>
+      <div class="hero-clock-info">
+        <span class="hero-clock-digital" id="hero-clock-digital">--:--:--</span>
+        <span class="hero-clock-city" id="hero-clock-city"></span>
+      </div>
+    </div>
+    <script>
+    (function(){
+      var hourHand = document.getElementById('hand-hour');
+      var minHand = document.getElementById('hand-minute');
+      var secHand = document.getElementById('hand-second');
+      var digital = document.getElementById('hero-clock-digital');
+      function update(){
+        var now = new Date();
+        var s = now.getSeconds() + now.getMilliseconds() / 1000;
+        var m = now.getMinutes() + s / 60;
+        var h = (now.getHours() % 12) + m / 60;
+        if(secHand) secHand.setAttribute('transform', 'rotate(' + (s * 6) + ' 60 60)');
+        if(minHand) minHand.setAttribute('transform', 'rotate(' + (m * 6) + ' 60 60)');
+        if(hourHand) hourHand.setAttribute('transform', 'rotate(' + (h * 30) + ' 60 60)');
+        if(digital) digital.textContent = now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+        requestAnimationFrame(update);
+      }
+      try{
+        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+        var city = tz.split('/').pop().replace(/_/g, ' ');
+        var friendly = { 'Karachi': 'Pakistan', 'Kolkata': 'India', 'Dhaka': 'Bangladesh' };
+        if(friendly[city]) city = friendly[city];
+        var lbl = document.getElementById('hero-clock-city');
+        if(lbl && city) lbl.textContent = 'Time in ' + city + ' now';
+      }catch(e){}
+      requestAnimationFrame(update);
+    })();
+    </script>
+
     <div class="calc-card">
       <h2>Try it now: Age Calculator</h2>
       <p class="sub">Enter your date of birth to see your exact age instantly.</p>
