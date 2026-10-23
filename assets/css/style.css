@@ -457,3 +457,15 @@ html[data-theme="dark"] .clock-face{fill:#0d1f23}
 
 /* Guide card thumbnails */
 .guide-thumb{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover}
+
+/* Blog images: any image placed in an article renders at one standard
+   dimension (1200x630 ratio) on desktop and mobile, whatever its
+   uploaded size. object-fit cover crops to the ratio without distortion. */
+.post-content img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-radius:12px;margin:26px 0}
+.post-featured{margin:0 0 28px}
+.post-featured img{display:block;width:100%;height:auto;aspect-ratio:1200/630;object-fit:cover;border-radius:14px}
+.post-faq{margin-top:44px;border-top:2px solid var(--border);padding-top:28px}
+.post-faq h2{margin-bottom:18px}
+.post-faq-item{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
+.post-faq-item h3{font-size:1.02rem;margin-bottom:6px}
+.post-faq-item p{margin:0;color:var(--muted)}
