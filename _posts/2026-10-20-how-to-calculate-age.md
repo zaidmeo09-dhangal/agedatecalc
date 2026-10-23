@@ -18,7 +18,7 @@ meta_title: How to Calculate Your Exact Age (Manual Method)
 meta_description: Learn how to calculate your exact age by hand. Step-by-step method with a worked example, plus how leap years and month lengths affect the result.
 excerpt: Learn how to calculate your exact age by hand. Step-by-step method with a worked example, plus how leap years and month lengths affect the result.
 featured_image: /assets/images/how-to-calculate-age.webp
-image_alt: A worked example of calculating exact age by hand, subtracting a birth date from today's date to find the age in years, months, and days
+image_alt: A birthday cake with lit candles next to a desk calendar with a birthday date circled in red
 read_time: 6 min read
 faqs_raw: 'How do I calculate my exact age in years, months, and days?
 
@@ -95,7 +95,7 @@ Final answer: **35 years, 10 months, 23 days**. Notice how this example uses eve
 
 ## How leap years affect the math
 
-Leap years add February 29, which shifts day counts but not the year/month logic above, because the method borrows actual month lengths. If you were born on February 29, most systems count your birthday on March 1 in non-leap years.
+[Leap years](https://www.timeanddate.com/date/leapyear.html) add February 29, which shifts day counts but not the year/month logic above, because the method borrows actual month lengths. If you were born on February 29, most systems count your birthday on March 1 in non-leap years.
 
 ## Your age in other units
 
@@ -107,11 +107,11 @@ Years, months, and days are the friendliest format, but sometimes you need the r
 
 The day count includes 6 leap days: February 29 of 2004, 2008, 2012, 2016, 2020, and 2024. February 29, 2000 does not count because it fell before the birth date. This is exactly where manual math gets tedious and where our [Age Calculator]({{ '/age-calculator/' | relative_url }}) earns its keep: it sums real calendar days, leap days included, in a fraction of a second.
 
-![A winding path with signposts marking life milestones such as retirement age]({{ '/assets/images/how-to-calculate-age-milestones.webp' | relative_url }})
+![A winding path through green hills with wooden signposts marking life milestones along the way]({{ '/assets/images/how-to-calculate-age-milestones.webp' | relative_url }})
 
 ## Full retirement age by birth year
 
-Exact age is not just trivia. Social Security uses your birth year to set your full retirement age, the age at which you qualify for unreduced benefits:
+Exact age is not just trivia. Social Security uses your birth year to set your [full retirement age](https://www.ssa.gov/benefits/retirement/planner/ageincrease.html), the age at which you qualify for unreduced benefits:
 
 | Year of birth | Full retirement age |
 |---|---|
@@ -142,34 +142,10 @@ Claiming benefits before your full retirement age reduces the monthly amount, so
 
 Doing this by hand is good practice once, but tedious every time. Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) does the full calendar math instantly, and also shows total days lived, the weekday you were born, and your next birthday countdown.
 
-## How do I calculate my exact age in years, months, and days?
-
-Subtract your birth year from the current year, then check whether your birthday has already happened this year and subtract one if it has not. Next count the remaining full months, borrowing 12 if the current month falls before your birth month, then count the leftover days, borrowing the previous month's actual days when needed.
-
-### Why is my calculated age one year less than simple year subtraction gives?
-
-Because your birthday has not happened yet this year. Simple subtraction assumes your birthday already passed, so if your birth month and day are still ahead on the calendar, you are one year younger than the raw year difference.
-
-### How is age calculated for someone born on February 29?
-
-Most systems treat March 1 as the birthday in non-leap years, so a February 29 baby turns a year older on March 1 when there is no February 29. The total day count is unaffected, because it uses real calendar days.
-
-### What is my age in days?
-
-Your age in days is the total count of calendar days between your birth date and today, leap days included. For example, someone born on June 15, 2000 was 9,621 days old on October 18, 2026, a span that includes 6 leap days.
-
-### What is the full retirement age for Social Security?
-
-It depends on your birth year. Full retirement age is 66 for people born from 1943 through 1954, rises by two months per year for those born from 1955 through 1959, and reaches 67 for anyone born in 1960 or later.
-
 ## Related guides
 
 - [What Is a Leap Year?]({{ '/blog/what-is-a-leap-year/' | relative_url }})
 - [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
-
-## Sources
-
-- US Social Security Administration: [full retirement age by birth year](https://www.ssa.gov/benefits/retirement/planner/ageincrease.html)
 
 </div>
