@@ -2,6 +2,18 @@
 layout: post
 title: How to Calculate Your Exact Age (Manual Method)
 description: Learn how to calculate your exact age by hand. Step-by-step method with a worked example, plus how leap years and month lengths affect the result.
+image: /assets/images/how-to-calculate-age.webp
+faq:
+  - q: "How do I calculate my exact age in years, months, and days?"
+    a: "Subtract your birth year from the current year, then check whether your birthday has already happened this year and subtract one if it has not. Next count the remaining full months, borrowing 12 if the current month falls before your birth month, then count the leftover days, borrowing the previous month's actual days when needed."
+  - q: "Why is my calculated age one year less than simple year subtraction gives?"
+    a: "Because your birthday has not happened yet this year. Simple subtraction assumes your birthday already passed, so if your birth month and day are still ahead on the calendar, you are one year younger than the raw year difference."
+  - q: "How is age calculated for someone born on February 29?"
+    a: "Most systems treat March 1 as the birthday in non-leap years, so a February 29 baby turns a year older on March 1 when there is no February 29. The total day count is unaffected, because it uses real calendar days."
+  - q: "What is my age in days?"
+    a: "Your age in days is the total count of calendar days between your birth date and today, leap days included. For example, someone born on June 15, 2000 was 9,621 days old on October 18, 2026, a span that includes 6 leap days."
+  - q: "What is the full retirement age for Social Security?"
+    a: "It depends on your birth year. Full retirement age is 66 for people born from 1943 through 1954, rises by two months per year for those born from 1955 through 1959, and reaches 67 for anyone born in 1960 or later."
 permalink: /blog/how-to-calculate-age/
 category: How-To Guides
 tool_url: /age-calculator/
@@ -18,6 +30,8 @@ schema: |
 <div class="prose" markdown="1">
 
 Your exact age is the time between your date of birth and today, expressed in years, months, and days. Here is the manual method in three steps.
+
+![A worked example of calculating exact age by hand, subtracting a birth date from today's date to find the age in years, months, and days]({{ '/assets/images/how-to-calculate-age.webp' | relative_url }})
 
 ## Why manual age math is error-prone
 
@@ -67,6 +81,22 @@ Years, months, and days are the friendliest format, but sometimes you need the r
 
 The day count includes 6 leap days: February 29 of 2004, 2008, 2012, 2016, 2020, and 2024. February 29, 2000 does not count because it fell before the birth date. This is exactly where manual math gets tedious and where our [Age Calculator]({{ '/age-calculator/' | relative_url }}) earns its keep: it sums real calendar days, leap days included, in a fraction of a second.
 
+## Full retirement age by birth year
+
+Exact age is not just trivia. Social Security uses your birth year to set your full retirement age, the age at which you qualify for unreduced benefits:
+
+| Year of birth | Full retirement age |
+|---|---|
+| 1943-1954 | 66 |
+| 1955 | 66 and 2 months |
+| 1956 | 66 and 4 months |
+| 1957 | 66 and 6 months |
+| 1958 | 66 and 8 months |
+| 1959 | 66 and 10 months |
+| 1960 or later | 67 |
+
+Claiming benefits before your full retirement age reduces the monthly amount, so knowing your exact age to the month matters for this decision.
+
 ## Common mistakes
 
 - **Forgetting the birthday check:** if your birthday is later this year, you are one year younger than simple subtraction suggests.
@@ -84,11 +114,33 @@ The day count includes 6 leap days: February 29 of 2004, 2008, 2012, 2016, 2020,
 
 Doing this by hand is good practice once, but tedious every time. Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) does the full calendar math instantly, and also shows total days lived, the weekday you were born, and your next birthday countdown.
 
+## Frequently asked questions
+
+### How do I calculate my exact age in years, months, and days?
+
+Subtract your birth year from the current year, then check whether your birthday has already happened this year and subtract one if it has not. Next count the remaining full months, borrowing 12 if the current month falls before your birth month, then count the leftover days, borrowing the previous month's actual days when needed.
+
+### Why is my calculated age one year less than simple year subtraction gives?
+
+Because your birthday has not happened yet this year. Simple subtraction assumes your birthday already passed, so if your birth month and day are still ahead on the calendar, you are one year younger than the raw year difference.
+
+### How is age calculated for someone born on February 29?
+
+Most systems treat March 1 as the birthday in non-leap years, so a February 29 baby turns a year older on March 1 when there is no February 29. The total day count is unaffected, because it uses real calendar days.
+
+### What is my age in days?
+
+Your age in days is the total count of calendar days between your birth date and today, leap days included. For example, someone born on June 15, 2000 was 9,621 days old on October 18, 2026, a span that includes 6 leap days.
+
+### What is the full retirement age for Social Security?
+
+It depends on your birth year. Full retirement age is 66 for people born from 1943 through 1954, rises by two months per year for those born from 1955 through 1959, and reaches 67 for anyone born in 1960 or later.
+
 ## Related guides
 
-- [What Is a Leap Year?]({{ '/what-is-a-leap-year/' | relative_url }})
-- [How to Count Days Between Two Dates]({{ '/how-to-count-days-between-dates/' | relative_url }})
-- [How Many Days Are in a Year?]({{ '/how-many-days-in-a-year/' | relative_url }})
+- [What Is a Leap Year?]({{ '/blog/what-is-a-leap-year/' | relative_url }})
+- [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }})
+- [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
 
 ## Sources
 
