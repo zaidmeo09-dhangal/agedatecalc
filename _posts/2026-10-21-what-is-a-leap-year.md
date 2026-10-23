@@ -2,6 +2,18 @@
 layout: post
 title: What Is a Leap Year? Simple Rules Explained
 description: Why does February sometimes have 29 days? Learn the three leap year rules, why leap years exist, and how they affect age and date calculations.
+image: /assets/images/what-is-a-leap-year.webp
+faq:
+  - q: "Is 2026 a leap year?"
+    a: "No. 2026 is not divisible by 4, so February 2026 has 28 days. The most recent leap year was 2024, and the next one is 2028."
+  - q: "How often does a leap year occur?"
+    a: "Usually every four years. Century years are the exception: a year divisible by 100 is only a leap year if it is also divisible by 400, which is why the Gregorian calendar produces 97 leap years in every 400-year cycle."
+  - q: "Was the year 2000 a leap year?"
+    a: "Yes. Although 2000 is a century year, it is divisible by 400, so the third rule applies and February 2000 had 29 days. The century years 1900 and 2100 fail that test and are not leap years."
+  - q: "Why does February get an extra day in a leap year?"
+    a: "Earth takes about 365.25 days to orbit the sun, roughly a quarter day more than the 365 days on the calendar. Adding February 29 every four years absorbs that extra time and keeps the calendar from drifting away from the seasons."
+  - q: "What birthday do February 29 babies celebrate in non-leap years?"
+    a: "They celebrate on February 28 or March 1, depending on local custom and law. March 1 is the most common convention, and it is the one most age calculators use."
 permalink: /blog/what-is-a-leap-year/
 category: Date Guides
 tool_url: /age-calculator/
@@ -18,6 +30,8 @@ schema: |
 <div class="prose" markdown="1">
 
 A leap year is a year with 366 days instead of 365. The extra day, February 29, keeps our calendar aligned with Earth's orbit around the sun.
+
+![A February calendar page in a leap year with February 29 highlighted as the extra leap day]({{ '/assets/images/what-is-a-leap-year.webp' | relative_url }})
 
 ## Why leap years exist
 
@@ -69,12 +83,47 @@ A leap second is a single extra second added to UTC now and then to keep atomic 
 - **Upcoming:** 2028, 2032, 2036
 - **Skipped century ahead:** 2100 will not be a leap year
 
+Here is how the three rules play out across recent, upcoming, and century years:
+
+| Year | Leap year? | Why |
+|---|---|---|
+| 1900 | No | Divisible by 100 but not by 400 |
+| 2000 | Yes | Divisible by 400 |
+| 2024 | Yes | Divisible by 4, not a century year |
+| 2028 | Yes | Divisible by 4, not a century year |
+| 2032 | Yes | Divisible by 4, not a century year |
+| 2036 | Yes | Divisible by 4, not a century year |
+| 2040 | Yes | Divisible by 4, not a century year |
+| 2100 | No | Divisible by 100 but not by 400 |
+
 Over each 400-year cycle, the Gregorian rules produce exactly 97 leap years, which is what holds the average year at 365.2425 days.
+
+## Frequently asked questions
+
+### Is 2026 a leap year?
+
+No. 2026 is not divisible by 4, so February 2026 has 28 days. The most recent leap year was 2024, and the next one is 2028.
+
+### How often does a leap year occur?
+
+Usually every four years. Century years are the exception: a year divisible by 100 is only a leap year if it is also divisible by 400, which is why the Gregorian calendar produces 97 leap years in every 400-year cycle.
+
+### Was the year 2000 a leap year?
+
+Yes. Although 2000 is a century year, it is divisible by 400, so the third rule applies and February 2000 had 29 days. The century years 1900 and 2100 fail that test and are not leap years.
+
+### Why does February get an extra day in a leap year?
+
+Earth takes about 365.25 days to orbit the sun, roughly a quarter day more than the 365 days on the calendar. Adding February 29 every four years absorbs that extra time and keeps the calendar from drifting away from the seasons.
+
+### What birthday do February 29 babies celebrate in non-leap years?
+
+They celebrate on February 28 or March 1, depending on local custom and law. March 1 is the most common convention, and it is the one most age calculators use.
 
 ## Related guides
 
-- [How to Calculate Your Exact Age]({{ '/how-to-calculate-age/' | relative_url }})
-- [How Many Days Are in a Year?]({{ '/how-many-days-in-a-year/' | relative_url }})
+- [How to Calculate Your Exact Age]({{ '/blog/how-to-calculate-age/' | relative_url }})
+- [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
 
 ## Sources
 
