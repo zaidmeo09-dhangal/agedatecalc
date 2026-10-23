@@ -18,7 +18,7 @@ meta_title: How to Count Days Between Two Dates (Manual Method)
 meta_description: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
 excerpt: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
 featured_image: /assets/images/how-to-count-days-between-dates.webp
-image_alt: Two calendar pages side by side showing how to count the days between two dates month by month
+image_alt: A desk with two calendar pages side by side and a hand marking a date with a pen, counting the days between two dates
 read_time: 6 min read
 faqs_raw: 'Should I count the end date when counting days between dates?
 
@@ -84,11 +84,11 @@ Most tools count **exclusive** of the end date: January 1 to January 2 is 1 day.
 
 When the count matters, state the convention out loud: "4 nights" or "5 days inclusive." It takes five seconds and prevents most disputes.
 
-![An office desk with a weekly planner showing five highlighted weekdays and two greyed-out weekend days]({{ '/assets/images/how-to-count-days-between-dates-business.webp' | relative_url }})
+![A bright office desk with an open weekly planner showing the five weekdays, a laptop and a coffee cup]({{ '/assets/images/how-to-count-days-between-dates-business.webp' | relative_url }})
 
 ## Business days: skipping weekends
 
-Deadlines usually mean business days, Monday through Friday, excluding public holidays. The manual shortcut: a full Monday-to-Friday week always contributes exactly 5 business days. For longer spans, count complete weeks and multiply by 5, then handle the leftover days one by one.
+Deadlines usually mean business days, Monday through Friday, excluding [public holidays](https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/). The manual shortcut: a full Monday-to-Friday week always contributes exactly 5 business days. For longer spans, count complete weeks and multiply by 5, then handle the leftover days one by one.
 
 **Example:** Monday, March 2 to Friday, March 13, 2026. The calendar span is 11 days, but the business-day count is 10: five days in the first week (March 2 to 6) and five in the second (March 9 to 13).
 
@@ -122,33 +122,9 @@ The last row is a useful sanity check: 24 years at 365 days each is 8,760, and t
 
 Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, and years/months/days, and can also add or subtract days from any date.
 
-## Should I count the end date when counting days between dates?
-
-By default, no. Most tools and conventions count the days between the two dates without including the end date, so January 1 to January 2 is 1 day. If you need both endpoints included, as with some billing or booking situations, add 1 to the result.
-
-### How many days are there between January 1 and December 31, 2026?
-
-There are 364 days between January 1, 2026 and December 31, 2026 using the standard exclusive convention. That is one day short of a full year because 2026 is a common year of 365 days and the count stops one day before January 1, 2027.
-
-### How do I count business days between two dates?
-
-Count only Monday through Friday and skip weekends, then subtract any public holidays that fall inside the range. Every complete week contributes exactly 5 business days, so count full weeks first and then handle the remaining days one by one.
-
-### Does February 29 count as a day between two dates?
-
-Yes. Day counts use real calendar days, so if February 29 falls inside your range it adds one day. A range that crosses February in a leap year is one day longer than the same range in a common year.
-
-### Why is my day count off by one?
-
-Almost always because of the inclusive versus exclusive convention. If you counted both the start and end dates, your result is exactly one higher than the standard count, which excludes the end date. Deciding the convention before you count prevents the discrepancy.
-
 ## Related guides
 
 - [What Is a Leap Year?]({{ '/blog/what-is-a-leap-year/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
-
-## Sources
-
-- US House of Representatives, Office of the Law Revision Counsel: [Federal Rule of Civil Procedure 6, Computing and Extending Time](https://uscode.house.gov/view.xhtml?path=&req=granuleid%3AUSC-1999-title28a-node79-node85-rule6&f=&fq=&num=0&hl=false&edition=1999)
 
 </div>
