@@ -39,6 +39,8 @@ Most years have 365 days. Leap years, which occur roughly every four years, add 
 
 The full rule: a year is a leap year if divisible by 4, except century years, which must also be divisible by 400. That is why 2000 was a leap year but 1900 was not.
 
+![A ribbon timeline divided into twelve segments representing the twelve months of a year]({{ '/assets/images/how-many-days-in-a-year-months.webp' | relative_url }})
+
 ## Days in each month
 
 | Month | Days |
@@ -63,6 +65,8 @@ A classic memory aid is the knuckle trick. Make a fist and count the months acro
 The "divisible by 400" exception is easy to dismiss until you see its effect at scale. Without it, every century year would be a leap year, and the calendar would gain about three extra days per 400 years. With it, each 400-year cycle contains exactly 97 leap years instead of 100, tuning the average year to 365.2425 days.
 
 In practice this means: 2000 had a February 29, 2100 will not, and neither will 2200 or 2300. If you are computing spans that cross 2100, say a long-range projection or a very long payment schedule, those missing leap days change the total. For everyday spans under a century, the only century year that ever matters is 2000, and it behaved normally.
+
+![A wheel showing the four seasons of a year: spring blossoms, summer sun, autumn leaves and winter snow]({{ '/assets/images/how-many-days-in-a-year-seasons.webp' | relative_url }})
 
 ## Why the answer is not exactly 365.25
 
