@@ -37,6 +37,8 @@ Your exact age is the time between your date of birth and today, expressed in ye
 
 Months are not equal, birthdays do not always fall on convenient days, and leap years quietly add days. That is why hand calculations go wrong: people subtract the years and stop, forget to check whether this year's birthday has passed, or divide by 30.44 and call the result exact. The three-step method below avoids all of that because it works with real calendar months instead of averages. Walk through it once to understand it, then let a calculator handle the repetition.
 
+![Writing out an age calculation by hand, subtracting years, months and days in columns on a calendar page]({{ '/assets/images/how-to-calculate-age-subtraction.webp' | relative_url }})
+
 ## Step 1: Count full years
 
 Subtract your birth year from the current year. Then check whether your birthday has already happened this year. If it has not, subtract one more year.
@@ -80,6 +82,8 @@ Years, months, and days are the friendliest format, but sometimes you need the r
 - **Total hours:** 230,904
 
 The day count includes 6 leap days: February 29 of 2004, 2008, 2012, 2016, 2020, and 2024. February 29, 2000 does not count because it fell before the birth date. This is exactly where manual math gets tedious and where our [Age Calculator]({{ '/age-calculator/' | relative_url }}) earns its keep: it sums real calendar days, leap days included, in a fraction of a second.
+
+![A winding path with signposts marking life milestones such as retirement age]({{ '/assets/images/how-to-calculate-age-milestones.webp' | relative_url }})
 
 ## Full retirement age by birth year
 
