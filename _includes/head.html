@@ -1,17 +1,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | Free Date and Time Tools{% endif %}</title>
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<title>{% if page.meta_title %}{{ page.meta_title }} | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | Free Date and Time Tools{% endif %}</title>
+<meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:title" content="{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-{% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">
+{% assign og_image = page.featured_image | default: page.image %}{% if og_image %}<meta property="og:image" content="{{ og_image | absolute_url }}">
+<meta property="og:image:alt" content="{{ page.image_alt | default: page.title | escape }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ page.image | absolute_url }}">{% else %}<meta name="twitter:card" content="summary">{% endif %}
+<meta name="twitter:image" content="{{ og_image | absolute_url }}">
+<meta name="twitter:image:alt" content="{{ page.image_alt | default: page.title | escape }}">{% else %}<meta name="twitter:card" content="summary">{% endif %}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E6B62'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23FAF6EF' stroke-width='5'/%3E%3Cpath d='M32 22v10l7 5' fill='none' stroke='%23E9A13B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,20 +37,39 @@
   "description": "Free online date and time tools: age calculator, date difference calculator, countdown timer, stopwatch, and time zone converter."
 }
 </script>
-{% if page.layout == "post" and page.faq %}
+{% if page.layout == "post" and page.faqs_raw and page.faqs_raw != "" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {% for item in page.faq %}{
-      "@type": "Question",
-      "name": {{ item.q | jsonify }},
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": {{ item.a | jsonify }}
-      }
-    }{% unless forloop.last %},{% endunless %}
+    {% assign faq_blocks = page.faqs_raw | split: "---" %}
+    {% assign first_faq = true %}
+    {% for block in faq_blocks %}
+      {% assign raw_lines = block | newline_to_br | split: "<br />" %}
+      {% assign q = "" %}
+      {% assign q_found = false %}
+      {% capture a %}{% endcapture %}
+      {% for l in raw_lines %}
+        {% assign clean_l = l | strip %}
+        {% if clean_l != "" %}
+          {% if q_found == false %}
+            {% assign q = clean_l %}
+            {% assign q_found = true %}
+          {% else %}
+            {% capture a %}{{ a }}{% unless a == "" %} {% endunless %}{{ clean_l }}{% endcapture %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% if q != "" %}{% unless first_faq %},{% endunless %}
+      {
+        "@type": "Question",
+        "name": {{ q | jsonify }},
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": {{ a | jsonify }}
+        }
+      }{% assign first_faq = false %}{% endif %}
     {% endfor %}
   ]
 }
@@ -67,8 +88,8 @@
     "@type": "Person",
     "name": "Zaid",
     "url": "{{ '/about/' | absolute_url }}"
-  },{% if page.image %}
-  "image": "{{ page.image | absolute_url }}",{% endif %}
+  },{% assign bp_image = page.featured_image | default: page.image %}{% if bp_image %}
+  "image": "{{ bp_image | absolute_url }}",{% endif %}
   "publisher": {
     "@type": "Organization",
     "name": "AgeDateCalc",
