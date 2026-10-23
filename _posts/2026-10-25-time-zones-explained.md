@@ -37,6 +37,8 @@ The world is divided into 24 main time zones, each roughly 15 degrees of longitu
 
 **UTC (Coordinated Universal Time)** is the standard every time zone is measured against. Zones are written as offsets: UTC-5 (New York in winter), UTC+0 (London in winter), UTC+9 (Tokyo).
 
+![A globe with the glowing prime meridian line passing through an observatory and clock tower]({{ '/assets/images/time-zones-explained-meridian.webp' | relative_url }})
+
 ## How offsets work: a worked example
 
 Converting between zones is just addition and subtraction through UTC.
@@ -81,6 +83,8 @@ Daylight saving moves clocks forward one hour in spring and back in autumn. Two 
 Notice the gaps: for about three weeks each spring and one week each autumn, the US and Europe are out of sync relative to their winter difference. A standing 3 PM London / 10 AM New York meeting quietly becomes 3 PM / 11 AM during those windows. This is the single most common cause of "the meeting time changed and nobody told me."
 
 Many tropical countries skip DST entirely, since daylight hours barely change near the equator, and some countries have abolished it after trying it. Never assume a zone observes DST; check the current rules.
+
+![A Pacific map with the zigzag international date line and two islands, one in daylight and one at night]({{ '/assets/images/time-zones-explained-date-line.webp' | relative_url }})
 
 ## The international date line
 
