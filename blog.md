@@ -18,6 +18,7 @@ permalink: /blog/
     <div class="guides-grid">
       {% for post in site.posts %}
       <a class="guide-card" href="{{ post.url | relative_url }}">
+        {% if post.image %}<img class="guide-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" width="1200" height="630" loading="lazy">{% endif %}
         <div class="guide-body">
           <span class="guide-tag">{{ post.category | default: "Guide" }}</span>
           <h3>{{ post.title }}</h3>
