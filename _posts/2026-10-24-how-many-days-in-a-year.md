@@ -1,37 +1,61 @@
 ---
 layout: post
 title: How Many Days Are in a Year? 365 vs 366 Explained
-description: Is it 365 or 366 days in a year? Learn when each applies, how leap years decide it, and why the answer matters for age and date math.
-image: /assets/images/how-many-days-in-a-year.webp
-faq:
-  - q: "How many days are in a leap year?"
-    a: "A leap year has 366 days. The extra day is February 29, which is added to keep the calendar in step with Earth's orbit."
-  - q: "How often do leap years happen?"
-    a: "Leap years happen roughly every four years. A year is a leap year if it divides evenly by 4, except century years, which must also divide by 400. The most recent leap year was 2024, and the next one is 2028."
-  - q: "How many days are in 2026?"
-    a: "2026 has 365 days. It is a common year because 2026 does not divide evenly by 4, so February 2026 has 28 days."
-  - q: "Why does February have 29 days in a leap year?"
-    a: "Because Earth's orbit takes about 365.2422 days, not exactly 365. Adding February 29 roughly every four years makes up the difference and stops the calendar from drifting against the seasons."
-  - q: "How many weeks are in a year?"
-    a: "A common year has 52 weeks and 1 extra day, since 52 times 7 is 364. A leap year has 52 weeks and 2 extra days."
-permalink: /blog/how-many-days-in-a-year/
+slug: how-many-days-in-a-year
+date: '2026-10-24'
+status: Published
+author: Zaid
 category: Date Guides
+tags:
+- days in a year
+- leap year
+- calendar
+primary_keyword: how many days in a year
+secondary_keywords:
+- days in each month
+- 365 or 366 days
+meta_title: How Many Days Are in a Year? 365 vs 366 Explained
+meta_description: Is it 365 or 366 days in a year? Learn when each applies, how leap years decide it, and why the answer matters for age and date math.
+excerpt: Is it 365 or 366 days in a year? Learn when each applies, how leap years decide it, and why the answer matters for age and date math.
+featured_image: /assets/images/how-many-days-in-a-year.webp
+image_alt: Two calendar pages side by side, one for a 365-day common year and one for a 366-day leap year with February 29 marked
+read_time: 5 min read
+faqs_raw: 'How many days are in a leap year?
+
+  A leap year has 366 days. The extra day is February 29, which is added to keep the calendar in step with Earth''s orbit.
+
+  ---
+
+  How often do leap years happen?
+
+  Leap years happen roughly every four years. A year is a leap year if it divides evenly by 4, except century years, which must also divide by 400. The most recent leap year was 2024, and the next one is 2028.
+
+  ---
+
+  How many days are in 2026?
+
+  2026 has 365 days. It is a common year because 2026 does not divide evenly by 4, so February 2026 has 28 days.
+
+  ---
+
+  Why does February have 29 days in a leap year?
+
+  Because Earth''s orbit takes about 365.2422 days, not exactly 365. Adding February 29 roughly every four years makes up the difference and stops the calendar from drifting against the seasons.
+
+  ---
+
+  How many weeks are in a year?
+
+  A common year has 52 weeks and 1 extra day, since 52 times 7 is 364. A leap year has 52 weeks and 2 extra days.'
+permalink: /blog/how-many-days-in-a-year/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
-schema: |
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "How Many Days Are in a Year? 365 vs 366 Explained",
-    "author": { "@type": "Organization", "name": "AgeDateCalc" }
-  }
+schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"How Many Days Are in a Year? 365 vs 366 Explained\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}"
 ---
 
 <div class="prose" markdown="1">
 
 **Short answer:** a common year has 365 days, and a leap year has 366.
-
-![Two calendar pages side by side, one for a 365-day common year and one for a 366-day leap year with February 29 marked]({{ '/assets/images/how-many-days-in-a-year.webp' | relative_url }})
 
 ## When each applies
 
@@ -87,9 +111,7 @@ Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts every leap 
 
 Astronomers use several different "years." The tropical year (365.2422 days) is what the calendar tracks. The sidereal year (365.2564 days) measures one full orbit relative to the stars. And calendar history has oddities: when Britain adopted the Gregorian calendar in 1752, the year had only 355 days because 11 days were skipped outright. For every modern calculation, though, the answer stays 365 or 366.
 
-## Frequently asked questions
-
-### How many days are in a leap year?
+## How many days are in a leap year?
 
 A leap year has 366 days. The extra day is February 29, which is added to keep the calendar in step with Earth's orbit.
 
