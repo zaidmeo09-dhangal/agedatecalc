@@ -76,15 +76,21 @@ layout: default
       {% endif %}
     </article>
   </div>
-  {% if page.tool_url %}
-  <div class="wrap" style="max-width:760px;margin:40px auto 0;padding:0 20px">
-    <div class="legal-card cta-card">
-      <h2>Try it yourself</h2>
-      <p>Skip the manual math. Our free {{ page.tool_name }} does this instantly, no sign-up needed.</p>
-      <a class="btn btn-primary" href="{{ page.tool_url | relative_url }}">Open {{ page.tool_name }}</a>
+</section>
+
+<section class="post-cta" aria-labelledby="post-cta-heading">
+  <div class="wrap post-cta-wrap">
+    <h2 id="post-cta-heading">Put the guide into practice</h2>
+    {% if page.tool_url %}
+    <p>Skip the manual math. Our free {{ page.tool_name }} does this instantly, no sign-up needed.</p>
+    {% else %}
+    <p>Use AgeDateCalc tools to calculate your exact age, count days between dates, run countdowns and stopwatches, and convert time zones.</p>
+    {% endif %}
+    <div class="post-cta-actions">
+      {% if page.tool_url %}<a class="post-cta-primary" href="{{ page.tool_url | relative_url }}">Open {{ page.tool_name }}</a>{% else %}<a class="post-cta-primary" href="{{ '/tools/' | relative_url }}">Browse All Tools</a>{% endif %}
+      <a class="post-cta-secondary" href="{{ '/blog/' | relative_url }}">Read More Guides</a>
     </div>
   </div>
-  {% endif %}
 </section>
 
 <script>
