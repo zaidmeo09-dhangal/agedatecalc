@@ -18,7 +18,7 @@ meta_title: What Is a Leap Year? Simple Rules Explained
 meta_description: Why does February sometimes have 29 days? Learn the three leap year rules, why leap years exist, and how they affect age and date calculations.
 excerpt: Why does February sometimes have 29 days? Learn the three leap year rules, why leap years exist, and how they affect age and date calculations.
 featured_image: /assets/images/what-is-a-leap-year.webp
-image_alt: A February calendar page in a leap year with February 29 highlighted as the extra leap day
+image_alt: Infographic of a February calendar grid with the 29th day highlighted in a glowing circle and arrows showing the four year leap cycle
 read_time: 5 min read
 faqs_raw: 'Is 2026 a leap year?
 
@@ -65,7 +65,7 @@ Earth takes about 365.25 days to orbit the sun, not exactly 365. Without correct
 
 ## The three leap year rules
 
-A year is a leap year if **any** of these apply in order:
+A year is a [leap year](https://www.timeanddate.com/date/leapyear.html) if **any** of these apply in order:
 
 1. **Divisible by 4:** the year is a leap year (2024, 2028).
 2. **Except centuries:** years divisible by 100 are NOT leap years (1900 was not, 2100 will not be).
@@ -126,33 +126,9 @@ Here is how the three rules play out across recent, upcoming, and century years:
 
 Over each 400-year cycle, the Gregorian rules produce exactly 97 leap years, which is what holds the average year at 365.2425 days.
 
-## Is 2026 a leap year?
-
-No. 2026 is not divisible by 4, so February 2026 has 28 days. The most recent leap year was 2024, and the next one is 2028.
-
-### How often does a leap year occur?
-
-Usually every four years. Century years are the exception: a year divisible by 100 is only a leap year if it is also divisible by 400, which is why the Gregorian calendar produces 97 leap years in every 400-year cycle.
-
-### Was the year 2000 a leap year?
-
-Yes. Although 2000 is a century year, it is divisible by 400, so the third rule applies and February 2000 had 29 days. The century years 1900 and 2100 fail that test and are not leap years.
-
-### Why does February get an extra day in a leap year?
-
-Earth takes about 365.25 days to orbit the sun, roughly a quarter day more than the 365 days on the calendar. Adding February 29 every four years absorbs that extra time and keeps the calendar from drifting away from the seasons.
-
-### What birthday do February 29 babies celebrate in non-leap years?
-
-They celebrate on February 28 or March 1, depending on local custom and law. March 1 is the most common convention, and it is the one most age calculators use.
-
 ## Related guides
 
 - [How to Calculate Your Exact Age]({{ '/blog/how-to-calculate-age/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
-
-## Sources
-
-- timeanddate.com: [leap year rules and list of leap years](https://www.timeanddate.com/date/leapyear.html)
 
 </div>
