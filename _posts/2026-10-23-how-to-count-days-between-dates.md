@@ -1,37 +1,61 @@
 ---
 layout: post
 title: How to Count Days Between Two Dates (Manual Method)
-description: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
-image: /assets/images/how-to-count-days-between-dates.webp
-faq:
-  - q: "Should I count the end date when counting days between dates?"
-    a: "By default, no. Most tools and conventions count the days between the two dates without including the end date, so January 1 to January 2 is 1 day. If you need both endpoints included, as with some billing or booking situations, add 1 to the result."
-  - q: "How many days are there between January 1 and December 31, 2026?"
-    a: "There are 364 days between January 1, 2026 and December 31, 2026 using the standard exclusive convention. That is one day short of a full year because 2026 is a common year of 365 days and the count stops one day before January 1, 2027."
-  - q: "How do I count business days between two dates?"
-    a: "Count only Monday through Friday and skip weekends, then subtract any public holidays that fall inside the range. Every complete week contributes exactly 5 business days, so count full weeks first and then handle the remaining days one by one."
-  - q: "Does February 29 count as a day between two dates?"
-    a: "Yes. Day counts use real calendar days, so if February 29 falls inside your range it adds one day. A range that crosses February in a leap year is one day longer than the same range in a common year."
-  - q: "Why is my day count off by one?"
-    a: "Almost always because of the inclusive versus exclusive convention. If you counted both the start and end dates, your result is exactly one higher than the standard count, which excludes the end date. Deciding the convention before you count prevents the discrepancy."
-permalink: /blog/how-to-count-days-between-dates/
+slug: how-to-count-days-between-dates
+date: '2026-10-23'
+status: Published
+author: Zaid
 category: How-To Guides
+tags:
+- days between dates
+- date difference
+- business days
+primary_keyword: how to count days between dates
+secondary_keywords:
+- days between two dates calculator
+- inclusive vs exclusive counting
+meta_title: How to Count Days Between Two Dates (Manual Method)
+meta_description: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
+excerpt: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
+featured_image: /assets/images/how-to-count-days-between-dates.webp
+image_alt: Two calendar pages side by side showing how to count the days between two dates month by month
+read_time: 6 min read
+faqs_raw: 'Should I count the end date when counting days between dates?
+
+  By default, no. Most tools and conventions count the days between the two dates without including the end date, so January 1 to January 2 is 1 day. If you need both endpoints included, as with some billing or booking situations, add 1 to the result.
+
+  ---
+
+  How many days are there between January 1 and December 31, 2026?
+
+  There are 364 days between January 1, 2026 and December 31, 2026 using the standard exclusive convention. That is one day short of a full year because 2026 is a common year of 365 days and the count stops one day before January 1, 2027.
+
+  ---
+
+  How do I count business days between two dates?
+
+  Count only Monday through Friday and skip weekends, then subtract any public holidays that fall inside the range. Every complete week contributes exactly 5 business days, so count full weeks first and then handle the remaining days one by one.
+
+  ---
+
+  Does February 29 count as a day between two dates?
+
+  Yes. Day counts use real calendar days, so if February 29 falls inside your range it adds one day. A range that crosses February in a leap year is one day longer than the same range in a common year.
+
+  ---
+
+  Why is my day count off by one?
+
+  Almost always because of the inclusive versus exclusive convention. If you counted both the start and end dates, your result is exactly one higher than the standard count, which excludes the end date. Deciding the convention before you count prevents the discrepancy.'
+permalink: /blog/how-to-count-days-between-dates/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
-schema: |
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "How to Count Days Between Two Dates (Manual Method)",
-    "author": { "@type": "Organization", "name": "AgeDateCalc" }
-  }
+schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"How to Count Days Between Two Dates (Manual Method)\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}"
 ---
 
 <div class="prose" markdown="1">
 
 Counting days between dates by hand is straightforward once you know the convention. Here is the method.
-
-![Two calendar pages side by side showing how to count the days between two dates month by month]({{ '/assets/images/how-to-count-days-between-dates.webp' | relative_url }})
 
 ## The basic method
 
@@ -98,9 +122,7 @@ The last row is a useful sanity check: 24 years at 365 days each is 8,760, and t
 
 Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, and years/months/days, and can also add or subtract days from any date.
 
-## Frequently asked questions
-
-### Should I count the end date when counting days between dates?
+## Should I count the end date when counting days between dates?
 
 By default, no. Most tools and conventions count the days between the two dates without including the end date, so January 1 to January 2 is 1 day. If you need both endpoints included, as with some billing or booking situations, add 1 to the result.
 
