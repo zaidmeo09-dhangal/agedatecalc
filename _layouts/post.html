@@ -12,11 +12,10 @@ layout: default
     </nav>
     {% if page.category %}<span class="badge">{{ page.category }}</span>{% endif %}
     <h1>{{ page.title }}</h1>
-    <p class="lead">{{ page.description }}</p>
+    <p class="lead">{{ page.excerpt | default: page.meta_description | default: page.description }}</p>
     <div class="post-meta-pills">
       <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
-      {% assign words = content | number_of_words %}
-      <span class="meta-pill">{{ words | divided_by: 200 | plus: 1 }} min read</span>
+      {% if page.read_time %}<span class="meta-pill">{{ page.read_time }}</span>{% else %}{% assign words = content | number_of_words %}<span class="meta-pill">{{ words | divided_by: 200 | plus: 1 }} min read</span>{% endif %}
       <span class="meta-pill">By {{ page.author | default: "Zaid" }}</span>
     </div>
   </div>
@@ -36,8 +35,45 @@ layout: default
         <ul class="toc-list" id="toc-list"></ul>
       </nav>
     </aside>
-    <article class="post-content prose" id="post-content">
+    <article class="post-article">
+      {% assign feat_img = page.featured_image | default: page.image %}
+      {% if feat_img %}
+      <figure class="post-featured">
+        <img src="{{ feat_img | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" width="1200" height="630">
+      </figure>
+      {% endif %}
+      <div class="post-content prose" id="post-content">
       {{ content }}
+      </div>
+      {% if page.faqs_raw and page.faqs_raw != "" %}
+      <section class="post-faq" aria-labelledby="post-faq-heading">
+        <h2 id="post-faq-heading">Frequently Asked Questions</h2>
+        {% assign faq_blocks = page.faqs_raw | split: "---" %}
+        {% for block in faq_blocks %}
+          {% assign raw_lines = block | newline_to_br | split: "<br />" %}
+          {% assign question = "" %}
+          {% assign question_found = false %}
+          {% capture answer %}{% endcapture %}
+          {% for l in raw_lines %}
+            {% assign clean_l = l | strip %}
+            {% if clean_l != "" %}
+              {% if question_found == false %}
+                {% assign question = clean_l %}
+                {% assign question_found = true %}
+              {% else %}
+                {% capture answer %}{{ answer }}{% unless answer == "" %} {% endunless %}{{ clean_l }}{% endcapture %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          {% if question != "" %}
+          <article class="post-faq-item">
+            <h3>{{ question }}</h3>
+            <p>{{ answer }}</p>
+          </article>
+          {% endif %}
+        {% endfor %}
+      </section>
+      {% endif %}
     </article>
   </div>
   {% if page.tool_url %}
