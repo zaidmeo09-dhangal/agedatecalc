@@ -17,33 +17,38 @@ content:
       primary: title
       sort: date
       order: desc
-      fields: [title, date, permalink]
+      fields: [title, category, date, status]
     fields:
       - name: layout
         label: Layout
         type: string
-        default: default
+        default: post
         hidden: true
       - name: title
         label: Blog Title
         type: string
         required: true
-      - name: description
-        label: Meta Description
-        type: text
-        required: true
-      - name: permalink
-        label: URL Permalink
+      - name: slug
+        label: URL Slug
         type: string
         required: true
-        description: "Example: /how-to-calculate-age/ (leading and trailing slash)"
       - name: date
         label: Publish Date
         type: date
         required: true
+      - name: status
+        label: Status
+        type: select
+        options:
+          values: [Draft, Published]
+      - name: author
+        label: Author
+        type: string
+        default: Zaid
       - name: category
         label: Category
         type: select
+        required: true
         options:
           values:
             - Date Guides
@@ -53,10 +58,44 @@ content:
         label: Tags
         type: string
         list: true
-      - name: schema
-        label: "JSON-LD Schema (optional)"
+      - name: primary_keyword
+        label: Primary Keyword
+        type: string
+      - name: secondary_keywords
+        label: Secondary Keywords
+        type: string
+        list: true
+      - name: meta_title
+        label: Meta Title
+        type: string
+        required: true
+      - name: meta_description
+        label: Meta Description
         type: text
-        description: "Paste Article schema JSON here. Leave empty if none."
+        required: true
+      - name: excerpt
+        label: Blog Card Excerpt
+        type: text
+        required: true
+      - name: featured_image
+        label: Featured Image
+        type: image
+        options:
+          media: images
+          path: assets/images
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: image_alt
+        label: Featured Image Alt Text
+        type: string
+      - name: read_time
+        label: Read Time
+        type: string
+        default: 5 min read
+      - name: faqs_raw
+        label: "FAQs (paste all at once)"
+        type: text
+        description: "Question on its own line, then the answer, then a line with just --- before the next question. See example below the field."
       - name: body
         label: Blog Content
         type: rich-text
