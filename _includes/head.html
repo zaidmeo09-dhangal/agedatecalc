@@ -9,7 +9,9 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta name="twitter:card" content="summary">
+{% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ page.image | absolute_url }}">{% else %}<meta name="twitter:card" content="summary">{% endif %}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E6B62'/%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23FAF6EF' stroke-width='5'/%3E%3Cpath d='M32 22v10l7 5' fill='none' stroke='%23E9A13B' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +35,25 @@
   "description": "Free online date and time tools: age calculator, date difference calculator, countdown timer, stopwatch, and time zone converter."
 }
 </script>
+{% if page.layout == "post" and page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}{
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 {% if page.layout == "post" %}
 <script type="application/ld+json">
 {
@@ -46,7 +67,8 @@
     "@type": "Person",
     "name": "Zaid",
     "url": "{{ '/about/' | absolute_url }}"
-  },
+  },{% if page.image %}
+  "image": "{{ page.image | absolute_url }}",{% endif %}
   "publisher": {
     "@type": "Organization",
     "name": "AgeDateCalc",
