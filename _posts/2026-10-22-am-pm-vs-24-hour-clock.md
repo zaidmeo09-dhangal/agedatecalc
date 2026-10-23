@@ -18,7 +18,7 @@ meta_title: AM/PM vs 24-Hour Clock - Complete Conversion Guide
 meta_description: Confused by 12-hour and 24-hour time? Learn how AM/PM works, how to convert between the two systems, and the tricky cases like 12 AM and 12 PM.
 excerpt: Confused by 12-hour and 24-hour time? Learn how AM/PM works, how to convert between the two systems, and the tricky cases like 12 AM and 12 PM.
 featured_image: /assets/images/am-pm-vs-24-hour-clock.webp
-image_alt: A clock face using the 12-hour dial next to a digital display showing the same time in 24-hour format
+image_alt: Infographic comparing two clock faces side by side, a 12-hour clock with a sun and a 24-hour clock with a moon
 read_time: 5 min read
 faqs_raw: 'What is 12 AM in 24-hour time?
 
@@ -64,7 +64,7 @@ Most of the world writes time in one of two systems. The 12-hour clock splits th
 
 The tricky part: **12 AM is midnight** (the start of the day) and **12 PM is noon**. This is the single most common source of scheduling mistakes.
 
-![A horizon split between a rising morning sun and a night sky with a crescent moon, with a clock in the center]({{ '/assets/images/am-pm-vs-24-hour-clock-day-night.webp' | relative_url }})
+![A landscape split between bright morning sunshine on one side and a dusky night sky with a crescent moon on the other]({{ '/assets/images/am-pm-vs-24-hour-clock-day-night.webp' | relative_url }})
 
 ## The 12 AM trap, explained properly
 
@@ -102,7 +102,7 @@ A handy check: AM comes before PM in the alphabet, and midnight comes before noo
 | 10:00 AM | 10:00 | 10:00 PM | 22:00 |
 | 11:00 AM | 11:00 | 11:00 PM | 23:00 |
 
-![An airplane window, boarding pass and digital clock, where 24-hour time is standard in travel]({{ '/assets/images/am-pm-vs-24-hour-clock-travel.webp' | relative_url }})
+![View from an airplane window above the clouds at golden hour, with a boarding pass and wristwatch on the tray table]({{ '/assets/images/am-pm-vs-24-hour-clock-travel.webp' | relative_url }})
 
 ## Where each system dominates
 
@@ -111,7 +111,7 @@ The 24-hour clock is standard across most of Europe and Asia, and in several fie
 Specific fields made the switch because mistakes there are expensive:
 
 - **Aviation:** flight plans, weather reports, and air traffic control run on 24-hour UTC worldwide. A misread AM/PM at 35,000 feet is not an option.
-- **Military:** orders use 24-hour time ("report at oh-four-hundred hours") for the same reason.
+- **[Military](https://www.timeanddate.com/time/military-time.html):** orders use 24-hour time ("report at oh-four-hundred hours") for the same reason.
 - **Hospitals:** medication schedules and shift handovers use 24-hour time to prevent dosing errors.
 - **Computing:** server logs, booking systems, and code (cron jobs, timestamps) all use 24-hour time.
 
@@ -129,33 +129,9 @@ Going the other way, subtract 12 from any hour above 12 (18:00 becomes 6 PM), an
 
 When scheduling anything important across time zones, write the time in 24-hour format or spell it out ("midnight" / "noon"). Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) shows converted times clearly so nothing gets lost.
 
-## What is 12 AM in 24-hour time?
-
-12 AM is 00:00 in 24-hour time. It is midnight, the very start of the day, so the first hour of the day runs from 00:00 to 00:59.
-
-### Is 12 PM noon or midnight?
-
-12 PM is noon, the middle of the day. 12 AM is midnight. A quick way to remember it: AM comes before PM in the alphabet, and midnight comes before noon in the day.
-
-### How do I convert 7 PM to 24-hour time?
-
-Add 12 to the hour, so 7 PM becomes 19:00. The rule works for every PM time except 12 PM, which stays 12:00 because it is already noon.
-
-### What is 18:00 in 12-hour time?
-
-18:00 is 6:00 PM. For any 24-hour time from 13:00 to 23:59, subtract 12 from the hour and add PM.
-
-### Why do the military and hospitals use 24-hour time?
-
-Because it removes all AM/PM ambiguity. In aviation, military orders, and medication schedules, misreading a time can cause serious errors, and a single 24-hour scale leaves no room for doubt.
-
 ## Related guides
 
 - [Time Zones Explained]({{ '/blog/time-zones-explained/' | relative_url }})
 - [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }})
-
-## Sources
-
-- National Institute of Standards and Technology: [Time and Frequency Division](https://www.nist.gov/pml/time-and-frequency-division)
 
 </div>
