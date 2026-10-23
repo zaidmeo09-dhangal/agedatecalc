@@ -2,6 +2,18 @@
 layout: post
 title: How to Count Days Between Two Dates (Manual Method)
 description: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
+image: /assets/images/how-to-count-days-between-dates.webp
+faq:
+  - q: "Should I count the end date when counting days between dates?"
+    a: "By default, no. Most tools and conventions count the days between the two dates without including the end date, so January 1 to January 2 is 1 day. If you need both endpoints included, as with some billing or booking situations, add 1 to the result."
+  - q: "How many days are there between January 1 and December 31, 2026?"
+    a: "There are 364 days between January 1, 2026 and December 31, 2026 using the standard exclusive convention. That is one day short of a full year because 2026 is a common year of 365 days and the count stops one day before January 1, 2027."
+  - q: "How do I count business days between two dates?"
+    a: "Count only Monday through Friday and skip weekends, then subtract any public holidays that fall inside the range. Every complete week contributes exactly 5 business days, so count full weeks first and then handle the remaining days one by one."
+  - q: "Does February 29 count as a day between two dates?"
+    a: "Yes. Day counts use real calendar days, so if February 29 falls inside your range it adds one day. A range that crosses February in a leap year is one day longer than the same range in a common year."
+  - q: "Why is my day count off by one?"
+    a: "Almost always because of the inclusive versus exclusive convention. If you counted both the start and end dates, your result is exactly one higher than the standard count, which excludes the end date. Deciding the convention before you count prevents the discrepancy."
 permalink: /blog/how-to-count-days-between-dates/
 category: How-To Guides
 tool_url: /date-difference-calculator/
@@ -18,6 +30,8 @@ schema: |
 <div class="prose" markdown="1">
 
 Counting days between dates by hand is straightforward once you know the convention. Here is the method.
+
+![Two calendar pages side by side showing how to count the days between two dates month by month]({{ '/assets/images/how-to-count-days-between-dates.webp' | relative_url }})
 
 ## The basic method
 
@@ -64,14 +78,48 @@ The same range in a leap year behaves differently: February 27 to March 2, 2024.
 
 Check whether February 29 falls between your dates. In the example above, 2026 is not a leap year, so February contributed 28 days. For a range spanning 2024, February would contribute 29.
 
+## Worked examples
+
+Three longer ranges, counted with the exclusive convention described above:
+
+| Start date | End date | Days between |
+|---|---|---|
+| January 1, 2026 | December 31, 2026 | 364 |
+| December 25, 2019 | July 4, 2026 | 2,383 |
+| February 29, 2000 | February 29, 2024 | 8,766 |
+
+The last row is a useful sanity check: 24 years at 365 days each is 8,760, and the range contains 6 leap days (2004, 2008, 2012, 2016, 2020, and 2024), which brings the total to 8,766.
+
 ## The fast way
 
 Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, and years/months/days, and can also add or subtract days from any date.
 
+## Frequently asked questions
+
+### Should I count the end date when counting days between dates?
+
+By default, no. Most tools and conventions count the days between the two dates without including the end date, so January 1 to January 2 is 1 day. If you need both endpoints included, as with some billing or booking situations, add 1 to the result.
+
+### How many days are there between January 1 and December 31, 2026?
+
+There are 364 days between January 1, 2026 and December 31, 2026 using the standard exclusive convention. That is one day short of a full year because 2026 is a common year of 365 days and the count stops one day before January 1, 2027.
+
+### How do I count business days between two dates?
+
+Count only Monday through Friday and skip weekends, then subtract any public holidays that fall inside the range. Every complete week contributes exactly 5 business days, so count full weeks first and then handle the remaining days one by one.
+
+### Does February 29 count as a day between two dates?
+
+Yes. Day counts use real calendar days, so if February 29 falls inside your range it adds one day. A range that crosses February in a leap year is one day longer than the same range in a common year.
+
+### Why is my day count off by one?
+
+Almost always because of the inclusive versus exclusive convention. If you counted both the start and end dates, your result is exactly one higher than the standard count, which excludes the end date. Deciding the convention before you count prevents the discrepancy.
+
 ## Related guides
 
-- [What Is a Leap Year?]({{ '/what-is-a-leap-year/' | relative_url }})
-- [How Many Days Are in a Year?]({{ '/how-many-days-in-a-year/' | relative_url }})
+- [What Is a Leap Year?]({{ '/blog/what-is-a-leap-year/' | relative_url }})
+- [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
 
 ## Sources
 
