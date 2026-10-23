@@ -37,6 +37,8 @@ A leap year is a year with 366 days instead of 365. The extra day, February 29, 
 
 Earth takes about 365.25 days to orbit the sun, not exactly 365. Without correction, the calendar would drift by about one day every four years. After a century, seasons would slide by nearly a month. Adding one day every four years absorbs most of that drift.
 
+![Earth at four positions in its orbit around the sun, showing why a year is about 365.25 days and leap years exist]({{ '/assets/images/what-is-a-leap-year-orbit.webp' | relative_url }})
+
 ## The three leap year rules
 
 A year is a leap year if **any** of these apply in order:
@@ -46,6 +48,8 @@ A year is a leap year if **any** of these apply in order:
 3. **Except 400s:** years divisible by 400 ARE leap years anyway (2000 was, 2400 will be).
 
 So 2024 was a leap year, 2026 is not, and 2000 was one despite being a century year.
+
+![Three calendar pages being checked against the leap year rules with checkmarks and a cross]({{ '/assets/images/what-is-a-leap-year-rules.webp' | relative_url }})
 
 ## The century test: 1900 vs 2000
 
