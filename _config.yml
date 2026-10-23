@@ -9,6 +9,16 @@ baseurl: "/agedatecalc"
 # Publish posts dated in the future immediately (all 6 articles go live now)
 future: true
 
+# Defaults for blog posts created in PagesCMS: layout and /blog/slug/ URL
+# are automatic, so new posts only need the fields in .pages.yml
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/blog/:title/"
+
 # Build settings
 markdown: kramdown
 plugins:
