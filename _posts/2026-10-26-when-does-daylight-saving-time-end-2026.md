@@ -18,7 +18,7 @@ meta_title: When Does Daylight Saving Time End in 2026?
 meta_description: Daylight saving time ends on Sunday, November 1, 2026 at 2:00 AM. Here is what changes, which states skip it, and the 2027 schedule.
 excerpt: Daylight saving time ends on Sunday, November 1, 2026 at 2:00 AM. Here is what changes, which states skip it, and the 2027 schedule.
 featured_image: /assets/images/dst-end-2026.webp
-image_alt: A wall clock falling back one hour surrounded by autumn leaves
+image_alt: A wall clock on a wooden wall surrounded by orange autumn leaves in warm afternoon light
 read_time: 4 min read
 faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
 
@@ -55,7 +55,7 @@ schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n
 
 <div class="prose" markdown="1">
 
-Daylight saving time ends on **Sunday, November 1, 2026, at 2:00 AM local time**. At that moment clocks fall back one hour to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter.
+Daylight saving time ends on **Sunday, November 1, 2026, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter.
 
 If you are reading this in late October, the change is days away. Set a reminder now, because the devices you forget about are always the ones that stay wrong for a week.
 
@@ -78,7 +78,7 @@ Everywhere else in the US, including all major cities, falls back on November 1.
 
 ## The 2026 and 2027 schedule
 
-US daylight saving runs from the second Sunday of March to the first Sunday of November:
+[US daylight saving](https://www.timeanddate.com/time/change/usa) runs from the second Sunday of March to the first Sunday of November:
 
 | Year | Starts (spring forward) | Ends (fall back) |
 |---|---|---|
@@ -100,29 +100,5 @@ Europe follows a different rhythm (last Sunday of March to last Sunday of Octobe
 ## Counting down to the switch
 
 Want to see exactly how much time is left? Drop November 1, 2026, 2:00 AM into our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) and watch the days tick down. Handy for shift planners and anyone coordinating the change across time zones.
-
-## Do we gain or lose an hour when daylight saving ends?
-
-You gain an hour. Clocks fall back from 2:00 AM to 1:00 AM, so the night is 25 hours long and you get an extra hour of sleep.
-
-### Why do we still change the clocks?
-
-The US has observed daylight saving under the Uniform Time Act of 1966, with the current March-to-November schedule set by the Energy Policy Act of 2005. Bills to make daylight saving permanent have been introduced in Congress but none has become law, so the twice-yearly switch continues.
-
-### Does Arizona observe daylight saving time?
-
-No. Arizona stays on Mountain Standard Time (UTC-7) year-round, except the Navajo Nation in the northeastern part of the state, which does observe it. Hawaii also skips daylight saving entirely.
-
-### What time exactly does the clock change?
-
-2:00 AM local time on Sunday, November 1, 2026. Clocks move back to 1:00 AM. The change happens in each time zone at its own local 2:00 AM, so it ripples across the country from east to west.
-
-### When does daylight saving start again in 2027?
-
-Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM.
-
-## Sources
-
-- timeanddate.com: [daylight saving time schedule](https://www.timeanddate.com/time/dst/)
 
 </div>
