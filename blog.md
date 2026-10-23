@@ -18,11 +18,11 @@ permalink: /blog/
     <div class="guides-grid">
       {% for post in site.posts %}
       <a class="guide-card" href="{{ post.url | relative_url }}">
-        {% if post.image %}<img class="guide-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" width="1200" height="630" loading="lazy">{% endif %}
+        {% assign thumb = post.featured_image | default: post.image %}{% if thumb %}<img class="guide-thumb" src="{{ thumb | relative_url }}" alt="{{ post.image_alt | default: post.title }}" width="1200" height="630" loading="lazy">{% endif %}
         <div class="guide-body">
           <span class="guide-tag">{{ post.category | default: "Guide" }}</span>
           <h3>{{ post.title }}</h3>
-          <p>{{ post.description }}</p>
+          <p>{{ post.excerpt | default: post.meta_description | default: post.description }}</p>
           <span class="guide-date">{{ post.date | date: "%B %-d, %Y" }}</span>
         </div>
       </a>
