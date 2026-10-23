@@ -43,6 +43,8 @@ Counting days between dates by hand is straightforward once you know the convent
 
 **Worked example:** January 10 to March 5, 2026. January has 31 days, so 21 remain after the 10th. February 2026 has 28 days. March contributes 5. Total: 21 + 28 + 5 = 54 days.
 
+![Counting days on fingers with small calendar squares above each fingertip]({{ '/assets/images/how-to-count-days-between-dates-counting.webp' | relative_url }})
+
 ## Inclusive vs exclusive: the off-by-one trap
 
 Most tools count **exclusive** of the end date: January 1 to January 2 is 1 day. If you need both endpoints counted (common for booking nights or project billing), add 1 to the result. Always confirm which convention your situation needs, because this single choice causes most "my count is off by one" complaints.
@@ -57,6 +59,8 @@ Most tools count **exclusive** of the end date: January 1 to January 2 is 1 day.
 - **Countdowns:** "5 days until Friday" said on a Sunday is exclusive counting. Said on Monday morning, some people mean 4.
 
 When the count matters, state the convention out loud: "4 nights" or "5 days inclusive." It takes five seconds and prevents most disputes.
+
+![An office desk with a weekly planner showing five highlighted weekdays and two greyed-out weekend days]({{ '/assets/images/how-to-count-days-between-dates-business.webp' | relative_url }})
 
 ## Business days: skipping weekends
 
