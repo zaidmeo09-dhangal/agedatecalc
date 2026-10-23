@@ -14,7 +14,7 @@
           {% assign post = site.posts | where: "url", url | first %}
           {% if post %}
           <a class="guide-card strip-card" href="{{ post.url | relative_url }}">
-            {% if post.image %}<img class="guide-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}" width="1200" height="630" loading="lazy">{% endif %}
+            {% assign thumb = post.featured_image | default: post.image %}{% if thumb %}<img class="guide-thumb" src="{{ thumb | relative_url }}" alt="{{ post.image_alt | default: post.title }}" width="1200" height="630" loading="lazy">{% endif %}
             <div class="guide-body">
               <span class="guide-tag">{{ post.category | default: "Guide" }}</span>
               <h3>{{ post.title }}</h3>
