@@ -2,6 +2,18 @@
 layout: post
 title: AM/PM vs 24-Hour Clock - Complete Conversion Guide
 description: Confused by 12-hour and 24-hour time? Learn how AM/PM works, how to convert between the two systems, and the tricky cases like 12 AM and 12 PM.
+image: /assets/images/am-pm-vs-24-hour-clock.webp
+faq:
+  - q: "What is 12 AM in 24-hour time?"
+    a: "12 AM is 00:00 in 24-hour time. It is midnight, the very start of the day, so the first hour of the day runs from 00:00 to 00:59."
+  - q: "Is 12 PM noon or midnight?"
+    a: "12 PM is noon, the middle of the day. 12 AM is midnight. A quick way to remember it: AM comes before PM in the alphabet, and midnight comes before noon in the day."
+  - q: "How do I convert 7 PM to 24-hour time?"
+    a: "Add 12 to the hour, so 7 PM becomes 19:00. The rule works for every PM time except 12 PM, which stays 12:00 because it is already noon."
+  - q: "What is 18:00 in 12-hour time?"
+    a: "18:00 is 6:00 PM. For any 24-hour time from 13:00 to 23:59, subtract 12 from the hour and add PM."
+  - q: "Why do the military and hospitals use 24-hour time?"
+    a: "Because it removes all AM/PM ambiguity. In aviation, military orders, and medication schedules, misreading a time can cause serious errors, and a single 24-hour scale leaves no room for doubt."
 permalink: /blog/am-pm-vs-24-hour-clock/
 category: Time Guides
 tool_url: /time-zone-converter/
@@ -18,6 +30,8 @@ schema: |
 <div class="prose" markdown="1">
 
 Most of the world writes time in one of two systems. The 12-hour clock splits the day into AM and PM. The 24-hour clock counts all the way from 00:00 to 23:59.
+
+![A clock face using the 12-hour dial next to a digital display showing the same time in 24-hour format]({{ '/assets/images/am-pm-vs-24-hour-clock.webp' | relative_url }})
 
 ## How the 12-hour clock works
 
@@ -87,10 +101,32 @@ Going the other way, subtract 12 from any hour above 12 (18:00 becomes 6 PM), an
 
 When scheduling anything important across time zones, write the time in 24-hour format or spell it out ("midnight" / "noon"). Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) shows converted times clearly so nothing gets lost.
 
+## Frequently asked questions
+
+### What is 12 AM in 24-hour time?
+
+12 AM is 00:00 in 24-hour time. It is midnight, the very start of the day, so the first hour of the day runs from 00:00 to 00:59.
+
+### Is 12 PM noon or midnight?
+
+12 PM is noon, the middle of the day. 12 AM is midnight. A quick way to remember it: AM comes before PM in the alphabet, and midnight comes before noon in the day.
+
+### How do I convert 7 PM to 24-hour time?
+
+Add 12 to the hour, so 7 PM becomes 19:00. The rule works for every PM time except 12 PM, which stays 12:00 because it is already noon.
+
+### What is 18:00 in 12-hour time?
+
+18:00 is 6:00 PM. For any 24-hour time from 13:00 to 23:59, subtract 12 from the hour and add PM.
+
+### Why do the military and hospitals use 24-hour time?
+
+Because it removes all AM/PM ambiguity. In aviation, military orders, and medication schedules, misreading a time can cause serious errors, and a single 24-hour scale leaves no room for doubt.
+
 ## Related guides
 
-- [Time Zones Explained]({{ '/time-zones-explained/' | relative_url }})
-- [How to Count Days Between Two Dates]({{ '/how-to-count-days-between-dates/' | relative_url }})
+- [Time Zones Explained]({{ '/blog/time-zones-explained/' | relative_url }})
+- [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }})
 
 ## Sources
 
