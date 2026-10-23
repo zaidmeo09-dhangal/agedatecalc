@@ -2,6 +2,18 @@
 layout: post
 title: Time Zones Explained - UTC, GMT, and Daylight Saving
 description: What are time zones, how do UTC and GMT differ, and what is daylight saving? A plain-language guide with practical conversion tips.
+image: /assets/images/time-zones-explained.webp
+faq:
+  - q: "How many time zones are there in the world?"
+    a: "The world is divided into 24 main time zones, each roughly 15 degrees of longitude wide. Some regions use half-hour or 45-minute offsets, so the number of distinct local times is higher than 24."
+  - q: "What is the difference between GMT and UTC?"
+    a: "On a clock they read the same. GMT is a time zone used in the UK during winter, while UTC is the precise scientific standard that all time zones are measured against."
+  - q: "How many time zones does the United States have?"
+    a: "The 50 states span six main time zones: Eastern, Central, Mountain, Pacific, Alaska, and Hawaii. Most states also observe daylight saving time, so their offsets change twice a year."
+  - q: "What does UTC-5 mean?"
+    a: "UTC-5 means a place is five hours behind Coordinated Universal Time. New York uses UTC-5 on standard time in winter and UTC-4 on daylight time in summer."
+  - q: "Why do some places not observe daylight saving time?"
+    a: "Daylight saving offers little benefit near the equator, where daylight hours barely change across the year. Arizona and Hawaii stay on standard time all year for this reason."
 permalink: /blog/time-zones-explained/
 category: Time Guides
 tool_url: /time-zone-converter/
@@ -18,6 +30,8 @@ schema: |
 <div class="prose" markdown="1">
 
 The world is divided into 24 main time zones, each roughly 15 degrees of longitude wide. As Earth rotates, different regions face the sun at different times, so noon in New York is morning in Los Angeles and evening in London.
+
+![A world map divided into vertical time zone bands, with clocks showing different local times in New York, London, and Tokyo]({{ '/assets/images/time-zones-explained.webp' | relative_url }})
 
 ## UTC: the global reference
 
@@ -37,6 +51,21 @@ So 3 PM in Los Angeles is 6 PM the same day in New York. In July the answer shif
 ## GMT vs UTC
 
 In everyday use they read the same on the clock. The difference: GMT is a time zone used in the UK during winter, while UTC is the precise scientific standard behind all zones. For scheduling, treat them as interchangeable.
+
+## US time zones and their offsets
+
+The 50 states span six main time zones. Each one shifts one hour earlier than the zone to its east, and most move forward one hour during daylight saving time.
+
+| Time zone | Standard time | Daylight time |
+|---|---|---|
+| Eastern | EST (UTC-5) | EDT (UTC-4) |
+| Central | CST (UTC-6) | CDT (UTC-5) |
+| Mountain | MST (UTC-7) | MDT (UTC-6) |
+| Pacific | PST (UTC-8) | PDT (UTC-7) |
+| Alaska | AKST (UTC-9) | AKDT (UTC-8) |
+| Hawaii | HST (UTC-10) | None (no daylight saving) |
+
+Hawaii never changes its clocks, and Arizona stays on Mountain Standard Time all year (the Navajo Nation in the northeast of the state is the exception). So in summer, Arizona matches Pacific Daylight Time even though it never springs forward itself.
 
 ## Daylight saving time (DST)
 
@@ -72,9 +101,31 @@ For scheduling, the rule is simple: whenever a conversion crosses the Pacific, c
 7. **Send calendar invites, not chat messages.** Calendar files carry time zone data, so the invite lands at the right local hour on every device automatically.
 8. **Confirm the day for far-apart zones.** Anything spanning more than about 8 hours of offset can flip the calendar date. A one-line "that is Tuesday your time, right?" prevents the classic miss.
 
+## Frequently asked questions
+
+### How many time zones are there in the world?
+
+The world is divided into 24 main time zones, each roughly 15 degrees of longitude wide. Some regions use half-hour or 45-minute offsets, so the number of distinct local times is higher than 24.
+
+### What is the difference between GMT and UTC?
+
+On a clock they read the same. GMT is a time zone used in the UK during winter, while UTC is the precise scientific standard that all time zones are measured against.
+
+### How many time zones does the United States have?
+
+The 50 states span six main time zones: Eastern, Central, Mountain, Pacific, Alaska, and Hawaii. Most states also observe daylight saving time, so their offsets change twice a year.
+
+### What does UTC-5 mean?
+
+UTC-5 means a place is five hours behind Coordinated Universal Time. New York uses UTC-5 on standard time in winter and UTC-4 on daylight time in summer.
+
+### Why do some places not observe daylight saving time?
+
+Daylight saving offers little benefit near the equator, where daylight hours barely change across the year. Arizona and Hawaii stay on standard time all year for this reason.
+
 ## Related guides
 
-- [AM/PM vs 24-Hour Clock]({{ '/am-pm-vs-24-hour-clock/' | relative_url }})
+- [AM/PM vs 24-Hour Clock]({{ '/blog/am-pm-vs-24-hour-clock/' | relative_url }})
 - [Countdown Timer]({{ '/countdown-timer/' | relative_url }}): track events across zones
 
 ## Sources
