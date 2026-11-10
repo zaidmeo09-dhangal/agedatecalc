@@ -15,7 +15,7 @@ primary_keyword: time zones explained
 secondary_keywords:
 - UTC offsets
 - international date line
-meta_title: Time Zones Explained - UTC, GMT, and Daylight Saving
+meta_title: Time Zones Explained - UTC, GMT and DST
 meta_description: What are time zones, how do UTC and GMT differ, and what is daylight saving? A plain-language guide with practical conversion tips.
 excerpt: What are time zones, how do UTC and GMT differ, and what is daylight saving? A plain-language guide with practical conversion tips.
 featured_image: /assets/images/time-zones-explained.webp
@@ -51,7 +51,6 @@ faqs_raw: 'How many time zones are there in the world?
 permalink: /blog/time-zones-explained/
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
-schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"Time Zones Explained - UTC, GMT, and Daylight Saving\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}"
 ---
 
 <div class="prose" markdown="1">
