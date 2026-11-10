@@ -61,7 +61,7 @@ The world is divided into 24 main time zones, each roughly 15 degrees of longitu
 
 **UTC (Coordinated Universal Time)** is the standard every time zone is measured against. Zones are written as offsets: UTC-5 (New York in winter), UTC+0 (London in winter), UTC+9 (Tokyo).
 
-![A globe with the glowing prime meridian line passing through an observatory and clock tower]({{ '/assets/images/time-zones-explained-meridian.webp' | relative_url }})
+<img src="{{ '/assets/images/time-zones-explained-meridian.webp' | relative_url }}" alt="A globe with the glowing prime meridian line passing through an observatory and clock tower" width="1200" height="630" loading="lazy">
 
 ## How offsets work: a worked example
 
@@ -108,7 +108,7 @@ Notice the gaps: for about three weeks each spring and one week each autumn, the
 
 Many tropical countries skip DST entirely, since daylight hours barely change near the equator, and some countries have abolished it after trying it. Never assume a zone observes DST; check the current rules.
 
-![A Pacific map with the zigzag international date line and two islands, one in daylight and one at night]({{ '/assets/images/time-zones-explained-date-line.webp' | relative_url }})
+<img src="{{ '/assets/images/time-zones-explained-date-line.webp' | relative_url }}" alt="A Pacific map with the zigzag international date line and two islands, one in daylight and one at night" width="1200" height="630" loading="lazy">
 
 ## The international date line
 
