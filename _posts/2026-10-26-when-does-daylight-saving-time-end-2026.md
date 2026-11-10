@@ -3,6 +3,7 @@ layout: post
 title: When Does Daylight Saving Time End in 2027?
 slug: when-does-daylight-saving-time-end
 date: '2026-10-26'
+last_modified_at: 2026-11-10
 status: Published
 author: Zaid
 category: Time Guides
@@ -66,7 +67,7 @@ At 2:00 AM, the clock jumps backward to 1:00 AM. The hour from 1:00 to 2:00 happ
 
 Most phones, computers, and smart devices adjust themselves overnight. The troublemakers are wall clocks, ovens, microwaves, car dashboards, and older alarm clocks. Walk through your home on Sunday morning and fix them in one pass.
 
-![A clock with two curved arrows, springing forward with green leaves and falling back with autumn leaves]({{ '/assets/images/dst-end-2026-spring-fall.webp' | relative_url }})
+<img src="{{ '/assets/images/dst-end-2026-spring-fall.webp' | relative_url }}" alt="A clock with two curved arrows, springing forward with green leaves and falling back with autumn leaves" width="1200" height="630" loading="lazy">
 
 ## Which states do not change their clocks
 
@@ -88,7 +89,7 @@ Everywhere else in the US, including all major cities, falls back on November 7,
 
 Europe follows a different rhythm (last Sunday of March to last Sunday of October), which is why US-Europe meeting times drift for a few weeks each spring and fall. Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) applies the right rules automatically if you schedule across the Atlantic.
 
-![An early autumn sunrise over a farm field on the morning the clocks go back]({{ '/assets/images/dst-end-2026-sunrise.webp' | relative_url }})
+<img src="{{ '/assets/images/dst-end-2026-sunrise.webp' | relative_url }}" alt="An early autumn sunrise over a farm field on the morning the clocks go back" width="1200" height="630" loading="lazy">
 
 ## 5 things to do before the clock changes
 
