@@ -1,11 +1,9 @@
 # AgeDateCalc - Jekyll configuration
 title: AgeDateCalc
 description: Free date and time tools. Calculate your exact age, count days between dates, run countdown timers, and convert time zones. No sign-up needed.
-# Staging on GitHub Pages project URL. When the custom domain is connected,
-# Staging URL (github.io). When agedatecalc.com is purchased:
-# set url: "https://agedatecalc.com" and baseurl: "" again.
-url: "https://zaidmeo09-dhangal.github.io"
-baseurl: "/agedatecalc"
+# Live on the custom domain agedatecalc.com
+url: "https://agedatecalc.com"
+baseurl: ""
 # Publish posts dated in the future immediately (all 6 articles go live now)
 future: true
 
