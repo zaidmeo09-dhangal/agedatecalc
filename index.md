@@ -207,7 +207,7 @@ schema: |
           <p>UTC, GMT, and daylight saving, in plain language.</p>
         </div>
       </a>
-      <a class="guide-card" href="{{ '/blog/when-does-daylight-saving-time-end-2026/' | relative_url }}">
+      <a class="guide-card" href="{{ '/blog/when-does-daylight-saving-time-end/' | relative_url }}">
         <div class="guide-body">
           <span class="guide-tag">Guide</span>
           <h3>When Does Daylight Saving Time End in 2027?</h3>
