@@ -63,7 +63,7 @@ Most of the world writes time in one of two systems. The 12-hour clock splits th
 
 The tricky part: **12 AM is midnight** (the start of the day) and **12 PM is noon**. This is the single most common source of scheduling mistakes.
 
-![A landscape split between bright morning sunshine on one side and a dusky night sky with a crescent moon on the other]({{ '/assets/images/am-pm-vs-24-hour-clock-day-night.webp' | relative_url }})
+<img src="{{ '/assets/images/am-pm-vs-24-hour-clock-day-night.webp' | relative_url }}" alt="A landscape split between bright morning sunshine on one side and a dusky night sky with a crescent moon on the other" width="1200" height="630" loading="lazy">
 
 ## The 12 AM trap, explained properly
 
@@ -101,7 +101,7 @@ A handy check: AM comes before PM in the alphabet, and midnight comes before noo
 | 10:00 AM | 10:00 | 10:00 PM | 22:00 |
 | 11:00 AM | 11:00 | 11:00 PM | 23:00 |
 
-![View from an airplane window above the clouds at golden hour, with a boarding pass and wristwatch on the tray table]({{ '/assets/images/am-pm-vs-24-hour-clock-travel.webp' | relative_url }})
+<img src="{{ '/assets/images/am-pm-vs-24-hour-clock-travel.webp' | relative_url }}" alt="View from an airplane window above the clouds at golden hour, with a boarding pass and wristwatch on the tray table" width="1200" height="630" loading="lazy">
 
 ## Where each system dominates
 
