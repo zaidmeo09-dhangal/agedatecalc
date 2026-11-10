@@ -4,7 +4,7 @@ title: How to Count Days Between Two Dates (Manual Method)
 slug: how-to-count-days-between-dates
 date: '2026-10-23'
 status: Published
-author: Zaid
+author: AgeDateCalc Team
 category: How-To Guides
 tags:
 - days between dates
