@@ -4,7 +4,7 @@ description: Free date and time tools. Calculate your exact age, count days betw
 # Live on the custom domain agedatecalc.com
 url: "https://agedatecalc.com"
 baseurl: ""
-# Publish posts dated in the future immediately (all 6 articles go live now)
+# Publish posts dated in the future immediately (all 7 articles go live now)
 future: true
 
 # Defaults for blog posts created in PagesCMS: layout and /blog/slug/ URL
