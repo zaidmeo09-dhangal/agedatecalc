@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Age Calculator - Exact Age in Years, Months and Days
+meta_title: Age Calculator - Years, Months and Days
 description: Calculate your exact age in years, months, and days. See total days lived, weekday born, and next birthday countdown. Free, no sign-up.
 permalink: /age-calculator/
 schema: |
@@ -213,7 +214,7 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
 </details>
 <details>
 <summary>Can I find my age on a specific past or future date?</summary>
-<p>Yes. Enter your birth date and change the target date from today to any date you choose. This answers questions like "how old will I be on June 1, 2030?" or "how old was I when I graduated?" The same borrowing math applies; only the reference date changes. For the gap between any two dates, the <a href="/agedatecalc/date-difference-calculator/">Date Difference Calculator</a> is the faster tool.</p>
+<p>Yes. Enter your birth date and change the target date from today to any date you choose. This answers questions like "how old will I be on June 1, 2030?" or "how old was I when I graduated?" The same borrowing math applies; only the reference date changes. For the gap between any two dates, the <a href="/date-difference-calculator/">Date Difference Calculator</a> is the faster tool.</p>
 </details>
 <details>
 <summary>Which day of the week was I born on?</summary>
@@ -237,7 +238,7 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
 </details>
 <details>
 <summary>How do I calculate age by hand in years, months, and days?</summary>
-<p>Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our <a href="/agedatecalc/blog/how-to-calculate-age/">step-by-step guide</a> walks through harder cases like month ends.</p>
+<p>Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our <a href="/blog/how-to-calculate-age/">step-by-step guide</a> walks through harder cases like month ends.</p>
 </details>
 </div>
 
@@ -294,13 +295,13 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
     if(d < 0){ mo -= 1; d += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); }
     if(mo < 0){ y -= 1; mo += 12; }
 
-    var totalDays = Math.floor((now - dob) / 86400000);
+    var totalDays = Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(dob.getFullYear(), dob.getMonth(), dob.getDate())) / 86400000);
     var totalMonths = y * 12 + mo;
     var totalWeeks = Math.floor(totalDays / 7);
     var weekday = dob.toLocaleDateString("en-US", { weekday: "long" });
     var next = bday(dob, now.getFullYear());
     if(next <= now){ next = bday(dob, now.getFullYear() + 1); }
-    var daysTo = Math.ceil((next - now) / 86400000);
+    var daysTo = Math.round((Date.UTC(next.getFullYear(), next.getMonth(), next.getDate()) - Date.UTC(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
     var nextStr = next.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
     out.innerHTML =
