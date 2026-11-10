@@ -21,6 +21,7 @@ defaults:
 markdown: kramdown
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Exclude from build
 exclude:
