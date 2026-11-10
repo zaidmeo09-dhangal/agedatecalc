@@ -1,0 +1,28 @@
+# AgeDateCalc
+
+> Free date and time tools. Calculate your exact age, count days between dates, run countdown timers, use a stopwatch, and convert time zones. No sign-up needed.
+
+## Tools
+
+- [Age Calculator](https://agedatecalc.com/age-calculator/): Calculate your exact age in years, months, and days, with day of birth and days to next birthday.
+- [Date Difference Calculator](https://agedatecalc.com/date-difference-calculator/): Count days, weeks, and months between any two dates.
+- [Countdown Timer](https://agedatecalc.com/countdown-timer/): Count down to any future date and time.
+- [Stopwatch](https://agedatecalc.com/stopwatch/): A free online stopwatch with laps.
+- [Time Zone Converter](https://agedatecalc.com/time-zone-converter/): Convert time between zones, with daylight saving time explained.
+
+## Guides
+
+- [How to Calculate Your Exact Age](https://agedatecalc.com/blog/how-to-calculate-age/): Step by step age calculation with worked examples.
+- [What Is a Leap Year?](https://agedatecalc.com/blog/what-is-a-leap-year/): Simple leap year rules with examples.
+- [AM/PM vs 24-Hour Clock](https://agedatecalc.com/blog/am-pm-vs-24-hour-clock/): Conversion guide with examples.
+- [How to Count Days Between Two Dates](https://agedatecalc.com/blog/how-to-count-days-between-dates/): Counting rules with worked examples.
+- [How Many Days Are in a Year?](https://agedatecalc.com/blog/how-many-days-in-a-year/): 365 vs 366 days explained.
+- [Time Zones Explained](https://agedatecalc.com/blog/time-zones-explained/): UTC, GMT, and daylight saving time.
+- [When Does Daylight Saving Time End?](https://agedatecalc.com/blog/when-does-daylight-saving-time-end/): The 2027 US daylight saving schedule.
+
+## Site
+
+- [All Tools](https://agedatecalc.com/tools/)
+- [Blog](https://agedatecalc.com/blog/)
+- [About](https://agedatecalc.com/about/)
+- [Contact](https://agedatecalc.com/contact/)
