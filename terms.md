@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Terms of Service | AgeDateCalc
+meta_title: Terms of Service
 description: The terms for using AgeDateCalc's free date and time tools, including acceptable use, accuracy limits, and advertising disclosure.
 permalink: /terms/
 ---
@@ -40,7 +41,7 @@ permalink: /terms/
 
     <div class="legal-card">
       <h2><span class="licon">📢</span> Advertising</h2>
-      <p style="margin-bottom:0">The site may display third-party advertisements. We do not endorse advertised products or services.</p>
+      <p style="margin-bottom:0">The site currently shows no advertising. If advertising is added in future, it may display third-party advertisements. We do not endorse advertised products or services.</p>
     </div>
 
     <div class="legal-card">
