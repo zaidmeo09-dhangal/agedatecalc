@@ -16,7 +16,7 @@ layout: default
     <div class="post-meta-pills">
       <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
       {% if page.read_time %}<span class="meta-pill">{{ page.read_time }}</span>{% else %}{% assign words = content | number_of_words %}<span class="meta-pill">{{ words | divided_by: 200 | plus: 1 }} min read</span>{% endif %}
-      <span class="meta-pill">By {{ page.author | default: "Zaid" }}</span>
+      <span class="meta-pill">By <a href="{{ '/about/' | relative_url }}">{{ page.author | default: "Zaid" }}</a></span>
     </div>
   </div>
 </section>
@@ -26,7 +26,7 @@ layout: default
     <aside class="post-sidebar">
       <div class="author-card">
         <div class="author-avatar">Z</div>
-        <div class="author-name">{{ page.author | default: "Zaid" }}</div>
+        <div class="author-name"><a href="{{ '/about/' | relative_url }}">{{ page.author | default: "Zaid" }}</a></div>
         <div class="author-role">Founder, AgeDateCalc</div>
         <p class="author-bio">Zaid builds free date and time tools at AgeDateCalc. Every guide is checked against official sources like NIST, the U.S. Naval Observatory, and timeanddate.com so the math you read here matches the math the tools do.</p>
       </div>
