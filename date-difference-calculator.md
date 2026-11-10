@@ -4,6 +4,7 @@ title: Age Calculator Between Two Dates - Date Difference Tool
 meta_title: Age Calculator Between Two Dates - Free
 description: Find the age between two dates in years, months, and days. Count exact days, weeks, and months between any two dates, or add days to a date. Free.
 permalink: /date-difference-calculator/
+breadcrumb: Date Difference Calculator
 schema: |
   {
     "@context": "https://schema.org",
@@ -105,6 +106,11 @@ related_posts:
 
 <section class="hero" style="padding:48px 0 24px">
   <div class="wrap hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> <span>/</span>
+      <a href="{{ '/tools/' | relative_url }}">Tools</a> <span>/</span>
+      <span>{{ page.breadcrumb }}</span>
+    </nav>
     <h1>Date Difference <span class="accent">Calculator</span></h1>
     <p class="lead">An age calculator between two dates: find the exact years, months, and days between any two dates, or count total days, weeks, and months.</p>
     <div class="calc-card">
@@ -176,7 +182,7 @@ More verified examples:
 
 ## Inclusive vs exclusive: the one-day trap
 
-This calculator counts exclusive of the start date: January 1 to January 2 is 1 day, and the same date twice is 0 days. This is the standard convention in spreadsheets and most date tools, and it matches how US federal courts count time periods. Federal Rule of Civil Procedure 6(a)(1) directs courts to "exclude the day of the event that triggers the period" and "count every day, including intermediate Saturdays, Sundays, and legal holidays" ([uscode.house.gov](https://uscode.house.gov/view.xhtml?path=&req=granuleid%3AUSC-1999-title28a-node79-node85-rule6&f=&fq=&num=0&hl=false&edition=1999)).
+This calculator counts exclusive of the start date: January 1 to January 2 is 1 day, and the same date twice is 0 days. This is the standard convention in spreadsheets and most date tools, and it matches how US federal courts count time periods. Federal Rule of Civil Procedure 6(a)(1) directs courts to "exclude the day of the event that triggers the period" and "count every day, including intermediate Saturdays, Sundays, and legal holidays" ([Legal Information Institute](https://www.law.cornell.edu/rules/frcp/rule_6)).
 
 When does it bite? Whenever you count calendar days touched rather than gaps:
 
