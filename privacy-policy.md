@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Privacy Policy | AgeDateCalc
+meta_title: Privacy Policy
 description: How AgeDateCalc handles your data, cookies, and advertising. Our tools run in your browser; we do not collect or sell your inputs.
 permalink: /privacy-policy/
 ---
@@ -32,14 +33,14 @@ permalink: /privacy-policy/
       <p>We use a minimal set of cookies:</p>
       <ul>
         <li><strong>Strictly necessary cookies</strong> that remember basic preferences, such as display settings.</li>
-        <li><strong>Advertising cookies</strong> set by Google AdSense and its partners, used to show relevant ads and measure their performance. Google may use cookies to serve ads based on your prior visits to this and other websites.</li>
+        <li><strong>Advertising cookies</strong> only if advertising is added in future, set by the ad provider and its partners to show relevant ads and measure their performance. No advertising cookies are set today, because the site currently shows no ads.</li>
       </ul>
       <p>You can control cookies through your browser settings, and you can opt out of personalized advertising at Google's Ads Settings page.</p>
     </div>
 
     <div class="legal-card">
       <h2><span class="licon">📢</span> Advertising</h2>
-      <p style="margin-bottom:0">This site may display ads served by Google AdSense. Google's use of advertising cookies enables it and its partners to serve ads based on your visit to this site and other sites on the internet. Learn more in Google's Privacy and Terms.</p>
+      <p style="margin-bottom:0">This site currently shows no advertising. If advertising is added in future, it may be served through Google AdSense. Google's use of advertising cookies would then enable it and its partners to serve ads based on your visit to this site and other sites on the internet. Learn more in Google's Privacy and Terms.</p>
     </div>
 
     <div class="legal-card">
