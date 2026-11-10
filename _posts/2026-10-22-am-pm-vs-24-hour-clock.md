@@ -14,7 +14,7 @@ primary_keyword: AM PM vs 24 hour clock
 secondary_keywords:
 - 12 hour to 24 hour conversion
 - what is 12 AM
-meta_title: AM/PM vs 24-Hour Clock - Complete Conversion Guide
+meta_title: AM/PM vs 24-Hour Clock - Conversion Guide
 meta_description: Confused by 12-hour and 24-hour time? Learn how AM/PM works, how to convert between the two systems, and the tricky cases like 12 AM and 12 PM.
 excerpt: Confused by 12-hour and 24-hour time? Learn how AM/PM works, how to convert between the two systems, and the tricky cases like 12 AM and 12 PM.
 featured_image: /assets/images/am-pm-vs-24-hour-clock.webp
@@ -50,7 +50,6 @@ faqs_raw: 'What is 12 AM in 24-hour time?
 permalink: /blog/am-pm-vs-24-hour-clock/
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
-schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"AM/PM vs 24-Hour Clock - Complete Conversion Guide\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}"
 ---
 
 <div class="prose" markdown="1">
