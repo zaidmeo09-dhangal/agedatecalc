@@ -95,8 +95,8 @@
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
   "author": {
-    "@type": "Person",
-    "name": "Zaid",
+    "@type": "Organization",
+    "name": "AgeDateCalc",
     "url": "{{ '/about/' | absolute_url }}"
   },{% assign bp_image = page.featured_image | default: page.image %}{% if bp_image %}
   "image": "{{ bp_image | absolute_url }}",{% endif %}
