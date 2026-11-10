@@ -3,6 +3,7 @@ layout: default
 title: Countdown Timer - Online Countdown to Any Date
 description: Start a live online countdown to any date and time. Track birthdays, exams, and launches in days, hours, minutes, seconds. Free.
 permalink: /countdown-timer/
+breadcrumb: Countdown Timer
 schema: |
   {
     "@context": "https://schema.org",
@@ -103,6 +104,11 @@ related_posts:
 
 <section class="hero" style="padding:48px 0 24px">
   <div class="wrap hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> <span>/</span>
+      <a href="{{ '/tools/' | relative_url }}">Tools</a> <span>/</span>
+      <span>{{ page.breadcrumb }}</span>
+    </nav>
     <h1>Countdown <span class="accent">Timer</span></h1>
     <p class="lead">Pick a future date and watch the time tick down, live. Perfect for birthdays, exams, holidays, and launches.</p>
     <div class="calc-card">
@@ -152,7 +158,7 @@ Jump straight in with a pre-built countdown. Each link opens the timer already s
 
 The timer records your target as an exact timestamp, then recomputes the remaining time from your device clock on every tick. Because it never counts ticks, display errors cannot accumulate, and reopening the page or refocusing the tab resyncs instantly.
 
-Your device clock itself stays correct through NTP, the protocol the National Institute of Standards and Technology uses to distribute official US time with accuracy around one millisecond ([NIST Internet Time Service](https://data.nist.gov/od/id/25C39B1D2C1549AFE0531A5706812CBC1445/pdr:v/1.0.1)). Practical precision of this countdown is about one second, which is more than enough for any event.
+Your device clock itself stays correct through NTP, the protocol the National Institute of Standards and Technology uses to distribute official US time with accuracy around one millisecond ([NIST Internet Time Service](https://data.nist.gov/pdr/lps/25C39B1D2C1549AFE0531A5706812CBC1445/pdr:v/1.0.1)). Practical precision of this countdown is about one second, which is more than enough for any event.
 
 What to expect in each situation:
 
@@ -162,6 +168,12 @@ What to expect in each situation:
 | Tab in background | May update slower to save battery | Resyncs on return |
 | Page reloaded | Recalculates instantly from the link | Shows on time |
 | Tab closed | No live display | Reopen the share link to check |
+
+## Worked example: counting down to Christmas 2027
+
+Set the timer on January 1, 2027 for Christmas Day, December 25, 2027, and it shows 358 days. December 25 is the 359th day of 2027, which is not a leap year, so the gap from January 1 is 358 days, and Christmas Day itself falls on a Saturday. As each midnight passes, the day count drops by one while the hours, minutes, and seconds keep ticking underneath.
+
+A second check: from Independence Day, July 4, 2027 to New Year, January 1, 2028 is 181 days. Both counts come from the same calendar math the Date Difference Calculator uses, so the two tools always agree.
 
 ## Countdown vs timer: which do you need?
 
