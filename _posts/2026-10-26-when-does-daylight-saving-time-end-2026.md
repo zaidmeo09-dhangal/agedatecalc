@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When Does Daylight Saving Time End in 2026?
+title: When Does Daylight Saving Time End in 2027?
 slug: when-does-daylight-saving-time-end-2026
 date: '2026-10-26'
 status: Published
@@ -9,14 +9,14 @@ category: Time Guides
 tags:
 - daylight saving time
 - fall back
-- DST 2026
-primary_keyword: when does daylight saving time end 2026
+- DST 2027
+primary_keyword: when does daylight saving time end 2027
 secondary_keywords:
-- DST end date 2026
-- clock change November 2026
-meta_title: When Does Daylight Saving Time End in 2026?
-meta_description: Daylight saving time ends on Sunday, November 1, 2026 at 2:00 AM. Here is what changes, which states skip it, and the 2027 schedule.
-excerpt: Daylight saving time ends on Sunday, November 1, 2026 at 2:00 AM. Here is what changes, which states skip it, and the 2027 schedule.
+- DST end date 2027
+- clock change November 2027
+meta_title: When Does Daylight Saving Time End in 2027?
+meta_description: Daylight saving time ends on Sunday, November 7, 2027 at 2:00 AM. Here is the 2027 US schedule, which states skip it, and what changes.
+excerpt: Daylight saving time ends on Sunday, November 7, 2027 at 2:00 AM. Here is the 2027 US schedule, which states skip it, and what changes.
 featured_image: /assets/images/dst-end-2026.webp
 image_alt: A wall clock on a wooden wall surrounded by orange autumn leaves in warm afternoon light
 read_time: 4 min read
@@ -40,7 +40,7 @@ faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
 
   What time exactly does the clock change?
 
-  2:00 AM local time on Sunday, November 1, 2026. Clocks move back to 1:00 AM. The change happens in each time zone at its own local 2:00 AM, so it ripples across the country from east to west.
+  2:00 AM local time on Sunday, November 7, 2027. Clocks move back to 1:00 AM. The change happens in each time zone at its own local 2:00 AM, so it ripples across the country from east to west.
 
   ---
 
@@ -50,16 +50,15 @@ faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
 permalink: /blog/when-does-daylight-saving-time-end-2026/
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
-schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"When Does Daylight Saving Time End in 2026?\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" },\n  \"datePublished\": \"2026-10-26\",\n  \"dateModified\": \"2026-10-26\"\n}"
 ---
 
 <div class="prose" markdown="1">
 
-Daylight saving time ends on **Sunday, November 1, 2026, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter.
+In 2027, daylight saving time ends on **Sunday, November 7, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter. Daylight saving in 2027 runs from Sunday, March 14 to Sunday, November 7.
 
-If you are reading this in late October, the change is days away. Set a reminder now, because the devices you forget about are always the ones that stay wrong for a week.
+The 2026 switch already happened, on November 1, 2026. The next one is November 7, 2027. Set a reminder now, because the devices you forget about are always the ones that stay wrong for a week.
 
-## What actually happens on November 1
+## What actually happens on November 7
 
 At 2:00 AM, the clock jumps backward to 1:00 AM. The hour from 1:00 to 2:00 happens twice. Sunrise and sunset both shift one hour earlier on the clock: mornings get brighter, evenings get darker.
 
@@ -74,7 +73,7 @@ Two states skip daylight saving entirely and stay on standard time all year:
 - **Hawaii** (Hawaii-Aleutian Standard Time, UTC-10)
 - **Arizona** (Mountain Standard Time, UTC-7), except the Navajo Nation in the northeast, which does observe daylight saving
 
-Everywhere else in the US, including all major cities, falls back on November 1.
+Everywhere else in the US, including all major cities, falls back on November 7, 2027.
 
 ## The 2026 and 2027 schedule
 
@@ -92,13 +91,13 @@ Europe follows a different rhythm (last Sunday of March to last Sunday of Octobe
 ## 5 things to do before the clock changes
 
 1. **Check recurring alarms.** A 6:30 AM weekday alarm still rings at 6:30 AM, but your body will feel like it is 5:30 for a few days. Move bedtime 15 minutes earlier for three nights before the switch to soften the landing.
-2. **Confirm Sunday appointments.** Anything scheduled for the early hours of November 1 exists in a duplicated hour. If you have a 1:30 AM commitment (night-shift workers, this means you), clarify which 1:30 with the other party.
+2. **Confirm Sunday appointments.** Anything scheduled for the early hours of November 7 exists in a duplicated hour. If you have a 1:30 AM commitment (night-shift workers, this means you), clarify which 1:30 with the other party.
 3. **Fix the manual clocks.** Oven, microwave, car, wall clocks, thermostats. Do it Sunday morning with coffee, not Monday in a rush.
 4. **Check your car clock against your phone** after the change. Car infotainment systems are the number one source of "my clock is wrong" complaints every November.
 5. **Use the extra hour well.** It is the one day of the year with 25 hours. Go for a walk in the new morning light, or just enjoy the sleep.
 
 ## Counting down to the switch
 
-Want to see exactly how much time is left? Drop November 1, 2026, 2:00 AM into our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) and watch the days tick down. Handy for shift planners and anyone coordinating the change across time zones.
+Want to see exactly how much time is left? Drop November 7, 2027, 2:00 AM into our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) and watch the days tick down. Handy for shift planners and anyone coordinating the change across time zones.
 
 </div>
