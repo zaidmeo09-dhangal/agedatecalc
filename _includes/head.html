@@ -1,6 +1,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6NE2Q4XTM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q6NE2Q4XTM');
+</script>
 <title>{% if page.meta_title %}{{ page.meta_title }} | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} | Free Date and Time Tools{% endif %}</title>
 <meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
