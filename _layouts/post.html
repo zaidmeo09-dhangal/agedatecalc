@@ -17,7 +17,7 @@ layout: default
       <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
       {% if page.last_modified_at %}<span class="meta-pill">Updated {{ page.last_modified_at | date: "%B %-d, %Y" }}</span>{% endif %}
       {% if page.read_time %}<span class="meta-pill">{{ page.read_time }}</span>{% else %}{% assign words = content | number_of_words %}<span class="meta-pill">{{ words | divided_by: 200 | plus: 1 }} min read</span>{% endif %}
-      <span class="meta-pill">By <a href="{{ '/about/' | relative_url }}">{{ page.author | default: "Zaid" }}</a></span>
+      <span class="meta-pill">By <a href="{{ '/about/' | relative_url }}">{{ page.author | default: "AgeDateCalc Team" }}</a></span>
     </div>
   </div>
 </section>
@@ -26,10 +26,10 @@ layout: default
   <div class="wrap post-layout">
     <aside class="post-sidebar">
       <div class="author-card">
-        <div class="author-avatar">Z</div>
-        <div class="author-name"><a href="{{ '/about/' | relative_url }}">{{ page.author | default: "Zaid" }}</a></div>
-        <div class="author-role">Founder, AgeDateCalc</div>
-        <p class="author-bio">Zaid builds free date and time tools at AgeDateCalc. Every guide is checked against official sources like NIST, the U.S. Naval Observatory, and timeanddate.com so the math you read here matches the math the tools do.</p>
+        <div class="author-avatar">A</div>
+        <div class="author-name"><a href="{{ '/about/' | relative_url }}">{{ page.author | default: "AgeDateCalc Team" }}</a></div>
+        <div class="author-role">AgeDateCalc Team</div>
+        <p class="author-bio">The AgeDateCalc team builds free date and time tools. Every guide is checked against official sources like NIST, the U.S. Naval Observatory, and timeanddate.com so the math you read here matches the math the tools do.</p>
       </div>
       <nav class="toc-card" aria-label="Table of contents">
         <div class="toc-title">Table of Contents</div>
