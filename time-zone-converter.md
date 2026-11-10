@@ -4,6 +4,7 @@ title: Time Zone Converter - Convert Time Between Zones
 meta_title: Time Zone Converter - Convert Time Zones
 description: Convert any time between world time zones instantly. Enter a time, pick the source and target zones, and see the converted result. Free, no sign-up.
 permalink: /time-zone-converter/
+breadcrumb: Time Zone Converter
 schema: |
   {
     "@context": "https://schema.org",
@@ -104,6 +105,11 @@ related_posts:
 
 <section class="hero" style="padding:48px 0 24px">
   <div class="wrap hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> <span>/</span>
+      <a href="{{ '/tools/' | relative_url }}">Tools</a> <span>/</span>
+      <span>{{ page.breadcrumb }}</span>
+    </nav>
     <h1>Time Zone <span class="accent">Converter</span></h1>
     <p class="lead">This time zone converter instantly converts any time between world time zones. Never miss a meeting across borders again.</p>
     <div class="calc-card">
