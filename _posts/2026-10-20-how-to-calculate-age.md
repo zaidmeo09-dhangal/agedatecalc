@@ -4,7 +4,7 @@ title: How to Calculate Your Exact Age (Manual Method)
 slug: how-to-calculate-age
 date: '2026-10-20'
 status: Published
-author: Zaid
+author: AgeDateCalc Team
 category: How-To Guides
 tags:
 - age calculator
