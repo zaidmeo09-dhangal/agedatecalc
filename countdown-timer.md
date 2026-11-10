@@ -97,7 +97,7 @@ schema: |
     ]
   }
 related_posts:
-  - /blog/when-does-daylight-saving-time-end-2026/
+  - /blog/when-does-daylight-saving-time-end/
   - /blog/how-many-days-in-a-year/
   - /blog/how-to-count-days-between-dates/
 ---
