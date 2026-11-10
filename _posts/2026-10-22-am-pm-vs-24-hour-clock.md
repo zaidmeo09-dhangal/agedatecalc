@@ -4,7 +4,7 @@ title: AM/PM vs 24-Hour Clock - Complete Conversion Guide
 slug: am-pm-vs-24-hour-clock
 date: '2026-10-22'
 status: Published
-author: Zaid
+author: AgeDateCalc Team
 category: Time Guides
 tags:
 - 24 hour clock
