@@ -1,6 +1,7 @@
 ---
 layout: default
 title: All Free Date and Time Tools | AgeDateCalc
+meta_title: All Free Date and Time Tools
 description: Browse every free date and time tool in one place. Age calculator, date difference, countdown timer, stopwatch, and time zone converter. No sign-up.
 permalink: /tools/
 ---
@@ -18,32 +19,32 @@ permalink: /tools/
     <div class="tools-grid">
       <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
         <div class="tool-icon">🎂</div>
-        <h3>Age Calculator</h3>
-        <p>Your exact age in years, months, and days, plus total days lived and birthday countdown.</p>
+        <h2>Age Calculator</h2>
+        <p>Work out your exact age from any birth date, with total days lived and your next birthday.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
       <a class="tool-card" href="{{ '/date-difference-calculator/' | relative_url }}">
         <div class="tool-icon">📅</div>
-        <h3>Date Difference Calculator</h3>
-        <p>Count the days, weeks, or months between any two dates, or add days to a date.</p>
+        <h2>Date Difference Calculator</h2>
+        <p>See the gap between two dates in years, months, and days, or add days to a date.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
       <a class="tool-card" href="{{ '/countdown-timer/' | relative_url }}">
         <div class="tool-icon">⏳</div>
-        <h3>Countdown Timer</h3>
-        <p>Set any future date and watch the live countdown in days, hours, minutes, and seconds.</p>
+        <h2>Countdown Timer</h2>
+        <p>Pick a date and watch the days, hours, minutes, and seconds tick down live.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
       <a class="tool-card" href="{{ '/stopwatch/' | relative_url }}">
         <div class="tool-icon">⏱️</div>
-        <h3>Stopwatch</h3>
-        <p>A clean online stopwatch with lap times. Great for workouts, study sessions, and races.</p>
+        <h2>Stopwatch</h2>
+        <p>Start, pause, and record laps with a clean stopwatch that runs in your browser.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
       <a class="tool-card" href="{{ '/time-zone-converter/' | relative_url }}">
         <div class="tool-icon">🌍</div>
-        <h3>Time Zone Converter</h3>
-        <p>Convert any time between world time zones instantly. Never miss a meeting again.</p>
+        <h2>Time Zone Converter</h2>
+        <p>Turn any time into another zone's local time, with daylight saving handled.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
     </div>
