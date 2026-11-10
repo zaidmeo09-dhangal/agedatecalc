@@ -4,7 +4,7 @@ title: Time Zones Explained - UTC, GMT, and Daylight Saving
 slug: time-zones-explained
 date: '2026-10-25'
 status: Published
-author: Zaid
+author: AgeDateCalc Team
 category: Time Guides
 tags:
 - time zones
