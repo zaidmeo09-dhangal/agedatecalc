@@ -19,7 +19,7 @@ permalink: /about/
 
     <div class="legal-card legal-summary">
       <h2><span class="licon">👋</span> Who builds this</h2>
-      <p>AgeDateCalc is built and maintained by Zaid, an SEO specialist from Pakistan who creates free online tools. It started as a companion project to a student calculator site Zaid previously built. Every tool on this site is hand-built, tested with real inputs, and kept free on purpose.</p>
+      <p>AgeDateCalc is built and maintained by Zaid, who creates free online tools. Every tool on this site is hand-built, tested with real inputs, and kept free on purpose.</p>
     </div>
 
     <div class="legal-card legal-summary">
