@@ -141,9 +141,9 @@ An online countdown timer counts down to a future date and time you choose, show
 
 Jump straight in with a pre-built countdown. Each link opens the timer already set:
 
-- [Halloween 2026, October 31]({{ '/countdown-timer/' | relative_url }}?to=2026-10-31T00:00&label=Halloween%202026)
-- [Thanksgiving 2026, November 26]({{ '/countdown-timer/' | relative_url }}?to=2026-11-26T00:00&label=Thanksgiving%202026)
-- [Christmas 2026, December 25]({{ '/countdown-timer/' | relative_url }}?to=2026-12-25T00:00&label=Christmas%202026)
+- [Halloween 2027, October 31]({{ '/countdown-timer/' | relative_url }}?to=2027-10-31T00:00&label=Halloween%202027)
+- [Thanksgiving 2027, November 25]({{ '/countdown-timer/' | relative_url }}?to=2027-11-25T00:00&label=Thanksgiving%202027)
+- [Christmas 2027, December 25]({{ '/countdown-timer/' | relative_url }}?to=2027-12-25T00:00&label=Christmas%202027)
 - [New Year 2027, January 1]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027)
 - [Valentine's Day 2027, February 14]({{ '/countdown-timer/' | relative_url }}?to=2027-02-14T00:00&label=Valentine%27s%20Day%202027)
 - [Independence Day 2027, July 4]({{ '/countdown-timer/' | relative_url }}?to=2027-07-04T00:00&label=Independence%20Day%202027)
@@ -196,7 +196,7 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 </details>
 <details>
 <summary>What time zone does the countdown use?</summary>
-<p>Your device's local time zone. Set a countdown to December 25 at midnight and it hits zero at midnight where you are. The share link stores the absolute moment, so if you send it to someone in another time zone, their page converts it and counts down to the same instant. Learn more in <a href="/agedatecalc/blog/time-zones-explained/">Time Zones Explained</a>.</p>
+<p>Your device's local time zone. Set a countdown to December 25 at midnight and it hits zero at midnight where you are. The share link stores the absolute moment, so if you send it to someone in another time zone, their page converts it and counts down to the same instant. Learn more in <a href="/blog/time-zones-explained/">Time Zones Explained</a>.</p>
 </details>
 <details>
 <summary>Why does the countdown show fewer days than I expected?</summary>
@@ -313,11 +313,17 @@ If your countdown crosses a daylight saving change, the day count stays correct 
     var qto = qp.get("to");
     if(qto){
       var qt = new Date(qto);
-      if(!isNaN(qt.getTime()) && qt > new Date()){
-        document.getElementById("cd-target").value = qto.slice(0, 16);
-        var ql = qp.get("label");
-        if(ql){ document.getElementById("cd-name").value = ql.slice(0, 60); }
-        document.getElementById("cd-btn").click();
+      if(!isNaN(qt.getTime())){
+        if(qt > new Date()){
+          document.getElementById("cd-target").value = qto.slice(0, 16);
+          var ql = qp.get("label");
+          if(ql){ document.getElementById("cd-name").value = ql.slice(0, 60); }
+          document.getElementById("cd-btn").click();
+        }else{
+          var pastLabel = qp.get("label");
+          var pastName = pastLabel ? pastLabel.slice(0, 60).replace(/</g, "&lt;") + " - " : "";
+          document.getElementById("cd-result").innerHTML = '<p class="result-note"><strong>' + pastName + 'That date has passed.</strong> Pick a future date to start a new countdown.</p>';
+        }
       }
     }
   }catch(e2){}
