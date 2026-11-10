@@ -19,7 +19,7 @@ permalink: /about/
 
     <div class="legal-card legal-summary">
       <h2><span class="licon">👋</span> Who builds this</h2>
-      <p>AgeDateCalc is built and maintained by Zaid, who creates free online tools. Every tool on this site is hand-built, tested with real inputs, and kept free on purpose.</p>
+      <p>AgeDateCalc is built and maintained by a small team that makes free online tools. Every tool is hand-built, tested with real dates, and checked against official sources before it goes live. The tools run entirely in your browser, so your dates are never sent or stored, and everything here is free on purpose.</p>
     </div>
 
     <div class="legal-card legal-summary">
