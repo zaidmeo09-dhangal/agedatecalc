@@ -3,6 +3,7 @@ layout: default
 title: Online Stopwatch with Lap Times - Free
 description: A clean, free online stopwatch with lap times. Time workouts, study sessions, races, and experiments with start, pause, reset, and lap recording. No sign-up.
 permalink: /stopwatch/
+breadcrumb: Stopwatch
 schema: |
   {
     "@context": "https://schema.org",
@@ -103,6 +104,11 @@ related_posts:
 
 <section class="hero" style="padding:48px 0 24px">
   <div class="wrap hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a> <span>/</span>
+      <a href="{{ '/tools/' | relative_url }}">Tools</a> <span>/</span>
+      <span>{{ page.breadcrumb }}</span>
+    </nav>
     <h1>Online <span class="accent">Stopwatch</span></h1>
     <p class="lead">A clean stopwatch with lap times. Time workouts, study sessions, races, and anything else.</p>
     <div class="calc-card" style="text-align:center">
