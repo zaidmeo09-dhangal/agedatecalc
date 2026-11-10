@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Contact AgeDateCalc | Feedback and Support
+meta_title: Contact AgeDateCalc
 description: Contact the AgeDateCalc team for bug reports, tool suggestions, or questions. We read every message and usually reply within days.
 permalink: /contact/
 ---
