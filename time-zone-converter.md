@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Time Zone Converter - Convert Time Between Zones
+meta_title: Time Zone Converter - Convert Time Zones
 description: Convert any time between world time zones instantly. Enter a time, pick the source and target zones, and see the converted result. Free, no sign-up.
 permalink: /time-zone-converter/
 schema: |
@@ -85,10 +86,10 @@ schema: |
           },
           {
                     "@type": "Question",
-                    "name": "Why was my New York to London meeting off by an hour this week?",
+                    "name": "Why was my New York to London meeting off by an hour?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Europe and the US end daylight saving in different weeks. From October 26 to 31, 2026 the gap is 4 hours instead of 5."
+                              "text": "Because Europe and the US change clocks in different weeks. In spring 2027, the US springs forward on March 14 while Europe waits until March 28, so from March 14 to 27 the New York-London gap is 4 hours instead of the usual 5. The same mismatch happened in fall 2026, when Europe fell back on October 25 and the US on November 1. It happens twice a year, in spring and fall, and is the most common cause of transatlantic scheduling errors."
                     }
           }
   ]
@@ -127,7 +128,7 @@ related_posts:
 
 <div class="prose" markdown="1">
 
-<p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
+<p class="result-note" style="font-size:.85rem">Guide updated November 2026.</p>
 
 ## How do I convert a time between zones?
 
@@ -160,11 +161,13 @@ Worked example with this time zone converter's logic: 2:00 PM in California in J
 
 Phoenix stays on MST (UTC-7) year-round, so it matches Los Angeles in summer but runs one hour ahead in winter. Hawaii stays on HST (UTC-10) all year.
 
-## The tricky week: when the US and Europe disagree
+## The tricky weeks: when the US and Europe disagree
 
-Europe and the US end daylight saving in different weeks, and the gap between them shifts for a few days twice a year. In fall 2026, Europe fell back on October 25 while the US falls back on November 1. From October 26 to 31, New York to London is 4 hours instead of the usual 5, and Los Angeles to Berlin is 8 hours instead of 9.
+Europe and the US change clocks in different weeks, and the gap between them shifts by an hour for a few days twice a year. The next mismatch is in spring 2027: the US springs forward on March 14, but Europe waits until March 28. From March 14 to 27, New York to London is 4 hours instead of the usual 5, and Los Angeles to Berlin is 8 hours instead of 9.
 
-This mismatch is the most common cause of transatlantic scheduling errors. If a meeting feels off by an hour in late October or late March, check which side has switched.
+The same thing happened in fall 2026, when Europe fell back on October 25 while the US fell back on November 1, leaving a 4-hour New York-London gap from October 26 to 31.
+
+This mismatch is the most common cause of transatlantic scheduling errors. If a meeting feels off by an hour in late March or late October, check which side has switched.
 
 ## Best meeting hours across US time zones
 
@@ -183,7 +186,7 @@ And never schedule 8:00 AM Eastern unless it is an emergency: that is 5:00 AM in
 
 US daylight saving is federal law. The Uniform Time Act of 1966 (15 U.S.C. 260a) requires clocks to spring forward at 2:00 AM on the second Sunday of March and fall back at 2:00 AM on the first Sunday of November. States may only exempt themselves to observe permanent standard time, which is what Arizona (except the Navajo Nation) and Hawaii do.
 
-In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7. For the full schedule and which states skip it, see our guide on [when daylight saving time ends in 2026]({{ '/blog/when-does-daylight-saving-time-end-2026/' | relative_url }}).
+In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7. For the full schedule and which states skip it, see our guide on [when daylight saving time ends in 2027]({{ '/blog/when-does-daylight-saving-time-end-2026/' | relative_url }}).
 
 ## Why time zone conversions go wrong
 
@@ -239,8 +242,8 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
 <p>UTC (Coordinated Universal Time) is the atomic-clock standard the whole world measures against, maintained from labs including NIST in Boulder, Colorado. GMT (Greenwich Mean Time) is now simply the name of the UK winter time zone at UTC+0. For everyday conversions the two are interchangeable; the distinction only matters at sub-second precision.</p>
 </details>
 <details>
-<summary>Why was my New York to London meeting off by an hour this week?</summary>
-<p>Because Europe and the US end daylight saving in different weeks. Europe fell back on October 25, 2026 while the US falls back on November 1, so from October 26 to 31 the New York-London gap is 4 hours instead of the usual 5. This mismatch happens twice a year (spring and fall) and is the most common cause of transatlantic scheduling errors.</p>
+<summary>Why was my New York to London meeting off by an hour?</summary>
+<p>Because Europe and the US change clocks in different weeks. In spring 2027, the US springs forward on March 14 while Europe waits until March 28, so from March 14 to 27 the New York-London gap is 4 hours instead of the usual 5. The same mismatch happened in fall 2026, when Europe fell back on October 25 and the US on November 1. It happens twice a year, in spring and fall, and is the most common cause of transatlantic scheduling errors.</p>
 </details>
 </div>
 
