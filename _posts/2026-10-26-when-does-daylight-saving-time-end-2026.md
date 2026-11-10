@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When Does Daylight Saving Time End in 2027?
-slug: when-does-daylight-saving-time-end-2026
+slug: when-does-daylight-saving-time-end
 date: '2026-10-26'
 status: Published
 author: Zaid
@@ -47,7 +47,9 @@ faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
   When does daylight saving start again in 2027?
 
   Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM.'
-permalink: /blog/when-does-daylight-saving-time-end-2026/
+permalink: /blog/when-does-daylight-saving-time-end/
+redirect_from:
+  - /blog/when-does-daylight-saving-time-end-2026/
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
 ---
