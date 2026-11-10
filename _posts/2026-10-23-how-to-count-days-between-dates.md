@@ -14,7 +14,7 @@ primary_keyword: how to count days between dates
 secondary_keywords:
 - days between two dates calculator
 - inclusive vs exclusive counting
-meta_title: How to Count Days Between Two Dates (Manual Method)
+meta_title: How to Count Days Between Two Dates - Guide
 meta_description: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
 excerpt: Learn the manual method for counting days between dates, when to include the end date, and the common mistakes that throw counts off by one day.
 featured_image: /assets/images/how-to-count-days-between-dates.webp
@@ -50,7 +50,6 @@ faqs_raw: 'Should I count the end date when counting days between dates?
 permalink: /blog/how-to-count-days-between-dates/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
-schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"How to Count Days Between Two Dates (Manual Method)\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}"
 ---
 
 <div class="prose" markdown="1">
