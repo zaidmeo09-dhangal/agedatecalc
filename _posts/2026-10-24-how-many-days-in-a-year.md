@@ -14,7 +14,7 @@ primary_keyword: how many days in a year
 secondary_keywords:
 - days in each month
 - 365 or 366 days
-meta_title: How Many Days Are in a Year? 365 vs 366 Explained
+meta_title: How Many Days Are in a Year? 365 vs 366
 meta_description: Is it 365 or 366 days in a year? Learn when each applies, how leap years decide it, and why the answer matters for age and date math.
 excerpt: Is it 365 or 366 days in a year? Learn when each applies, how leap years decide it, and why the answer matters for age and date math.
 featured_image: /assets/images/how-many-days-in-a-year.webp
@@ -50,7 +50,6 @@ faqs_raw: 'How many days are in a leap year?
 permalink: /blog/how-many-days-in-a-year/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
-schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"How Many Days Are in a Year? 365 vs 366 Explained\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}"
 ---
 
 <div class="prose" markdown="1">
