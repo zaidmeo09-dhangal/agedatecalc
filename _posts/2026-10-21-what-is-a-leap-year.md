@@ -50,7 +50,6 @@ faqs_raw: 'Is 2026 a leap year?
 permalink: /blog/what-is-a-leap-year/
 tool_url: /age-calculator/
 tool_name: Age Calculator
-schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"What Is a Leap Year? Simple Rules Explained\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}"
 ---
 
 <div class="prose" markdown="1">
