@@ -4,7 +4,7 @@ title: How Many Days Are in a Year? 365 vs 366 Explained
 slug: how-many-days-in-a-year
 date: '2026-10-24'
 status: Published
-author: Zaid
+author: AgeDateCalc Team
 category: Date Guides
 tags:
 - days in a year
