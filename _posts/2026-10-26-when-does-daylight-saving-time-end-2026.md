@@ -5,7 +5,7 @@ slug: when-does-daylight-saving-time-end
 date: '2026-10-26'
 last_modified_at: 2026-11-10
 status: Published
-author: Zaid
+author: AgeDateCalc Team
 category: Time Guides
 tags:
 - daylight saving time
