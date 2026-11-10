@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About AgeDateCalc | Free Date and Time Tools
+meta_title: About AgeDateCalc
 description: Learn what AgeDateCalc is, who builds it, and how our five free date and time tools work. No sign-up, private by design.
 permalink: /about/
 ---
@@ -18,7 +19,7 @@ permalink: /about/
 
     <div class="legal-card legal-summary">
       <h2><span class="licon">👋</span> Who builds this</h2>
-      <p>AgeDateCalc is built and maintained by Zaid, an SEO specialist from Pakistan who creates free online tools. It started as a companion project to <a href="https://studentcalctools.com" rel="noopener">StudentCalcTools</a>, his free calculator site for students. Every tool on this site is hand-built, tested with real inputs, and kept free on purpose.</p>
+      <p>AgeDateCalc is built and maintained by Zaid, an SEO specialist from Pakistan who creates free online tools. It started as a companion project to a student calculator site Zaid previously built. Every tool on this site is hand-built, tested with real inputs, and kept free on purpose.</p>
     </div>
 
     <div class="legal-card legal-summary">
