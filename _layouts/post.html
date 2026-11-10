@@ -15,6 +15,7 @@ layout: default
     <p class="lead">{{ page.excerpt | default: page.meta_description | default: page.description }}</p>
     <div class="post-meta-pills">
       <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
+      {% if page.last_modified_at %}<span class="meta-pill">Updated {{ page.last_modified_at | date: "%B %-d, %Y" }}</span>{% endif %}
       {% if page.read_time %}<span class="meta-pill">{{ page.read_time }}</span>{% else %}{% assign words = content | number_of_words %}<span class="meta-pill">{{ words | divided_by: 200 | plus: 1 }} min read</span>{% endif %}
       <span class="meta-pill">By <a href="{{ '/about/' | relative_url }}">{{ page.author | default: "Zaid" }}</a></span>
     </div>
