@@ -4,7 +4,7 @@ title: What Is a Leap Year? Simple Rules Explained
 slug: what-is-a-leap-year
 date: '2026-10-21'
 status: Published
-author: Zaid
+author: AgeDateCalc Team
 category: Date Guides
 tags:
 - leap year
