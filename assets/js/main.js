@@ -39,12 +39,12 @@
     }
     if(months < 0){ years -= 1; months += 12; }
 
-    var totalDays = Math.floor((now - dob) / 86400000);
+    var totalDays = Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(dob.getFullYear(), dob.getMonth(), dob.getDate())) / 86400000);
     var weekday = dob.toLocaleDateString("en-US", { weekday: "long" });
 
     var next = birthdayThisYear(dob, now.getFullYear());
     if(next <= now){ next = birthdayThisYear(dob, now.getFullYear() + 1); }
-    var daysTo = Math.ceil((next - now) / 86400000);
+    var daysTo = Math.round((Date.UTC(next.getFullYear(), next.getMonth(), next.getDate()) - Date.UTC(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
 
     return { years: years, months: months, days: days, totalDays: totalDays, weekday: weekday, daysTo: daysTo };
   }
