@@ -14,7 +14,7 @@ primary_keyword: how to calculate age
 secondary_keywords:
 - age calculator between two dates
 - calculate age in days
-meta_title: How to Calculate Your Exact Age (Manual Method)
+meta_title: How to Calculate Your Exact Age - Step by Step
 meta_description: Learn how to calculate your exact age by hand. Step-by-step method with a worked example, plus how leap years and month lengths affect the result.
 excerpt: Learn how to calculate your exact age by hand. Step-by-step method with a worked example, plus how leap years and month lengths affect the result.
 featured_image: /assets/images/how-to-calculate-age.webp
@@ -50,7 +50,6 @@ faqs_raw: 'How do I calculate my exact age in years, months, and days?
 permalink: /blog/how-to-calculate-age/
 tool_url: /age-calculator/
 tool_name: Age Calculator
-schema: "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Article\",\n  \"headline\": \"How to Calculate Your Exact Age (Manual Method)\",\n  \"author\": { \"@type\": \"Organization\", \"name\": \"AgeDateCalc\" }\n}\n"
 ---
 
 <div class="prose" markdown="1">
