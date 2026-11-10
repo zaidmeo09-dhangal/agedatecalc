@@ -130,3 +130,31 @@
 }
 </script>
 {% endif %}
+{% if page.breadcrumb %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ '/' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "{{ '/tools/' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ page.breadcrumb | escape }}",
+      "item": "{{ page.url | absolute_url }}"
+    }
+  ]
+}
+</script>
+{% endif %}
