@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Age Calculator - Exact Age in Years, Months and Days
-meta_title: Age Calculator - Years, Months and Days
-description: Calculate your exact age in years, months, and days. See total days lived, weekday born, and next birthday countdown. Free, no sign-up.
+meta_title: "Age Calculator - Exact Age in Years, Months and Days"
+description: Calculate your exact age from your date of birth in years, months and days. See total days lived, your weekday born and days until your next birthday. Free.
 permalink: /age-calculator/
 breadcrumb: Age Calculator
 schema: |
