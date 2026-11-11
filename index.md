@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Free Date and Time Tools
+meta_title: "Free Date and Time Tools: Age Calculator, Countdown & More"
 description: Calculate your exact age, count days between dates, run countdowns, use a stopwatch, and convert time zones. Free date and time tools.
 schema: |
   {
