@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Time Zone Converter - Convert Time Between Zones
-meta_title: Time Zone Converter - Convert Time Zones
-description: Convert any time between world time zones instantly. Enter a time, pick the source and target zones, and see the converted result. Free, no sign-up.
+meta_title: "Time Zone Converter - Convert Time Between World Time Zones"
+description: Convert any time between world time zones instantly. Compare cities, check UTC offsets and daylight saving changes. Free, no sign-up.
 permalink: /time-zone-converter/
 breadcrumb: Time Zone Converter
 schema: |
