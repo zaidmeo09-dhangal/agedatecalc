@@ -50,7 +50,7 @@ schema: |
                     "name": "What time zone does the countdown use?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Your device's local time zone. The share link stores the absolute moment, so a recipient in another time zone counts down to the same instant."
+                              "text": "Your device's local time zone. The share link stores the date and time you set, without a time zone, so a recipient in another time zone counts down to that date and time in their own local time."
                     }
           },
           {
@@ -209,7 +209,7 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 </details>
 <details>
 <summary>What time zone does the countdown use?</summary>
-<p>Your device's local time zone. Set a countdown to December 25 at midnight and it hits zero at midnight where you are. The share link stores the absolute moment, so if you send it to someone in another time zone, their page converts it and counts down to the same instant. Learn more in <a href="/blog/time-zones-explained/">Time Zones Explained</a>.</p>
+<p>Your device's local time zone. Set a countdown to December 25 at midnight and it hits zero at midnight where you are. The share link stores the date and time you set, without a time zone. If you send it to someone in another time zone, their countdown ends at that date and time in their own local time. Learn more in <a href="/blog/time-zones-explained/">Time Zones Explained</a>.</p>
 </details>
 <details>
 <summary>Why does the countdown show fewer days than I expected?</summary>
