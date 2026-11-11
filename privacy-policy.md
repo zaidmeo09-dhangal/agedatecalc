@@ -2,7 +2,7 @@
 layout: default
 title: Privacy Policy | AgeDateCalc
 meta_title: Privacy Policy
-description: How AgeDateCalc handles your data, cookies, and advertising. Our tools run in your browser; we do not collect or sell your inputs.
+description: How AgeDateCalc handles your data, cookies, and analytics. Our tools run in your browser, and we do not collect or sell your tool inputs.
 permalink: /privacy-policy/
 ---
 
@@ -11,7 +11,7 @@ permalink: /privacy-policy/
     <span class="badge">Legal</span>
     <h1>Privacy Policy</h1>
     <p class="lead">How we handle your data, cookies, and advertising. Short and honest.</p>
-    <span class="update-badge">Last updated: October 18, 2026</span>
+    <span class="update-badge">Last updated: November 11, 2026</span>
   </div>
 </section>
 
@@ -30,12 +30,13 @@ permalink: /privacy-policy/
 
     <div class="legal-card">
       <h2><span class="licon">🍪</span> Cookies</h2>
-      <p>We use a minimal set of cookies:</p>
+      <p>We use the following cookies and browser storage:</p>
       <ul>
-        <li><strong>Strictly necessary cookies</strong> that remember basic preferences, such as display settings.</li>
-        <li><strong>Advertising cookies</strong> only if advertising is added in future, set by the ad provider and its partners to show relevant ads and measure their performance. No advertising cookies are set today, because the site currently shows no ads.</li>
+        <li><strong>Theme preference:</strong> stored in your browser's local storage on your device, not in a cookie.</li>
+        <li><strong>Google Analytics 4 cookies:</strong> <code>_ga</code> and <code>_ga_&lt;container-id&gt;</code>, set by Google Analytics to measure visits (see Analytics below).</li>
+        <li><strong>Advertising cookies:</strong> none today, because the site currently shows no ads. If advertising is added in future, the ad provider may set its own cookies.</li>
       </ul>
-      <p>You can control cookies through your browser settings, and you can opt out of personalized advertising at Google's Ads Settings page.</p>
+      <p>You can control cookies through your browser settings, and you can opt out of Google Analytics at the Google Analytics opt-out page (tools.google.com/dlpage/gaoptout).</p>
     </div>
 
     <div class="legal-card">
@@ -45,12 +46,12 @@ permalink: /privacy-policy/
 
     <div class="legal-card">
       <h2><span class="licon">📊</span> Analytics</h2>
-      <p style="margin-bottom:0">We may use privacy-friendly analytics to understand which tools are popular, so we know what to improve. Analytics data is aggregated and never linked to individual users.</p>
+      <p style="margin-bottom:0">We use Google Analytics 4 (Measurement ID G-Q6NE2Q4XTM) to understand which tools are popular, so we know what to improve. Google Analytics sets first-party cookies and collects visit data such as pages viewed, browser and device information, and approximate location, and sends it to Google. You can opt out at tools.google.com/dlpage/gaoptout.</p>
     </div>
 
     <div class="legal-card">
       <h2><span class="licon">🧒</span> Children's privacy</h2>
-      <p style="margin-bottom:0">Our tools are general-purpose and do not target children specifically. We do not knowingly collect personal information from anyone, including children.</p>
+      <p style="margin-bottom:0">Our tools are general-purpose and do not target children specifically. The dates and times you enter into the tools are processed only in your browser and are not collected by us. Google Analytics visit data is handled as described in the Analytics section above.</p>
     </div>
 
     <div class="legal-card">
