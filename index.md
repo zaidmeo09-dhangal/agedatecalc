@@ -47,7 +47,7 @@ schema: |
       </svg>
       <div class="hero-clock-info">
         <span class="hero-clock-digital" id="hero-clock-digital">--:--:--</span>
-        <span class="hero-clock-city" id="hero-clock-city"></span>
+        <span class="hero-clock-city" id="hero-clock-city">Your local time now</span>
       </div>
     </div>
     <script>
@@ -67,12 +67,6 @@ schema: |
         if(digital) digital.textContent = now.toLocaleTimeString('en-US',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
         requestAnimationFrame(update);
       }
-      try{
-        var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-        var city = tz.split('/').pop().replace(/_/g, ' ');
-        var lbl = document.getElementById('hero-clock-city');
-        if(lbl && city) lbl.textContent = 'Time in ' + city + ' now';
-      }catch(e){}
       requestAnimationFrame(update);
     })();
     </script>
