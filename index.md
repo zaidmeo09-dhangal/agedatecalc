@@ -70,8 +70,6 @@ schema: |
       try{
         var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
         var city = tz.split('/').pop().replace(/_/g, ' ');
-        var friendly = { 'Karachi': 'Pakistan', 'Kolkata': 'India', 'Dhaka': 'Bangladesh' };
-        if(friendly[city]) city = friendly[city];
         var lbl = document.getElementById('hero-clock-city');
         if(lbl && city) lbl.textContent = 'Time in ' + city + ' now';
       }catch(e){}
