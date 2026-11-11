@@ -77,7 +77,7 @@ permalink: /about/
 
     <div class="legal-card" style="margin-top:2.5rem">
       <h2><span class="licon">📢</span> How we keep it free</h2>
-      <p>AgeDateCalc is supported by advertising. In the future, you may see ads on the site served through Google AdSense. Ads never affect how the tools work, and we do not sell or share personal data.</p>
+      <p>AgeDateCalc is free to use and is planned to be supported by advertising in future. In the future, you may see ads on the site served through Google AdSense. Ads never affect how the tools work, and we do not sell the dates you enter into the tools.</p>
     </div>
 
     <div class="cta-banner">
