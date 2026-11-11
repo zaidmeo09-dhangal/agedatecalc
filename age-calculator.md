@@ -42,7 +42,7 @@ schema: |
                     "name": "Can I find my age on a specific past or future date?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Yes. Enter your birth date and change the target date from today to any date you choose. The same borrowing math applies; only the reference date changes."
+                              "text": "No. This calculator always works from today. For the gap between any two dates, use the Date Difference Calculator."
                     }
           },
           {
@@ -220,7 +220,7 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
 </details>
 <details>
 <summary>Can I find my age on a specific past or future date?</summary>
-<p>Yes. Enter your birth date and change the target date from today to any date you choose. This answers questions like "how old will I be on June 1, 2030?" or "how old was I when I graduated?" The same borrowing math applies; only the reference date changes. For the gap between any two dates, the <a href="/date-difference-calculator/">Date Difference Calculator</a> is the faster tool.</p>
+<p>No. The Age Calculator always works from today, so it answers "how old am I right now?" For the gap between any two dates, including a future or past target date, the <a href="/date-difference-calculator/">Date Difference Calculator</a> is the faster tool.</p>
 </details>
 <details>
 <summary>Which day of the week was I born on?</summary>
