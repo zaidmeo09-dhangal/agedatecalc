@@ -101,7 +101,7 @@ Earth's orbit takes about 365.2422 days. The leap year system (adding a day ever
 - **Contracts and interest:** a 366-day year shifts daily-rate math slightly.
 - **Anniversaries:** events anchored to February 29 need a rule for non-leap years.
 - **Loan and savings interest:** banks often compute daily interest as the annual rate divided by 365, even in leap years (the "actual/365" convention), while others use 366. On a large balance, that one-day difference is real money.
-- **Subscriptions and warranties:** a one-year subscription bought on March 1, 2024 ends March 1, 2025, which spans 366 days because it includes February 29, 2024. Bought March 1, 2025, the same "one year" is 365 days.
+- **Subscriptions and warranties:** a one-year subscription bought on March 1, 2023 ends March 1, 2024, which spans 366 days because it includes February 29, 2024. Bought March 1, 2024, the same "one year" is 365 days.
 - **Payroll:** salaried staff paid monthly earn the same per month either way, but daily-rate contractors working through a leap year log one extra billable day.
 
 Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts every leap day in your lifetime automatically.
