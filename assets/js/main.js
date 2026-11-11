@@ -99,7 +99,7 @@
     var now = new Date();
     var html = "";
     zones.forEach(function(z){
-      var t = now.toLocaleTimeString("en-GB", { timeZone: z[1], hour: "2-digit", minute: "2-digit", second: "2-digit" });
+      var t = now.toLocaleTimeString("en-US", { timeZone: z[1], hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true });
       html += '<div class="clock"><span class="city">' + z[0] + '</span><span class="time">' + t + '</span></div>';
     });
     clocksWrap.innerHTML = html;
