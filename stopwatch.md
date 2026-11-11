@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Online Stopwatch with Lap Times - Free
-description: A clean, free online stopwatch with lap times. Time workouts, study sessions, races, and experiments with start, pause, reset, and lap recording. No sign-up.
+meta_title: "Online Stopwatch with Lap Times - Free & Precise"
+description: Free online stopwatch with lap and split times. Time workouts, study sessions and races with start, pause, reset and lap recording. No sign-up.
 permalink: /stopwatch/
 breadcrumb: Stopwatch
 schema: |
