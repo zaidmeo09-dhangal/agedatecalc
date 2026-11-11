@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Age Calculator Between Two Dates - Date Difference Tool
-meta_title: Age Calculator Between Two Dates - Free
-description: Find the age between two dates in years, months, and days. Count exact days, weeks, and months between any two dates, or add days to a date. Free.
+title: Date Difference Calculator
+meta_title: "Date Difference Calculator: Days Between Two Dates"
+description: Count the exact days, weeks, months and years between any two dates. Add or subtract days from a date. Free, no sign-up.
 permalink: /date-difference-calculator/
 breadcrumb: Date Difference Calculator
 schema: |
