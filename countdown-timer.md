@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Countdown Timer - Online Countdown to Any Date
-description: Start a live online countdown to any date and time. Track birthdays, exams, and launches in days, hours, minutes, seconds. Free.
+meta_title: "Countdown Timer Online: Count Down to Any Date and Time"
+description: Start a free live countdown to any date and time. Track birthdays, exams, holidays and launches in days, hours, minutes and seconds.
 permalink: /countdown-timer/
 breadcrumb: Countdown Timer
 schema: |
