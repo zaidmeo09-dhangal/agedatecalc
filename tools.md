@@ -1,7 +1,7 @@
 ---
 layout: default
-title: All Free Date and Time Tools | AgeDateCalc
-meta_title: All Free Date and Time Tools
+title: All Free Date and Time Tools
+meta_title: "All Free Date and Time Tools in One Place"
 description: Browse every free date and time tool in one place. Age calculator, date difference, countdown timer, stopwatch, and time zone converter. No sign-up.
 permalink: /tools/
 ---
