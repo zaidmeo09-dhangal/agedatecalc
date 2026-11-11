@@ -299,10 +299,6 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
     ["Paris (CET/CEST)", "Europe/Paris"],
     ["Berlin (CET/CEST)", "Europe/Berlin"],
     ["Moscow (MSK)", "Europe/Moscow"],
-    ["Dubai (GST)", "Asia/Dubai"],
-    ["Mumbai (IST)", "Asia/Kolkata"],
-    ["Singapore (SGT)", "Asia/Singapore"],
-    ["Tokyo (JST)", "Asia/Tokyo"],
     ["Sydney (AEDT/AEST)", "Australia/Sydney"]
   ];
 
