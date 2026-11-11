@@ -267,7 +267,7 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
     return (h > 0 ? p(h) + ":" : "") + p(m) + ":" + p(s) + "." + p(cs);
   }
 
-  function current(){ return elapsed + (running ? Date.now() - startStamp : 0); }
+  function current(){ return elapsed + (running ? performance.now() - startStamp : 0); }
 
   function draw(){ display.textContent = fmt(current()); }
 
@@ -279,7 +279,7 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
       cancelAnimationFrame(raf); draw();
       startBtn.textContent = "Resume";
     } else {
-      running = true; startStamp = Date.now();
+      running = true; startStamp = performance.now();
       loop();
       startBtn.textContent = "Pause";
       lapBtn.disabled = false;
