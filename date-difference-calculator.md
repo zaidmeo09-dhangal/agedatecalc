@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Date Difference Calculator
 meta_title: "Date Difference Calculator: Days Between Two Dates"
 description: Count the exact days, weeks, months and years between any two dates. Add or subtract days from a date. Free, no sign-up.
 permalink: /date-difference-calculator/
@@ -42,7 +41,7 @@ schema: |
             "name": "Is the end date included in the count?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The end date is counted but the start date is not. This is the standard exclusive convention: March 1 to March 2 is 1 day. If you need both days counted, add 1 to the result. The two answers always differ by exactly one day."
+              "text": "By default, the end date is counted but the start date is not. This is the standard exclusive convention: March 1 to March 2 is 1 day. If you need both days counted, tick the 'Include the end date' checkbox, or add 1 to the result. The two answers always differ by exactly one day."
             }
           },
           {
@@ -79,10 +78,10 @@ schema: |
           },
           {
             "@type": "Question",
-            "name": "How do I add days or months to a date?",
+            "name": "How do I add days to a date?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. Months follow calendar logic in most tools: adding one month to January 31 lands at the end of February, not in March."
+              "text": "Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. This tool adds calendar days only. Adding 30 days to January 31 lands on March 2 in a common year, because January has 31 days."
             }
           },
           {
@@ -122,9 +121,12 @@ related_posts:
         <label for="dd-end">End date</label>
         <input type="date" id="dd-end">
       </div>
+      <div class="field">
+        <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="dd-include-end" style="width:auto"> Include the end date in the count</label>
+      </div>
       <button class="btn btn-primary btn-block" id="dd-btn" type="button">Calculate Difference</button>
       <div id="dd-result"></div>
-      <p class="result-note" style="font-size:.82rem;margin-top:12px">Counts the end date, not the start date. Uses calendar days only, so time zones never affect the result.</p>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">By default, counts the end date, not the start date. Tick "Include the end date" to count both days. Uses calendar days only, so time zones never affect the result.</p>
       <hr style="border:0;border-top:1px solid var(--border);margin:24px 0">
       <h2 style="font-size:1.15rem;margin-bottom:12px">Add or subtract days</h2>
       <div class="field">
@@ -272,7 +274,7 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 | Thanksgiving | Thursday, November 25 | Nov 25 |
 | Christmas Day | Saturday, December 25 | Friday, December 24 |
 
-**Business days shortcut:** count the weekdays in your range with the calculator, then subtract the observed holidays that fall inside it. Example: a project running Monday, November 23 to Friday, December 4, 2026 spans 10 weekdays, minus Thanksgiving (Nov 26), giving 9 business days.
+**Business days shortcut:** the calculator counts the weekdays in your range for you. It does not subtract holidays, so subtract the observed holidays that fall inside the range yourself. Example: a project running Monday, November 23 to Friday, December 4, 2026 has 9 weekdays after the start date (November 24 to December 4). Subtract Thanksgiving (Nov 26) to get 8 business days.
 
 **Sources:** holiday dates and observed-date rules follow the US Office of Personnel Management (OPM.gov) federal holiday schedule and 5 U.S.C. 6103.
 
@@ -287,7 +289,7 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 </details>
 <details>
 <summary>Is the end date included in the count?</summary>
-<p>Yes, the end date is counted but the start date is not. This is the standard exclusive convention used by spreadsheets and most date tools: March 1 to March 2 is 1 day. If your situation needs both days counted, for example a hotel stay priced per day or a period described as "from the 11th to the 25th inclusive," add 1 to the result. The two answers always differ by exactly one day.</p>
+<p>Yes, by default the end date is counted but the start date is not. This is the standard exclusive convention used by spreadsheets and most date tools: March 1 to March 2 is 1 day. If your situation needs both days counted, for example a hotel stay priced per day or a period described as "from the 11th to the 25th inclusive," tick the "Include the end date" checkbox above the result, or add 1 to the result. The two answers always differ by exactly one day.</p>
 </details>
 <details>
 <summary>Why do two date calculators give different answers?</summary>
@@ -306,8 +308,8 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 <p>Enter both birth dates in any order. The person born on the earlier date is older, and the result shows exactly how much older in years, months, and days. For example, birth dates of January 1, 1985 and June 15, 1990 give a gap of 5 years, 5 months, and 14 days.</p>
 </details>
 <details>
-<summary>How do I add days or months to a date?</summary>
-<p>Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. Months follow calendar logic in most tools: adding one month to January 31 lands at the end of February, not in March.</p>
+<summary>How do I add days to a date?</summary>
+<p>Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. This tool adds calendar days only. Adding 30 days to January 31 lands on March 2 in a common year, because January has 31 days.</p>
 </details>
 <details>
 <summary>Does my time zone change the result?</summary>
@@ -363,13 +365,30 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
     if(isNaN(d1) || isNaN(d2)){ out.innerHTML = '<p class="result-note">Please enter valid dates.</p>'; return; }
     if(d2 < d1){ var t = d1; d1 = d2; d2 = t; }
 
-    var days = Math.round((d2 - d1) / DAY);
-    var weeks = Math.floor(days / 7), remDays = days % 7;
+    var inc = document.getElementById("dd-include-end").checked;
+    var d2e = new Date(d2);
+    if(inc){ d2e.setDate(d2e.getDate() + 1); }
 
-    var y = d2.getFullYear() - d1.getFullYear();
-    var mo = d2.getMonth() - d1.getMonth();
-    var dd = d2.getDate() - d1.getDate();
-    if(dd < 0){ mo -= 1; dd += new Date(d2.getFullYear(), d2.getMonth(), 0).getDate(); }
+    function businessDays(a, b, includeStart){
+      var n = 0;
+      var cur = new Date(a);
+      if(!includeStart){ cur.setDate(cur.getDate() + 1); }
+      while(cur <= b){
+        var wd = cur.getDay();
+        if(wd !== 0 && wd !== 6){ n += 1; }
+        cur.setDate(cur.getDate() + 1);
+      }
+      return n;
+    }
+
+    var days = Math.round((d2e - d1) / DAY);
+    var weeks = Math.floor(days / 7), remDays = days % 7;
+    var biz = businessDays(d1, d2, inc);
+
+    var y = d2e.getFullYear() - d1.getFullYear();
+    var mo = d2e.getMonth() - d1.getMonth();
+    var dd = d2e.getDate() - d1.getDate();
+    if(dd < 0){ mo -= 1; dd += new Date(d2e.getFullYear(), d2e.getMonth(), 0).getDate(); }
     if(mo < 0){ y -= 1; mo += 12; }
 
     out.innerHTML =
@@ -377,12 +396,15 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
       '<div class="result-box"><span class="num">' + days.toLocaleString() + '</span><span class="lbl">Days</span></div>' +
       '<div class="result-box"><span class="num">' + weeks + 'w ' + remDays + 'd</span><span class="lbl">Weeks</span></div>' +
       '<div class="result-box"><span class="num">' + y + 'y ' + mo + 'm ' + dd + 'd</span><span class="lbl">Years / months / days</span></div>' +
+      '<div class="result-box"><span class="num">' + biz.toLocaleString() + '</span><span class="lbl">Business days</span></div>' +
       '</div>' +
-      '<p class="result-note">From <strong>' + fmtDate(d1) + '</strong> to <strong>' + fmtDate(d2) + '</strong>.</p>' +
+      '<p class="result-note">From <strong>' + fmtDate(d1) + '</strong> to <strong>' + fmtDate(d2) + '</strong>' + (inc ? ' (end date included)' : '') + '.</p>' +
+      '<p class="result-note">Business days are weekdays (Monday to Friday)' + (inc ? ' including both dates' : ', excluding the start date and including the end date') + '. US federal holidays are not subtracted, see the holiday tables below.</p>' +
       '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="dd-share-btn">Copy share link</button> <span id="dd-share-msg" style="font-size:.85rem"></span></p>';
     try{
       var u = new URL(window.location.href);
       u.searchParams.set("from", s); u.searchParams.set("to", e);
+      if(document.getElementById("dd-include-end").checked){ u.searchParams.set("inc", "1"); } else { u.searchParams.delete("inc"); }
       u.searchParams.delete("base"); u.searchParams.delete("days");
       window.history.replaceState(null, "", u.toString());
     }catch(e2){}
@@ -423,6 +445,7 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
     if(qfrom && qto && dateRe.test(qfrom) && dateRe.test(qto)){
       document.getElementById("dd-start").value = qfrom;
       document.getElementById("dd-end").value = qto;
+      if(qp.get("inc") === "1"){ document.getElementById("dd-include-end").checked = true; }
       document.getElementById("dd-btn").click();
     }else if(qbase && qdays && dateRe.test(qbase) && /^-?\d+$/.test(qdays)){
       document.getElementById("dd-base").value = qbase;
