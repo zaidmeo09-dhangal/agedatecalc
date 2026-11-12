@@ -3,6 +3,7 @@ layout: post
 title: How Many Days Are in a Year? 365 vs 366 Explained
 slug: how-many-days-in-a-year
 date: '2026-10-24'
+last_modified_at: 2026-11-12
 status: Published
 author: AgeDateCalc Team
 category: Date Guides
@@ -46,7 +47,7 @@ faqs_raw: 'How many days are in a leap year?
 
   How many weeks are in a year?
 
-  A common year has 52 weeks and 1 extra day, since 52 times 7 is 364. A leap year has 52 weeks and 2 extra days.'
+  A common year has 52 weeks and 1 extra day, since 52 times 7 is 364. A leap year has 52 weeks and 2 extra days. Under the ISO week system, most years have 52 weeks, but a year has 53 ISO weeks when it starts on a Thursday, as 2026 does, or when a leap year starts on a Wednesday, as 2020 did.'
 permalink: /blog/how-many-days-in-a-year/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
@@ -63,6 +64,22 @@ Most years have 365 days. Leap years, which occur roughly every four years, add 
 The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate.com/date/leapyear.html), except century years, which must also be divisible by 400. That is why 2000 was a leap year but 1900 was not.
 
 <img src="{{ '/assets/images/how-many-days-in-a-year-months.webp' | relative_url }}" alt="A ribbon timeline divided into twelve segments representing the twelve months of a year" width="1200" height="630" loading="lazy">
+
+## How many days in each year, 2024 to 2030
+
+| Year | Days | Leap year? |
+|---|---|---|
+| 2024 | 366 | Yes |
+| 2025 | 365 | No |
+| 2026 | 365 | No |
+| 2027 | 365 | No |
+| 2028 | 366 | Yes |
+| 2029 | 365 | No |
+| 2030 | 365 | No |
+
+## ISO weeks: 52 or 53?
+
+A calendar year is not a whole number of weeks. Under the ISO week system, most years have 52 weeks, but a year has 53 ISO weeks when it starts on a Thursday, as 2026 does, or when a leap year starts on a Wednesday, as 2020 did.
 
 ## Days in each month
 
@@ -83,17 +100,15 @@ The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate
 
 A classic memory aid is the knuckle trick. Make a fist and count the months across your knuckles, starting with January on the first knuckle. Every month that lands on a knuckle has 31 days; every month in a valley has 30, except February. It works because the 31-day months genuinely alternate that way, with July and August as the one place two knuckles sit side by side.
 
-## The century rule's long game
+## The century rule in one line
 
-The "divisible by 400" exception is easy to dismiss until you see its effect at scale. Without it, every century year would be a leap year, and the calendar would gain about three extra days per 400 years. With it, each 400-year cycle contains exactly 97 leap years instead of 100, tuning the average year to 365.2425 days.
-
-In practice this means: 2000 had a February 29, 2100 will not, and neither will 2200 or 2300. If you are computing spans that cross 2100, say a long-range projection or a very long payment schedule, those missing leap days change the total. For everyday spans under a century, the only century year that ever matters is 2000, and it behaved normally.
+The "divisible by 400" exception keeps the average year at 365.2425 days: 2000 had a February 29, but 2100, 2200, and 2300 will not. If you are computing spans that cross 2100, those missing leap days change the total. The full rules, with the 1900 vs 2000 proof, are in [what is a leap year]({{ '/blog/what-is-a-leap-year/' | relative_url }}).
 
 <img src="{{ '/assets/images/how-many-days-in-a-year-seasons.webp' | relative_url }}" alt="A wheel showing the four seasons of a year: spring blossoms, summer sun, autumn leaves and winter snow" width="1200" height="630" loading="lazy">
 
 ## Why the answer is not exactly 365.25
 
-Earth's orbit takes about 365.2422 days. The leap year system (adding a day every 4 years, skipping most century years) averages the calendar year to 365.2425 days, astonishingly close to reality. The leftover drift amounts to about one day every 3,000 years.
+Note the two numbers: 365.25 days is the Julian average, one leap day every four years, not the measured orbit. The measured tropical year is 365.2422 days. The leap year system (adding a day every 4 years, skipping most century years) averages the calendar year to 365.2425 days, astonishingly close to reality. The leftover drift amounts to about one day every 3,000 years.
 
 ## When the difference matters
 
@@ -108,7 +123,7 @@ Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts every leap 
 
 ## A year is not always 365 or 366 days
 
-Astronomers use several different "years." The tropical year (365.2422 days) is what the calendar tracks. The sidereal year (365.2564 days) measures one full orbit relative to the stars. And calendar history has oddities: when Britain adopted the Gregorian calendar in 1752, the year had only 355 days because 11 days were skipped outright. For every modern calculation, though, the answer stays 365 or 366.
+Astronomers use several different "years." The tropical year (365.2422 days) is what the calendar tracks. The sidereal year (365.2564 days) measures one full orbit relative to the stars. A lunar year, 12 lunar months, is about 354 days, which is why lunar calendars drift about 11 days a year against the Gregorian calendar. And calendar history has oddities: when Britain adopted the Gregorian calendar in 1752, the year had only 355 days because 11 days were skipped outright. For every modern calculation, though, the answer stays 365 or 366.
 
 ## Related guides
 
