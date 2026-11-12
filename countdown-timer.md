@@ -74,7 +74,7 @@ schema: |
                     "name": "Does Google have a countdown timer?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Google's built-in timer counts down minutes from the moment you start it, but cannot point at a specific date like a wedding or New Year's Eve."
+                              "text": "Google's built-in timer counts down hours and minutes from the moment you start it, but cannot point at a specific date like a wedding or New Year's Eve."
                     }
           },
           {
@@ -221,7 +221,7 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 </details>
 <details>
 <summary>Does Google have a countdown timer?</summary>
-<p>Google's built-in timer counts down a number of minutes from the moment you start it, which is handy for cooking but cannot point at a specific date like a wedding or New Year's Eve. For a countdown to a chosen date and time, you need a dedicated countdown tool.</p>
+<p>Google's built-in timer counts down hours and minutes from the moment you start it, which is handy for cooking but cannot point at a specific date like a wedding or New Year's Eve. For a countdown to a chosen date and time, you need a dedicated countdown tool.</p>
 </details>
 <details>
 <summary>What is the difference between a countdown timer and a regular timer?</summary>
