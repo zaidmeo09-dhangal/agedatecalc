@@ -9,6 +9,9 @@
 - [Countdown Timer](https://agedatecalc.com/countdown-timer/): Count down to any future date and time.
 - [Stopwatch](https://agedatecalc.com/stopwatch/): A free online stopwatch with laps.
 - [Time Zone Converter](https://agedatecalc.com/time-zone-converter/): Convert time between zones, with daylight saving time explained.
+- [Business Days Calculator](https://agedatecalc.com/business-days-calculator/): Count workdays between two dates, excluding weekends and US federal holidays.
+- [Leap Year Calculator](https://agedatecalc.com/leap-year-calculator/): Check any year and list leap years in a range.
+- [Birthday Countdown](https://agedatecalc.com/birthday-countdown/): Days, hours, minutes, and seconds until your next birthday.
 
 ## Guides
 
