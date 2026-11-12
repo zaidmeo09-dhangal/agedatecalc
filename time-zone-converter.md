@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Time Zone Converter - Convert Time Between Zones
 meta_title: "Time Zone Converter - Convert Time Between World Time Zones"
 description: Convert any time between world time zones instantly. Compare cities, check UTC offsets and daylight saving changes. Free, no sign-up.
 permalink: /time-zone-converter/
@@ -50,7 +49,7 @@ schema: |
                     "name": "What about Arizona and Hawaii, which skip daylight saving?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Arizona stays on MST (UTC-7) all year and Hawaii on HST (UTC-10) all year. Phoenix matches Los Angeles in summer but runs one hour ahead in winter."
+                              "text": "Arizona does not observe daylight saving time because of extreme summer heat: an extra hour of evening sunlight would mean more air conditioning use, not less. Arizona stays on Mountain Standard Time (UTC-7) year round, except the Navajo Nation, which does observe DST. Hawaii stays on HST (UTC-10) all year. That means Phoenix matches Los Angeles in summer (both effectively UTC-7) but runs one hour ahead of it in winter."
                     }
           },
           {
@@ -121,6 +120,7 @@ related_posts:
         <label for="tz-from">From time zone</label>
         <select id="tz-from"></select>
       </div>
+      <button class="btn btn-outline btn-block" id="tz-swap" type="button" style="margin-bottom:16px">Swap zones</button>
       <div class="field">
         <label for="tz-to">To time zone</label>
         <select id="tz-to"></select>
@@ -163,7 +163,8 @@ Worked example with this time zone converter's logic: 2:00 PM in California in J
 | Pacific (Los Angeles) | PST, UTC-8 | PDT, UTC-7 | Yes |
 | Arizona (Phoenix) | MST, UTC-7 | MST, UTC-7 | No |
 | Hawaii (Honolulu) | HST, UTC-10 | HST, UTC-10 | No |
-| London | GMT, UTC+0 | BST, UTC+1 | Yes |
+
+London is not a US time zone. It runs on GMT (UTC+0) in winter and BST (UTC+1) in summer, and the converter lists it as a European zone.
 
 Phoenix stays on MST (UTC-7) year-round, so it matches Los Angeles in summer but runs one hour ahead in winter. Hawaii stays on HST (UTC-10) all year.
 
@@ -192,7 +193,7 @@ And never schedule 8:00 AM Eastern unless it is an emergency: that is 5:00 AM in
 
 US daylight saving is federal law. The Uniform Time Act of 1966 (15 U.S.C. 260a) requires clocks to spring forward at 2:00 AM on the second Sunday of March and fall back at 2:00 AM on the first Sunday of November. States may only exempt themselves to observe permanent standard time, which is what Arizona (except the Navajo Nation) and Hawaii do.
 
-In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7. For the full schedule and which states skip it, see our guide on [when daylight saving time ends in 2027]({{ '/blog/when-does-daylight-saving-time-end/' | relative_url }}).
+In 2026, DST runs March 8 to November 1. In 2027, it runs March 14 to November 7. These dates stand under current law. The House passed the Sunshine Protection Act (H.R. 139) on July 14, 2026, but the Senate has not voted and it is not law, so the 2027 schedule still applies. For the full schedule and which states skip it, see our guide on [when daylight saving time ends in 2027]({{ '/blog/when-does-daylight-saving-time-end/' | relative_url }}).
 
 ## Why time zone conversions go wrong
 
@@ -229,7 +230,7 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
 </details>
 <details>
 <summary>What about Arizona and Hawaii, which skip daylight saving?</summary>
-<p>Arizona (except the Navajo Nation) stays on Mountain Standard Time (UTC-7) all year, and Hawaii stays on HST (UTC-10) all year, as federal law allows. That means Phoenix matches Los Angeles in summer (both effectively UTC-7) but runs one hour ahead of it in winter. Always confirm the local time for participants in these states.</p>
+<p>Arizona does not observe daylight saving time because of extreme summer heat: an extra hour of evening sunlight would mean more air conditioning use, not less. Arizona stays on Mountain Standard Time (UTC-7) year round, except the Navajo Nation, which does observe DST. Hawaii stays on HST (UTC-10) all year. That means Phoenix matches Los Angeles in summer (both effectively UTC-7) but runs one hour ahead of it in winter.</p>
 </details>
 <details>
 <summary>How do I convert time zones manually?</summary>
@@ -299,7 +300,19 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
     ["Paris (CET/CEST)", "Europe/Paris"],
     ["Berlin (CET/CEST)", "Europe/Berlin"],
     ["Moscow (MSK)", "Europe/Moscow"],
-    ["Sydney (AEDT/AEST)", "Australia/Sydney"]
+    ["Sydney (AEDT/AEST)", "Australia/Sydney"],
+    ["Honolulu (HST, no DST)", "Pacific/Honolulu"],
+    ["Anchorage (AKST/AKDT)", "America/Anchorage"],
+    ["Mexico City (CST)", "America/Mexico_City"],
+    ["Bogota (COT)", "America/Bogota"],
+    ["Buenos Aires (ART)", "America/Argentina/Buenos_Aires"],
+    ["Dublin (GMT/IST)", "Europe/Dublin"],
+    ["Madrid (CET/CEST)", "Europe/Madrid"],
+    ["Rome (CET/CEST)", "Europe/Rome"],
+    ["Amsterdam (CET/CEST)", "Europe/Amsterdam"],
+    ["Athens (EET/EEST)", "Europe/Athens"],
+    ["Auckland (NZST/NZDT)", "Pacific/Auckland"],
+    ["Melbourne (AEST/AEDT)", "Australia/Melbourne"]
   ];
 
   var fromSel = document.getElementById("tz-from");
@@ -310,6 +323,13 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
   });
   fromSel.selectedIndex = 1; // New York default
   toSel.selectedIndex = 8; // London default
+
+  document.getElementById("tz-swap").addEventListener("click", function(){
+    var tmp = fromSel.value;
+    fromSel.value = toSel.value;
+    toSel.value = tmp;
+    if(document.getElementById("tz-datetime").value){ document.getElementById("tz-btn").click(); }
+  });
 
   // Pre-fill with current local time
   (function(){
