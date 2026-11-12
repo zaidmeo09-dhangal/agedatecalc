@@ -206,9 +206,9 @@ Social Security note: the SSA counts you as reaching an age the day before your 
 
 For a spreadsheet, the DATEDIF function does the same borrowing math:
 
-`=DATEDIF(birth_date, TODAY(), "Y") & " years, " & DATEDIF(birth_date, TODAY(), "YM") & " months, " & DATEDIF(birth_date, TODAY(), "MD") & " days"`
+`=DATEDIF(birth_date, TODAY(), "Y") & " years, " & DATEDIF(birth_date, TODAY(), "YM") & " months, " & (TODAY() - EDATE(birth_date, DATEDIF(birth_date, TODAY(), "Y") * 12 + DATEDIF(birth_date, TODAY(), "YM"))) & " days"`
 
-Replace birth_date with the cell holding the date of birth. Note that Excel intentionally treats 1900 as a leap year for old compatibility reasons, so avoid dates before March 1, 1900 in spreadsheets.
+Replace birth_date with the cell holding the date of birth. Microsoft warns against the "MD" unit because it can return a negative number, a zero, or an inaccurate result, so the days part above uses EDATE instead: EDATE moves the birth date forward by the completed years and months, and subtracting that date from today leaves the remaining days. See our full [how to calculate age in Excel]({{ '/blog/how-to-calculate-age-in-excel/' | relative_url }}) guide for three worked examples. Note that Excel intentionally treats 1900 as a leap year for old compatibility reasons, so avoid dates before March 1, 1900 in spreadsheets.
 
 ## Frequently asked questions
 
