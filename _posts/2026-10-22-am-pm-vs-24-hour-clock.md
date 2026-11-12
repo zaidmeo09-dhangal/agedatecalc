@@ -3,6 +3,7 @@ layout: post
 title: AM/PM vs 24-Hour Clock - Complete Conversion Guide
 slug: am-pm-vs-24-hour-clock
 date: '2026-10-22'
+last_modified_at: 2026-11-12
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -84,6 +85,14 @@ A handy check: AM comes before PM in the alphabet, and midnight comes before noo
 - Hour 12 stays 12 PM.
 - Hours 13 to 23: subtract 12 and add PM.
 
+## Military time: no colon, four digits
+
+Military time drops the colon and always uses four digits. 2:30 PM becomes 1430, 8:00 AM becomes 0800, and midnight is 0000. Spoken aloud, 1430 is "fourteen thirty" and 0800 is "zero eight hundred."
+
+Note the two midnight forms: 00:00 is the standard start of a day, while 24:00 is sometimes written for midnight at the end of a day. Both mean midnight, but 00:00 is the form to use, and 24:00 never means the start of a day.
+
+This four-digit style follows ISO 8601, the international date and time standard, which writes times in 24-hour form with a colon (14:30) and dates as year-month-day (2026-11-12).
+
 ## Quick reference table
 
 | 12-hour | 24-hour | 12-hour | 24-hour |
@@ -105,7 +114,7 @@ A handy check: AM comes before PM in the alphabet, and midnight comes before noo
 
 ## Where each system dominates
 
-The 24-hour clock is standard across most of Europe and Asia, and in several fields worldwide, because it removes all AM/PM ambiguity. The 12-hour clock remains common in everyday speech in the US, UK, and several other countries.
+The 24-hour clock is the everyday default across most of continental Europe, including Germany, France, Spain, and Italy, and on timetables and screens across much of Asia. The 12-hour clock remains the everyday default in the United States, Canada, the United Kingdom, Ireland, Australia, New Zealand, India, and the Philippines.
 
 Specific fields made the switch because mistakes there are expensive:
 
