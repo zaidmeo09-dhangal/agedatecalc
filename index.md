@@ -1,22 +1,63 @@
 ---
 layout: default
-title: Free Date and Time Tools
-meta_title: "Free Date and Time Tools: Age Calculator, Countdown & More"
-description: Calculate your exact age, count days between dates, run countdowns, use a stopwatch, and convert time zones. Free date and time tools.
+title: Age Date Calculator - Free Date and Time Tools
+meta_title: "Age Date Calculator - Free Date and Time Tools"
+description: "Age Date Calculator: find your exact age, count days between dates, run countdowns, use a stopwatch, and convert time zones. Free, no sign-up."
 schema: |
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "AgeDateCalc",
-    "url": "https://agedatecalc.com/",
-    "description": "Free date and time tools: age calculator, date difference calculator, countdown timer, stopwatch, and time zone converter."
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "AgeDateCalc",
+        "url": "https://agedatecalc.com/",
+        "description": "Free date and time tools: age calculator, date difference calculator, countdown timer, stopwatch, and time zone converter."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are these tools really free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Every calculator and timer on AgeDateCalc is completely free, with no account, no trial period, and no usage limits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you store my dates or personal data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. All calculations happen in your browser. Your dates of birth and other inputs are never sent to our servers or stored anywhere."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is the Age Calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It accounts for leap years and varying month lengths, and correctly handles February 29 birthdays by celebrating them on March 1 in non-leap years."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do the tools work on mobile phones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The entire site is designed mobile-first, so every tool works smoothly on phones, tablets, and desktop computers."
+            }
+          }
+        ]
+      }
+    ]
   }
 ---
 
 <section class="hero">
   <div class="wrap hero-inner">
     <span class="badge">100% Free, No Sign-Up</span>
-    <h1>Every date and time calculation, <span class="accent">in seconds.</span></h1>
+    <h1>Age Date Calculator: every date and time <span class="accent">in seconds.</span></h1>
     <p class="lead">Find your exact age, count the days between any two dates, run a countdown, or convert time zones. Fast, accurate, and free forever.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="{{ '/age-calculator/' | relative_url }}">Calculate Your Age</a>
@@ -76,7 +117,7 @@ schema: |
       <p class="sub">Enter your date of birth to see your exact age instantly.</p>
       <div class="field">
         <label for="dob">Date of birth</label>
-        <input type="date" id="dob" max="2026-10-18">
+        <input type="date" id="dob">
       </div>
       <button class="btn btn-primary btn-block" id="calc-age-btn" type="button">Calculate My Age</button>
       <div id="age-result"></div>
