@@ -82,7 +82,7 @@ schema: |
                     "name": "How do I save my lap times?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Copy the lap list into a spreadsheet before hitting Reset, because clearing erases them."
+                              "text": "Use the Copy laps button to copy the lap list, then paste it into a spreadsheet. Copy before hitting Reset, because clearing erases them."
                     }
           },
           {
@@ -117,10 +117,13 @@ related_posts:
       <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
         <button class="btn btn-primary" id="sw-start" type="button">Start</button>
         <button class="btn btn-outline" id="sw-lap" type="button" disabled>Lap</button>
+        <button class="btn btn-outline" id="sw-copy" type="button" disabled>Copy laps</button>
         <button class="btn btn-outline" id="sw-reset" type="button">Reset</button>
+        <button class="btn btn-outline" id="sw-full" type="button">Fullscreen</button>
+        <span id="sw-copy-msg" style="font-size:.85rem;align-self:center"></span>
       </div>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Keyboard shortcuts: Space starts and pauses, L records a lap, R resets. Hundredth-second precision. Runs entirely in your browser, nothing uploaded.</p>
       <div id="sw-laps" style="margin-top:20px;text-align:left"></div>
-      <p class="result-note" style="font-size:.82rem;margin-top:12px">Hundredth-second precision. Runs entirely in your browser, nothing uploaded.</p>
     </div>
   </div>
 </section>
@@ -137,9 +140,9 @@ An online stopwatch counts up from zero to measure how long something takes, wit
 
 1. Click **Start** to begin timing.
 2. Click **Lap** to record a split without stopping the clock. Each lap lists its own time and the running total.
-3. Click **Start** again to pause, and **Reset** to clear everything and start over.
+3. Click **Start** again to pause, and **Reset** to clear everything and start over. Keyboard shortcuts work too: Space starts and pauses, L records a lap, R resets.
 
-Tip: write down or copy your laps before hitting Reset, because clearing erases them.
+Tip: use the **Copy laps** button to save your laps before hitting Reset, because clearing erases them. The fastest lap is highlighted in teal and the slowest in amber.
 
 ## How this stopwatch keeps accurate time
 
@@ -151,7 +154,7 @@ The browser's `performance.now()` clock resolves down to 100 microseconds in sta
 
 **Lap time** is how long one segment took. **Split time** is the total elapsed time at that checkpoint.
 
-Worked example: your laps land at 1:05.200 and 2:12.700. The split at lap 2 is 2:12.700, but lap 2 itself took 1:07.500 (2:12.700 minus 1:05.200). Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish time.
+Worked example: your laps land at 01:05.20 and 02:12.70. The split at lap 2 is 02:12.70, but lap 2 itself took 01:07.50 (02:12.70 minus 01:05.20). Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish time.
 
 ## Your finger is the real limit
 
@@ -189,7 +192,7 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
 </details>
 <details>
 <summary>What is the difference between lap time and split time?</summary>
-<p>Lap time is how long one segment took. Split time is the total elapsed time at that checkpoint. If your laps land at 1:05.200 and 2:12.700, the split at lap 2 is 2:12.700 but lap 2 itself took 1:07.500. Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish.</p>
+<p>Lap time is how long one segment took. Split time is the total elapsed time at that checkpoint. If your laps land at 01:05.20 and 02:12.70, the split at lap 2 is 02:12.70 but lap 2 itself took 01:07.50. Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish.</p>
 </details>
 <details>
 <summary>Does the stopwatch keep running if I switch tabs?</summary>
@@ -209,7 +212,7 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
 </details>
 <details>
 <summary>How do I save my lap times?</summary>
-<p>Copy the lap list into a spreadsheet to chart pace or find your slowest segment. Write down or export laps before hitting Reset, because clearing the stopwatch erases them.</p>
+<p>Use the Copy laps button to copy the lap list, then paste it into a spreadsheet to chart pace or find your slowest segment. Copy before hitting Reset, because clearing the stopwatch erases them.</p>
 </details>
 <details>
 <summary>How do I time something accurately by hand?</summary>
@@ -255,7 +258,9 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
   var display = document.getElementById("sw-display");
   var startBtn = document.getElementById("sw-start");
   var lapBtn = document.getElementById("sw-lap");
+  var copyBtn = document.getElementById("sw-copy");
   var resetBtn = document.getElementById("sw-reset");
+  var fullBtn = document.getElementById("sw-full");
   var lapsBox = document.getElementById("sw-laps");
 
   function fmt(ms){
@@ -273,7 +278,7 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
 
   function loop(){ draw(); raf = requestAnimationFrame(loop); }
 
-  startBtn.addEventListener("click", function(){
+  function toggleStart(){
     if(running){
       elapsed = current(); running = false;
       cancelAnimationFrame(raf); draw();
@@ -284,27 +289,75 @@ Need to count down to a moment instead of timing up from zero? The [Countdown Ti
       startBtn.textContent = "Pause";
       lapBtn.disabled = false;
     }
-  });
+  }
 
-  lapBtn.addEventListener("click", function(){
+  function recordLap(){
     if(!running){ return; }
     var total = current();
     var prev = laps.length ? laps[laps.length - 1].total : 0;
     laps.push({ n: laps.length + 1, split: total - prev, total: total });
-    var html = '<div class="result-box" style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;align-items:center">' +
-      '<strong>Lap ' + laps[laps.length - 1].n + '</strong>' +
-      '<span class="mono">' + fmt(laps[laps.length - 1].split) + ' <span style="color:var(--muted)">(' + fmt(total) + ')</span></span>' +
-      '</div></div>';
-    lapsBox.insertAdjacentHTML("afterbegin", html);
-  });
+    renderLaps();
+  }
 
-  resetBtn.addEventListener("click", function(){
+  function renderLaps(){
+    var fastest = null, slowest = null;
+    if(laps.length >= 2){
+      fastest = laps[0].split; slowest = laps[0].split;
+      laps.forEach(function(l){ if(l.split < fastest){ fastest = l.split; } if(l.split > slowest){ slowest = l.split; } });
+    }
+    var html = "";
+    for(var i = laps.length - 1; i >= 0; i--){
+      var l = laps[i];
+      var cls = "", tag = "";
+      if(fastest !== null && fastest !== slowest){
+        if(l.split === fastest){ cls = " lap-fastest"; tag = ' <span style="font-size:.8rem">Fastest</span>'; }
+        else if(l.split === slowest){ cls = " lap-slowest"; tag = ' <span style="font-size:.8rem">Slowest</span>'; }
+      }
+      html += '<div class="result-box' + cls + '" style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;align-items:center">' +
+        '<strong>Lap ' + l.n + tag + '</strong>' +
+        '<span class="mono">' + fmt(l.split) + ' <span style="color:var(--muted)">(' + fmt(l.total) + ')</span></span>' +
+        '</div></div>';
+    }
+    lapsBox.innerHTML = html;
+    copyBtn.disabled = laps.length === 0;
+  }
+
+  function doReset(){
     running = false; elapsed = 0; laps = [];
     cancelAnimationFrame(raf);
     display.textContent = "00:00.00";
     lapsBox.innerHTML = "";
     startBtn.textContent = "Start";
     lapBtn.disabled = true;
+    copyBtn.disabled = true;
+  }
+
+  startBtn.addEventListener("click", toggleStart);
+  lapBtn.addEventListener("click", recordLap);
+  resetBtn.addEventListener("click", doReset);
+
+  copyBtn.addEventListener("click", function(){
+    if(!laps.length){ return; }
+    var text = laps.map(function(l){ return "Lap " + l.n + ": " + fmt(l.split) + " (total " + fmt(l.total) + ")"; }).join("\n");
+    var msg = document.getElementById("sw-copy-msg");
+    function done(t){ if(msg){ msg.textContent = t; } }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ done("Laps copied!"); }, function(){ done("Copy failed, select the laps manually."); });
+    }else{ done("Copy is not supported in this browser."); }
+  });
+
+  fullBtn.addEventListener("click", function(){
+    var card = document.querySelector(".calc-card");
+    if(!card){ return; }
+    if(document.fullscreenElement){ document.exitFullscreen(); }
+    else if(card.requestFullscreen){ card.requestFullscreen(); }
+  });
+
+  document.addEventListener("keydown", function(e){
+    if(e.target && e.target.matches("input, textarea, select, button, a")){ return; }
+    if(e.code === "Space"){ e.preventDefault(); toggleStart(); }
+    else if(e.code === "KeyL"){ recordLap(); }
+    else if(e.code === "KeyR"){ doReset(); }
   });
 })();
 </script>
