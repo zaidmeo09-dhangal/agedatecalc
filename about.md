@@ -4,6 +4,15 @@ title: About AgeDateCalc | Free Date and Time Tools
 meta_title: About AgeDateCalc
 description: Learn what AgeDateCalc is, who builds it, and how our five free date and time tools work. No sign-up, private by design.
 permalink: /about/
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://agedatecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://agedatecalc.com/about/" }
+    ]
+  }
 ---
 
 <section class="page-hero">
