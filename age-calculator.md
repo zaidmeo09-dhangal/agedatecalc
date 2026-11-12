@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Age Calculator - Exact Age in Years, Months and Days
 meta_title: "Age Calculator - Exact Age in Years, Months and Days"
 description: Calculate your exact age from your date of birth in years, months and days. See total days lived, your weekday born and days until your next birthday. Free.
 permalink: /age-calculator/
@@ -189,6 +188,8 @@ Your birth date also determines your Social Security timeline. Under current law
 
 Key ages: **62** is the earliest you can claim (with a permanent reduction), **67** is full retirement age for anyone born in 1960 or later, and **70** is the maximum benefit age, with benefits growing about 8 percent per year past full retirement age. Born in 1990? Your full retirement age is 67, landing in 2057.
 
+Social Security note: the SSA counts you as reaching an age the day before your birthday. If you turn 62 on June 15, the SSA treats you as 62 on June 14, so your earliest claiming month starts a day earlier than the birthday itself.
+
 ## US legal age milestones at a glance
 
 | Age | Milestone |
@@ -324,9 +325,10 @@ Replace birth_date with the cell holding the date of birth. Note that Excel inte
       '<div class="stat-grid">' +
       '<div class="stat-box"><span class="num" data-count="' + (totalDays * 24).toLocaleString() + '">0</span><span class="lbl">Hours lived</span></div>' +
       '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 24 * 60 / 1000) + 'k">0</span><span class="lbl">Minutes lived (thousands)</span></div>' +
-      '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 100800 / 1000000) + 'M">0</span><span class="lbl">Heartbeats (millions)</span></div>' +
-      '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 23040 / 1000000) + 'M">0</span><span class="lbl">Breaths (millions)</span></div>' +
+      '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 100800 / 1000000) + 'M">0</span><span class="lbl">Heartbeats, estimate (millions)</span></div>' +
+      '<div class="stat-box"><span class="num" data-count="' + Math.round(totalDays * 23040 / 1000000) + 'M">0</span><span class="lbl">Breaths, estimate (millions)</span></div>' +
       '</div>' +
+      '<p class="result-note">Heartbeats and breaths are estimates based on 70 heartbeats per minute and 16 breaths per minute.</p>' +
       '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="age-share-btn">Copy share link</button> <span id="age-share-msg" style="font-size:.85rem"></span></p>';
     /* Animated count-up for life-in-numbers */
     setTimeout(function(){
