@@ -4,6 +4,15 @@ title: Terms of Service | AgeDateCalc
 meta_title: Terms of Service
 description: The terms for using AgeDateCalc's free date and time tools, including acceptable use, accuracy limits, and advertising disclosure.
 permalink: /terms/
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://agedatecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Terms of Service", "item": "https://agedatecalc.com/terms/" }
+    ]
+  }
 ---
 
 <section class="page-hero">
