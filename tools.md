@@ -4,6 +4,30 @@ title: All Free Date and Time Tools
 meta_title: "All Free Date and Time Tools in One Place"
 description: Browse every free date and time tool in one place. Age calculator, date difference, countdown timer, stopwatch, and time zone converter. No sign-up.
 permalink: /tools/
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ItemList",
+        "name": "All Free Date and Time Tools",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Age Calculator", "url": "https://agedatecalc.com/age-calculator/" },
+          { "@type": "ListItem", "position": 2, "name": "Date Difference Calculator", "url": "https://agedatecalc.com/date-difference-calculator/" },
+          { "@type": "ListItem", "position": 3, "name": "Countdown Timer", "url": "https://agedatecalc.com/countdown-timer/" },
+          { "@type": "ListItem", "position": 4, "name": "Stopwatch", "url": "https://agedatecalc.com/stopwatch/" },
+          { "@type": "ListItem", "position": 5, "name": "Time Zone Converter", "url": "https://agedatecalc.com/time-zone-converter/" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://agedatecalc.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://agedatecalc.com/tools/" }
+        ]
+      }
+    ]
+  }
 ---
 
 <section class="page-hero">
@@ -11,6 +35,7 @@ permalink: /tools/
     <span class="badge">Tools</span>
     <h1>All Date and Time <span class="accent">Tools</span></h1>
     <p class="lead">Every calculator and timer on AgeDateCalc, free forever. Pick one and get your answer in seconds.</p>
+    <p>From birthdays to board meetings, these tools cover the dates that matter. Calculate an exact age, measure the gap between two dates, count down to an event, time anything with a stopwatch, or convert a meeting time across zones. Every tool runs in your browser, needs no account, and is free.</p>
   </div>
 </section>
 
