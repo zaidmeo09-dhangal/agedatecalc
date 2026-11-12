@@ -4,6 +4,15 @@ title: Privacy Policy | AgeDateCalc
 meta_title: Privacy Policy
 description: How AgeDateCalc handles your data, cookies, and analytics. Our tools run in your browser, and we do not collect or sell your tool inputs.
 permalink: /privacy-policy/
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://agedatecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Privacy Policy", "item": "https://agedatecalc.com/privacy-policy/" }
+    ]
+  }
 ---
 
 <section class="page-hero">
