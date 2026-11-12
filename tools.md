@@ -2,7 +2,7 @@
 layout: default
 title: All Free Date and Time Tools
 meta_title: "All Free Date and Time Tools in One Place"
-description: Browse every free date and time tool in one place. Age calculator, date difference, countdown timer, stopwatch, and time zone converter. No sign-up.
+description: Browse every free date and time tool in one place. Age, business days, countdowns, stopwatch, time zones, leap years, birthdays. No sign-up.
 permalink: /tools/
 schema: |
   {
@@ -16,7 +16,10 @@ schema: |
           { "@type": "ListItem", "position": 2, "name": "Date Difference Calculator", "url": "https://agedatecalc.com/date-difference-calculator/" },
           { "@type": "ListItem", "position": 3, "name": "Countdown Timer", "url": "https://agedatecalc.com/countdown-timer/" },
           { "@type": "ListItem", "position": 4, "name": "Stopwatch", "url": "https://agedatecalc.com/stopwatch/" },
-          { "@type": "ListItem", "position": 5, "name": "Time Zone Converter", "url": "https://agedatecalc.com/time-zone-converter/" }
+          { "@type": "ListItem", "position": 5, "name": "Time Zone Converter", "url": "https://agedatecalc.com/time-zone-converter/" },
+          { "@type": "ListItem", "position": 6, "name": "Business Days Calculator", "url": "https://agedatecalc.com/business-days-calculator/" },
+          { "@type": "ListItem", "position": 7, "name": "Leap Year Calculator", "url": "https://agedatecalc.com/leap-year-calculator/" },
+          { "@type": "ListItem", "position": 8, "name": "Birthday Countdown", "url": "https://agedatecalc.com/birthday-countdown/" }
         ]
       },
       {
@@ -35,7 +38,7 @@ schema: |
     <span class="badge">Tools</span>
     <h1>All Date and Time <span class="accent">Tools</span></h1>
     <p class="lead">Every calculator and timer on AgeDateCalc, free forever. Pick one and get your answer in seconds.</p>
-    <p>From birthdays to board meetings, these tools cover the dates that matter. Calculate an exact age, measure the gap between two dates, count down to an event, time anything with a stopwatch, or convert a meeting time across zones. Every tool runs in your browser, needs no account, and is free.</p>
+    <p>From birthdays to board meetings, these tools cover the dates that matter. Calculate an exact age, measure the gap between two dates, count business days, count down to an event or a birthday, check leap years, time anything with a stopwatch, or convert a meeting time across zones. Every tool runs in your browser, needs no account, and is free.</p>
   </div>
 </section>
 
@@ -70,6 +73,24 @@ schema: |
         <div class="tool-icon">🌍</div>
         <h2>Time Zone Converter</h2>
         <p>Turn any time into another zone's local time, with daylight saving handled.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/business-days-calculator/' | relative_url }}">
+        <div class="tool-icon">💼</div>
+        <h2>Business Days Calculator</h2>
+        <p>Count workdays between two dates, with weekends and US federal holidays removed.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/leap-year-calculator/' | relative_url }}">
+        <div class="tool-icon">📆</div>
+        <h2>Leap Year Calculator</h2>
+        <p>Check any year and list leap years in a range, with the three rules explained.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/birthday-countdown/' | relative_url }}">
+        <div class="tool-icon">🎉</div>
+        <h2>Birthday Countdown</h2>
+        <p>Days, hours, minutes, and seconds until your next birthday, with the age you turn.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
     </div>
