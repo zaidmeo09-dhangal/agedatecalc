@@ -3,6 +3,7 @@ layout: post
 title: How to Count Days Between Two Dates (Manual Method)
 slug: how-to-count-days-between-dates
 date: '2026-10-23'
+last_modified_at: 2026-11-12
 status: Published
 author: AgeDateCalc Team
 category: How-To Guides
@@ -93,6 +94,17 @@ Deadlines usually mean business days, Monday through Friday, excluding [public h
 
 Public holidays vary by country and are the usual reason business-day counts still surprise people. When a deadline is contractual, list the holidays or name the exact date instead of a day count.
 
+## Count days in Excel or Google Sheets
+
+Put the start date in A2 and the end date in B2:
+
+- `=B2-A2` gives the days between the two dates, using the same exclusive convention as this guide.
+- `=B2-A2+1` counts both endpoints, for billing or booking situations.
+- `=NETWORKDAYS(A2, B2)` counts business days, skipping Saturdays and Sundays. Add a holiday list as a third argument, `=NETWORKDAYS(A2, B2, holidays)`, to skip public holidays too.
+- `=DATEDIF(A2, B2, "d")` gives the same day count as `=B2-A2`.
+
+Note that NETWORKDAYS counts both the start and end dates, so it is one more than the exclusive count when both are weekdays. For the March 2 to March 13, 2026 example above, NETWORKDAYS gives 10, matching the business-day count.
+
 ## A month-boundary example
 
 Crossing from one month into the next is where hand counting usually breaks, because the month lengths change mid-count.
@@ -119,7 +131,7 @@ The last row is a useful sanity check: 24 years at 365 days each is 8,760, and t
 
 ## The fast way
 
-Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, and years/months/days, and can also add or subtract days from any date.
+Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and can also add or subtract days from any date.
 
 ## Related guides
 
