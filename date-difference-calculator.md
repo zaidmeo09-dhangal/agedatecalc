@@ -274,7 +274,7 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 | Thanksgiving | Thursday, November 25 | Nov 25 |
 | Christmas Day | Saturday, December 25 | Friday, December 24 |
 
-**Business days shortcut:** the calculator counts the weekdays in your range for you. It does not subtract holidays, so subtract the observed holidays that fall inside the range yourself. Example: a project running Monday, November 23 to Friday, December 4, 2026 has 9 weekdays after the start date (November 24 to December 4). Subtract Thanksgiving (Nov 26) to get 8 business days.
+**Business days shortcut:** the calculator counts the weekdays in your range for you. It does not subtract holidays, so subtract the observed holidays that fall inside the range yourself. For a count that subtracts them automatically, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). Example: a project running Monday, November 23 to Friday, December 4, 2026 has 9 weekdays after the start date (November 24 to December 4). Subtract Thanksgiving (Nov 26) to get 8 business days.
 
 **Sources:** holiday dates and observed-date rules follow the US Office of Personnel Management (OPM.gov) federal holiday schedule and 5 U.S.C. 6103.
 
