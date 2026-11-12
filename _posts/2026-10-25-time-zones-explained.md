@@ -3,6 +3,7 @@ layout: post
 title: Time Zones Explained - UTC, GMT, and Daylight Saving
 slug: time-zones-explained
 date: '2026-10-25'
+last_modified_at: 2026-11-12
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -47,7 +48,7 @@ faqs_raw: 'How many time zones are there in the world?
 
   Why do some places not observe daylight saving time?
 
-  Daylight saving offers little benefit near the equator, where daylight hours barely change across the year. Arizona and Hawaii stay on standard time all year for this reason.'
+  Hawaii skips daylight saving because it sits near the equator, where daylight hours barely change across the year. Arizona skips it for a different reason: extreme summer heat. An extra hour of evening sunlight would mean more air conditioning use, not less, so Arizona stays on Mountain Standard Time (UTC-7) year round, except the Navajo Nation, which does observe DST.'
 permalink: /blog/time-zones-explained/
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
@@ -91,7 +92,28 @@ The 50 states span [six main time zones](https://www.timeanddate.com/time/zone/u
 | Alaska | AKST (UTC-9) | AKDT (UTC-8) |
 | Hawaii | HST (UTC-10) | None (no daylight saving) |
 
-Hawaii never changes its clocks, and Arizona stays on Mountain Standard Time all year (the Navajo Nation in the northeast of the state is the exception). So in summer, Arizona matches Pacific Daylight Time even though it never springs forward itself.
+Hawaii never changes its clocks. Arizona stays on Mountain Standard Time all year because of extreme summer heat, not because of its latitude: an extra hour of evening sun would mean more air conditioning use. The Navajo Nation in the northeast of the state is the exception and does observe daylight saving. So in summer, Arizona matches Pacific Daylight Time even though it never springs forward itself.
+
+## Not every offset is a whole hour
+
+The textbook model has 24 zones, but the real world has 38 distinct UTC offsets, because half-hour and 45-minute offsets exist alongside the whole-hour ones:
+
+| Place | Offset | Note |
+|---|---|---|
+| India | UTC+5:30 | Whole country, one zone |
+| Nepal | UTC+5:45 | One of only two 45-minute offsets in standard use |
+| Iran | UTC+3:30 | No daylight saving |
+| Chatham Islands, New Zealand | UTC+12:45 | UTC+13:45 in daylight time |
+| Newfoundland, Canada | UTC-3:30 | UTC-2:30 in daylight time |
+| Myanmar | UTC+6:30 | Whole country, one zone |
+
+## One country, one clock? Not always
+
+- **China** uses a single time zone, UTC+8, across the whole country, even though it spans five geographic zones. Solar noon in western China can fall well into the afternoon by the clock.
+- **Spain** sits on the Greenwich meridian but uses Central European Time (UTC+1), so Madrid clocks run about an hour ahead of the sun.
+- **Russia** spans 11 time zones, the most of any country, from Kaliningrad (UTC+2) to Kamchatka (UTC+12).
+
+In summer, the UK switches to BST, British Summer Time (UTC+1). And when you build anything with time zones, use IANA identifiers like America/New_York or Europe/London, not fixed offsets: the identifier carries the DST rules and history, while a fixed offset goes stale twice a year.
 
 ## Daylight saving time (DST)
 
