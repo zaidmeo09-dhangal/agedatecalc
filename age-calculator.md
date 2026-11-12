@@ -135,7 +135,7 @@ Your exact age is the time from your date of birth to today, counted in full yea
 
 1. Pick your date of birth using the date picker above.
 2. Click **Calculate My Age**.
-3. Read your exact age, total days lived, the weekday you were born on, and how many days remain until your next birthday.
+3. Read your exact age, total days lived, the weekday you were born on, and how many days remain until your next birthday. For a live ticking countdown to that day, use the [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}).
 
 Want to save or share the result? Use the Copy share link button to get a link that reopens your exact calculation.
 
@@ -166,7 +166,7 @@ Notice the borrow in action if we measured one day earlier, on October 14: the d
 
 Leap day birthdays are handled with the most common convention: in non-leap years, your birthday is counted on March 1. Your total days lived remain exact regardless.
 
-Example: born February 29, 2012, you are still 12 on February 28, 2025, and turn 13 on March 1. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. Learn more in [what is a leap year]({{ '/blog/what-is-a-leap-year/' | relative_url }}).
+Example: born February 29, 2012, you are still 12 on February 28, 2025, and turn 13 on March 1. A leap year is any year divisible by 4, except century years, which must also be divisible by 400. Learn more in [what is a leap year]({{ '/blog/what-is-a-leap-year/' | relative_url }}), or check any year with the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
 
 ## Why age calculators sometimes disagree
 
