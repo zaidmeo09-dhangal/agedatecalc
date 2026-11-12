@@ -3,6 +3,7 @@ layout: post
 title: What Is a Leap Year? Simple Rules Explained
 slug: what-is-a-leap-year
 date: '2026-10-21'
+last_modified_at: 2026-11-12
 status: Published
 author: AgeDateCalc Team
 category: Date Guides
@@ -40,13 +41,13 @@ faqs_raw: 'Is 2026 a leap year?
 
   Why does February get an extra day in a leap year?
 
-  Earth takes about 365.25 days to orbit the sun, roughly a quarter day more than the 365 days on the calendar. Adding February 29 every four years absorbs that extra time and keeps the calendar from drifting away from the seasons.
+  Earth takes about 365.2422 days (the tropical year) to orbit the sun, roughly a quarter day more than the 365 days on the calendar. Adding February 29 every four years absorbs that extra time and keeps the calendar from drifting away from the seasons.
 
   ---
 
   What birthday do February 29 babies celebrate in non-leap years?
 
-  They celebrate on February 28 or March 1, depending on local custom and law. March 1 is the most common convention, and it is the one most age calculators use.'
+  They celebrate on February 28 or March 1, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents.'
 permalink: /blog/what-is-a-leap-year/
 tool_url: /age-calculator/
 tool_name: Age Calculator
@@ -58,7 +59,7 @@ A leap year is a year with 366 days instead of 365. The extra day, February 29, 
 
 ## Why leap years exist
 
-Earth takes about 365.25 days to orbit the sun, not exactly 365. Without correction, the calendar would drift by about one day every four years. After a century, seasons would slide by nearly a month. Adding one day every four years absorbs most of that drift.
+Earth takes about 365.2422 days (the tropical year) to orbit the sun, not exactly 365. Without correction, the calendar would drift by about one day every four years. After a century, seasons would slide by nearly a month. Adding one day every four years absorbs most of that drift.
 
 <img src="{{ '/assets/images/what-is-a-leap-year-orbit.webp' | relative_url }}" alt="Earth at four positions in its orbit around the sun, showing why a year is about 365.25 days and leap years exist" width="1200" height="630" loading="lazy">
 
@@ -98,11 +99,11 @@ Leap years change day counts between dates. Anyone calculating exact age, contra
 
 ## Leap day birthdays
 
-People born on February 29 celebrate on February 28 or March 1 in non-leap years, depending on local custom. March 1 is the most common convention and the one our calculator uses.
+People born on February 29 celebrate on February 28 or March 1 in non-leap years, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents. Our calculator counts the birthday on March 1 in non-leap years.
 
 ## Leap seconds are not leap years
 
-A leap second is a single extra second added to UTC now and then to keep atomic clocks in step with Earth's slightly irregular rotation. Since 1972, 27 leap seconds have been added, the most recent on December 31, 2016. They have nothing to do with February 29, they do not affect birthdays or anniversaries, and they are scheduled to be phased out by 2035. If you ever see "leap second" in a time article, it belongs to a different story.
+A leap second is a single extra second added to UTC now and then to keep atomic clocks in step with Earth's slightly irregular rotation. Since 1972, 27 leap seconds have been added, the most recent on December 31, 2016. They have nothing to do with February 29, they do not affect birthdays or anniversaries. On October 15, 2026, the CGPM voted to end leap seconds. Continuous UTC takes effect on May 20, 2027, and the allowed gap between UTC and Earth rotation rises to one hour (3,600 seconds). If you ever see "leap second" in a time article, it belongs to a different story.
 
 ## Recent and upcoming leap years
 
