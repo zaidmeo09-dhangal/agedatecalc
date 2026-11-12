@@ -2,8 +2,17 @@
 layout: default
 title: Contact AgeDateCalc | Feedback and Support
 meta_title: Contact AgeDateCalc
-description: Contact the AgeDateCalc team for bug reports, tool suggestions, or questions. We read every message and usually reply within days.
+description: Contact the AgeDateCalc team for bug reports, tool suggestions, or questions. We read every message.
 permalink: /contact/
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://agedatecalc.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://agedatecalc.com/contact/" }
+    ]
+  }
 ---
 
 <section class="page-hero">
@@ -19,7 +28,7 @@ permalink: /contact/
 
     <div class="mail-card">
       <h2>Email us anytime</h2>
-      <p>We usually reply within a few days.</p>
+      <p>We read every message.</p>
       <a class="mail-addr" href="mailto:hello@agedatecalc.com">hello@agedatecalc.com</a>
       <p style="margin-bottom:0"><a class="btn btn-amber" href="mailto:hello@agedatecalc.com">Write an Email</a></p>
     </div>
