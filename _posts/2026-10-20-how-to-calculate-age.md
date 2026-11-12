@@ -3,6 +3,7 @@ layout: post
 title: How to Calculate Your Exact Age (Manual Method)
 slug: how-to-calculate-age
 date: '2026-10-20'
+last_modified_at: 2026-11-12
 status: Published
 author: AgeDateCalc Team
 category: How-To Guides
@@ -34,7 +35,7 @@ faqs_raw: 'How do I calculate my exact age in years, months, and days?
 
   How is age calculated for someone born on February 29?
 
-  Most systems treat March 1 as the birthday in non-leap years, so a February 29 baby turns a year older on March 1 when there is no February 29. The total day count is unaffected, because it uses real calendar days.
+  In many jurisdictions a February 29 birthday is observed on March 1 in non-leap years, but the legal date varies by jurisdiction, so check local rules for official documents. The total day count is unaffected, because it uses real calendar days.
 
   ---
 
@@ -94,7 +95,7 @@ Final answer: **35 years, 10 months, 23 days**. Notice how this example uses eve
 
 ## How leap years affect the math
 
-[Leap years](https://www.timeanddate.com/date/leapyear.html) add February 29, which shifts day counts but not the year/month logic above, because the method borrows actual month lengths. If you were born on February 29, most systems count your birthday on March 1 in non-leap years.
+[Leap years](https://www.timeanddate.com/date/leapyear.html) add February 29, which shifts day counts but not the year/month logic above, because the method borrows actual month lengths. If you were born on February 29, your birthday is often observed on March 1 in non-leap years, but the legal date varies by jurisdiction, so check local rules for official documents.
 
 ## Your age in other units
 
@@ -107,6 +108,22 @@ Years, months, and days are the friendliest format, but sometimes you need the r
 The day count includes 6 leap days: February 29 of 2004, 2008, 2012, 2016, 2020, and 2024. February 29, 2000 does not count because it fell before the birth date. This is exactly where manual math gets tedious and where our [Age Calculator]({{ '/age-calculator/' | relative_url }}) earns its keep: it sums real calendar days, leap days included, in a fraction of a second.
 
 <img src="{{ '/assets/images/how-to-calculate-age-milestones.webp' | relative_url }}" alt="A winding path through green hills with wooden signposts marking life milestones along the way" width="1200" height="630" loading="lazy">
+
+## Calculate age in Excel or Google Sheets
+
+For a spreadsheet, the DATEDIF function does the same borrowing math. Put the birth date in cell A2 and use today's date as the end date:
+
+- `=DATEDIF(A2, TODAY(), "Y")` gives full years.
+- `=DATEDIF(A2, TODAY(), "YM")` gives the remaining months.
+- `=DATEDIF(A2, TODAY(), "MD")` gives the remaining days.
+
+Combined into one cell:
+
+`=DATEDIF(A2, TODAY(), "Y") & " years, " & DATEDIF(A2, TODAY(), "YM") & " months, " & DATEDIF(A2, TODAY(), "MD") & " days"`
+
+Worked example: birth date June 15, 2000 in A2 gives **26 years, 4 months, 3 days** on October 18, 2026, matching the manual method above.
+
+Two warnings: DATEDIF is undocumented in Excel, so it gives no autocomplete help, and Excel intentionally treats 1900 as a leap year for old compatibility reasons, so avoid dates before March 1, 1900 in spreadsheets.
 
 ## Full retirement age by birth year
 
@@ -134,7 +151,7 @@ Claiming benefits before your full retirement age reduces the monthly amount, so
 
 - **Born today:** the answer is 0 years, 0 months, 0 days. Simple, but a surprising number of people still ask.
 - **Future birth date:** if the date of birth is after today, the result is meaningless. Any trustworthy calculator rejects it instead of showing a negative age.
-- **February 29 birthdays:** as noted above, most systems roll the birthday to March 1 in non-leap years, which keeps the year count correct.
+- **February 29 birthdays:** as noted above, the birthday is often observed on March 1 in non-leap years, but the legal date varies by jurisdiction. Either way, the year count stays correct.
 - **Time of day:** calendar age ignores the hour you were born. Someone born at 11 PM is the same calendar age all day on their birthday.
 
 ## The fast way
