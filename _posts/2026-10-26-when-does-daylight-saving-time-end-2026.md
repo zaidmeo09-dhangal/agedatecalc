@@ -3,7 +3,7 @@ layout: post
 title: When Does Daylight Saving Time End in 2027?
 slug: when-does-daylight-saving-time-end
 date: '2026-10-26'
-last_modified_at: 2026-11-10
+last_modified_at: 2026-11-12
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -29,7 +29,7 @@ faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
 
   Why do we still change the clocks?
 
-  The US has observed daylight saving under the Uniform Time Act of 1966, with the current March-to-November schedule set by the Energy Policy Act of 2005. Bills to make daylight saving permanent have been introduced in Congress but none has become law, so the twice-yearly switch continues.
+  The US has observed daylight saving under the Uniform Time Act of 1966, with the current March-to-November schedule set by the Energy Policy Act of 2005. The House passed the Sunshine Protection Act on July 14, 2026 (308 to 117), but the Senate has not voted and it is not law, so the twice-yearly clock change still applies under current law.
 
   ---
 
@@ -76,6 +76,8 @@ Two states skip daylight saving entirely and stay on standard time all year:
 - **Hawaii** (Hawaii-Aleutian Standard Time, UTC-10)
 - **Arizona** (Mountain Standard Time, UTC-7), except the Navajo Nation in the northeast, which does observe daylight saving
 
+US territories also skip daylight saving: American Samoa, Guam, the Northern Mariana Islands, Puerto Rico, and the US Virgin Islands.
+
 Everywhere else in the US, including all major cities, falls back on November 7, 2027.
 
 ## The 2026 and 2027 schedule
@@ -86,21 +88,30 @@ Everywhere else in the US, including all major cities, falls back on November 7,
 |---|---|---|
 | 2026 | Sunday, March 8 | Sunday, November 1 |
 | 2027 | Sunday, March 14 | Sunday, November 7 |
+| 2028 | Sunday, March 12 | Sunday, November 5 |
 
-Europe follows a different rhythm (last Sunday of March to last Sunday of October), which is why US-Europe meeting times drift for a few weeks each spring and fall. Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) applies the right rules automatically if you schedule across the Atlantic.
+The 2028 dates assume current law stays in place. If the Sunshine Protection Act becomes law, the schedule changes.
+
+Europe follows a different rhythm (last Sunday of March to last Sunday of October), which is why US-Europe meeting times drift for a few weeks each spring and fall. In Europe, daylight saving in 2027 runs from Sunday, March 28 to Sunday, October 31. Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) applies the right rules automatically if you schedule across the Atlantic.
 
 <img src="{{ '/assets/images/dst-end-2026-sunrise.webp' | relative_url }}" alt="An early autumn sunrise over a farm field on the morning the clocks go back" width="1200" height="630" loading="lazy">
 
 ## 5 things to do before the clock changes
 
-1. **Check recurring alarms.** A 6:30 AM weekday alarm still rings at 6:30 AM, but your body will feel like it is 5:30 for a few days. Move bedtime 15 minutes earlier for three nights before the switch to soften the landing.
+1. **Check recurring alarms.** A 6:30 AM weekday alarm still rings at 6:30 AM, but your body will feel like it is 5:30 for a few days.
 2. **Confirm Sunday appointments.** Anything scheduled for the early hours of November 7 exists in a duplicated hour. If you have a 1:30 AM commitment (night-shift workers, this means you), clarify which 1:30 with the other party.
 3. **Fix the manual clocks.** Oven, microwave, car, wall clocks, thermostats. Do it Sunday morning with coffee, not Monday in a rush.
-4. **Check your car clock against your phone** after the change. Car infotainment systems are the number one source of "my clock is wrong" complaints every November.
+4. **Check your car clock against your phone** after the change. Many car dashboards do not update themselves, so compare them on Sunday morning.
 5. **Use the extra hour well.** It is the one day of the year with 25 hours. Go for a walk in the new morning light, or just enjoy the sleep.
 
 ## Counting down to the switch
 
 Want to see exactly how much time is left? Drop November 7, 2027, 2:00 AM into our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) and watch the days tick down. Handy for shift planners and anyone coordinating the change across time zones.
+
+## Related guides
+
+- [Time Zones Explained]({{ '/blog/time-zones-explained/' | relative_url }})
+- [AM/PM vs 24-Hour Clock]({{ '/blog/am-pm-vs-24-hour-clock/' | relative_url }})
+- [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
 
 </div>
