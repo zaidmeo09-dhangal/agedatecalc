@@ -131,7 +131,7 @@ The last row is a useful sanity check: 24 years at 365 days each is 8,760, and t
 
 ## The fast way
 
-Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and can also add or subtract days from any date.
+Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and can also add or subtract days from any date. For workdays only, with US federal holidays removed, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
 
 ## Related guides
 
