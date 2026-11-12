@@ -155,6 +155,8 @@ Jump straight in with a pre-built countdown. Each link opens the timer already s
 - [Valentine's Day 2027, February 14]({{ '/countdown-timer/' | relative_url }}?to=2027-02-14T00:00&label=Valentine%27s%20Day%202027)
 - [Independence Day 2027, July 4]({{ '/countdown-timer/' | relative_url }}?to=2027-07-04T00:00&label=Independence%20Day%202027)
 
+Counting down to a birthday? The [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}) starts from your date of birth and shows the age you will turn.
+
 ## How the countdown stays accurate
 
 The timer records your target as an exact timestamp, then recomputes the remaining time from your device clock on every tick. Because it never counts ticks, display errors cannot accumulate, and reopening the page or refocusing the tab resyncs instantly.
