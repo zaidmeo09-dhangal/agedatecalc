@@ -79,6 +79,10 @@
 
   if(calcBtn){ calcBtn.addEventListener("click", runAgeCalc); }
   if(dobInput){
+    /* Cap the date picker at today so it never goes stale */
+    var _t = new Date();
+    var _today = _t.getFullYear() + "-" + ("0" + (_t.getMonth() + 1)).slice(-2) + "-" + ("0" + _t.getDate()).slice(-2);
+    dobInput.max = _today;
     dobInput.addEventListener("keydown", function(e){
       if(e.key === "Enter"){ e.preventDefault(); runAgeCalc(); }
     });
