@@ -111,6 +111,8 @@ A leap second is a single extra second added to UTC now and then to keep atomic 
 - **Upcoming:** 2028, 2032, 2036
 - **Skipped century ahead:** 2100 will not be a leap year
 
+To check any year or list leap years in a range, use the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
+
 Here is how the three rules play out across recent, upcoming, and century years:
 
 | Year | Leap year? | Why |
