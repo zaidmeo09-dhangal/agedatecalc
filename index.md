@@ -11,7 +11,7 @@ schema: |
         "@type": "WebSite",
         "name": "AgeDateCalc",
         "url": "https://agedatecalc.com/",
-        "description": "Free date and time tools: age calculator, date difference calculator, countdown timer, stopwatch, and time zone converter."
+        "description": "Free date and time tools: age calculator, date difference calculator, business days calculator, countdown timer, stopwatch, time zone converter, leap year calculator, and birthday countdown."
       },
       {
         "@type": "FAQPage",
@@ -136,7 +136,7 @@ schema: |
 <section class="section" id="tools">
   <div class="wrap">
     <h2 class="section-title">Our Tools</h2>
-    <p class="section-sub">Five focused tools that do one job well. Pick one and get your answer.</p>
+    <p class="section-sub">Eight focused tools that do one job well. Pick one and get your answer.</p>
     <div class="tools-grid">
       <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
         <div class="tool-icon">🎂</div>
@@ -166,6 +166,24 @@ schema: |
         <div class="tool-icon">🌍</div>
         <h3>Time Zone Converter</h3>
         <p>Convert any time between world time zones instantly. Never miss a meeting again.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/business-days-calculator/' | relative_url }}">
+        <div class="tool-icon">💼</div>
+        <h3>Business Days Calculator</h3>
+        <p>Count workdays between two dates, with weekends and US federal holidays removed.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/leap-year-calculator/' | relative_url }}">
+        <div class="tool-icon">📆</div>
+        <h3>Leap Year Calculator</h3>
+        <p>Check any year and list leap years in a range, with the three rules explained.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/birthday-countdown/' | relative_url }}">
+        <div class="tool-icon">🎉</div>
+        <h3>Birthday Countdown</h3>
+        <p>Days, hours, minutes, and seconds until your next birthday, with the age you turn.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
     </div>
