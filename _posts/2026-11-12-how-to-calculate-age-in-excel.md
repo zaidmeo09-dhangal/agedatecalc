@@ -3,7 +3,7 @@ layout: post
 title: "How to Calculate Age in Excel: DATEDIF Formula"
 slug: how-to-calculate-age-in-excel
 date: '2026-11-12'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: How-To Guides
@@ -19,8 +19,8 @@ secondary_keywords:
 meta_title: "How to Calculate Age in Excel: DATEDIF Formula"
 meta_description: "Calculate age in Excel with DATEDIF. Full formula for years, months and days, three worked examples, and the errors that break it."
 excerpt: "Calculate age in Excel with DATEDIF. Full formula for years, months and days, three worked examples, and the errors that break it."
-featured_image: /assets/images/agedatecalc-og.webp
-image_alt: AgeDateCalc free date and time tools, calculate age in Excel guide
+featured_image: /assets/images/how-to-calculate-age-in-excel.webp
+image_alt: A laptop showing charts and data tables on a desk in a bright office
 read_time: 7 min read
 faqs_raw: 'What is the formula to calculate age in Excel?
 
@@ -117,6 +117,10 @@ Most forms ask for whole years, and for that you need one function call:
 
 With June 15, 1990 in A2 and today as November 12, 2026, it returns **36**. It stays 36 until June 15, 2027, when it ticks up to 37. Do not use `=YEAR(TODAY()) - YEAR(A2)` for this. That subtraction ignores whether the birthday has happened yet this year, so it reads one year too high for anyone whose birthday is still ahead.
 
+One more option: `=YEARFRAC(A2, B2)` returns the age as a fractional number of years, for example 36.4, which is handy for interest or pro-rating math. It is not a substitute for the DATEDIF and EDATE breakdown above, because it gives a decimal, not years, months, and days.
+
+<img src="{{ '/assets/images/how-to-calculate-age-in-excel-calculator.webp' | relative_url }}" alt="A hand holding a phone with a calculator app open over paperwork" width="1200" height="630" loading="lazy">
+
 ## Common errors and how to fix them
 
 | Error | Cause | Fix |
@@ -133,6 +137,8 @@ Two more traps: dates typed as 15/6/1990 in a US locale file are read as text or
 ## When to use the tool instead
 
 A spreadsheet is right when the ages live in a list, for example a roster of employees or students, and you need every row at once. A calculator is faster for a one-off age. Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) also gives the total days lived, the weekday you were born, and the days until your next birthday, with a shareable link and no formulas to type. For the gap between any two dates, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
+
+<img src="{{ '/assets/images/how-to-calculate-age-in-excel-charts.webp' | relative_url }}" alt="A computer screen showing a candlestick chart with green and red bars" width="1200" height="630" loading="lazy">
 
 ## Related guides
 
