@@ -3,7 +3,7 @@ layout: post
 title: When Does Daylight Saving Time End in 2027?
 slug: when-does-daylight-saving-time-end
 date: '2026-10-26'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -18,7 +18,7 @@ secondary_keywords:
 meta_title: When Does Daylight Saving Time End in 2027?
 meta_description: Daylight saving time ends on Sunday, November 7, 2027 at 2:00 AM. Here is the 2027 US schedule, which states skip it, and what changes.
 excerpt: Daylight saving time ends on Sunday, November 7, 2027 at 2:00 AM. Here is the 2027 US schedule, which states skip it, and what changes.
-featured_image: /assets/images/dst-end-2026.webp
+featured_image: /assets/images/when-does-daylight-saving-time-end.webp
 image_alt: A wall clock on a wooden wall surrounded by orange autumn leaves in warm afternoon light
 read_time: 4 min read
 faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
@@ -45,9 +45,9 @@ faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
 
   ---
 
-  When does daylight saving start again in 2027?
+  When does daylight savings start again in 2027?
 
-  Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM.'
+  Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM. Our guide on when daylight savings starts in 2027 covers the spring change in full.'
 permalink: /blog/when-does-daylight-saving-time-end/
 redirect_from:
   - /blog/when-does-daylight-saving-time-end-2026/
@@ -57,9 +57,9 @@ tool_name: Time Zone Converter
 
 <div class="prose" markdown="1">
 
-In 2027, daylight saving time ends on **Sunday, November 7, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter. Daylight saving in 2027 runs from Sunday, March 14 to Sunday, November 7.
+In 2027, daylight saving time ends on **Sunday, November 7, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter. Daylight saving in 2027 runs from [Sunday, March 14]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }}) to Sunday, November 7. Most people search for it as daylight savings time, with an S, so this guide uses both spellings: the official name is daylight saving time, and daylight savings is the common spelling.
 
-The 2026 switch already happened, on November 1, 2026. The next one is November 7, 2027. Set a reminder now, because the devices you forget about are always the ones that stay wrong for a week.
+The 2026 switch was on November 1, 2026. The next one is November 7, 2027. Set a reminder now, because the devices you forget about are always the ones that stay wrong for a week.
 
 ## What actually happens on November 7
 
@@ -104,12 +104,17 @@ Europe follows a different rhythm (last Sunday of March to last Sunday of Octobe
 4. **Check your car clock against your phone** after the change. Many car dashboards do not update themselves, so compare them on Sunday morning.
 5. **Use the extra hour well.** It is the one day of the year with 25 hours. Go for a walk in the new morning light, or just enjoy the sleep.
 
+## Sleep and health: the fall back is the easier change
+
+The fall back is the gentler of the two clock changes, because it gives you an extra hour instead of taking one away. Even so, the shift in light and time can disrupt sleep and circadian rhythms for a few days: mornings get light earlier, evenings go dark earlier, and the body needs about a week to adjust. The measured risks sit with the spring change, where the CDC notes evidence of shortened sleep and adverse health and safety effects, including up to a 30% higher risk of heart attacks and a 6% rise in fatal traffic accidents, with the highest risk in the morning. The same advice covers both changes: keep a regular sleep and wake time, get morning light, and aim for at least 7 hours of sleep a night, the amount the CDC recommends for adults. Read the CDC guidance on [adapting to daylight saving time](https://www.cdc.gov/niosh/bulletin/2022/time-change.html).
+
 ## Counting down to the switch
 
 Want to see exactly how much time is left? Drop November 7, 2027, 2:00 AM into our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) and watch the days tick down. Handy for shift planners and anyone coordinating the change across time zones.
 
 ## Related guides
 
+- [When Does Daylight Saving Time Start in 2027?]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }})
 - [Time Zones Explained]({{ '/blog/time-zones-explained/' | relative_url }})
 - [AM/PM vs 24-Hour Clock]({{ '/blog/am-pm-vs-24-hour-clock/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
