@@ -59,7 +59,7 @@ A leap year is a year with 366 days instead of 365. The extra day, February 29, 
 
 ## Why leap years exist
 
-Earth takes about 365.2422 days (the tropical year) to orbit the sun, not exactly 365. Without correction, the calendar would drift by about one day every four years. After a century, seasons would slide by nearly a month. Adding one day every four years absorbs most of that drift.
+Earth takes about 365.2422 days (the tropical year) to orbit the sun, not exactly 365. Without correction, the calendar would drift by about one day every four years. After a century, seasons would slide by nearly a month. Adding one day every four years absorbs most of that drift. To check any year, use the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
 
 <img src="{{ '/assets/images/what-is-a-leap-year-orbit.webp' | relative_url }}" alt="Earth at four positions in its orbit around the sun, showing why a year is about 365.2422 days and leap years exist" width="1200" height="630" loading="lazy">
 
