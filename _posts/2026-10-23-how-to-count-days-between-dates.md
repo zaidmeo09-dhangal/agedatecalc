@@ -55,7 +55,7 @@ tool_name: Date Difference Calculator
 
 <div class="prose" markdown="1">
 
-Subtract the start date from the end date; the answer excludes the end date unless you add 1. Counting days between dates by hand is straightforward once you know that convention. Here is the method.
+Subtract the start date from the end date; the answer excludes the end date unless you add 1. Counting days between dates by hand is straightforward once you know that convention. If you want the answer without the hand math, the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives it instantly. Here is the method.
 
 ## The basic method
 
@@ -138,7 +138,7 @@ The last row is a useful sanity check: 24 years at 365 days each is 8,760, and t
 
 ## The fast way
 
-Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and can also [add or subtract days]({{ '/days-from-today-calculator/' | relative_url }}) from any date. For workdays only, with US federal holidays removed, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) adds or subtracts days from any date. For workdays only, with US federal holidays removed, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
 
 ## Related guides
 
