@@ -11,7 +11,7 @@ schema: |
         "@type": "WebSite",
         "name": "AgeDateCalc",
         "url": "https://agedatecalc.com/",
-        "description": "Free date and time tools: age calculator, date difference calculator, business days calculator, countdown timer, stopwatch, time zone converter, leap year calculator, and birthday countdown."
+        "description": "Free date and time tools: age calculator, date difference calculator, business days calculator, countdown timer, stopwatch, time zone converter, leap year calculator, birthday countdown, and days from today calculator."
       },
       {
         "@type": "FAQPage",
@@ -136,7 +136,7 @@ schema: |
 <section class="section" id="tools">
   <div class="wrap">
     <h2 class="section-title">Our Tools</h2>
-    <p class="section-sub">Eight focused tools that do one job well. Pick one and get your answer.</p>
+    <p class="section-sub">Nine focused tools that do one job well. Pick one and get your answer.</p>
     <div class="tools-grid">
       <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
         <div class="tool-icon">🎂</div>
@@ -184,6 +184,12 @@ schema: |
         <div class="tool-icon">🎉</div>
         <h3>Birthday Countdown</h3>
         <p>Days, hours, minutes, and seconds until your next birthday, with the age you turn.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/days-from-today-calculator/' | relative_url }}">
+        <div class="tool-icon">➕</div>
+        <h3>Days From Today Calculator</h3>
+        <p>Add or subtract days, weeks, months, or years from any date, with month-end clamping.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
     </div>
