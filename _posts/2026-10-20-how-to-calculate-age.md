@@ -3,7 +3,7 @@ layout: post
 title: How to Calculate Your Exact Age (Manual Method)
 slug: how-to-calculate-age
 date: '2026-10-20'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: How-To Guides
@@ -35,7 +35,7 @@ faqs_raw: 'How do I calculate my exact age in years, months, and days?
 
   How is age calculated for someone born on February 29?
 
-  In many jurisdictions a February 29 birthday is observed on March 1 in non-leap years, but the legal date varies by jurisdiction, so check local rules for official documents. The total day count is unaffected, because it uses real calendar days.
+  A February 29 birthday is often observed on March 1 in non-leap years, but the legal date varies by jurisdiction, so check local rules for official documents. The total day count is unaffected, because it uses real calendar days.
 
   ---
 
@@ -103,6 +103,7 @@ Years, months, and days are the friendliest format, but sometimes you need the r
 
 - **Total days:** 9,621
 - **Total weeks:** 1,374 (plus 3 days)
+- **Total months:** 316
 - **Total hours:** 230,904
 
 The day count includes 6 leap days: February 29 of 2004, 2008, 2012, 2016, 2020, and 2024. February 29, 2000 does not count because it fell before the birth date. This is exactly where manual math gets tedious and where our [Age Calculator]({{ '/age-calculator/' | relative_url }}) earns its keep: it sums real calendar days, leap days included, in a fraction of a second.
@@ -115,15 +116,15 @@ For a spreadsheet, the DATEDIF function does the same borrowing math. Put the bi
 
 - `=DATEDIF(A2, TODAY(), "Y")` gives full years.
 - `=DATEDIF(A2, TODAY(), "YM")` gives the remaining months.
-- `=DATEDIF(A2, TODAY(), "MD")` gives the remaining days.
+- For the remaining days, do not use the "MD" unit. Microsoft warns that "MD" can return a negative number, a zero, or an inaccurate result, so use EDATE instead: `=TODAY() - EDATE(A2, DATEDIF(A2, TODAY(), "Y") * 12 + DATEDIF(A2, TODAY(), "YM"))`.
 
 Combined into one cell:
 
-`=DATEDIF(A2, TODAY(), "Y") & " years, " & DATEDIF(A2, TODAY(), "YM") & " months, " & DATEDIF(A2, TODAY(), "MD") & " days"`
+`=DATEDIF(A2, TODAY(), "Y") & " years, " & DATEDIF(A2, TODAY(), "YM") & " months, " & (TODAY() - EDATE(A2, DATEDIF(A2, TODAY(), "Y") * 12 + DATEDIF(A2, TODAY(), "YM"))) & " days"`
 
 Worked example: birth date June 15, 2000 in A2 gives **26 years, 4 months, 3 days** on October 18, 2026, matching the manual method above.
 
-Two warnings: DATEDIF is undocumented in Excel, so it gives no autocomplete help, and Excel intentionally treats 1900 as a leap year for old compatibility reasons, so avoid dates before March 1, 1900 in spreadsheets.
+Two warnings: DATEDIF is undocumented in Excel, so it gives no autocomplete help, and Excel intentionally treats 1900 as a leap year for old compatibility reasons, so avoid dates before March 1, 1900 in spreadsheets. For the full method with three worked examples, read our guide [How to Calculate Age in Excel]({{ '/blog/how-to-calculate-age-in-excel/' | relative_url }}).
 
 ## Full retirement age by birth year
 
@@ -149,9 +150,11 @@ Claiming benefits before your full retirement age reduces the monthly amount, so
 
 ## Edge cases worth knowing
 
-- **Born today:** the answer is 0 years, 0 months, 0 days. Simple, but a surprising number of people still ask.
+- **Born today:** the answer is 0 years, 0 months, 0 days.
 - **Future birth date:** if the date of birth is after today, the result is meaningless. Any trustworthy calculator rejects it instead of showing a negative age.
 - **February 29 birthdays:** as noted above, the birthday is often observed on March 1 in non-leap years, but the legal date varies by jurisdiction. Either way, the year count stays correct.
+- **Born on the 31st:** month anniversaries fall on the last day of short months. Someone born January 31, 2000 was 26 years, 0 months, 28 days old on February 28, 2026, because February has no 31st, so the month count borrows from January. On March 31, 2026 the same person was exactly 26 years, 2 months, 0 days old.
+- **Age on a chosen date:** the same three steps work for any date, not just today. Someone born June 15, 2000 was 26 years, 6 months, 17 days old on January 1, 2027, or 9,696 days in total. Use a fixed date instead of today whenever the answer must stay the same, for example on a form or a record.
 - **Time of day:** calendar age ignores the hour you were born. Someone born at 11 PM is the same calendar age all day on their birthday.
 
 ## The fast way
