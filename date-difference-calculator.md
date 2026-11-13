@@ -91,6 +91,14 @@ schema: |
               "@type": "Answer",
               "text": "No. This calculator works on calendar days only, so the result is identical everywhere in the world. Time zones only matter when a specific time of day is involved. If another tool shows a different answer, its time zone or counting basis is the likely cause."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate years between 2 dates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the borrowing for you."
+            }
           }
         ]
       }
@@ -149,7 +157,7 @@ related_posts:
 
 ## Age calculator between two dates: what does it mean?
 
-The age between two dates is the exact calendar time from the earlier date to the later one, expressed in years, months, and days. The same gap can also be read as total days, weeks, or business days. Use it for age gaps between two people, someone's age on a specific day, tenure, or the time between any two events.
+The age between two dates is the exact calendar time from the earlier date to the later one, expressed in years, months, and days. The same gap can also be read as total days, weeks, or business days. Use it for age gaps between two people, someone's age on a specific day, tenure, or the time between any two events. It is also called a dates calculator between two dates, because it works for any pair of dates, not only birth dates.
 
 ## How to use this calculator
 
@@ -220,7 +228,7 @@ The second mode answers "what date is X days from here?" Enter a positive number
 - 30 days from October 18, 2026 is November 17, 2026.
 - 45 days before October 18, 2026 is September 3, 2026.
 
-This is the mode people reach for with searches like "90 days from today" or "30 days from today." Month and year boundaries, including leap years, are handled automatically.
+This is the mode people reach for with searches like "90 days from today" or "30 days from today." Month and year boundaries, including leap years, are handled automatically. For quick picks like 7 days from today, 2 weeks from today, or 30 days ago, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster.
 
 ## Where day counts actually get used
 
@@ -278,6 +286,12 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 
 **Sources:** holiday dates and observed-date rules follow the US Office of Personnel Management (OPM.gov) federal holiday schedule and 5 U.S.C. 6103.
 
+## How to calculate years between 2 dates
+
+To calculate years between 2 dates, count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. That is the same borrowing method this calculator uses, and it is why month ends and leap years come out exact.
+
+Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Five full years reach January 1, 1990, five more months reach June 1, 1990, and 14 days reach June 15. The same method works for any pair: August 22, 1985 to May 15, 1990 is 4 years, 8 months, and 23 days. Enter both dates above and the calculator does the borrowing for you.
+
 ## Frequently asked questions
 
 </div>
@@ -310,6 +324,10 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 <details>
 <summary>How do I add days to a date?</summary>
 <p>Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. This tool adds calendar days only. Adding 30 days to January 31 lands on March 2 in a common year, because January has 31 days.</p>
+</details>
+<details>
+<summary>How do I calculate years between 2 dates?</summary>
+<p>Count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the borrowing for you.</p>
 </details>
 <details>
 <summary>Does my time zone change the result?</summary>
