@@ -79,7 +79,7 @@ Most tools count **exclusive** of the end date: January 1 to January 2 is 1 day.
 
 - **Hotel nights:** checking in January 1 and checking out January 5 means 4 nights, not 5. Hotels count exclusive of the checkout day.
 - **Project billing:** a contractor billing "January 1 through January 5" might mean 5 billable days to the client. Agree on the convention in writing before the work starts.
-- **Free trials:** a "7-day trial" starting Monday usually ends Sunday at midnight, which is 7 exclusive days. Counting from the wrong endpoint is how trials "end a day early."
+- **Free trials:** a "7-day trial" starting Monday covers 7 full days only if it runs to midnight at the end of Sunday. If it ends Sunday at 00:00, that is 6 days, not 7. Counting from the wrong endpoint is how trials "end a day early."
 - **Countdowns:** "5 days until Friday" said on a Sunday is exclusive counting. Said on Monday morning, some people mean 4.
 
 When the count matters, state the convention out loud: "4 nights" or "5 days inclusive." It takes five seconds and prevents most disputes.
@@ -121,7 +121,7 @@ Check whether February 29 falls between your dates. In the example above, 2026 i
 
 - **Month-end rollover:** one month after January 31 is February 28 in a common year (February 29 in a leap year), not March 3. Adding a month means landing on the same day number in the next month, or the last day of that month when the day does not exist.
 - **The DST caveat:** a 24-hour span across a clock change is not 24 hours. From noon on Saturday, March 13, 2027 to noon on Sunday, March 14, 2027 is 23 hours, because the clocks spring forward. From noon on Saturday, November 6, 2027 to noon on Sunday, November 7, 2027 is 25 hours, because the clocks fall back. Day counts ignore this, but hour counts do not.
-- **ISO weeks:** a year has 52 ISO weeks, except years that start on a Thursday, like 2026, which have 53. The extra week matters when you count weeks instead of days: 2026 has 53 ISO weeks, 2027 has 52.
+- **ISO weeks:** a year has 52 ISO weeks, except years that start on a Thursday, like 2026, and leap years that start on a Wednesday, like 2020, which have 53. The extra week matters when you count weeks instead of days: 2026 has 53 ISO weeks, 2027 has 52.
 - **Same date and reversed dates:** the same date twice is 0 days. If the end date comes before the start date, the answer is negative: December 20 to December 25, 2026 is 5 days, but December 25 to December 20 is minus 5 days. Swap the dates if you need a positive count.
 
 ## Worked examples
