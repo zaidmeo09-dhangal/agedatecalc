@@ -3,7 +3,7 @@ layout: post
 title: "How to Count Business Days Between Two Dates"
 slug: how-to-count-business-days-between-two-dates
 date: '2026-11-12'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: How-To Guides
@@ -19,8 +19,8 @@ secondary_keywords:
 meta_title: "How to Count Business Days Between Two Dates"
 meta_description: "Count business days between two dates by removing weekends and US federal holidays. Three step method, 2027 holiday list, and a NETWORKDAYS example."
 excerpt: "Count business days between two dates by removing weekends and US federal holidays. Three step method, 2027 holiday list, and a NETWORKDAYS example."
-featured_image: /assets/images/agedatecalc-og.webp
-image_alt: AgeDateCalc free date and time tools, business days guide
+featured_image: /assets/images/how-to-count-business-days-between-two-dates.webp
+image_alt: A tidy office desk with a laptop, planner and calendar for planning workdays
 read_time: 7 min read
 faqs_raw: 'What counts as a business day?
 
@@ -67,6 +67,8 @@ A business day is a weekday, Monday to Friday, that is not a US federal holiday.
 **Step 3: Subtract the federal holidays.** Remove any of the 11 US federal holidays that fall on a weekday inside the range. A holiday that falls on a Saturday or Sunday is already removed by step 2, so do not subtract it twice.
 
 That is it. If the range has no holidays, step 3 changes nothing. If it has one, the answer drops by one.
+
+<img src="{{ '/assets/images/how-to-count-business-days-between-two-dates-planner.webp' | relative_url }}" alt="An open desk planner with a monthly calendar grid, a pen and sticky notes" width="1200" height="630" loading="lazy">
 
 ## Business days vs calendar days
 
@@ -116,6 +118,8 @@ For a month total, point the formula at the first and last day of the month. Nov
 
 Two things to know about NETWORKDAYS. First, it counts both the start date and the end date, so it gives one more than a count that starts the day after the start date. Our [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) counts from the day after the start date by default, so for January 11 to January 22, 2027 it gives 8, and ticking the include box gives 9. Second, NETWORKDAYS ignores the holiday list unless the cells hold real dates, so check with `=ISNUMBER()` before you trust the answer.
 
+Two related functions cover the cases NETWORKDAYS does not. `=NETWORKDAYS.INTL(A2, B2, 1, holidays)` counts business days with a custom weekend, where 1 means Saturday and Sunday off and 11 means Sunday only. For the January 11 to January 22, 2027 example above it also returns 9. `=WORKDAY(A2, 30, holidays)` returns the date 30 business days after the start date: with January 4, 2027 in A2, it returns February 17, 2027, skipping weekends and the January 18 and February 15 holidays.
+
 ## Common mistakes
 
 - **Counting the start date twice or not at all.** Decide the convention first. NETWORKDAYS counts both endpoints. Our calculator counts from the day after the start date by default. Mixing the two gives an answer that is off by one.
@@ -127,6 +131,8 @@ Two things to know about NETWORKDAYS. First, it counts both the start date and t
 ## When to count business days
 
 Payroll cutoffs, contract deadlines, shipping estimates, and notice periods all run on business days. A 30 day notice period starting Monday, January 4, 2027 is not 30 calendar days: it is 30 business days, which lands weeks later once weekends and the January 18 holiday are removed. For a plain span, like how long ago something happened, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) instead, or read our guide [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }}).
+
+<img src="{{ '/assets/images/how-to-count-business-days-between-two-dates-planning.webp' | relative_url }}" alt="A laptop and paper documents on a desk during business planning" width="1200" height="630" loading="lazy">
 
 For time zones, a deadline set in one zone can land on a different business day in another. Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) checks the local date before you count.
 
