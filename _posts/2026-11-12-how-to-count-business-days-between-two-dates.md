@@ -56,7 +56,7 @@ tool_name: Business Days Calculator
 
 <div class="prose" markdown="1">
 
-A business day is a weekday, Monday to Friday, that is not a US federal holiday. This guide shows how to calculate business days between two dates: count the weekdays in the range, then subtract the federal holidays that fall on weekdays. That is the whole method. The mistakes come from the details: whether the start date counts, which holidays fall on weekends, and what your spreadsheet counts. This guide works through all three.
+A business day is a weekday, Monday to Friday, that is not a US federal holiday. This guide shows how to calculate business days between two dates: count the weekdays in the range, then subtract the federal holidays that fall on weekdays. That is the whole method. To skip the hand math, the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) counts them for you. The mistakes come from the details: whether the start date counts, which holidays fall on weekends, and what your spreadsheet counts. This guide works through all three.
 
 ## The three step method
 
