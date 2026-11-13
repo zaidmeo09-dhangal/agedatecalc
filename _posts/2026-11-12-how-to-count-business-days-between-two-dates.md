@@ -17,8 +17,8 @@ secondary_keywords:
 - count workdays between dates
 - NETWORKDAYS formula
 meta_title: "How to Count Business Days Between Two Dates"
-meta_description: "Count business days between two dates by removing weekends and US federal holidays. Three step method, 2027 holiday list, and a NETWORKDAYS example."
-excerpt: "Count business days between two dates by removing weekends and US federal holidays. Three step method, 2027 holiday list, and a NETWORKDAYS example."
+meta_description: "Count business days between two dates by removing weekends and US federal holidays. Three-step method, 2027 holiday list, and a NETWORKDAYS example."
+excerpt: "Count business days between two dates by removing weekends and US federal holidays. Three-step method, 2027 holiday list, and a NETWORKDAYS example."
 featured_image: /assets/images/how-to-count-business-days-between-two-dates.webp
 image_alt: A tidy office desk with a laptop, planner and calendar for planning workdays
 read_time: 7 min read
@@ -58,7 +58,7 @@ tool_name: Business Days Calculator
 
 A business day is a weekday, Monday to Friday, that is not a US federal holiday. This guide shows how to calculate business days between two dates: count the weekdays in the range, then subtract the federal holidays that fall on weekdays. That is the whole method. To skip the hand math, the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) counts them for you. The mistakes come from the details: whether the start date counts, which holidays fall on weekends, and what your spreadsheet counts. This guide works through all three.
 
-## The three step method
+## The three-step method
 
 **Step 1: Count the calendar days.** Subtract the start date from the end date. This is the raw span, weekends included.
 
@@ -88,7 +88,7 @@ These are the 11 federal holidays under 5 U.S.C. 6103, with the dates federal of
 
 | Holiday | Observed date in 2027 | Weekday |
 |---|---|---|
-| New Year Day | January 1 | Friday |
+| New Year's Day | January 1 | Friday |
 | Birthday of Martin Luther King, Jr. | January 18 | Monday |
 | Washington Birthday (Presidents Day) | February 15 | Monday |
 | Memorial Day | May 31 | Monday |
@@ -100,7 +100,7 @@ These are the 11 federal holidays under 5 U.S.C. 6103, with the dates federal of
 | Thanksgiving Day | November 25 | Thursday |
 | Christmas Day | December 24 (observed; December 25 is a Saturday) | Friday |
 
-One more date belongs on a 2027 planner even though it is not a 2027 holiday: New Year Day 2028 falls on a Saturday, so it is observed on Friday, December 31, 2027. State holidays and company holidays are not on this list. If your count must include them, add them yourself.
+One more date belongs on a 2027 planner even though it is not a 2027 holiday: New Year's Day 2028 falls on a Saturday, so it is observed on Friday, December 31, 2027. State holidays and company holidays are not on this list. If your count must include them, add them yourself.
 
 ## Excel: the NETWORKDAYS formula
 
