@@ -19,7 +19,8 @@ schema: |
           { "@type": "ListItem", "position": 5, "name": "Time Zone Converter", "url": "https://agedatecalc.com/time-zone-converter/" },
           { "@type": "ListItem", "position": 6, "name": "Business Days Calculator", "url": "https://agedatecalc.com/business-days-calculator/" },
           { "@type": "ListItem", "position": 7, "name": "Leap Year Calculator", "url": "https://agedatecalc.com/leap-year-calculator/" },
-          { "@type": "ListItem", "position": 8, "name": "Birthday Countdown", "url": "https://agedatecalc.com/birthday-countdown/" }
+          { "@type": "ListItem", "position": 8, "name": "Birthday Countdown", "url": "https://agedatecalc.com/birthday-countdown/" },
+          { "@type": "ListItem", "position": 9, "name": "Days From Today Calculator", "url": "https://agedatecalc.com/days-from-today-calculator/" }
         ]
       },
       {
@@ -91,6 +92,12 @@ schema: |
         <div class="tool-icon">🎉</div>
         <h2>Birthday Countdown</h2>
         <p>Days, hours, minutes, and seconds until your next birthday, with the age you turn.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/days-from-today-calculator/' | relative_url }}">
+        <div class="tool-icon">➕</div>
+        <h2>Days From Today Calculator</h2>
+        <p>Add or subtract days, weeks, months, or years from any date, with month-end clamping.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
     </div>
