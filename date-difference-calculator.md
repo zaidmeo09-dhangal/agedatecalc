@@ -1,7 +1,7 @@
 ---
 layout: default
-meta_title: "Date Difference Calculator: Days Between Two Dates"
-description: Count the exact days, weeks, months and years between any two dates. Add or subtract days from a date. Free, no sign-up.
+meta_title: "Age Calculator Between Two Dates: Exact Days"
+description: Use this age calculator between two dates to find the age in years, months, and days, or count the exact days between them. Fast, free, no sign-up.
 permalink: /date-difference-calculator/
 breadcrumb: Date Difference Calculator
 schema: |
@@ -228,7 +228,7 @@ The second mode answers "what date is X days from here?" Enter a positive number
 - 30 days from October 18, 2026 is November 17, 2026.
 - 45 days before October 18, 2026 is September 3, 2026.
 
-This is the mode people reach for with searches like "90 days from today" or "30 days from today." Month and year boundaries, including leap years, are handled automatically. For quick picks like 7 days from today, 2 weeks from today, or 30 days ago, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster.
+This is the mode people reach for with searches like "90 days from today" or "30 days from today." Month and year boundaries, including leap years, are handled automatically. For quick picks like 7 days from today, 2 weeks from today, or 30 days ago, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster. To find which numbered week a date falls in, use the [Week Number Calculator]({{ '/week-number-calculator/' | relative_url }}).
 
 ## Where day counts actually get used
 
