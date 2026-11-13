@@ -24,7 +24,7 @@ image_alt: Pine branches, holly berries and eucalyptus arranged in a frame on a 
 read_time: 5 min read
 faqs_raw: 'How many days until Christmas 2026?
 
-  43 days from November 12, 2026. Christmas Day is Friday, December 25, 2026. The count changes every day, so check the live Countdown Timer for the current number.
+  The number changes every day, so check the live Countdown Timer for the current count. As a dated example, it was 43 days on November 12, 2026. Christmas Day is Friday, December 25, 2026.
 
   ---
 
@@ -56,11 +56,11 @@ tool_name: Countdown Timer
 
 <div class="prose" markdown="1">
 
-Christmas 2026 is **43 days away** from November 12, 2026. Christmas Day falls on **Friday, December 25, 2026**. That count is dated: it was correct on November 12, 2026, and it drops by one every day. For the live number right now, use our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}), which ticks down to Christmas in real time.
+On November 12, 2026, Christmas was **43 days away**. Christmas Day falls on **Friday, December 25, 2026**. That count is a dated example: it was correct on November 12, 2026, and it drops by one every day. For the live number right now, use our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}), which ticks down to Christmas in real time.
 
 ## How many days until Christmas 2026?
 
-The short answer to how many days until Christmas is 43 days from November 12, 2026. That is the calendar day count, and it is the number most people want. The rest of this guide breaks that number down, because a countdown and a work plan are not the same thing: the calendar says 43 days, but only 29 of the days left are business days, and only 30 are weekdays.
+The short answer, worked from November 12, 2026, is 43 days. That is the calendar day count, and it is the number most people want. The rest of this guide breaks that worked example down, because a countdown and a work plan are not the same thing: in that example the calendar says 43 days, but only 29 of the days left are business days, and only 30 are weekdays.
 
 ## Using the three counts
 
@@ -107,11 +107,11 @@ Christmas Eve is Thursday, December 24, 2026, which is 42 days after November 12
 
 Pick the method that fits the question you are asking:
 
-1. **Calendar days:** subtract today date from December 25. December 25, 2026 minus November 12, 2026 is 43 days.
+1. **Calendar days:** subtract today's date from December 25. December 25, 2026 minus November 12, 2026 is 43 days.
 2. **Weekdays:** count Monday to Friday only, and skip Saturdays and Sundays.
 3. **Business days:** count weekdays, then remove Thanksgiving and any other holiday your office observes. Read our guide [How to Count Business Days Between Two Dates]({{ '/blog/how-to-count-business-days-between-two-dates/' | relative_url }}) for the full method with a worked example.
 
-The fastest way is our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). Enter today date and December 25, 2026 and it gives the exact day count, or read [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }}) to do it by hand.
+The fastest way is our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). Enter today's date and December 25, 2026 and it gives the exact day count, or read [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }}) to do it by hand.
 
 ## Related guides
 
