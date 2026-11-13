@@ -15,7 +15,7 @@ primary_keyword: how many days in a year
 secondary_keywords:
 - days in each month
 - 365 or 366 days
-meta_title: How Many Days Are in a Year? 365 vs 366
+meta_title: How Many Days Are in a Year? 365 vs 366 Days
 meta_description: Is it 365 or 366 days in a year? Learn when each applies, how leap years decide it, and why the answer matters for age and date math.
 excerpt: Is it 365 or 366 days in a year? Learn when each applies, how leap years decide it, and why the answer matters for age and date math.
 featured_image: /assets/images/how-many-days-in-a-year.webp
@@ -41,7 +41,7 @@ faqs_raw: 'How many days are in a leap year?
 
   How many days into the year are we?
 
-  On November 13, 2026, we are on day 317 of 2026, which means 316 days have already passed and 48 days are left in the year. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
+  For example, on November 13, 2026, the day number was 317, which means 316 days had already passed and 48 days were left in the year. The number changes every day, so use the Date Difference Calculator for the live number. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
 
   ---
 
@@ -85,7 +85,7 @@ The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate
 
 ## How many days into the year are we?
 
-This is the question people ask mid-year: how many days into the year are we, or in other words, how many days are we in the year. Count the days from January 1 to today. On November 13, 2026, we are on day 317 of 2026, which means 316 days have already passed and 48 days are left in the year. 2026 has 365 days, so day 317 is about 87 percent of the way through.
+This is the question people ask mid-year: how many days into the year are we, or in other words, how many days are we in the year. Count the days from January 1 to the date you want. For example, on November 13, 2026, the day number was 317, which means 316 days had already passed and 48 days were left in the year. 2026 has 365 days, so day 317 was about 87 percent of the way through.
 
 To find the day number for any date, enter January 1 of that year and your date in the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) and add 1 to the result, because the calculator counts the gap between the two dates and January 1 itself is day 1.
 
@@ -129,7 +129,7 @@ Note the two numbers: 365.25 days is the Julian average, one leap day every four
 - **Anniversaries:** events anchored to February 29 need a rule for non-leap years.
 - **Loan and savings interest:** banks often compute daily interest as the annual rate divided by 365, even in leap years (the "actual/365" convention), while others use 366. On a large balance, that one-day difference is real money.
 - **Subscriptions and warranties:** a one-year subscription bought on March 1, 2023 ends March 1, 2024, which spans 366 days because it includes February 29, 2024. Bought March 1, 2024, the same "one year" is 365 days.
-- **Payroll:** salaried staff paid monthly earn the same per month either way, but daily-rate contractors working through a leap year log one extra billable day.
+- **Payroll:** salaried staff paid monthly earn the same per month either way, but daily-rate contractors working through a leap year log one extra billable day if they work February 29.
 
 Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts every leap day in your lifetime automatically.
 
