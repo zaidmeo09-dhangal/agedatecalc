@@ -100,6 +100,14 @@ schema: |
                               "@type": "Answer",
                               "text": "Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 13, 2026, May 22, 2027 is 190 days away."
                     }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How many days until New Year?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Counted from Friday, November 13, 2026, there are 49 days until New Year, Friday, January 1, 2027. Enter January 1, 2027 above, or use the New Year 2027 preset, to watch the live countdown in days, hours, minutes, and seconds."
+                    }
           }
   ]
       }
@@ -139,7 +147,7 @@ related_posts:
 
 <div class="prose" markdown="1">
 
-<p class="result-note" style="font-size:.85rem">Guide updated October 2026.</p>
+<p class="result-note" style="font-size:.85rem">Guide updated November 2026.</p>
 
 ## What is an online countdown timer?
 
@@ -174,6 +182,12 @@ The most common countdown question is simply "how many days till" a date. Counte
 - **How many days until October 1?** October 1, 2027 is 322 days away.
 
 Enter any of these dates above to watch the live countdown, or use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) for the plain day count without the ticking display. For quick picks like 7 days from today or 2 weeks from today, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster.
+
+If you are asking how many weeks until christmas, counted from November 13, 2026 the answer is exactly 6 weeks: Christmas Day, Friday, December 25, 2026, is 42 days away.
+
+## Days until New Year
+
+How many days until new year? Counted from Friday, November 13, 2026, there are 49 days until New Year, Friday, January 1, 2027. [Start the New Year 2027 countdown]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027) to watch it tick down live, or pick any New Year date above. January 1, 2027 is a Friday, so the holiday falls at the end of a working week in the US.
 
 ## How the countdown stays accurate
 
@@ -250,6 +264,10 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 <details>
 <summary>How do I count the days till a date?</summary>
 <p>Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 13, 2026, May 22, 2027 is 190 days away.</p>
+</details>
+<details>
+<summary>How many days until New Year?</summary>
+<p>Counted from Friday, November 13, 2026, there are 49 days until New Year, Friday, January 1, 2027. Enter January 1, 2027 above, or use the New Year 2027 preset, to watch the live countdown in days, hours, minutes, and seconds.</p>
 </details>
 <details>
 <summary>Will it notify me when the countdown finishes?</summary>
