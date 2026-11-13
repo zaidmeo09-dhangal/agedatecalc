@@ -55,7 +55,7 @@ tool_name: Time Zone Converter
 
 <div class="prose" markdown="1">
 
-The 12-hour clock splits the day into AM and PM; the 24-hour clock counts 00:00 to 23:59, and 12 AM is midnight, not noon. Most of the world writes time in one of these two systems.
+The 12-hour clock splits the day into AM and PM; the 24-hour clock counts 00:00 to 23:59, and 12 AM is midnight, not noon. Most of the world writes time in one of these two systems. When the same moment needs converting across time zones, the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) does the conversion for you.
 
 ## How the 12-hour clock works
 
