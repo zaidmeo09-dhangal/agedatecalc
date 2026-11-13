@@ -67,7 +67,7 @@ At 2:00 AM, the clock jumps backward to 1:00 AM. The hour from 1:00 to 2:00 happ
 
 Most phones, computers, and smart devices adjust themselves overnight. The troublemakers are wall clocks, ovens, microwaves, car dashboards, and older alarm clocks. Walk through your home on Sunday morning and fix them in one pass.
 
-<img src="{{ '/assets/images/dst-end-2026-spring-fall.webp' | relative_url }}" alt="A clock with two curved arrows, springing forward with green leaves and falling back with autumn leaves" width="1200" height="630" loading="lazy">
+<img src="{{ '/assets/images/dst-end-spring-fall.webp' | relative_url }}" alt="A clock with two curved arrows, springing forward with green leaves and falling back with autumn leaves" width="1200" height="630" loading="lazy">
 
 ## Which states do not change their clocks
 
@@ -94,7 +94,7 @@ The 2028 dates assume current law stays in place. If the Sunshine Protection Act
 
 Europe follows a different rhythm (last Sunday of March to last Sunday of October), which is why US-Europe meeting times drift for a few weeks each spring and fall. In Europe, daylight saving in 2027 runs from Sunday, March 28 to Sunday, October 31. Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) applies the right rules automatically if you schedule across the Atlantic.
 
-<img src="{{ '/assets/images/dst-end-2026-sunrise.webp' | relative_url }}" alt="An early autumn sunrise over a farm field on the morning the clocks go back" width="1200" height="630" loading="lazy">
+<img src="{{ '/assets/images/dst-end-sunrise.webp' | relative_url }}" alt="An early autumn sunrise over a farm field on the morning the clocks go back" width="1200" height="630" loading="lazy">
 
 ## 5 things to do before the clock changes
 
