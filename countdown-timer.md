@@ -92,6 +92,14 @@ schema: |
                               "@type": "Answer",
                               "text": "The page shows a clear time's up state, but browsers cannot reliably play alarms after the tab is closed or the device sleeps."
                     }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How do I count the days till a date?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 13, 2026, May 22, 2027 is 190 days away."
+                    }
           }
   ]
       }
@@ -135,7 +143,7 @@ related_posts:
 
 ## What is an online countdown timer?
 
-An online countdown timer counts down to a future date and time you choose, showing the remaining days, hours, minutes, and seconds ticking live. Set it for a birthday, exam, holiday, or product launch, then share the link so anyone can watch the same countdown.
+An online countdown timer, also called an online countdown calculator, counts down to a future date and time you choose, showing the remaining days, hours, minutes, and seconds ticking live. Set it for a birthday, exam, holiday, or product launch, then share the link so anyone can watch the same countdown. It answers the days till date question directly: pick the date and the timer shows exactly how many days are left, down to the second.
 
 ## How to set a countdown
 
@@ -156,6 +164,16 @@ Jump straight in with a pre-built countdown. Each link opens the timer already s
 - [Independence Day 2027, July 4]({{ '/countdown-timer/' | relative_url }}?to=2027-07-04T00:00&label=Independence%20Day%202027)
 
 Counting down to a birthday? The [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}) starts from your date of birth and shows the age you will turn.
+
+## Days until a date: worked examples
+
+The most common countdown question is simply "how many days till" a date. Counted from November 13, 2026:
+
+- **How many days till May 22?** May 22, 2027 is 190 days away.
+- **How many days until June 10?** June 10, 2027 is 209 days away.
+- **How many days until October 1?** October 1, 2027 is 322 days away.
+
+Enter any of these dates above to watch the live countdown, or use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) for the plain day count without the ticking display. For quick picks like 7 days from today or 2 weeks from today, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster.
 
 ## How the countdown stays accurate
 
@@ -228,6 +246,10 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 <details>
 <summary>What is the difference between a countdown timer and a regular timer?</summary>
 <p>A countdown targets a calendar moment (Christmas morning, a launch at 9 AM). A regular timer counts down a duration from now (25 minutes, 2 hours). This page does the first; for the second, a stopwatch or duration timer is the right tool.</p>
+</details>
+<details>
+<summary>How do I count the days till a date?</summary>
+<p>Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 13, 2026, May 22, 2027 is 190 days away.</p>
 </details>
 <details>
 <summary>Will it notify me when the countdown finishes?</summary>
