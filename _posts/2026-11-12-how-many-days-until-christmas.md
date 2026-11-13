@@ -3,7 +3,7 @@ layout: post
 title: "How Many Days Until Christmas? 2026 Countdown"
 slug: how-many-days-until-christmas
 date: '2026-11-12'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -17,10 +17,10 @@ secondary_keywords:
 - Christmas countdown 2026
 - how many days till Christmas
 meta_title: "How Many Days Until Christmas? 2026 Countdown"
-meta_description: "Christmas 2026 is 43 days away from November 12, 2026. See calendar days, weekdays and business days left, plus Christmas dates from 2026 to 2030."
-excerpt: "Christmas 2026 is 43 days away from November 12, 2026. See calendar days, weekdays and business days left, plus Christmas dates from 2026 to 2030."
-featured_image: /assets/images/agedatecalc-og.webp
-image_alt: AgeDateCalc free date and time tools, days until Christmas guide
+meta_description: "Plan Christmas 2026 with calendar days, weekdays and business days left until December 25, plus Christmas dates from 2026 to 2030."
+excerpt: "Plan Christmas 2026 with calendar days, weekdays and business days left until December 25, plus Christmas dates from 2026 to 2030."
+featured_image: /assets/images/how-many-days-until-christmas.webp
+image_alt: Pine branches, holly berries and eucalyptus arranged in a frame on a light background
 read_time: 5 min read
 faqs_raw: 'How many days until Christmas 2026?
 
@@ -81,6 +81,8 @@ The answer depends on what you are counting. All three counts below start from N
 
 The 43 counts every day up to and including Christmas Day. The 42 counts only the days before it. Of those 42 days, 30 are weekdays and 12 are weekend days. Thanksgiving falls on Thursday, November 26, 2026, so removing it from the weekdays leaves 29 business days for shopping, shipping, and work before Christmas.
 
+<img src="{{ '/assets/images/how-many-days-until-christmas-stocking.webp' | relative_url }}" alt="A red Christmas stocking and shiny red ornaments hanging on a Christmas tree" width="1200" height="630" loading="lazy">
+
 If you are planning deliveries, the business day count is the one that matters. A parcel that needs 5 business days and is sent on Monday, December 21, 2026 uses December 21, 22, 23, 24, and 28, because Christmas Day itself is a federal holiday and December 26 and 27 are weekend days.
 
 ## Christmas dates 2026 to 2030
@@ -96,6 +98,10 @@ Christmas always falls on December 25, but the weekday moves every year:
 | 2030 | December 25 | Wednesday |
 
 Christmas 2027 falls on a Saturday, which means the federal observance moves to Friday, December 24, 2027. From November 12, 2026, Christmas 2027 is 408 days away. Christmas 2028 falls on a Monday, the first Monday Christmas since 2023.
+
+Christmas Eve is Thursday, December 24, 2026, which is 42 days after November 12, 2026. Advent in 2026 begins on Sunday, November 29, 2026, the fourth Sunday before Christmas.
+
+<img src="{{ '/assets/images/how-many-days-until-christmas-lights.webp' | relative_url }}" alt="A gold glitter Christmas ornament hanging on a tree branch with warm lights glowing behind it" width="1200" height="630" loading="lazy">
 
 ## How to count the days yourself
 
