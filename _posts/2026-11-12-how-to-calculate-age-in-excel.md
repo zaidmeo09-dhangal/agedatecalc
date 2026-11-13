@@ -60,7 +60,7 @@ This guide shows how to calculate age in Excel with the DATEDIF function, with t
 
 `=DATEDIF(A2, B2, "Y") & " years, " & DATEDIF(A2, B2, "YM") & " months, " & (B2 - EDATE(A2, DATEDIF(A2, B2, "Y") * 12 + DATEDIF(A2, B2, "YM"))) & " days"`
 
-That is the full answer in one line. The rest of this guide explains each piece, works through three examples with the answers checked, and covers the errors that break it. If you only need whole years, the short version is `=DATEDIF(A2, TODAY(), "Y")`, which ticks up on the birthday itself.
+That is the full answer in one line. The rest of this guide explains each piece, works through three examples with the answers checked, and covers the errors that break it. If you only need whole years, the short version is `=DATEDIF(A2, TODAY(), "Y")`, which ticks up on the birthday itself. If you want the answer without formulas, the [Age Calculator]({{ '/age-calculator/' | relative_url }}) gives the same result instantly.
 
 ## How DATEDIF works
 
