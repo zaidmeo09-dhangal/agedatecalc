@@ -59,7 +59,7 @@ Your exact age is the time between your date of birth and today, expressed in ye
 
 ## Why manual age math is error-prone
 
-Months are not equal, birthdays do not always fall on convenient days, and leap years quietly add days. That is why hand calculations go wrong: people subtract the years and stop, forget to check whether this year's birthday has passed, or divide by 30.44 and call the result exact. The three-step method below avoids all of that because it works with real calendar months instead of averages. Walk through it once to understand it, then let a calculator handle the repetition.
+Months are not equal, birthdays do not always fall on convenient days, and leap years quietly add days. That is why hand calculations go wrong: people subtract the years and stop, forget to check whether this year's birthday has passed, or divide by 30.44 and call the result exact. The three-step method below avoids all of that because it works with real calendar months instead of averages. Walk through it once to understand it, then let the [Age Calculator]({{ '/age-calculator/' | relative_url }}) handle the repetition.
 
 <img src="{{ '/assets/images/how-to-calculate-age-subtraction.webp' | relative_url }}" alt="Writing out an age calculation by hand, subtracting years, months and days in columns on a calendar page" width="1200" height="630" loading="lazy">
 
