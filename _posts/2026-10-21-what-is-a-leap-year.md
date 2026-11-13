@@ -3,7 +3,7 @@ layout: post
 title: What Is a Leap Year? Simple Rules Explained
 slug: what-is-a-leap-year
 date: '2026-10-21'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: Date Guides
@@ -61,11 +61,11 @@ A leap year is a year with 366 days instead of 365. The extra day, February 29, 
 
 Earth takes about 365.2422 days (the tropical year) to orbit the sun, not exactly 365. Without correction, the calendar would drift by about one day every four years. After a century, seasons would slide by nearly a month. Adding one day every four years absorbs most of that drift.
 
-<img src="{{ '/assets/images/what-is-a-leap-year-orbit.webp' | relative_url }}" alt="Earth at four positions in its orbit around the sun, showing why a year is about 365.25 days and leap years exist" width="1200" height="630" loading="lazy">
+<img src="{{ '/assets/images/what-is-a-leap-year-orbit.webp' | relative_url }}" alt="Earth at four positions in its orbit around the sun, showing why a year is about 365.2422 days and leap years exist" width="1200" height="630" loading="lazy">
 
 ## The three leap year rules
 
-A year is a [leap year](https://www.timeanddate.com/date/leapyear.html) if **any** of these apply in order:
+A year is a [leap year](https://www.timeanddate.com/date/leapyear.html) if it passes these tests in order:
 
 1. **Divisible by 4:** the year is a leap year (2024, 2028).
 2. **Except centuries:** years divisible by 100 are NOT leap years (1900 was not, 2100 will not be).
@@ -85,6 +85,12 @@ These two years are the classic proof that the rules must be applied in order.
 
 The next century year, 2100, will fail the same test 1900 failed: divisible by 100 but not by 400, so there will be no February 29 in 2100.
 
+## A short history: from Julius Caesar to Pope Gregory XIII
+
+The leap year is almost 2,100 years old. Julius Caesar introduced it in 46 BC, on the advice of the astronomer Sosigenes of Alexandria: add one day every four years to stop the calendar drifting against the seasons. The Julian calendar used that simple rule for over 1,600 years, but its average year of 365.25 days was slightly too long, so by 1582 the calendar had drifted 10 days. Pope Gregory XIII fixed it that year: the day after October 4, 1582 became October 15, and the century rule was added, so century years skip the leap day unless divisible by 400. That Gregorian calendar is the one the world still uses.
+
+The name itself comes from the weekday jump. In a common year, a fixed date falls one weekday later the next year. After a February 29, it jumps two weekdays, leaping over one: March 1, 2023 was a Wednesday, but March 1, 2024 was a Friday.
+
 ## What the drift looks like in numbers
 
 Three calendar designs, three drift speeds:
@@ -99,7 +105,7 @@ Leap years change day counts between dates. Anyone calculating exact age, contra
 
 ## Leap day birthdays
 
-People born on February 29 celebrate on February 28 or March 1 in non-leap years, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents. Our calculator counts the birthday on March 1 in non-leap years.
+People born on February 29 celebrate on February 28 or March 1 in non-leap years, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents. Our calculator counts the birthday on March 1 in non-leap years. If your birthday is February 29, our [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}) shows how long until your next real birthday.
 
 ## Leap seconds are not leap years
 
@@ -108,7 +114,7 @@ A leap second is a single extra second added to UTC now and then to keep atomic 
 ## Recent and upcoming leap years
 
 - **Recent:** 2016, 2020, 2024
-- **Upcoming:** 2028, 2032, 2036
+- **Upcoming:** [2028]({{ '/blog/is-2028-a-leap-year/' | relative_url }}), 2032, 2036
 - **Skipped century ahead:** 2100 will not be a leap year
 
 To check any year or list leap years in a range, use the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
