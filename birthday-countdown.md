@@ -124,6 +124,12 @@ Birthdays move forward one weekday each year, or two weekdays after a leap year.
 
 If you were born on February 29, your birthday only exists in leap years. In non-leap years this countdown counts to March 1, the most common legal convention, and the same one our [Age Calculator]({{ '/age-calculator/' | relative_url }}) uses. The next February 29 is in 2028, which falls on a Tuesday. To check any year, use the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
 
+## What is a golden birthday?
+
+Your golden birthday is the birthday where you turn the age of your birth day number. Born on the 15th, your golden birthday is the day you turn 15. Born on the 7th, it is the day you turn 7. It happens once in a lifetime, and it is the one birthday people look up with a golden birthday calculator.
+
+For example, someone born on June 15, 1990 had their golden birthday on Wednesday, June 15, 2005, the day they turned 15. To find yours, take your birth day number and add it to your birth year: born on the 25th of any month in 2001, your golden birthday falls in 2026. Enter your date of birth above and the result shows your golden birthday too.
+
 ## Planning around your birthday
 
 - **Parties:** a birthday on a Friday or Saturday is the easiest to celebrate. Check the weekday first, then pick the nearest weekend if it lands midweek.
@@ -217,6 +223,10 @@ If you were born on February 29, your birthday only exists in leap years. In non
     var now2 = new Date();
     var todayOnly = new Date(now2.getFullYear(), now2.getMonth(), now2.getDate(), 0, 0, 0, 0);
     var totalDays = Math.round((target - todayOnly) / 86400000);
+    var golden = birthdayInYear(dob, dob.getFullYear() + dob.getDate());
+    var goldenTxt = golden <= now2
+      ? "Your golden birthday was <strong>" + fmtDate(golden) + "</strong>."
+      : "Your golden birthday is <strong>" + fmtDate(golden) + "</strong>.";
     out.innerHTML =
       '<p class="result-note" style="text-align:center">Your next birthday is <strong>' + fmtDate(target) + '</strong>. You will turn <strong>' + ageTurns + '</strong>.</p>' +
       '<div class="countdown-grid">' +
@@ -225,7 +235,8 @@ If you were born on February 29, your birthday only exists in leap years. In non
       '<div class="result-box"><span class="num">' + pad(m) + '</span><span class="lbl">Minutes</span></div>' +
       '<div class="result-box"><span class="num">' + pad(s) + '</span><span class="lbl">Seconds</span></div>' +
       '</div>' +
-      '<p class="result-note" style="text-align:center">That is <strong>' + totalDays + ' days</strong> away.</p>';
+      '<p class="result-note" style="text-align:center">That is <strong>' + totalDays + ' days</strong> away.</p>' +
+      '<p class="result-note" style="text-align:center">' + goldenTxt + '</p>';
   }
 
   document.getElementById("bc-btn").addEventListener("click", function(){
