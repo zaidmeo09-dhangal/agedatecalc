@@ -3,7 +3,7 @@ layout: post
 title: Time Zones Explained - UTC, GMT, and Daylight Saving
 slug: time-zones-explained
 date: '2026-10-25'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -16,7 +16,7 @@ primary_keyword: time zones explained
 secondary_keywords:
 - UTC offsets
 - international date line
-meta_title: Time Zones Explained - UTC, GMT and DST
+meta_title: Time Zones Explained - UTC, GMT and DST Guide
 meta_description: What are time zones, how do UTC and GMT differ, and what is daylight saving? A plain-language guide with practical conversion tips.
 excerpt: What are time zones, how do UTC and GMT differ, and what is daylight saving? A plain-language guide with practical conversion tips.
 featured_image: /assets/images/time-zones-explained.webp
@@ -115,6 +115,12 @@ The textbook model has 24 zones, but the real world has 38 distinct UTC offsets,
 
 In summer, the UK switches to BST, British Summer Time (UTC+1). And when you build anything with time zones, use IANA identifiers like America/New_York or Europe/London, not fixed offsets: the identifier carries the DST rules and history, while a fixed offset goes stale twice a year.
 
+## A short history, and why abbreviations repeat
+
+Standard time is younger than the railways. Before the 1800s every town kept its own local solar time. In 1847 the Great Western Railway in Britain adopted one railway time across its network, and in 1883 the US railroads set four standard zones, which the public adopted within days. The International Meridian Conference of 1884 then fixed Greenwich as the prime meridian and the basis for the world time zone system.
+
+One warning from that history: zone abbreviations repeat. CST means Central Standard Time in the US (UTC-6), China Standard Time (UTC+8), and Cuba Standard Time (UTC-5). EST is used in the US and in Australia for different offsets. Always pair an abbreviation with the place, or use the IANA identifier, and never trust a bare three-letter code.
+
 ## Daylight saving time (DST)
 
 Many regions shift clocks forward one hour in summer to extend evening daylight, then back in winter. This means a zone's offset can change during the year: New York is UTC-5 in winter and UTC-4 in summer. Not every country observes DST, which is why conversions need [a current database](https://www.iana.org/time-zones), not just a fixed offset table.
@@ -127,6 +133,8 @@ Daylight saving moves clocks forward one hour in spring and back in autumn. Two 
 - **European Union and UK:** starts the last Sunday of March, ends the last Sunday of October. In 2026, that is March 29 to October 25.
 
 Notice the gaps: for about three weeks each spring and one week each autumn, the US and Europe are out of sync relative to their winter difference. A standing 3 PM London / 10 AM New York meeting quietly becomes 3 PM / 11 AM during those windows. This is the single most common cause of "the meeting time changed and nobody told me."
+
+For the full 2027 dates, the states that skip the change, and what to do before the clocks move, read [When Does Daylight Saving Time Start in 2027?]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }}) and [When Does Daylight Saving Time End in 2027?]({{ '/blog/when-does-daylight-saving-time-end/' | relative_url }}).
 
 Many tropical countries skip DST entirely, since daylight hours barely change near the equator, and some countries have abolished it after trying it. Never assume a zone observes DST; check the current rules.
 
