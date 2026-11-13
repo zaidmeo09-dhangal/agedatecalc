@@ -101,7 +101,7 @@ Our guide [When Does Daylight Saving Time End in 2027?]({{ '/blog/when-does-dayl
 
 ## How to remember the dates
 
-Spring forward, fall back. The 2027 dates are March 14 for the spring forward and November 7 for the fall back, both Sundays at 2:00 AM local time. Searches for when does daylight saving time start 2027 all point to the same date: Sunday, March 14, 2027. Set a reminder for the Saturday night before, and check the live countdown on our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) if you want the exact days left.
+Spring forward, fall back. The 2027 dates are March 14 for the spring forward and November 7 for the fall back, both Sundays at 2:00 AM local time. Set a reminder for the Saturday night before, and check the live countdown on our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) if you want the exact days left.
 
 ## Related guides
 
