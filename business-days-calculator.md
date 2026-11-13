@@ -67,6 +67,14 @@ schema: |
               "@type": "Answer",
               "text": "Two causes explain nearly every disagreement. First, the counting basis: some tools count the start date and some do not, which shifts every answer by exactly one. Second, the holiday list: some tools subtract only weekends, some subtract US federal holidays, and some use a different country's holidays. Check both before trusting a number."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How many work days have I worked this year?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Set the start date to January 1 of this year and the end date to today. This days worked calculator counts the weekdays in between and subtracts US federal holidays when the option is on. Counted from January 1, 2026 to November 13, 2026, the answer is 218 business days with holidays excluded, or 226 weekdays without the holiday subtraction."
+            }
           }
         ]
       }
@@ -130,6 +138,10 @@ The tool walks the calendar one day at a time from the day after the start date 
 3. Count every remaining day.
 
 The counting basis is the same as the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): the end date is counted, the start date is not. Tick "Include the end date" to count both dates. That is the one-day difference that causes most disagreements between tools.
+
+## A days worked calculator
+
+If you searched for a days worked calculator, this tool is it. Pick January 1 as the start date and today as the end date, and the business days result is the number of work days you have worked this year, with weekends and US federal holidays removed. To answer how many work days have i worked this year, counted from January 1, 2026 to November 13, 2026, the answer is 218 business days with holidays excluded, or 226 weekdays without the holiday subtraction. Untick the holidays box if your employer does not observe federal holidays, and tick "Include the end date" if you want to count the first day of the year as a worked day too.
 
 ## Worked example: Monday, January 5 to Friday, January 16, 2026
 
@@ -219,6 +231,10 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
 <details>
 <summary>How do I count business days in Excel?</summary>
 <p>Use NETWORKDAYS. Put the start date in A2 and the end date in B2, then use =NETWORKDAYS(A2, B2) for weekdays only, or =NETWORKDAYS(A2, B2, holidays) with a list of holiday dates to subtract them too. Note that NETWORKDAYS counts both the start and end dates, so it gives one more than this calculator's default count.</p>
+</details>
+<details>
+<summary>How many work days have I worked this year?</summary>
+<p>Set the start date to January 1 of this year and the end date to today. This days worked calculator counts the weekdays in between and subtracts US federal holidays when the option is on. Counted from January 1, 2026 to November 13, 2026, the answer is 218 business days with holidays excluded, or 226 weekdays without the holiday subtraction.</p>
 </details>
 <details>
 <summary>Why is my count one day different from another tool?</summary>
