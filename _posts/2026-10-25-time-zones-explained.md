@@ -73,7 +73,7 @@ Converting between zones is just addition and subtraction through UTC.
 1. Convert Los Angeles to UTC: 15:00 plus 8 hours = **11:00 PM UTC**.
 2. Convert UTC to New York: in January, New York is on standard time (UTC-5), so 23:00 minus 5 hours = **6:00 PM**.
 
-So 3 PM in Los Angeles is 6 PM the same day in New York. In July the answer shifts with daylight saving: Los Angeles moves to UTC-7 and New York to UTC-4, so the same 3 PM in Los Angeles becomes 6 PM in New York again, three hours apart either way. Same cities, different offsets, which is exactly why fixed offset tables go stale.
+So 3 PM in Los Angeles is 6 PM the same day in New York. In July the answer shifts with daylight saving: Los Angeles moves to UTC-7 and New York to UTC-4, so the same 3 PM in Los Angeles becomes 6 PM in New York again, three hours apart either way. Same cities, different offsets, which is exactly why fixed offset tables go stale. To skip the hand math, the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) does the UTC steps for you.
 
 ## GMT vs UTC
 
