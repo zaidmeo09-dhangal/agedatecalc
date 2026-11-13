@@ -154,7 +154,7 @@ For scheduling, the rule is simple: whenever a conversion crosses the Pacific, c
 2. **Watch the date line.** Converting across the Pacific can land you on a different calendar day.
 3. **Recheck near DST changes.** Meetings scheduled across a DST transition weekend often shift by an hour.
 4. **Use a converter.** Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) applies current DST rules automatically.
-5. **Put the time zone in the invite title.** "Team sync, 3 PM EST / 8 PM GMT" survives forwarding and screenshots. A bare "3 PM" does not.
+5. **Put the time zone in the invite title.** "Team sync, 3 PM New York / 8 PM London" survives forwarding and screenshots. A bare "3 PM" does not.
 6. **Schedule in UTC when the group is large.** One reference time plus a converter link beats five separate conversions in a chat thread.
 7. **Send calendar invites, not chat messages.** Calendar files carry time zone data, so the invite lands at the right local hour on every device automatically.
 8. **Confirm the day for far-apart zones.** Anything spanning more than about 8 hours of offset can flip the calendar date. A one-line "that is Tuesday your time, right?" prevents the classic miss.
