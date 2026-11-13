@@ -2,7 +2,7 @@
 layout: default
 title: About AgeDateCalc | Free Date and Time Tools
 meta_title: About AgeDateCalc
-description: Learn what AgeDateCalc is, who builds it, and how our eight free date and time tools work. No sign-up, private by design.
+description: Learn what AgeDateCalc is, who builds it, and how our nine free date and time tools work. No sign-up, private by design.
 permalink: /about/
 schema: |
   {
@@ -37,7 +37,7 @@ schema: |
     </div>
 
     <h2 class="section-title">What we offer</h2>
-    <p class="section-sub">Eight focused tools, each doing one job well.</p>
+    <p class="section-sub">Nine focused tools, each doing one job well.</p>
     <div class="tools-grid">
       <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
         <div class="tool-icon">🎂</div>
@@ -63,6 +63,11 @@ schema: |
         <div class="tool-icon">🌍</div>
         <h3>Time Zone Converter</h3>
         <p>Convert times across the world.</p>
+      </a>
+      <a class="tool-card" href="{{ '/days-from-today-calculator/' | relative_url }}">
+        <div class="tool-icon">➕</div>
+        <h3>Days From Today Calculator</h3>
+        <p>Add or subtract days, weeks, months, or years from any date.</p>
       </a>
     </div>
 
