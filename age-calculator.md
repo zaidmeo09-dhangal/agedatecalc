@@ -29,70 +29,78 @@ schema: |
         "@type": "FAQPage",
         "mainEntity": [
           {
-                    "@type": "Question",
-                    "name": "How is exact age calculated?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total."
-                    }
+            "@type": "Question",
+            "name": "How is exact age calculated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total."
+            }
           },
           {
-                    "@type": "Question",
-                    "name": "Can I find my age on a specific past or future date?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "No. This calculator always works from today. For the gap between any two dates, use the Date Difference Calculator."
-                    }
+            "@type": "Question",
+            "name": "Can I find my age on a specific past or future date?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This calculator always works from today. For the gap between any two dates, use the Date Difference Calculator."
+            }
           },
           {
-                    "@type": "Question",
-                    "name": "Which day of the week was I born on?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "The calculator shows the weekday of your birth date automatically. For example, June 15, 1990 was a Friday."
-                    }
+            "@type": "Question",
+            "name": "Which day of the week was I born on?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The calculator shows the weekday of your birth date automatically. For example, June 15, 1990 was a Friday."
+            }
           },
           {
-                    "@type": "Question",
-                    "name": "Why do two age calculators show different ages?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "Three causes explain nearly every disagreement. First, month-end handling. Second, February 29 birthdays. Third, time-zone effects near midnight when a tool uses timestamps instead of calendar dates."
-                    }
+            "@type": "Question",
+            "name": "Why do two age calculators show different ages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three causes explain nearly every disagreement. First, month-end handling. Second, February 29 birthdays. Third, time-zone effects near midnight when a tool uses timestamps instead of calendar dates."
+            }
           },
           {
-                    "@type": "Question",
-                    "name": "What happens if I was born on February 29?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "Your age still increases every year, not every four years. In non-leap years this calculator counts your birthday on March 1, the most common legal convention. Example: born February 29, 2012, you are still 12 on February 28, 2025, turning 13 on March 1."
-                    }
+            "@type": "Question",
+            "name": "What happens if I was born on February 29?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your age still increases every year, not every four years. In non-leap years this calculator counts your birthday on March 1, the most common legal convention. Example: born February 29, 2012, you are still 12 on February 28, 2025, turning 13 on March 1."
+            }
           },
           {
-                    "@type": "Question",
-                    "name": "Why does subtracting birth years give the wrong age?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "Because it ignores whether the birthday has happened yet this year. If this year's birthday has not arrived yet, subtract one from the year difference."
-                    }
+            "@type": "Question",
+            "name": "Why does subtracting birth years give the wrong age?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because it ignores whether the birthday has happened yet this year. If this year's birthday has not arrived yet, subtract one from the year difference."
+            }
           },
           {
-                    "@type": "Question",
-                    "name": "Is my date of birth stored anywhere?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page."
-                    }
+            "@type": "Question",
+            "name": "Is my date of birth stored anywhere?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page."
+            }
           },
           {
-                    "@type": "Question",
-                    "name": "How do I calculate age by hand in years, months, and days?",
-                    "acceptedAnswer": {
-                              "@type": "Answer",
-                              "text": "Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year."
-                    }
+            "@type": "Question",
+            "name": "How do I calculate age by hand in years, months, and days?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What year was I born in to turn 21?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Subtract 21 from the year you want to turn 21. To turn 21 in 2026, you must be born in 2005. To turn 21 in 2027, you must be born in 2006. If you search for the date born to be 21, the rule is the same: your birth year is the target year minus 21. In the US, 21 is the legal age for buying alcohol."
+            }
           }
-  ]
+        ]
       }
     ]
   }
@@ -242,6 +250,10 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
 <details>
 <summary>Is my date of birth stored anywhere?</summary>
 <p>No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page. Closing the tab erases it.</p>
+</details>
+<details>
+<summary>What year was I born in to turn 21?</summary>
+<p>Subtract 21 from the year you want to turn 21. To turn 21 in 2026, you must be born in 2005. To turn 21 in 2027, you must be born in 2006. If you search for the date born to be 21, the rule is the same: your birth year is the target year minus 21. In the US, 21 is the legal age for buying alcohol, and it is also the age on the milestones table above.</p>
 </details>
 <details>
 <summary>How do I calculate age by hand in years, months, and days?</summary>
