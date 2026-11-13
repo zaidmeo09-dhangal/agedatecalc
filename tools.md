@@ -20,7 +20,8 @@ schema: |
           { "@type": "ListItem", "position": 6, "name": "Business Days Calculator", "url": "https://agedatecalc.com/business-days-calculator/" },
           { "@type": "ListItem", "position": 7, "name": "Leap Year Calculator", "url": "https://agedatecalc.com/leap-year-calculator/" },
           { "@type": "ListItem", "position": 8, "name": "Birthday Countdown", "url": "https://agedatecalc.com/birthday-countdown/" },
-          { "@type": "ListItem", "position": 9, "name": "Days From Today Calculator", "url": "https://agedatecalc.com/days-from-today-calculator/" }
+          { "@type": "ListItem", "position": 9, "name": "Days From Today Calculator", "url": "https://agedatecalc.com/days-from-today-calculator/" },
+          { "@type": "ListItem", "position": 10, "name": "Week Number Calculator", "url": "https://agedatecalc.com/week-number-calculator/" }
         ]
       },
       {
@@ -98,6 +99,12 @@ schema: |
         <div class="tool-icon">➕</div>
         <h2>Days From Today Calculator</h2>
         <p>Add or subtract days, weeks, months, or years from any date, with month-end clamping.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/week-number-calculator/' | relative_url }}">
+        <div class="tool-icon">🗓️</div>
+        <h2>Week Number Calculator</h2>
+        <p>Find the ISO week number of any date, with the week's Monday to Sunday range.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
     </div>
