@@ -150,7 +150,7 @@ For scheduling, the rule is simple: whenever a conversion crosses the Pacific, c
 
 ## Practical conversion tips
 
-1. **Always name the zone, not just the time.** "3 PM" is meaningless globally; "3 PM EST" is exact.
+1. **Always name the zone, not just the time.** "3 PM" is meaningless globally; "3 PM in New York (UTC-5 in winter, UTC-4 in summer)" is exact.
 2. **Watch the date line.** Converting across the Pacific can land you on a different calendar day.
 3. **Recheck near DST changes.** Meetings scheduled across a DST transition weekend often shift by an hour.
 4. **Use a converter.** Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) applies current DST rules automatically.
