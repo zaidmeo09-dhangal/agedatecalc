@@ -3,7 +3,7 @@ layout: post
 title: How Many Days Are in a Year? 365 vs 366 Explained
 slug: how-many-days-in-a-year
 date: '2026-10-24'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: Date Guides
@@ -36,6 +36,12 @@ faqs_raw: 'How many days are in a leap year?
   How many days are in 2026?
 
   2026 has 365 days. It is a common year because 2026 does not divide evenly by 4, so February 2026 has 28 days.
+
+  ---
+
+  How many days into the year are we?
+
+  On November 13, 2026, we are on day 317 of 2026, which means 316 days have already passed and 48 days are left in the year. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
 
   ---
 
@@ -76,6 +82,12 @@ The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate
 | 2028 | 366 | Yes |
 | 2029 | 365 | No |
 | 2030 | 365 | No |
+
+## How many days into the year are we?
+
+This is the question people ask mid-year: how many days into the year are we, or in other words, how many days are we in the year. Count the days from January 1 to today. On November 13, 2026, we are on day 317 of 2026, which means 316 days have already passed and 48 days are left in the year. 2026 has 365 days, so day 317 is about 87 percent of the way through.
+
+To find the day number for any date, enter January 1 of that year and your date in the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) and add 1 to the result, because the calculator counts the gap between the two dates and January 1 itself is day 1.
 
 ## ISO weeks: 52 or 53?
 
