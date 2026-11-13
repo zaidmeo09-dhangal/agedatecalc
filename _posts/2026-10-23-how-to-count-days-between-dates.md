@@ -3,7 +3,7 @@ layout: post
 title: How to Count Days Between Two Dates (Manual Method)
 slug: how-to-count-days-between-dates
 date: '2026-10-23'
-last_modified_at: 2026-11-12
+last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
 category: How-To Guides
@@ -11,7 +11,7 @@ tags:
 - days between dates
 - date difference
 - business days
-primary_keyword: how to count days between dates
+primary_keyword: how to count days between two dates
 secondary_keywords:
 - days between two dates calculator
 - inclusive vs exclusive counting
@@ -55,7 +55,7 @@ tool_name: Date Difference Calculator
 
 <div class="prose" markdown="1">
 
-Counting days between dates by hand is straightforward once you know the convention. Here is the method.
+Subtract the start date from the end date; the answer excludes the end date unless you add 1. Counting days between dates by hand is straightforward once you know that convention. Here is the method.
 
 ## The basic method
 
@@ -92,7 +92,7 @@ Deadlines usually mean business days, Monday through Friday, excluding [public h
 
 **Example:** Monday, March 2 to Friday, March 13, 2026. The calendar span is 11 days, but the business-day count is 10: five days in the first week (March 2 to 6) and five in the second (March 9 to 13).
 
-Public holidays vary by country and are the usual reason business-day counts still surprise people. When a deadline is contractual, list the holidays or name the exact date instead of a day count.
+Public holidays vary by country and are the usual reason business-day counts still surprise people. When a deadline is contractual, list the holidays or name the exact date instead of a day count. For the full method, with the 2027 US federal holiday list and a worked example, read [How to Count Business Days Between Two Dates]({{ '/blog/how-to-count-business-days-between-two-dates/' | relative_url }}).
 
 ## Count days in Excel or Google Sheets
 
@@ -117,6 +117,13 @@ The same range in a leap year behaves differently: February 27 to March 2, 2024.
 
 Check whether February 29 falls between your dates. In the example above, 2026 is not a leap year, so February contributed 28 days. For a range spanning 2024, February would contribute 29.
 
+## Four edge cases to know
+
+- **Month-end rollover:** one month after January 31 is February 28 in a common year (February 29 in a leap year), not March 3. Adding a month means landing on the same day number in the next month, or the last day of that month when the day does not exist.
+- **The DST caveat:** a 24-hour span across a clock change is not 24 hours. From noon on Saturday, March 13, 2027 to noon on Sunday, March 14, 2027 is 23 hours, because the clocks spring forward. From noon on Saturday, November 6, 2027 to noon on Sunday, November 7, 2027 is 25 hours, because the clocks fall back. Day counts ignore this, but hour counts do not.
+- **ISO weeks:** a year has 52 ISO weeks, except years that start on a Thursday, like 2026, which have 53. The extra week matters when you count weeks instead of days: 2026 has 53 ISO weeks, 2027 has 52.
+- **Same date and reversed dates:** the same date twice is 0 days. If the end date comes before the start date, the answer is negative: December 20 to December 25, 2026 is 5 days, but December 25 to December 20 is minus 5 days. Swap the dates if you need a positive count.
+
 ## Worked examples
 
 Three longer ranges, counted with the exclusive convention described above:
@@ -131,11 +138,12 @@ The last row is a useful sanity check: 24 years at 365 days each is 8,760, and t
 
 ## The fast way
 
-Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and can also add or subtract days from any date. For workdays only, with US federal holidays removed, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and can also [add or subtract days]({{ '/days-from-today-calculator/' | relative_url }}) from any date. For workdays only, with US federal holidays removed, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
 
 ## Related guides
 
 - [What Is a Leap Year?]({{ '/blog/what-is-a-leap-year/' | relative_url }})
 - [How Many Days Are in a Year?]({{ '/blog/how-many-days-in-a-year/' | relative_url }})
+- [How to Count Business Days Between Two Dates]({{ '/blog/how-to-count-business-days-between-two-dates/' | relative_url }})
 
 </div>
