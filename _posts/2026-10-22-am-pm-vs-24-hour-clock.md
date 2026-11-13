@@ -91,7 +91,7 @@ Military time drops the colon and always uses four digits. 2:30 PM becomes 1430,
 
 Note the two midnight forms: 00:00 is the standard start of a day, while 24:00 is sometimes written for midnight at the end of a day. Both mean midnight, but 00:00 is the form to use, and 24:00 never means the start of a day.
 
-This four-digit style follows ISO 8601, the international date and time standard, which writes times in 24-hour form with a colon (14:30) and dates as year-month-day (2026-11-12).
+This four-digit style is the basic format of ISO 8601, the international date and time standard. The same standard also allows the extended format with a colon (14:30), and writes dates as year-month-day (2026-11-12).
 
 ## Quick reference table
 
@@ -140,6 +140,5 @@ When scheduling anything important across time zones, write the time in 24-hour 
 ## Related guides
 
 - [Time Zones Explained]({{ '/blog/time-zones-explained/' | relative_url }})
-- [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }})
 
 </div>
