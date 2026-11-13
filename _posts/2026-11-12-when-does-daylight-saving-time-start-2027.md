@@ -56,7 +56,7 @@ tool_name: Time Zone Converter
 
 <div class="prose" markdown="1">
 
-Daylight saving time starts in 2027 on **Sunday, March 14, at 2:00 AM local time**. This guide answers when does daylight saving time start in 2027, which states skip it, what changes at 2:00 AM, and what the Sunshine Protection Act means for the 2027 dates. At that moment clocks spring forward one hour to 3:00 AM, the day becomes 23 hours long, and the United States moves onto daylight time until November. This is the spring clock change, the one that costs you an hour of sleep. Most people search for it as daylight savings time, with an S, so this guide uses both spellings: the official name is daylight saving time, and daylight savings is the common spelling.
+Daylight saving time starts in 2027 on **Sunday, March 14, at 2:00 AM local time**. This guide answers when does daylight saving time start in 2027, which states skip it, what changes at 2:00 AM, and what the Sunshine Protection Act means for the 2027 dates. At that moment clocks spring forward one hour to 3:00 AM, the day becomes 23 hours long, and the United States moves onto daylight time until November. This is the spring clock change, the one that costs you an hour of sleep. Most people search for it as daylight savings time, with an S, so this guide uses both spellings: the official name is daylight saving time, and daylight savings is the common spelling. Check the change in your own time zone with the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}).
 
 ## Daylight savings start dates by state in 2027
 
