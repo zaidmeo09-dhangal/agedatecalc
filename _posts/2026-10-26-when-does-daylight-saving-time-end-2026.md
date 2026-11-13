@@ -57,7 +57,7 @@ tool_name: Time Zone Converter
 
 <div class="prose" markdown="1">
 
-In 2027, daylight saving time ends on **Sunday, November 7, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter. Daylight saving in 2027 runs from [Sunday, March 14]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }}) to Sunday, November 7. Most people search for it as daylight savings time, with an S, so this guide uses both spellings: the official name is daylight saving time, and daylight savings is the common spelling.
+In 2027, daylight saving time ends on **Sunday, November 7, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter. Daylight saving in 2027 runs from [Sunday, March 14]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }}) to Sunday, November 7. Most people search for it as daylight savings time, with an S, so this guide uses both spellings: the official name is daylight saving time, and daylight savings is the common spelling. Check the change in your own time zone with the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}).
 
 The 2026 switch was on November 1, 2026. The next one is November 7, 2027. Set a reminder now, because the devices you forget about are always the ones that stay wrong for a week.
 
