@@ -33,7 +33,7 @@ schema: |
             "name": "What is 28 days from today?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "28 days after today. Counted from Friday, November 13, 2026, 28 days from today is Friday, December 11, 2026. Enter today as the start date, 28 as the number, days as the unit, and from now as the direction."
+              "text": "28 days after today. Counted from Sunday, November 15, 2026, 28 days from today is Sunday, December 13, 2026. Enter today as the start date, 28 as the number, days as the unit, and from now as the direction."
             }
           },
           {
@@ -41,7 +41,7 @@ schema: |
             "name": "How do I calculate 30 days from today?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pick today as the start date, enter 30, choose days, and pick from now. 30 days from November 13, 2026 is Sunday, December 13, 2026. The same steps work for any number: change 30 to 7, 15, 60, or 90 and the result updates."
+              "text": "Pick today as the start date, enter 30, choose days, and pick from now. 30 days from November 15, 2026 is Tuesday, December 15, 2026. The same steps work for any number: change 30 to 7, 15, 60, or 90 and the result updates."
             }
           },
           {
@@ -49,7 +49,7 @@ schema: |
             "name": "What date is 2 weeks from today?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "2 weeks from today is 14 days after today. Counted from Friday, November 13, 2026, 2 weeks from today is Friday, November 27, 2026. Use the 2 weeks from today quick pick above, or enter 14 days from now."
+              "text": "2 weeks from today is 14 days after today. Counted from Sunday, November 15, 2026, 2 weeks from today is Sunday, November 29, 2026. Use the 2 weeks from today quick pick above, or enter 14 days from now."
             }
           },
           {
@@ -57,7 +57,7 @@ schema: |
             "name": "How many days ago was 2020?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It depends on the date in 2020. January 1, 2020 was 2,508 days before November 13, 2026. To find the days since any date in 2020, enter that date and today in the Date Difference Calculator, or count back from today with ago mode here."
+              "text": "It depends on the date in 2020. January 1, 2020 was 2,510 days before November 15, 2026. To find the days since any date in 2020, enter that date and today in the Date Difference Calculator, or count back from today with ago mode here."
             }
           },
           {
@@ -65,7 +65,31 @@ schema: |
             "name": "Can I subtract days to find a past date?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Choose ago as the direction and the calculator counts back. 30 days ago from November 13, 2026 is Wednesday, October 14, 2026, and 120 days ago is Thursday, July 16, 2026. Weeks, months, and years work the same way in ago mode."
+              "text": "Yes. Choose ago as the direction and the calculator counts back. 30 days ago from November 15, 2026 is Friday, October 16, 2026, and 120 days ago is Saturday, July 18, 2026. Weeks, months, and years work the same way in ago mode."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 45 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Sunday, November 15, 2026, 45 days from today is Wednesday, December 30, 2026. Enter 45 as the number, days as the unit, and from now as the direction on this page for the live answer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 100 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Sunday, November 15, 2026, 100 days from today is Tuesday, February 23, 2027. That is 14 weeks and 2 days from today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 365 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Sunday, November 15, 2026, 365 days from today is Monday, November 15, 2027. That is 52 weeks and 1 day, and the weekday moves forward by one because 2027 is not a leap year."
             }
           }
         ]
@@ -157,27 +181,27 @@ Pick a start date, enter a number, choose a unit, and pick a direction. From now
 
 ## Worked examples from today
 
-Counted from Friday, November 13, 2026:
+Counted from Sunday, November 15, 2026:
 
 | Question | Answer |
 |---|---|
-| 7 days from today | Friday, November 20, 2026 |
-| 15 days from today | Saturday, November 28, 2026 |
-| 2 weeks from today | Friday, November 27, 2026 |
-| 35 days from today | Friday, December 18, 2026 |
-| 25 days from today | Tuesday, December 8, 2026 |
-| 22 days from today | Saturday, December 5, 2026 |
-| 28 days from today | Friday, December 11, 2026 |
-| 29 days from today | Saturday, December 12, 2026 |
-| 11 days from today | Tuesday, November 24, 2026 |
-| 17 days from today | Monday, November 30, 2026 |
-| 6 days from today | Thursday, November 19, 2026 |
-| 4 months from today | Saturday, March 13, 2027 |
-| 30 days ago from today | Wednesday, October 14, 2026 |
-| 60 days before today | Monday, September 14, 2026 |
-| 120 days ago | Thursday, July 16, 2026 |
-| 100 days back from today | Wednesday, August 5, 2026 |
-| 33 months ago from today | Tuesday, February 13, 2024 |
+| 7 days from today | Sunday, November 22, 2026 |
+| 15 days from today | Wednesday, December 2, 2026 |
+| 2 weeks from today | Sunday, November 29, 2026 |
+| 35 days from today | Sunday, December 20, 2026 |
+| 25 days from today | Thursday, December 10, 2026 |
+| 22 days from today | Monday, December 7, 2026 |
+| 28 days from today | Sunday, December 13, 2026 |
+| 29 days from today | Monday, December 14, 2026 |
+| 11 days from today | Thursday, November 26, 2026 |
+| 17 days from today | Wednesday, December 2, 2026 |
+| 6 days from today | Saturday, November 21, 2026 |
+| 4 months from today | Monday, March 15, 2027 |
+| 30 days ago from today | Friday, October 16, 2026 |
+| 60 days before today | Wednesday, September 16, 2026 |
+| 120 days ago | Saturday, July 18, 2026 |
+| 100 days back from today | Friday, August 7, 2026 |
+| 33 months ago from today | Thursday, February 15, 2024 |
 
 ## Month ends and leap years
 
@@ -195,6 +219,56 @@ Leap years work the same way. February 29, 2028 plus 1 year is February 28, 2029
 
 To measure the gap between two fixed dates instead of counting from today, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To count only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
 
+## Days from today at a glance
+
+The most searched counts, worked out from Sunday, November 15, 2026:
+
+| Days from today | Date |
+|---|---|
+| 7 days | Sunday, November 22, 2026 |
+| 14 days | Sunday, November 29, 2026 |
+| 21 days | Sunday, December 6, 2026 |
+| 30 days | Tuesday, December 15, 2026 |
+| 45 days | Wednesday, December 30, 2026 |
+| 60 days | Thursday, January 14, 2027 |
+| 90 days | Saturday, February 13, 2027 |
+| 100 days | Tuesday, February 23, 2027 |
+| 180 days | Friday, May 14, 2027 |
+| 365 days | Monday, November 15, 2027 |
+
+These dates are fixed to November 15, 2026, and they move by one day every day. For the live count from today, use the calculator above, or tap one of the quick picks.
+
+## Days from today in weeks and months
+
+Days, weeks, and months do not convert evenly, so it helps to know the exact split:
+
+| Days | In weeks |
+|---|---|
+| 7 days | 1 week |
+| 14 days | 2 weeks |
+| 21 days | 3 weeks |
+| 30 days | 4 weeks and 2 days |
+| 45 days | 6 weeks and 3 days |
+| 60 days | 8 weeks and 4 days |
+| 90 days | 12 weeks and 6 days |
+| 100 days | 14 weeks and 2 days |
+| 180 days | 25 weeks and 5 days |
+| 365 days | 52 weeks and 1 day |
+
+Months are different, because months have 28 to 31 days. 30 days is about one month, 90 days is about three months, and 365 days is 12 months, but "about" is not exact. If you need a calendar month, use the months unit above instead of guessing 30 days: January 31 plus 1 month is February 28, 2027, because February is shorter and the date clamps to the last day of the month, while January 31 plus 30 days is March 2, 2027. To measure the gap between two fixed dates, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
+
+## How to add days to a date in Excel
+
+Put the start date in cell A1 and add the number of days:
+
+`=A1+30`
+
+That gives the date 30 days after the date in A1. For the count from today, use TODAY() instead of a fixed date:
+
+`=TODAY()+30`
+
+The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 gives 7 days from today, and =TODAY()-30 gives 30 days ago. Format the result cell as a date if it shows a number instead. To add calendar months rather than days, use =EDATE(A1,3), which adds 3 months to the date in A1 and clamps to the last day of the month when needed. For counting only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+
 ## Frequently asked questions
 
 </div>
@@ -202,23 +276,35 @@ To measure the gap between two fixed dates instead of counting from today, use t
 <div class="faq">
 <details>
 <summary>What is 28 days from today?</summary>
-<p>28 days after today. Counted from Friday, November 13, 2026, 28 days from today is Friday, December 11, 2026. Enter today as the start date, 28 as the number, days as the unit, and from now as the direction.</p>
+<p>28 days after today. Counted from Sunday, November 15, 2026, 28 days from today is Sunday, December 13, 2026. Enter today as the start date, 28 as the number, days as the unit, and from now as the direction.</p>
 </details>
 <details>
 <summary>How do I calculate 30 days from today?</summary>
-<p>Pick today as the start date, enter 30, choose days, and pick from now. 30 days from November 13, 2026 is Sunday, December 13, 2026. The same steps work for any number: change 30 to 7, 15, 60, or 90 and the result updates.</p>
+<p>Pick today as the start date, enter 30, choose days, and pick from now. 30 days from November 15, 2026 is Tuesday, December 15, 2026. The same steps work for any number: change 30 to 7, 15, 60, or 90 and the result updates.</p>
 </details>
 <details>
 <summary>What date is 2 weeks from today?</summary>
-<p>2 weeks from today is 14 days after today. Counted from Friday, November 13, 2026, 2 weeks from today is Friday, November 27, 2026. Use the 2 weeks from today quick pick above, or enter 14 days from now.</p>
+<p>2 weeks from today is 14 days after today. Counted from Sunday, November 15, 2026, 2 weeks from today is Sunday, November 29, 2026. Use the 2 weeks from today quick pick above, or enter 14 days from now.</p>
 </details>
 <details>
 <summary>How many days ago was 2020?</summary>
-<p>It depends on the date in 2020. January 1, 2020 was 2,508 days before November 13, 2026. To find the days since any date in 2020, enter that date and today in the <a href="/date-difference-calculator/">Date Difference Calculator</a>, or count back from today with ago mode here.</p>
+<p>It depends on the date in 2020. January 1, 2020 was 2,510 days before November 15, 2026. To find the days since any date in 2020, enter that date and today in the <a href="/date-difference-calculator/">Date Difference Calculator</a>, or count back from today with ago mode here.</p>
 </details>
 <details>
 <summary>Can I subtract days to find a past date?</summary>
-<p>Yes. Choose ago as the direction and the calculator counts back. 30 days ago from November 13, 2026 is Wednesday, October 14, 2026, and 120 days ago is Thursday, July 16, 2026. Weeks, months, and years work the same way in ago mode.</p>
+<p>Yes. Choose ago as the direction and the calculator counts back. 30 days ago from November 15, 2026 is Friday, October 16, 2026, and 120 days ago is Saturday, July 18, 2026. Weeks, months, and years work the same way in ago mode.</p>
+</details>
+<details>
+<summary>What is 45 days from today?</summary>
+<p>Counted from Sunday, November 15, 2026, 45 days from today is Wednesday, December 30, 2026. Enter 45 as the number, days as the unit, and from now as the direction above for the live answer.</p>
+</details>
+<details>
+<summary>What is 100 days from today?</summary>
+<p>Counted from Sunday, November 15, 2026, 100 days from today is Tuesday, February 23, 2027. That is 14 weeks and 2 days from today.</p>
+</details>
+<details>
+<summary>What is 365 days from today?</summary>
+<p>Counted from Sunday, November 15, 2026, 365 days from today is Monday, November 15, 2027. That is 52 weeks and 1 day, and the weekday moves forward by one because 2027 is not a leap year.</p>
 </details>
 </div>
 
