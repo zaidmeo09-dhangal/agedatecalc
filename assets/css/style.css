@@ -389,6 +389,7 @@ img,video,iframe{max-width:100%}
 /* Post layout: sidebar + content */
 .post-layout{display:grid;grid-template-columns:280px 1fr;gap:36px;align-items:start;max-width:1120px}
 .post-content{min-width:0}
+.post-article,.post-sidebar{min-width:0}
 .post-content h2,.post-content h3{scroll-margin-top:96px}
 /* Author card */
 .author-card{background:linear-gradient(135deg,var(--teal) 0%,var(--teal-deep) 100%);border-radius:var(--radius);padding:24px 20px;color:#fff;text-align:center;margin-bottom:20px}
@@ -420,6 +421,20 @@ img,video,iframe{max-width:100%}
   .post-sidebar{order:1}
   .post-content{order:2}
 }
+/* Mobile: post tables scroll sideways instead of clipping (the branded
+   .post-content table rule above sets overflow:hidden, which beats the
+   .prose table scroll rule; this later rule restores scrolling) */
+@media(max-width:600px){
+  .post-content table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  /* A 4-column table squeezes its last column so narrow on a phone that
+     rows grow very tall. Give the last column room; the table scrolls. */
+  .post-content table:has(th:nth-child(4)) th:nth-child(4),
+  .post-content table:has(th:nth-child(4)) td:nth-child(4){min-width:180px}
+}
+/* Every post wraps its body in an extra <div class="prose"> inside the
+   .post-content.prose container, which doubles the 20px side padding and
+   leaves a narrow text column on phones. The inner wrapper adds nothing. */
+.post-content .prose{padding:0;max-width:none;margin:0}
 
 /* ---- Related Guides auto-scrolling strip (tool pages) ---- */
 .related-guides{padding:48px 0 8px}
