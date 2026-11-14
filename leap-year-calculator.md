@@ -67,6 +67,30 @@ schema: |
               "@type": "Answer",
               "text": "They celebrate on February 28 or March 1, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents. Our Age Calculator counts February 29 birthdays on March 1 in non-leap years."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How often does February 29 happen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "February 29 happens every four years in most cases, with the century exceptions. The next February 29 dates are February 29, 2028, February 29, 2032, February 29, 2036, and February 29, 2040. The century years 1900 and 2100 skip it, while 2000 kept it because it is divisible by 400."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is 2100 a leap year?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. 2100 is divisible by 4 and by 100, but not by 400, so the second rule applies and February 2100 has 28 days. The leap year before 2100 is 2096, and the next one after it is 2104."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the Excel formula for a leap year?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Put the year in cell A1 and use =IF(OR(MOD(A1,400)=0,AND(MOD(A1,4)=0,MOD(A1,100)<>0)),\"Leap year\",\"Not a leap year\"). It works in both Excel and Google Sheets, and it follows the same three rules as the checker on this page."
+            }
           }
         ]
       }
@@ -133,6 +157,20 @@ Apply the rules year by year. 2024 is divisible by 4, so it is a leap year. 2025
 
 The next leap year is **2028**. February 29, 2028 falls on a Tuesday, and the leap year after that is 2032.
 
+## Leap years from 2024 to 2040
+
+The next five leap years are 2024, 2028, 2032, 2036, and 2040. Each one adds a February 29, and the weekday of that extra day moves around the week. Use the list tool above to check any range, or use this table as a quick reference.
+
+| Leap year | February 29 falls on |
+|---|---|
+| 2024 | Thursday |
+| 2028 | Tuesday |
+| 2032 | Sunday |
+| 2036 | Friday |
+| 2040 | Wednesday |
+
+February 29 is the 60th day of a leap year in every case, because January has 31 days and February reaches 29. The next leap year after 2040 is 2044. To see how leap years shift the days between two dates, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
+
 ## The century test: 1900 vs 2000 vs 2100
 
 | Year | Divisible by 4 | Divisible by 100 | Divisible by 400 | Leap year? |
@@ -154,6 +192,28 @@ The Gregorian calendar, introduced in 1582, refined the older Julian rule by add
 Leap days matter for exact date math. A period crossing February 2024 includes a 29th that 2025 and 2026 do not have, so day counts across leap years are one day longer. If you were born on February 29, your birthday is counted on March 1 in non-leap years, the most common legal convention. To find your exact age including leap days, use the [Age Calculator]({{ '/age-calculator/' | relative_url }}), and to measure the gap between any two dates, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
 
 For the full story behind the rules, including the history from Julius Caesar to Pope Gregory XIII, see [what is a leap year]({{ '/blog/what-is-a-leap-year/' | relative_url }}).
+
+## How to check if a year is a leap year
+
+Use the three rules in order:
+
+1. **Divide the year by 4.** If it does not divide evenly, it is not a leap year. 2026 divided by 4 is 506.5, so 2026 is not a leap year.
+2. **If it divides by 4, check whether it is a century year.** Divide by 100. If it is not a century year, it is a leap year. 2028 divides by 4 and is not a century year, so it is a leap year.
+3. **If it is a century year, divide by 400.** If it divides evenly, it is a leap year after all. If not, it is not. 2000 divides by 400, so it is a leap year. 1900 does not, so it is not.
+
+You can test any year with the checker at the top of this page, or do it in a spreadsheet. Put the year in cell A1 and use this formula, which works in both Excel and Google Sheets:
+
+`=IF(OR(MOD(A1,400)=0,AND(MOD(A1,4)=0,MOD(A1,100)<>0)),"Leap year","Not a leap year")`
+
+The formula follows the same three rules: MOD(A1,400)=0 catches the 400 rule, and the AND part catches years divisible by 4 that are not century years.
+
+## What is Leap Day?
+
+Leap Day is February 29, the extra day added to the calendar in a leap year. It is the 60th day of a leap year, and it keeps the calendar in step with the seasons. Without it, the calendar would drift by about one day every four years.
+
+People born on February 29 are sometimes called leaplings. In non-leap years they celebrate on February 28 or March 1, and our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts their birthday on March 1, the most common legal convention. The next Leap Day is February 29, 2028, which falls on a Tuesday, and the one after that is February 29, 2032, a Sunday.
+
+Leap Day also carries an old tradition in Ireland and the UK: February 29 is the day when, by custom, a woman may propose marriage. To see how many days a year has with and without a Leap Day, see [how many days in a year]({{ '/blog/how-many-days-in-a-year/' | relative_url }}).
 
 ## Frequently asked questions
 
@@ -179,6 +239,18 @@ For the full story behind the rules, including the history from Julius Caesar to
 <details>
 <summary>What birthday do February 29 babies celebrate in non-leap years?</summary>
 <p>They celebrate on February 28 or March 1, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents. Our Age Calculator counts February 29 birthdays on March 1 in non-leap years.</p>
+</details>
+<details>
+<summary>How often does February 29 happen?</summary>
+<p>February 29 happens every four years in most cases, with the century exceptions. The next February 29 dates are February 29, 2028, February 29, 2032, February 29, 2036, and February 29, 2040. The century years 1900 and 2100 skip it, while 2000 kept it because it is divisible by 400.</p>
+</details>
+<details>
+<summary>Is 2100 a leap year?</summary>
+<p>No. 2100 is divisible by 4 and by 100, but not by 400, so the second rule applies and February 2100 has 28 days. The leap year before 2100 is 2096, and the next one after it is 2104.</p>
+</details>
+<details>
+<summary>What is the Excel formula for a leap year?</summary>
+<p>Put the year in cell A1 and use =IF(OR(MOD(A1,400)=0,AND(MOD(A1,4)=0,MOD(A1,100)&lt;&gt;0)),"Leap year","Not a leap year"). It works in both Excel and Google Sheets, and it follows the same three rules as the checker above.</p>
 </details>
 </div>
 
