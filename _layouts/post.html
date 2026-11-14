@@ -29,10 +29,10 @@ layout: default
 <section class="section post-section">
   <div class="wrap post-layout">
     <aside class="post-sidebar">
-      <nav class="toc-card" aria-label="Table of contents">
-        <div class="toc-title">Table of Contents</div>
+      <details class="toc-card" open aria-label="Table of contents">
+        <summary class="toc-title">Table of Contents</summary>
         <ul class="toc-list" id="toc-list"></ul>
-      </nav>
+      </details>
     </aside>
     <article class="post-article">
       {% assign feat_img = page.featured_image | default: page.image %}
@@ -129,5 +129,9 @@ layout: default
       if(card) card.style.display = "none";
     }
   }
+  /* On phones the TOC starts collapsed so the reader reaches the
+     direct answer fast; on desktop it stays open. */
+  var tocCard = document.querySelector(".toc-card");
+  if(tocCard && window.innerWidth <= 860){ tocCard.removeAttribute("open"); }
 })();
 </script>
