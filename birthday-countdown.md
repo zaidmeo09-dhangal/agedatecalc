@@ -67,6 +67,30 @@ schema: |
               "@type": "Answer",
               "text": "The Age Calculator tells you how old you are right now, in years, months, and days, plus total days lived. The Birthday Countdown tells you how long until your next birthday, ticking live in days, hours, minutes, and seconds, and the age you will turn. Use the Age Calculator for your current age and this page for the wait."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate the days until my next birthday?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Find the next occurrence of your birth month and day. If this year's birthday has already passed, use next year's date, then subtract today. For example, counted from Sunday, November 15, 2026, someone born on June 15 has their next birthday on Tuesday, June 15, 2027, which is 212 days away. Enter your date of birth on this page and the countdown does it live."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a golden birthday?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your golden birthday is the birthday where you turn the age of your birth day number. Born on the 15th, your golden birthday is the day you turn 15. Born on the 31st, it is the day you turn 31. It happens once in a lifetime."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When is my next milestone birthday?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Milestone birthdays in the US are 18, 21, 30, 40, 50, 65, and 100. At 18 you can vote, at 21 you can buy alcohol, at 30 you can serve in the US Senate, at 40 federal age discrimination protection begins, at 50 you can join AARP, and at 65 Medicare eligibility begins. Enter your date of birth on this page and the countdown shows the age you will turn, so you can see which milestone comes next."
+            }
           }
         ]
       }
@@ -137,6 +161,59 @@ For example, someone born on June 15, 1990 had their golden birthday on Wednesda
 - **Gifts and cards:** the countdown in days is the number to beat. Order in time, and remember shipping takes business days, not calendar days, so check the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) for delivery windows.
 - **Half birthdays:** six months after a birthday is the half birthday, a fun date for children. Add six months to your last birthday with the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
 
+## How to work out the days until your next birthday
+
+Take your birth month and day, then find the next time that date comes around:
+
+1. **Start from today.** Counted from Sunday, November 15, 2026, the next birthday for someone born on June 15 is in 2027, because June 15, 2026 has already passed.
+2. **If this year's birthday has already passed, use next year's date.** If it has not happened yet, use this year's date.
+3. **Subtract today from that date.** The result is the number of days until your next birthday.
+
+Worked example: someone born on June 15, 1990 has their next birthday on Tuesday, June 15, 2027, which is 212 days after November 15, 2026, and they turn 37. Enter your own date of birth in the countdown above and the tool does the same steps live, ticking down in days, hours, minutes, and seconds.
+
+You can do the same count in a spreadsheet. Put your date of birth in cell A1 and use this formula, which works in both Excel and Google Sheets:
+
+`=DATE(YEAR(TODAY())+(DATE(YEAR(TODAY()),MONTH(A1),DAY(A1))<TODAY()),MONTH(A1),DAY(A1))-TODAY()`
+
+The formula builds this year's birthday, adds one year when that date has already passed, and subtracts today. For the exact age behind the countdown, use the [Age Calculator]({{ '/age-calculator/' | relative_url }}), and to measure the gap between any two dates, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
+
+## Birthday milestones
+
+Some birthdays change what you can legally do in the US. These are the ones people plan around:
+
+| Age | What changes in the US |
+|---|---|
+| 18 | The age of majority in most states, and the voting age nationwide. You can also enlist in the military. |
+| 21 | The legal drinking age in every state. |
+| 30 | The minimum age to serve in the US Senate. |
+| 40 | Federal protection against age discrimination at work begins under the Age Discrimination in Employment Act. |
+| 50 | You can join AARP. |
+| 65 | Medicare eligibility begins. |
+
+Laws vary by state for things like driving and marriage, so check your state for those. The countdown above shows the age you will turn, so a milestone year is easy to spot. For the full guide to working out an exact age, see [how to calculate age]({{ '/blog/how-to-calculate-age/' | relative_url }}).
+
+## Golden birthdays for every birth day
+
+Your golden birthday is the birthday where you turn the age of your birth day number. The rule is one line: born on the 15th, your golden birthday is the day you turn 15. Born on the 7th, it is the day you turn 7.
+
+| Born on the | Golden birthday age |
+|---|---|
+| 1st to 9th | 1 to 9 |
+| 10th to 19th | 10 to 19 |
+| 20th to 29th | 20 to 29 |
+| 30th | 30 |
+| 31st | 31 |
+
+A few examples: born on the 5th of any month, your golden birthday is the day you turn 5. Born on the 25th in 2001, your golden birthday falls in 2026, the year you turn 25. Born on the 31st, your golden birthday is the day you turn 31, the latest golden birthday age possible. Born on February 29, your birth day number is 29, so your golden birthday is the day you turn 29. To check whether a golden birthday year is a leap year, use the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
+
+## Birthday countdown vs age calculator
+
+These two tools answer different questions. The birthday countdown answers "how long until my next birthday?" in days, hours, minutes, and seconds. The [Age Calculator]({{ '/age-calculator/' | relative_url }}) answers "how old am I right now?" in years, months, and days.
+
+Use the countdown when you are planning: a party, a gift, a trip, or a reminder. Use the age calculator when you need your exact age: a form, an application, a milestone, or a simple "how old am I?" check.
+
+Both tools use the same date math, so they never disagree. Your next birthday from the countdown and your age from the age calculator are two views of the same birth date. If you want the gap between any two dates instead, the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) covers that.
+
 ## Frequently asked questions
 
 </div>
@@ -161,6 +238,18 @@ For example, someone born on June 15, 1990 had their golden birthday on Wednesda
 <details>
 <summary>How is this different from the Age Calculator?</summary>
 <p>The Age Calculator tells you how old you are right now, in years, months, and days, plus total days lived. The Birthday Countdown tells you how long until your next birthday, ticking live in days, hours, minutes, and seconds, and the age you will turn. Use the Age Calculator for your current age and this page for the wait.</p>
+</details>
+<details>
+<summary>How do I calculate the days until my next birthday?</summary>
+<p>Find the next occurrence of your birth month and day. If this year's birthday has already passed, use next year's date, then subtract today. For example, counted from Sunday, November 15, 2026, someone born on June 15 has their next birthday on Tuesday, June 15, 2027, which is 212 days away. Enter your date of birth above and the countdown does it live.</p>
+</details>
+<details>
+<summary>What is a golden birthday?</summary>
+<p>Your golden birthday is the birthday where you turn the age of your birth day number. Born on the 15th, your golden birthday is the day you turn 15. Born on the 31st, it is the day you turn 31. It happens once in a lifetime.</p>
+</details>
+<details>
+<summary>When is my next milestone birthday?</summary>
+<p>Milestone birthdays in the US are 18, 21, 30, 40, 50, 65, and 100. At 18 you can vote, at 21 you can buy alcohol, at 30 you can serve in the US Senate, at 40 federal age discrimination protection begins, at 50 you can join AARP, and at 65 Medicare eligibility begins. Enter your date of birth above and the countdown shows the age you will turn, so you can see which milestone comes next.</p>
 </details>
 </div>
 
