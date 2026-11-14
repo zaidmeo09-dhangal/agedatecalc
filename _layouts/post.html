@@ -26,17 +26,14 @@ layout: default
   </div>
 </section>
 
-<section class="post-toc-top">
-  <div class="wrap">
-    <nav class="toc-card" aria-label="Table of contents">
-      <div class="toc-title">Table of Contents</div>
-      <ul class="toc-list" id="toc-list"></ul>
-    </nav>
-  </div>
-</section>
-
 <section class="section post-section">
-  <div class="wrap">
+  <div class="wrap post-layout">
+    <aside class="post-sidebar">
+      <nav class="toc-card" aria-label="Table of contents">
+        <div class="toc-title">Table of Contents</div>
+        <ul class="toc-list" id="toc-list"></ul>
+      </nav>
+    </aside>
     <article class="post-article">
       {% assign feat_img = page.featured_image | default: page.image %}
       {% if feat_img %}
