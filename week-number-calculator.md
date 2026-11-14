@@ -59,6 +59,38 @@ schema: |
               "@type": "Answer",
               "text": "ISO week 1 is the week with the first Thursday of the year, and January 4 always falls in week 1. That is why late December dates can belong to the next year: December 29, 2025 is a Monday in ISO week 1 of 2026."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between ISO week and US week numbers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ISO weeks start on Monday, and week 1 is the week with the first Thursday of the year. US weeks start on Sunday, and week 1 is the week containing January 1. The same date can differ: December 29, 2025 is ISO week 1 of 2026 but US week 53 of 2025."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What week number is December 31, 2026?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "December 31, 2026 is a Thursday in ISO week 53 of 2026, running Monday, December 28, 2026 to Sunday, January 3, 2027. It is the last day of the year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get the ISO week number in Excel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use =ISOWEEKNUM(A1) with the date in cell A1, or =WEEKNUM(A1,21). Both give the ISO week number, and both work in Excel 2013 and later and in Google Sheets. Use =WEEKNUM(A1,1) for the US Sunday-start count instead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many ISO weeks are in 2027?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "2027 has 52 ISO weeks. A year gets a 53rd ISO week when it starts on a Thursday, or is a leap year starting on a Wednesday, and January 1, 2027 is a Friday in a common year, so 2027 has 52."
+            }
           }
         ]
       }
@@ -125,6 +157,88 @@ That Thursday rule is why the year of a week can differ from the year of the dat
 
 To count the days between two dates instead of finding a week number, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To find what date falls a number of days from today, use the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}).
 
+## Week numbers in 2026
+
+2026 has 53 ISO weeks. The first week starts on Monday, December 29, 2025, and the last week ends on Sunday, January 3, 2027. As of November 15, 2026, we are in week 46.
+
+| Week | Monday | Sunday |
+|---|---|---|
+| 1 | December 29, 2025 | January 4, 2026 |
+| 2 | January 5, 2026 | January 11, 2026 |
+| 3 | January 12, 2026 | January 18, 2026 |
+| 4 | January 19, 2026 | January 25, 2026 |
+| 5 | January 26, 2026 | February 1, 2026 |
+| 6 | February 2, 2026 | February 8, 2026 |
+| 7 | February 9, 2026 | February 15, 2026 |
+| 8 | February 16, 2026 | February 22, 2026 |
+| 9 | February 23, 2026 | March 1, 2026 |
+| 10 | March 2, 2026 | March 8, 2026 |
+| 11 | March 9, 2026 | March 15, 2026 |
+| 12 | March 16, 2026 | March 22, 2026 |
+| 13 | March 23, 2026 | March 29, 2026 |
+| 14 | March 30, 2026 | April 5, 2026 |
+| 15 | April 6, 2026 | April 12, 2026 |
+| 16 | April 13, 2026 | April 19, 2026 |
+| 17 | April 20, 2026 | April 26, 2026 |
+| 18 | April 27, 2026 | May 3, 2026 |
+| 19 | May 4, 2026 | May 10, 2026 |
+| 20 | May 11, 2026 | May 17, 2026 |
+| 21 | May 18, 2026 | May 24, 2026 |
+| 22 | May 25, 2026 | May 31, 2026 |
+| 23 | June 1, 2026 | June 7, 2026 |
+| 24 | June 8, 2026 | June 14, 2026 |
+| 25 | June 15, 2026 | June 21, 2026 |
+| 26 | June 22, 2026 | June 28, 2026 |
+| 27 | June 29, 2026 | July 5, 2026 |
+| 28 | July 6, 2026 | July 12, 2026 |
+| 29 | July 13, 2026 | July 19, 2026 |
+| 30 | July 20, 2026 | July 26, 2026 |
+| 31 | July 27, 2026 | August 2, 2026 |
+| 32 | August 3, 2026 | August 9, 2026 |
+| 33 | August 10, 2026 | August 16, 2026 |
+| 34 | August 17, 2026 | August 23, 2026 |
+| 35 | August 24, 2026 | August 30, 2026 |
+| 36 | August 31, 2026 | September 6, 2026 |
+| 37 | September 7, 2026 | September 13, 2026 |
+| 38 | September 14, 2026 | September 20, 2026 |
+| 39 | September 21, 2026 | September 27, 2026 |
+| 40 | September 28, 2026 | October 4, 2026 |
+| 41 | October 5, 2026 | October 11, 2026 |
+| 42 | October 12, 2026 | October 18, 2026 |
+| 43 | October 19, 2026 | October 25, 2026 |
+| 44 | October 26, 2026 | November 1, 2026 |
+| 45 | November 2, 2026 | November 8, 2026 |
+| 46 | November 9, 2026 | November 15, 2026 |
+| 47 | November 16, 2026 | November 22, 2026 |
+| 48 | November 23, 2026 | November 29, 2026 |
+| 49 | November 30, 2026 | December 6, 2026 |
+| 50 | December 7, 2026 | December 13, 2026 |
+| 51 | December 14, 2026 | December 20, 2026 |
+| 52 | December 21, 2026 | December 27, 2026 |
+| 53 | December 28, 2026 | January 3, 2027 |
+
+To find the week number of any date, including dates in other years, enter it in the calculator above. To find what date falls a number of days from today, use the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}).
+
+## ISO week numbers vs US week numbers
+
+The ISO system and the US system count weeks differently, and the same date can get a different week number in each:
+
+| | ISO week numbers | US week numbers |
+|---|---|---|
+| Week starts on | Monday | Sunday |
+| Week 1 is | The week with the first Thursday of the year | The week containing January 1 |
+| Weeks always have | 7 days, and belong to one year | Can be short at the start and end of the year |
+
+The two counts agree most of the year, but they split around New Year. December 29, 2025 is a Monday in ISO week 1 of 2026, because its Thursday falls on January 1, 2026. Under the US Sunday-start count, the same date is in week 53 of 2025. At the other end of 2026 the same thing happens in reverse: the first days of January 2027 belong to ISO week 53 of 2026, while the US count moves them into 2027.
+
+## How to get the week number in Excel and Google Sheets
+
+With the date in cell A1:
+
+`=ISOWEEKNUM(A1)`
+
+That returns the ISO week number, and it works in Excel 2013 and later and in Google Sheets. The same result comes from `=WEEKNUM(A1,21)`, which uses the ISO system. For the US Sunday-start count, use `=WEEKNUM(A1)` or `=WEEKNUM(A1,1)`, which counts the week containing January 1 as week 1. `=WEEKNUM(A1,2)` starts weeks on Monday but still counts week 1 from January 1, so it is not the ISO week: for March 9, 2012 it gives week 11, while ISOWEEKNUM gives week 10. To get the current week automatically, use =ISOWEEKNUM(TODAY()) for ISO, or =WEEKNUM(TODAY(),1) for the US count. To count only workdays in a week, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+
 ## Frequently asked questions
 
 </div>
@@ -145,6 +259,22 @@ To count the days between two dates instead of finding a week number, use the [D
 <details>
 <summary>What is the first week of the year?</summary>
 <p>ISO week 1 is the week with the first Thursday of the year, and January 4 always falls in week 1. That is why late December dates can belong to the next year: December 29, 2025 is a Monday in ISO week 1 of 2026.</p>
+</details>
+<details>
+<summary>What is the difference between ISO week and US week numbers?</summary>
+<p>ISO weeks start on Monday, and week 1 is the week with the first Thursday of the year. US weeks start on Sunday, and week 1 is the week containing January 1. The same date can differ: December 29, 2025 is ISO week 1 of 2026 but US week 53 of 2025.</p>
+</details>
+<details>
+<summary>What week number is December 31, 2026?</summary>
+<p>December 31, 2026 is a Thursday in ISO week 53 of 2026, running Monday, December 28, 2026 to Sunday, January 3, 2027. It is the last day of the year.</p>
+</details>
+<details>
+<summary>How do I get the ISO week number in Excel?</summary>
+<p>Use =ISOWEEKNUM(A1) with the date in cell A1, or =WEEKNUM(A1,21). Both give the ISO week number, and both work in Excel 2013 and later and in Google Sheets. Use =WEEKNUM(A1,1) for the US Sunday-start count instead.</p>
+</details>
+<details>
+<summary>How many ISO weeks are in 2027?</summary>
+<p>2027 has 52 ISO weeks. A year gets a 53rd ISO week when it starts on a Thursday, or is a leap year starting on a Wednesday, and January 1, 2027 is a Friday in a common year, so 2027 has 52.</p>
 </details>
 </div>
 
