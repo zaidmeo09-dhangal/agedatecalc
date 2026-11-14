@@ -48,9 +48,29 @@
   "@type": "Organization",
   "name": "AgeDateCalc",
   "url": "{{ '/' | absolute_url }}",
+  "logo": "{{ '/favicon-192.png' | absolute_url }}",
   "description": "Free online date and time tools: age calculator, date difference calculator, countdown timer, stopwatch, and time zone converter."
 }
 </script>
+{% if page.url == '/blog/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Date and Time Guides",
+  "itemListElement": [
+    {% for post in site.posts %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "name": {{ post.title | jsonify }},
+      "url": "{{ post.url | absolute_url }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
 {% if page.layout == "post" and page.faqs_raw and page.faqs_raw != "" %}
 <script type="application/ld+json">
 {
