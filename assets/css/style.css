@@ -401,12 +401,7 @@ img,video,iframe{max-width:100%}
 .author-name a{color:#fff;text-decoration:none}
 .author-role{font-size:.8rem;color:var(--amber);font-weight:600;margin-bottom:10px}
 .author-bio{font-size:.85rem;color:rgba(255,255,255,.85);line-height:1.6}
-/* TOC is a full-width card under the author, not a sidebar */
-.post-toc-top{padding:24px 0 0}
-.post-toc-top .toc-card{position:static}
-.post-toc-top .wrap{max-width:760px}
 .post-section{padding-top:32px}
-.post-section .wrap{max-width:760px}
 .post-date-line{color:var(--muted);font-size:.95rem;margin-top:14px}
 /* Author card sits full-width above the content, not in the sidebar */
 .post-author-top{padding:36px 0 0}
