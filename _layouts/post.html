@@ -10,14 +10,18 @@ layout: default
       <a href="{{ '/blog/' | relative_url }}">Blog</a> <span>/</span>
       <span>{{ page.title }}</span>
     </nav>
-    {% if page.category %}<span class="badge">{{ page.category }}</span>{% endif %}
     <h1>{{ page.title }}</h1>
-    <p class="lead">{{ page.excerpt | default: page.meta_description | default: page.description }}</p>
-    <div class="post-meta-pills">
-      <span class="meta-pill">{{ page.date | date: "%B %-d, %Y" }}</span>
-      {% if page.last_modified_at %}<span class="meta-pill">Updated {{ page.last_modified_at | date: "%B %-d, %Y" }}</span>{% endif %}
-      {% if page.read_time %}<span class="meta-pill">{{ page.read_time }}</span>{% else %}{% assign words = content | number_of_words %}<span class="meta-pill">{{ words | divided_by: 200 | plus: 1 }} min read</span>{% endif %}
-      <span class="meta-pill">By <a href="{{ '/about/' | relative_url }}">{{ page.author | default: "AgeDateCalc Team" }}</a></span>
+    <p class="post-date-line">{{ page.date | date: "%B %-d, %Y" }} &middot; AgeDateCalc</p>
+  </div>
+</section>
+
+<section class="post-author-top">
+  <div class="wrap">
+    <div class="author-card">
+      <div class="author-avatar">A</div>
+      <div class="author-name"><a href="{{ '/about/' | relative_url }}">{{ page.author | default: "AgeDateCalc Team" }}</a></div>
+      <div class="author-role">AgeDateCalc Team</div>
+      <p class="author-bio">The AgeDateCalc team builds free date and time tools. Every guide is checked against official sources like NIST, the U.S. Naval Observatory, and timeanddate.com so the math you read here matches the math the tools do.</p>
     </div>
   </div>
 </section>
@@ -25,12 +29,6 @@ layout: default
 <section class="section post-section">
   <div class="wrap post-layout">
     <aside class="post-sidebar">
-      <div class="author-card">
-        <div class="author-avatar">A</div>
-        <div class="author-name"><a href="{{ '/about/' | relative_url }}">{{ page.author | default: "AgeDateCalc Team" }}</a></div>
-        <div class="author-role">AgeDateCalc Team</div>
-        <p class="author-bio">The AgeDateCalc team builds free date and time tools. Every guide is checked against official sources like NIST, the U.S. Naval Observatory, and timeanddate.com so the math you read here matches the math the tools do.</p>
-      </div>
       <nav class="toc-card" aria-label="Table of contents">
         <div class="toc-title">Table of Contents</div>
         <ul class="toc-list" id="toc-list"></ul>
