@@ -207,7 +207,7 @@ Counted from Sunday, November 15, 2026:
 
 Adding months is the only case where the answer needs a rule. Months have different lengths, so adding months to the 31st can land on a date that does not exist. This calculator clamps to the last day of the target month: 4 months from October 31, 2026 is February 28, 2027, and January 31 plus 1 month is February 28 in a common year, or February 29 in a leap year.
 
-Leap years work the same way. February 29, 2028 plus 1 year is February 28, 2029, because 2029 has no February 29. Adding 4 years from February 29, 2028 lands exactly on February 29, 2032.
+Leap years work the same way. February 29, 2028 plus 1 year is February 28, 2029, because 2029 has no February 29. Adding 4 years from February 29, 2028 lands exactly on February 29, 2032. Not sure if a year is a leap year? Check it with the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
 
 ## Where "days from today" gets used
 
@@ -217,7 +217,7 @@ Leap years work the same way. February 29, 2028 plus 1 year is February 28, 2029
 - **Payroll and notice periods:** a 60-day notice or a 90-day probation period lands on a fixed date. Ago mode answers "what date was 60 days before today?" for backdated paperwork.
 - **Anniversaries and milestones:** 100 days back from today or 33 months ago from today are the round numbers people search for when marking a start date.
 
-To measure the gap between two fixed dates instead of counting from today, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To count only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+To measure the gap between two fixed dates instead of counting from today, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To count only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). Counting down to that date instead? Start a live countdown with the [Countdown Timer]({{ '/countdown-timer/' | relative_url }}).
 
 ## Days from today at a glance
 
@@ -236,7 +236,7 @@ The most searched counts, worked out from Sunday, November 15, 2026:
 | 180 days | Friday, May 14, 2027 |
 | 365 days | Monday, November 15, 2027 |
 
-These dates are fixed to November 15, 2026, and they move by one day every day. For the live count from today, use the calculator above, or tap one of the quick picks.
+These dates are fixed to November 15, 2026, and they move by one day every day. For the live count from today, use the calculator above, or tap one of the quick picks. Adding years to a birth date instead? The [Age Calculator]({{ '/age-calculator/' | relative_url }}) works it out in years, months and days.
 
 ## Days from today in weeks and months
 
@@ -267,7 +267,7 @@ That gives the date 30 days after the date in A1. For the count from today, use 
 
 `=TODAY()+30`
 
-The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 gives 7 days from today, and =TODAY()-30 gives 30 days ago. Format the result cell as a date if it shows a number instead. To add calendar months rather than days, use =EDATE(A1,3), which adds 3 months to the date in A1 and clamps to the last day of the month when needed. For counting only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 gives 7 days from today, and =TODAY()-30 gives 30 days ago. Format the result cell as a date if it shows a number instead. To add calendar months rather than days, use =EDATE(A1,3), which adds 3 months to the date in A1 and clamps to the last day of the month when needed. For counting only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). For the full method of counting between two fixed dates, see [how to count days between two dates]({{ '/blog/how-to-count-days-between-two-dates/' | relative_url }}).
 
 ## Frequently asked questions
 
