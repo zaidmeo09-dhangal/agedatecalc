@@ -157,13 +157,15 @@ related_posts:
 
 ## Age calculator between two dates: what does it mean?
 
-The age between two dates is the exact calendar time from the earlier date to the later one, expressed in years, months, and days. The same gap can also be read as total days, weeks, or business days. Use it for age gaps between two people, someone's age on a specific day, tenure, or the time between any two events. It is also called a dates calculator between two dates, because it works for any pair of dates, not only birth dates.
+The age between two dates is the exact calendar time from the earlier date to the later one, in years, months, and days. The same gap can also be read as total days, weeks, or business days.
+
+Use it for age gaps between two people, someone's age on a specific day, tenure, or the time between any two events. It is also called a dates calculator between two dates, because it works for any pair of dates, not only birth dates.
 
 ## How to use this calculator
 
-**Date difference mode:** pick a start date and an end date, then click Calculate Difference. As an age calculator between two dates, it shows the gap in years, months, and days, plus total days and weeks.
+**Date difference mode:** pick a start date and an end date, then click Calculate Difference. It shows the gap in years, months, and days, plus total days and weeks.
 
-**Add/subtract mode:** pick a starting date, enter how many days to add (or a negative number to subtract), and get the resulting date. Handy for questions like "what date is 90 days from today?"
+**Add/subtract mode:** pick a starting date, enter how many days to add (or a negative number to subtract), and get the resulting date. Handy for a question like "what date is 90 days from today?"
 
 ## How the calculator counts years, months, and days
 
@@ -182,17 +184,17 @@ Four years from August 22, 1985 reach August 22, 1989. Eight more months reach A
 
 More verified examples:
 
-| Earlier date | Later date | Years, months, days | Total days |
-|---|---|---|---|
-| January 15, 1990 | October 19, 2026 | 36 years, 9 months, 4 days | 13,426 |
-| February 29, 2000 | February 29, 2024 | 24 years exactly | 8,766 |
-| December 25, 2019 | July 4, 2026 | 6 years, 6 months, 9 days | 2,383 |
-| January 1, 2026 | December 31, 2026 | 11 months, 30 days | 364 |
-| January 1, 1985 | June 15, 1990 | 5 years, 5 months, 14 days | 1,991 |
+- January 15, 1990 to October 19, 2026: 36 years, 9 months, 4 days, or 13,426 days.
+- February 29, 2000 to February 29, 2024: 24 years exactly, or 8,766 days.
+- December 25, 2019 to July 4, 2026: 6 years, 6 months, 9 days, or 2,383 days.
+- January 1, 2026 to December 31, 2026: 11 months, 30 days, or 364 days.
+- January 1, 1985 to June 15, 1990: 5 years, 5 months, 14 days, or 1,991 days.
 
 ## Inclusive vs exclusive: the one-day trap
 
-This calculator counts exclusive of the start date: January 1 to January 2 is 1 day, and the same date twice is 0 days. This is the standard convention in spreadsheets and most date tools, and it matches how US federal courts count time periods. Federal Rule of Civil Procedure 6(a)(1) directs courts to "exclude the day of the event that triggers the period" and "count every day, including intermediate Saturdays, Sundays, and legal holidays" ([Legal Information Institute](https://www.law.cornell.edu/rules/frcp/rule_6)).
+This calculator counts exclusive of the start date. January 1 to January 2 is 1 day, and the same date twice is 0 days.
+
+This is the standard convention in spreadsheets and most date tools, and it matches how US federal courts count time periods. Federal Rule of Civil Procedure 6(a)(1) directs courts to "exclude the day of the event that triggers the period" and "count every day, including intermediate Saturdays, Sundays, and legal holidays" ([Legal Information Institute](https://www.law.cornell.edu/rules/frcp/rule_6)).
 
 When does it bite? Whenever you count calendar days touched rather than gaps:
 
@@ -209,7 +211,9 @@ Nearly every disagreement comes down to two causes:
 1. **Counting basis.** Some tools count the start day, some do not. That shifts every answer by exactly one day, nothing more.
 2. **Time zone of "today."** If it is 9 PM Tuesday in New York, it is already Wednesday in London. A "days until" count can differ by a full day depending on where the tool thinks today is.
 
-Before trusting any number, check both. This page states its basis directly under the tool, and because it counts whole calendar days, time zones cannot move its answers.
+Before trusting any number, check both. This page states its basis directly under the tool.
+
+Because it counts whole calendar days, time zones cannot move its answers.
 
 ## Edge cases the calculator handles
 
@@ -222,7 +226,7 @@ Before trusting any number, check both. This page states its basis directly unde
 
 ## Add and subtract mode, explained
 
-The second mode answers "what date is X days from here?" Enter a positive number to go forward, a negative number to go back:
+The second mode answers "what date is X days from here?" Enter a positive number to go forward, a negative number to go back.
 
 - 90 days from October 18, 2026 is January 16, 2027 (a Saturday).
 - 30 days from October 18, 2026 is November 17, 2026.
@@ -238,6 +242,8 @@ This is the mode people reach for with searches like "90 days from today" or "30
 - **Pregnancy:** the standard estimate is 280 days (40 weeks) from the first day of the last period. Counted from January 1, 2026, that gives an estimated due date of October 8, 2026.
 - **Trials and subscriptions:** a 90-day free trial started October 18, 2026 runs out on January 16, 2027. Set a reminder a few days earlier, not on the day.
 - **Travel gaps:** days between an outbound and a return flight, or between connecting trips when planning visas.
+
+Counting down to the holidays? See [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}) for the full count.
 
 ## Off-by-one traps to avoid
 
@@ -288,9 +294,9 @@ Business-day math lives or dies on the holiday list. These are the US federal ho
 
 ## How to calculate years between 2 dates
 
-To calculate years between 2 dates, count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. That is the same borrowing method this calculator uses, and it is why month ends and leap years come out exact.
+To calculate years between 2 dates, count full years first, then full months, then leftover days. Borrow from the previous month when the day would go negative. That is the same borrowing method this calculator uses, and it is why month ends and leap years come out exact.
 
-Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Five full years reach January 1, 1990, five more months reach June 1, 1990, and 14 days reach June 15. The same method works for any pair: August 22, 1985 to May 15, 1990 is 4 years, 8 months, and 23 days. Enter both dates above and the calculator does the borrowing for you.
+Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Five full years reach January 1, 1990, five more months reach June 1, 1990, and 14 days reach June 15. The same method works for any pair. Enter both dates above and the calculator does the borrowing for you. Wondering how many days a year holds? See [how many days in a year]({{ '/blog/how-many-days-in-a-year/' | relative_url }}).
 
 ## Frequently asked questions
 
