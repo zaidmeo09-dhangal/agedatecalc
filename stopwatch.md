@@ -134,7 +134,7 @@ related_posts:
 
 ## What is an online stopwatch?
 
-An online stopwatch counts up from zero to measure how long something takes, with lap recording for splits along the way. It runs in your browser with hundredth-second precision, needs no app install, and works for workouts, cooking, study sessions, presentations, and experiments.
+An online stopwatch counts up from zero to measure how long something takes, with lap recording for splits along the way. It runs in your browser with hundredth-second precision, needs no app install, and works for workouts, cooking, study sessions, presentations, and experiments. Timing a call with someone in another time zone? Convert the start time first with our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}), then start the clock.
 
 ## How to use the stopwatch
 
@@ -142,7 +142,7 @@ An online stopwatch counts up from zero to measure how long something takes, wit
 2. Click **Lap** to record a split without stopping the clock. Each lap lists its own time and the running total.
 3. Click **Start** again to pause, and **Reset** to clear everything and start over. Keyboard shortcuts work too: Space starts and pauses, L records a lap, R resets.
 
-Tip: use the **Copy laps** button to save your laps before hitting Reset, because clearing erases them. The fastest lap is highlighted in teal and the slowest in amber.
+Tip: use the **Copy laps** button to save your laps before hitting Reset, because clearing erases them. The fastest lap is highlighted in teal and the slowest in amber. If you log a start time, write it in 24-hour form so AM and PM never get mixed up. Our guide on [AM/PM vs 24-hour clock]({{ '/blog/am-pm-vs-24-hour-clock/' | relative_url }}) shows both systems side by side.
 
 ## How this stopwatch keeps accurate time
 
@@ -154,7 +154,7 @@ The browser's `performance.now()` clock resolves down to 100 microseconds in sta
 
 **Lap time** is how long one segment took. **Split time** is the total elapsed time at that checkpoint.
 
-Worked example: your laps land at 01:05.20 and 02:12.70. The split at lap 2 is 02:12.70, but lap 2 itself took 01:07.50 (02:12.70 minus 01:05.20). Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish time.
+Worked example: your laps land at 01:05.20 and 02:12.70. The split at lap 2 is 02:12.70, but lap 2 itself took 01:07.50 (02:12.70 minus 01:05.20). Runners watch lap times to compare effort per segment; they watch splits to check overall pace against a target finish time. Counting the days to race day instead of timing splits? The [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) gives the date in one tap.
 
 ## Your finger is the real limit
 
@@ -178,6 +178,8 @@ The Olympics use photo-finish cameras resolving to 1/1000th of a second, and Ome
 - **Study and work:** Pomodoro-style focus blocks, presentation rehearsals.
 - **Classroom:** science experiments, timed quizzes.
 - **Games:** speedrun attempts, puzzle timing.
+
+Timing a race is seconds and minutes. Counting the days between two dates is a different job, and the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) does that.
 
 Need to count down to a moment instead of timing up from zero? The [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) is the right tool.
 
