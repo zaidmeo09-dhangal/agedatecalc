@@ -67,7 +67,7 @@ tool_name: Date Difference Calculator
 
 Most years have 365 days. Leap years, which occur roughly every four years, add February 29 for a total of 366. The most recent leap years were 2020 and 2024. The next one is 2028.
 
-The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate.com/date/leapyear.html), except century years, which must also be divisible by 400. That is why 2000 was a leap year but 1900 was not.
+The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate.com/date/leapyear.html), except century years, which must also be divisible by 400. That is why 2000 was a leap year but 1900 was not. Check any year with the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
 
 <img src="{{ '/assets/images/how-many-days-in-a-year-months.webp' | relative_url }}" alt="A ribbon timeline divided into twelve segments representing the twelve months of a year" width="1200" height="630" loading="lazy">
 
@@ -91,7 +91,7 @@ To find the day number for any date, enter January 1 of that year and your date 
 
 ## ISO weeks: 52 or 53?
 
-A calendar year is not a whole number of weeks. Under the ISO week system, most years have 52 weeks, but a year has 53 ISO weeks when it starts on a Thursday, as 2026 does, or when a leap year starts on a Wednesday, as 2020 did.
+A calendar year is not a whole number of weeks. Under the ISO week system, most years have 52 weeks, but a year has 53 ISO weeks when it starts on a Thursday, as 2026 does, or when a leap year starts on a Wednesday, as 2020 did. Find the current week with the [Week Number Calculator]({{ '/week-number-calculator/' | relative_url }}).
 
 ## Days in each month
 
