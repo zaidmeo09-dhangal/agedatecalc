@@ -138,7 +138,7 @@ related_posts:
 
 ## How do I convert a time between zones?
 
-Pick the source time zone and the time, pick the target zone, and the converter applies each zone's current UTC offset, including daylight saving. For example, 2:00 PM in New York in January becomes 11:00 AM the same day in Los Angeles, a 3-hour difference that never changes between US zones.
+Pick the source time zone and the time, pick the target zone, and the converter applies each zone's current UTC offset, including daylight saving. For example, 2:00 PM in New York in January becomes 11:00 AM the same day in Los Angeles, a 3-hour difference that never changes between US zones. Daylight saving changes the offset, so check [when daylight saving time starts in 2027]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }}) before you convert a March date.
 
 ## How to use the converter
 
@@ -187,7 +187,7 @@ The shared work window between coasts is **9:00 AM to 2:00 PM Pacific**, which i
 | 2:00 PM | 5:00 PM | Fine, end of East Coast day |
 | 3:00 PM | 6:00 PM | Too late for the East Coast |
 
-And never schedule 8:00 AM Eastern unless it is an emergency: that is 5:00 AM in Los Angeles.
+And never schedule 8:00 AM Eastern unless it is an emergency: that is 5:00 AM in Los Angeles. Counting down to the meeting itself? Start a [Countdown Timer]({{ '/countdown-timer/' | relative_url }}) for the exact start time.
 
 ## Daylight saving time in the US, the legal version
 
@@ -203,6 +203,8 @@ Three causes cover almost every bad time zone converter result:
 2. **DST mismatch weeks.** The US and Europe switch on different dates, shifting transatlantic gaps by an hour for a few days.
 3. **Fixed-offset mental math.** Memorizing "New York is 5 hours behind London" breaks during the weeks above. Always convert through the actual date.
 
+For the full background on how zones work, see [Time Zones Explained]({{ '/blog/time-zones-explained/' | relative_url }}).
+
 ## What noon in New York means around the world
 
 | City | January | July | Daylight saving? |
@@ -213,7 +215,7 @@ Three causes cover almost every bad time zone converter result:
 | London | 5:00 PM | 5:00 PM | Yes, different weeks |
 | Phoenix | 10:00 AM | 9:00 AM | No |
 
-Note how Phoenix shifts relative to New York between seasons while Los Angeles does not: that is the no-DST effect in action.
+Note how Phoenix shifts relative to New York between seasons while Los Angeles does not: that is the no-DST effect in action. Reading converted times in 12-hour form and mixing up AM and PM? Our guide on [AM/PM vs 24-hour clock]({{ '/blog/am-pm-vs-24-hour-clock/' | relative_url }}) clears it up.
 
 ## Frequently asked questions
 
