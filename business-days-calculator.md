@@ -141,7 +141,7 @@ The counting basis is the same as the [Date Difference Calculator]({{ '/date-dif
 
 ## A days worked calculator
 
-If you searched for a days worked calculator, this tool is it. Pick January 1 as the start date and today as the end date, and the business days result is the number of work days you have worked this year, with weekends and US federal holidays removed. To answer how many work days have i worked this year, counted from January 1, 2026 to November 13, 2026, the answer is 218 business days with holidays excluded, or 226 weekdays without the holiday subtraction. Untick the holidays box if your employer does not observe federal holidays, and tick "Include the end date" if you want to count the first day of the year as a worked day too.
+If you searched for a days worked calculator, this tool is it. Pick January 1 as the start date and today as the end date, and the business days result is the number of work days you have worked this year, with weekends and US federal holidays removed. To answer how many work days have i worked this year, counted from January 1, 2026 to November 13, 2026, the answer is 218 business days with holidays excluded, or 226 weekdays without the holiday subtraction. Untick the holidays box if your employer does not observe federal holidays, and tick "Include the end date" if you want to count the first day of the year as a worked day too. The full method, with more worked examples, is in our guide on [how to count business days between two dates]({{ '/blog/how-to-count-business-days-between-two-dates/' | relative_url }}).
 
 ## Worked example: Monday, January 5 to Friday, January 16, 2026
 
@@ -205,11 +205,13 @@ These are the 11 US federal holidays under 5 U.S.C. 6103. When a holiday falls o
 - **Contracts and filings:** US federal courts count time periods under Federal Rule of Civil Procedure 6(a)(1), which excludes the triggering day and counts intermediate Saturdays, Sundays, and legal holidays ([Legal Information Institute](https://www.law.cornell.edu/rules/frcp/rule_6)). Business day math is different, so check which rule your document uses.
 - **School and leave planning:** counting school days in a term, or workdays left before a holiday break.
 
+Counting calendar days to a deadline instead of workdays? Use the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}). Planning by week number? Check what week it is with the [Week Number Calculator]({{ '/week-number-calculator/' | relative_url }}).
+
 ## Business days in Excel
 
 For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in B2:
 
-`=NETWORKDAYS(A2, B2)` counts weekdays only, and `=NETWORKDAYS(A2, B2, holidays)` subtracts a list of holiday dates as well. Note that NETWORKDAYS counts both the start and end dates, so it gives one more than this calculator's default count. For the same result, use `=NETWORKDAYS(A2, B2, holidays) - 1`.
+`=NETWORKDAYS(A2, B2)` counts weekdays only, and `=NETWORKDAYS(A2, B2, holidays)` subtracts a list of holiday dates as well. Note that NETWORKDAYS counts both the start and end dates, so it gives one more than this calculator's default count. For the same result, use `=NETWORKDAYS(A2, B2, holidays) - 1`. For the year-end count, see how many business days are left in 2026 in our guide on [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
 
 ## Frequently asked questions
 
