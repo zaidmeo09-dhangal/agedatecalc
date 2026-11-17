@@ -187,7 +187,7 @@ If you are asking how many weeks until christmas, counted from November 13, 2026
 
 ## Days until New Year
 
-How many days until new year? Counted from Friday, November 13, 2026, there are 49 days until New Year, Friday, January 1, 2027. [Start the New Year 2027 countdown]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027) to watch it tick down live, or pick any New Year date above. January 1, 2027 is a Friday, so the holiday falls at the end of a working week in the US.
+How many days until new year? Counted from Friday, November 13, 2026, there are 49 days until New Year, Friday, January 1, 2027. [Start the New Year 2027 countdown]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027) to watch it tick down live, or pick any New Year date above. January 1, 2027 is a Friday, so the holiday falls at the end of a working week in the US. For the full count and a week-by-week plan, read [How Many Days Until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
 
 ## How the countdown stays accurate
 
@@ -206,7 +206,7 @@ What to expect in each situation:
 
 ## Worked example: counting down to Christmas 2027
 
-Set the timer on January 1, 2027 for Christmas Day, December 25, 2027, and it shows 358 days. December 25 is the 359th day of 2027, which is not a leap year, so the gap from January 1 is 358 days, and Christmas Day itself falls on a Saturday. As each midnight passes, the day count drops by one while the hours, minutes, and seconds keep ticking underneath.
+Set the timer on January 1, 2027 for Christmas Day, December 25, 2027, and it shows 358 days. December 25 is the 359th day of 2027, which is not a leap year, so the gap from January 1 is 358 days, and Christmas Day itself falls on a Saturday. As each midnight passes, the day count drops by one while the hours, minutes, and seconds keep ticking underneath. Counting down to this Christmas instead? See [how many days until Christmas]({{ '/blog/how-many-days-until-christmas/' | relative_url }}).
 
 A second check: from Independence Day, July 4, 2027 to New Year, January 1, 2028 is 181 days. Both counts come from the same calendar math the Date Difference Calculator uses, so the two tools always agree.
 
