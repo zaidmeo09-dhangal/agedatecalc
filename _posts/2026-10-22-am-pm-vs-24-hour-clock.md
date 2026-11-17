@@ -114,7 +114,7 @@ This four-digit style is the basic format of ISO 8601, the international date an
 
 ## Where each system dominates
 
-The 24-hour clock is the everyday default across most of continental Europe, including Germany, France, Spain, and Italy, and on timetables and screens across much of Asia. The 12-hour clock remains the everyday default in the United States, Canada, the United Kingdom, Ireland, Australia, New Zealand, India, and the Philippines.
+The 24-hour clock is the everyday default across most of continental Europe, including Germany, France, Spain, and Italy. The 12-hour clock remains the everyday default in the United States, Canada, the United Kingdom, Ireland, Australia, New Zealand, India, and the Philippines.
 
 Specific fields made the switch because mistakes there are expensive:
 
@@ -123,7 +123,7 @@ Specific fields made the switch because mistakes there are expensive:
 - **Hospitals:** medication schedules and shift handovers use 24-hour time to prevent dosing errors.
 - **Computing:** server logs, booking systems, and code (cron jobs, timestamps) all use 24-hour time.
 
-In everyday life across most of continental Europe and Asia, the 24-hour clock is simply the default: on timetables, shop signs, and phone screens.
+In everyday life across most of continental Europe, the 24-hour clock is simply the default: on timetables, shop signs, and phone screens. Daylight saving time also changes what the clock shows. See [when daylight saving time ends]({{ '/blog/when-does-daylight-saving-time-end/' | relative_url }}).
 
 ## Two tricks that make conversion instant
 
@@ -131,11 +131,11 @@ In everyday life across most of continental Europe and Asia, the 24-hour clock i
 
 **Trick 2: the morning mirror.** AM times before 10 need a leading zero to look right in 24-hour form: 9 AM is 09:00, not 9:00. This matters when sorting times or typing them into forms that expect two digits.
 
-Going the other way, subtract 12 from any hour above 12 (18:00 becomes 6 PM), and remember that 00:xx always means the small hours of the morning: 00:30 is 12:30 AM.
+Going the other way, subtract 12 from any hour above 12 (18:00 becomes 6 PM), and remember that 00:xx always means the small hours of the morning: 00:30 is 12:30 AM. Setting a countdown for a specific time of day? Use the [Countdown Timer]({{ '/countdown-timer/' | relative_url }}).
 
 ## Avoiding the 12 AM mistake
 
-When scheduling anything important across time zones, write the time in 24-hour format or spell it out ("midnight" / "noon"). Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) shows converted times clearly so nothing gets lost.
+When scheduling anything important across time zones, write the time in 24-hour format or spell it out ("midnight" / "noon"). Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) shows converted times clearly so nothing gets lost. Timing something by the clock? The online [Stopwatch]({{ '/stopwatch/' | relative_url }}) counts up in hours, minutes and seconds.
 
 ## Related guides
 
