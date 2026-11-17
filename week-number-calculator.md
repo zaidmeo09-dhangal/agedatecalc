@@ -145,7 +145,7 @@ That Thursday rule is why the year of a week can differ from the year of the dat
 
 ## How many weeks are in 2026?
 
-2026 has 53 ISO weeks. A year gets a 53rd week when it starts on a Thursday, and January 1, 2026 is a Thursday. The extra week sits at the end of the year: week 53 runs Monday, December 28, 2026 to Sunday, January 3, 2027. Most years have 52 ISO weeks. Counted from November 13, 2026, which is week 46, there are 8 weeks left in 2026 including the current week.
+2026 has 53 ISO weeks. A year gets a 53rd week when it starts on a Thursday, and January 1, 2026 is a Thursday. The extra week sits at the end of the year: week 53 runs Monday, December 28, 2026 to Sunday, January 3, 2027. Most years have 52 ISO weeks. Counted from November 13, 2026, which is week 46, there are 8 weeks left in 2026 including the current week. A year with 53 weeks still has 365 days. See [how many days are in a year]({{ '/blog/how-many-days-in-a-year/' | relative_url }}) for the full count. For the day count to New Year, see [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
 
 ## Where week numbers get used
 
@@ -155,7 +155,7 @@ That Thursday rule is why the year of a week can differ from the year of the dat
 - **Payroll and timesheets:** weekly pay periods run Monday to Sunday in most US workplaces, and the week number labels the period.
 - **Travel and events:** conferences and tours are scheduled by week number months ahead, and the date range follows from it.
 
-To count the days between two dates instead of finding a week number, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To find what date falls a number of days from today, use the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}).
+To count the days between two dates instead of finding a week number, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To find what date falls a number of days from today, use the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}). A leap year shifts the week count. Check whether a year is a leap year with the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
 
 ## Week numbers in 2026
 
