@@ -155,7 +155,7 @@ Rule 3 is the one people forget. It is why 2000 was a leap year but 1900 was not
 
 Apply the rules year by year. 2024 is divisible by 4, so it is a leap year. 2025, 2026, and 2027 are not divisible by 4. 2028 is divisible by 4 and is not a century year, so it is a leap year. 2029, 2030, and 2031 are not divisible by 4. 2032 is divisible by 4, so it is a leap year. The leap years from 2024 to 2032 are **2024, 2028, and 2032**.
 
-The next leap year is **2028**. February 29, 2028 falls on a Tuesday, and the leap year after that is 2032.
+The next leap year is **2028**. February 29, 2028 falls on a Tuesday, and the leap year after that is 2032. For the full 2028 list, see [Is 2028 a Leap Year?]({{ '/blog/is-2028-a-leap-year/' | relative_url }}).
 
 ## Leap years from 2024 to 2040
 
@@ -211,7 +211,7 @@ The formula follows the same three rules: MOD(A1,400)=0 catches the 400 rule, an
 
 Leap Day is February 29, the extra day added to the calendar in a leap year. It is the 60th day of a leap year, and it keeps the calendar in step with the seasons. Without it, the calendar would drift by about one day every four years.
 
-People born on February 29 are sometimes called leaplings. In non-leap years they celebrate on February 28 or March 1, and our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts their birthday on March 1, the most common legal convention. The next Leap Day is February 29, 2028, which falls on a Tuesday, and the one after that is February 29, 2032, a Sunday.
+People born on February 29 are sometimes called leaplings. In non-leap years they celebrate on February 28 or March 1, and our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts their birthday on March 1, the most common legal convention. The next Leap Day is February 29, 2028, which falls on a Tuesday, and the one after that is February 29, 2032, a Sunday. Born on February 29? Count down to your next birthday with the [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}).
 
 Leap Day also carries an old tradition in Ireland and the UK: February 29 is the day when, by custom, a woman may propose marriage. To see how many days a year has with and without a Leap Day, see [how many days in a year]({{ '/blog/how-many-days-in-a-year/' | relative_url }}).
 
