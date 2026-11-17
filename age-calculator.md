@@ -145,6 +145,8 @@ Your exact age is the time from your date of birth to today, counted in full yea
 2. Click **Calculate My Age**.
 3. Read your exact age, total days lived, the weekday you were born on, and how many days remain until your next birthday. For a live ticking countdown to that day, use the [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}).
 
+Comparing two dates instead of a birth date and today? The [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) does that.
+
 Want to save or share the result? Use the Copy share link button to get a link that reopens your exact calculation.
 
 ## How the calculator counts your age
@@ -168,7 +170,7 @@ Born **June 15, 1990**, measured **October 19, 2026**:
 
 The answer is **36 years, 4 months, 4 days**, or **13,275 days** in total. June 15, 1990 was a Friday.
 
-Notice the borrow in action if we measured one day earlier, on October 14: the day subtraction (14 minus 15) goes negative, so we borrow September's 30 days, giving 3 months and 29 days instead.
+Notice the borrow in action if we measured one day earlier, on October 14: the day subtraction (14 minus 15) goes negative, so we borrow September's 30 days, giving 3 months and 29 days instead. Adding days to a date instead? Try the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}).
 
 ## Born on February 29?
 
