@@ -198,6 +198,12 @@ schema: |
         <p>Find the ISO week number of any date, with the week's Monday to Sunday range.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
+      <a class="tool-card" href="{{ '/time-duration-calculator/' | relative_url }}">
+        <div class="tool-icon">⏲️</div>
+        <h3>Time Duration Calculator</h3>
+        <p>Find the time between two times in hours, minutes and seconds, including overnight spans.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
     </div>
   </div>
 </section>
