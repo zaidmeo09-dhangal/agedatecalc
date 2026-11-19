@@ -21,7 +21,8 @@ schema: |
           { "@type": "ListItem", "position": 7, "name": "Leap Year Calculator", "url": "https://agedatecalc.com/leap-year-calculator/" },
           { "@type": "ListItem", "position": 8, "name": "Birthday Countdown", "url": "https://agedatecalc.com/birthday-countdown/" },
           { "@type": "ListItem", "position": 9, "name": "Days From Today Calculator", "url": "https://agedatecalc.com/days-from-today-calculator/" },
-          { "@type": "ListItem", "position": 10, "name": "Week Number Calculator", "url": "https://agedatecalc.com/week-number-calculator/" }
+          { "@type": "ListItem", "position": 10, "name": "Week Number Calculator", "url": "https://agedatecalc.com/week-number-calculator/" },
+          { "@type": "ListItem", "position": 11, "name": "Time Duration Calculator", "url": "https://agedatecalc.com/time-duration-calculator/" }
         ]
       },
       {
@@ -105,6 +106,12 @@ schema: |
         <div class="tool-icon">🗓️</div>
         <h2>Week Number Calculator</h2>
         <p>Find the ISO week number of any date, with the week's Monday to Sunday range.</p>
+        <span class="go">Use tool &rarr;</span>
+      </a>
+      <a class="tool-card" href="{{ '/time-duration-calculator/' | relative_url }}">
+        <div class="tool-icon">⏲️</div>
+        <h2>Time Duration Calculator</h2>
+        <p>Find the time between two times in hours, minutes and seconds, including overnight spans.</p>
         <span class="go">Use tool &rarr;</span>
       </a>
     </div>
