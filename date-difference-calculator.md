@@ -99,6 +99,14 @@ schema: |
               "@type": "Answer",
               "text": "Count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the borrowing for you."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How many days ago was 2020?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "January 1, 2020 was 2,514 days ago as of November 19, 2026, and December 31, 2020 was 2,149 days ago. Enter the past date as the start date and today as the end date above, and the calculator gives the exact count. 2020 was a leap year, so the count includes February 29, 2020."
+            }
           }
         ]
       }
@@ -245,6 +253,18 @@ This is the mode people reach for with searches like "90 days from today" or "30
 
 Counting down to the holidays? See [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}) for the full count.
 
+## How many days ago was 2020?
+
+January 1, 2020 was **2,514 days ago** as of November 19, 2026. December 31, 2020 was 2,149 days ago. To count it yourself, enter the past date as the start date and today as the end date above, and the calculator gives the exact day count.
+
+More "how many days ago" answers, all counted the same way from November 19, 2026:
+
+- January 1, 2019 was 2,879 days ago
+- March 11, 2020 was 2,444 days ago
+- January 1, 2025 was 687 days ago
+
+2020 was a leap year, so every count that crosses it includes February 29, 2020. Two leap days fall inside the span from January 1, 2020 to today, February 29, 2020 and February 29, 2024, and both are in the count. For a recent date, like 30 days ago, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster.
+
 ## Off-by-one traps to avoid
 
 - **Counting the start day twice** when chaining two periods back to back.
@@ -334,6 +354,10 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
 <details>
 <summary>How do I calculate years between 2 dates?</summary>
 <p>Count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the borrowing for you.</p>
+</details>
+<details>
+<summary>How many days ago was 2020?</summary>
+<p>January 1, 2020 was 2,514 days ago as of November 19, 2026, and December 31, 2020 was 2,149 days ago. Enter the past date as the start date and today as the end date above, and the calculator gives the exact count. 2020 was a leap year, so the count includes February 29, 2020.</p>
 </details>
 <details>
 <summary>Does my time zone change the result?</summary>
