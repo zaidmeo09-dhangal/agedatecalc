@@ -91,7 +91,7 @@ The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate
 
 ## How many days into the year are we?
 
-This is the question people ask mid-year: how many days into the year are we, or in other words, how many days are we in the year. Count the days from January 1 to the date you want. For example, on November 13, 2026, the day number was 317, which means 316 days had already passed and 48 days were left in the year. 2026 has 365 days, so day 317 was about 87 percent of the way through.
+This is the question people ask mid-year: how many days into the year are we, or in other words, how many days are we in the year. Count the days from January 1 to the date you want. For example, on November 19, 2026, the day number is 323, which means 322 days have already passed and 42 days are left in the year. 2026 has 365 days, so day 323 is about 88.5 percent of the way through.
 
 To find the day number for any date, enter January 1 of that year and your date in the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) and add 1 to the result, because the calculator counts the gap between the two dates and January 1 itself is day 1.
 
