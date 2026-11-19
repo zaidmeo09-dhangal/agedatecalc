@@ -73,7 +73,7 @@ schema: |
             "name": "What is 45 days from today?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Counted from Thursday, November 19, 2026, 45 days from today is Sunday, January 3, 2027. Enter 45 as the number, days as the unit, and from now as the direction on this page for the live answer."
+              "text": "Counted from Thursday, November 19, 2026, 45 days from today is Sunday, January 3, 2027. Enter 45 as the number, days as the unit, and from now as the direction above for the live answer."
             }
           },
           {
@@ -138,6 +138,86 @@ schema: |
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Counted from Thursday, November 19, 2026, 14 days from today is Thursday, December 3, 2026. That is exactly 2 weeks. Enter 14 as the number, days as the unit, and from now as the direction on this page for the live answer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 10 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 10 days from today is Sunday, November 29, 2026. That is 1 week and 3 days from today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 7 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 7 days from today is Thursday, November 26, 2026. That is exactly 1 week, and Thanksgiving Day in the US."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 15 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 15 days from today is Friday, December 4, 2026. That is 2 weeks and 1 day from today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 20 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 20 days from today is Wednesday, December 9, 2026. That is 2 weeks and 6 days from today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 35 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 35 days from today is Thursday, December 24, 2026. That is exactly 5 weeks, Christmas Eve."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 50 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 50 days from today is Friday, January 8, 2027. That is 7 weeks and 1 day from today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 25 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 25 days from today is Monday, December 14, 2026. That is 3 weeks and 4 days from today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 22 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 22 days from today is Friday, December 11, 2026. That is 3 weeks and 1 day from today."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 150 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 150 days from today is Sunday, April 18, 2027. That is 21 weeks and 3 days, about five months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 10 business days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 10 business days from today is Friday, December 4, 2026. Thanksgiving, November 26, is a federal holiday, so it does not count. Count workdays only with the Business Days Calculator."
             }
           }
         ]
@@ -288,10 +368,14 @@ The most searched counts, worked out from Thursday, November 19, 2026:
 | 7 days | Thursday, November 26, 2026 |
 | 10 days | Sunday, November 29, 2026 |
 | 14 days | Thursday, December 3, 2026 |
+| 15 days | Friday, December 4, 2026 |
 | 20 days | Wednesday, December 9, 2026 |
 | 21 days | Thursday, December 10, 2026 |
+| 22 days | Friday, December 11, 2026 |
+| 25 days | Monday, December 14, 2026 |
 | 28 days | Thursday, December 17, 2026 |
 | 30 days | Saturday, December 19, 2026 |
+| 35 days | Thursday, December 24, 2026 |
 | 45 days | Sunday, January 3, 2027 |
 | 50 days | Friday, January 8, 2027 |
 | 60 days | Monday, January 18, 2027 |
@@ -327,6 +411,58 @@ These dates are fixed to November 19, 2026, and they move by one day every day. 
 ## 28 days from today
 
 28 days from today is Thursday, December 17, 2026. That is exactly 4 weeks from Thursday, November 19, 2026. A 28-day cycle or four-week plan that starts today ends on that date. Use the calculator above, or tap the 28 days quick pick, for the live answer.
+
+## 21 days from today
+
+21 days from today is Thursday, December 10, 2026. That is exactly 3 weeks from Thursday, November 19, 2026. A 21-day habit, course or trial that starts today ends on that date. Use the calculator above, or tap the 21 days quick pick, for the live answer.
+
+## 120 days from today
+
+120 days from today is Friday, March 19, 2027. That is 17 weeks and 1 day from Thursday, November 19, 2026, about four months. A 120-day plan that starts today ends on that date. Use the calculator above, or tap the 120 days quick pick, for the live answer.
+
+## 180 days from today
+
+180 days from today is Tuesday, May 18, 2027. That is 25 weeks and 5 days from Thursday, November 19, 2026, about six months. A 180-day visa stay, semester or half-year plan that starts today ends on that date. Use the calculator above, or tap the 180 days quick pick, for the live answer.
+
+## 10 days from today
+
+10 days from today is Sunday, November 29, 2026. That is 1 week and 3 days from Thursday, November 19, 2026. A 10-day trip or deadline that starts today ends on that date. Use the calculator above, or tap the 10 days quick pick, for the live answer.
+
+## 7 days from today
+
+7 days from today is Thursday, November 26, 2026. That is exactly 1 week from Thursday, November 19, 2026, and Thanksgiving Day in the US. A one-week deadline or trip that starts today ends on that date. Use the calculator above, or tap the 7 days quick pick, for the live answer.
+
+## 100 days from today
+
+100 days from today is Saturday, February 27, 2027. That is 14 weeks and 2 days from Thursday, November 19, 2026, about three months. A 100-day plan or countdown that starts today ends on that date. Use the calculator above, or tap the 100 days quick pick, for the live answer.
+
+## 15 days from today
+
+15 days from today is Friday, December 4, 2026. That is 2 weeks and 1 day from Thursday, November 19, 2026. A 15-day trial or half-month deadline that starts today ends on that date. Use the calculator above, or tap the 15 days quick pick, for the live answer.
+
+## 35 days from today
+
+35 days from today is Thursday, December 24, 2026. That is exactly 5 weeks from Thursday, November 19, 2026, Christmas Eve. A 35-day plan that starts today ends on Christmas Eve. Use the calculator above, or tap the 35 days quick pick, for the live answer.
+
+## 20 days from today
+
+20 days from today is Wednesday, December 9, 2026. That is 2 weeks and 6 days from Thursday, November 19, 2026. A 20-day window that starts today ends on that date. Use the calculator above, or tap the 20 days quick pick, for the live answer.
+
+## 50 days from today
+
+50 days from today is Friday, January 8, 2027. That is 7 weeks and 1 day from Thursday, November 19, 2026, about seven weeks. A 50-day plan that starts today ends on that date. Use the calculator above, or tap the 50 days quick pick, for the live answer.
+
+## 25 days from today
+
+25 days from today is Monday, December 14, 2026. That is 3 weeks and 4 days from Thursday, November 19, 2026. A 25-day countdown that starts today ends on that date. Use the calculator above, or tap the 25 days quick pick, for the live answer.
+
+## 22 days from today
+
+22 days from today is Friday, December 11, 2026. That is 3 weeks and 1 day from Thursday, November 19, 2026. A 22-day plan that starts today ends on that date. Use the calculator above, or tap the 22 days quick pick, for the live answer.
+
+## 150 days from today
+
+150 days from today is Sunday, April 18, 2027. That is 21 weeks and 3 days from Thursday, November 19, 2026, about five months. A 150-day plan or countdown that starts today ends on that date. Use the calculator above, or tap the 150 days quick pick, for the live answer.
 
 ## Days from today in weeks and months
 
@@ -425,6 +561,46 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
 <details>
 <summary>What is 14 days from today?</summary>
 <p>Counted from Thursday, November 19, 2026, 14 days from today is Thursday, December 3, 2026. That is exactly 2 weeks. Enter 14 as the number, days as the unit, and from now as the direction on this page for the live answer.</p>
+</details>
+<details>
+<summary>What is 10 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 10 days from today is Sunday, November 29, 2026. That is 1 week and 3 days from today.</p>
+</details>
+<details>
+<summary>What is 7 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 7 days from today is Thursday, November 26, 2026. That is exactly 1 week, and Thanksgiving Day in the US.</p>
+</details>
+<details>
+<summary>What is 15 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 15 days from today is Friday, December 4, 2026. That is 2 weeks and 1 day from today.</p>
+</details>
+<details>
+<summary>What is 20 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 20 days from today is Wednesday, December 9, 2026. That is 2 weeks and 6 days from today.</p>
+</details>
+<details>
+<summary>What is 35 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 35 days from today is Thursday, December 24, 2026. That is exactly 5 weeks, Christmas Eve.</p>
+</details>
+<details>
+<summary>What is 50 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 50 days from today is Friday, January 8, 2027. That is 7 weeks and 1 day from today.</p>
+</details>
+<details>
+<summary>What is 25 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 25 days from today is Monday, December 14, 2026. That is 3 weeks and 4 days from today.</p>
+</details>
+<details>
+<summary>What is 22 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 22 days from today is Friday, December 11, 2026. That is 3 weeks and 1 day from today.</p>
+</details>
+<details>
+<summary>What is 150 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 150 days from today is Sunday, April 18, 2027. That is 21 weeks and 3 days, about five months.</p>
+</details>
+<details>
+<summary>What is 10 business days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 10 business days from today is Friday, December 4, 2026. Thanksgiving, November 26, is a federal holiday, so it does not count. Count workdays only with the <a href="/business-days-calculator/">Business Days Calculator</a>.</p>
 </details>
 </div>
 
