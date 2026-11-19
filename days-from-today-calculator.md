@@ -131,6 +131,14 @@ schema: |
               "@type": "Answer",
               "text": "Counted from Thursday, November 19, 2026, 180 days from today is Tuesday, May 18, 2027. That is 25 weeks and 5 days, about six months."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "What is 14 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Counted from Thursday, November 19, 2026, 14 days from today is Thursday, December 3, 2026. That is exactly 2 weeks. Enter 14 as the number, days as the unit, and from now as the direction on this page for the live answer."
+            }
           }
         ]
       }
@@ -312,6 +320,14 @@ These dates are fixed to November 19, 2026, and they move by one day every day. 
 
 45 days from today is Sunday, January 3, 2027. That is 6 weeks and 3 days from Thursday, November 19, 2026. A 45-day window starting today ends on the first Sunday of the new year.
 
+## 14 days from today
+
+14 days from today is Thursday, December 3, 2026. That is exactly 2 weeks from Thursday, November 19, 2026. A 14-day trip or two-week window that starts today ends on that date. Use the calculator above, or tap the 2 weeks quick pick, for the live answer.
+
+## 28 days from today
+
+28 days from today is Thursday, December 17, 2026. That is exactly 4 weeks from Thursday, November 19, 2026. A 28-day cycle or four-week plan that starts today ends on that date. Use the calculator above, or tap the 28 days quick pick, for the live answer.
+
 ## Days from today in weeks and months
 
 Days, weeks, and months do not convert evenly, so it helps to know the exact split:
@@ -405,6 +421,10 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
 <details>
 <summary>What is 180 days from today?</summary>
 <p>Counted from Thursday, November 19, 2026, 180 days from today is Tuesday, May 18, 2027. That is 25 weeks and 5 days, about six months.</p>
+</details>
+<details>
+<summary>What is 14 days from today?</summary>
+<p>Counted from Thursday, November 19, 2026, 14 days from today is Thursday, December 3, 2026. That is exactly 2 weeks. Enter 14 as the number, days as the unit, and from now as the direction on this page for the live answer.</p>
 </details>
 </div>
 
