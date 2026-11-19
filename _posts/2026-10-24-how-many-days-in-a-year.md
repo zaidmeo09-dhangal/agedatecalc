@@ -41,7 +41,7 @@ faqs_raw: 'How many days are in a leap year?
 
   How many days into the year are we?
 
-  For example, on November 13, 2026, the day number was 317, which means 316 days had already passed and 48 days were left in the year. The number changes every day, so use the Date Difference Calculator for the live number. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
+  For example, on November 19, 2026, the day number is 323, which means 322 days have already passed and 42 days are left in the year. The number changes every day, so use the Date Difference Calculator for the live number. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
 
   ---
 
@@ -53,7 +53,13 @@ faqs_raw: 'How many days are in a leap year?
 
   How many weeks are in a year?
 
-  A common year has 52 weeks and 1 extra day, since 52 times 7 is 364. A leap year has 52 weeks and 2 extra days. Under the ISO week system, most years have 52 weeks, but a year has 53 ISO weeks when it starts on a Thursday, as 2026 does, or when a leap year starts on a Wednesday, as 2020 did.'
+  A common year has 52 weeks and 1 extra day, since 52 times 7 is 364. A leap year has 52 weeks and 2 extra days. Under the ISO week system, most years have 52 weeks, but a year has 53 ISO weeks when it starts on a Thursday, as 2026 does, or when a leap year starts on a Wednesday, as 2020 did.
+
+  ---
+
+  How many days are in August?
+
+  August has 31 days, in every year. It is one of the seven 31-day months: January, March, May, July, August, October and December.'
 permalink: /blog/how-many-days-in-a-year/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
