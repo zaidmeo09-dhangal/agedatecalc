@@ -110,6 +110,14 @@ schema: |
           },
           {
             "@type": "Question",
+            "name": "Is sixty days from today the same as 60 days from today?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Sixty days from today is the same date as 60 days from today. Counted from Thursday, November 19, 2026, sixty days from today is Monday, January 18, 2027."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "What is 21 days from today?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -545,6 +553,10 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
 <details>
 <summary>What is 60 days from today?</summary>
 <p>Counted from Thursday, November 19, 2026, 60 days from today is Monday, January 18, 2027. That is 8 weeks and 4 days, about two months.</p>
+</details>
+<details>
+<summary>Is sixty days from today the same as 60 days from today?</summary>
+<p>Yes. Sixty days from today is the same date as 60 days from today. Counted from Thursday, November 19, 2026, sixty days from today is Monday, January 18, 2027.</p>
 </details>
 <details>
 <summary>What is 21 days from today?</summary>
