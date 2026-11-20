@@ -172,6 +172,7 @@ An online countdown timer, also called an online countdown calculator, counts do
 
 Jump straight in with a pre-built countdown. Each link opens the timer already set:
 
+- [Thanksgiving 2026, November 26]({{ '/countdown-timer/' | relative_url }}?to=2026-11-26T00:00&label=Thanksgiving%202026)
 - [Halloween 2027, October 31]({{ '/countdown-timer/' | relative_url }}?to=2027-10-31T00:00&label=Halloween%202027)
 - [Thanksgiving 2027, November 25]({{ '/countdown-timer/' | relative_url }}?to=2027-11-25T00:00&label=Thanksgiving%202027)
 - [Christmas 2027, December 25]({{ '/countdown-timer/' | relative_url }}?to=2027-12-25T00:00&label=Christmas%202027)
