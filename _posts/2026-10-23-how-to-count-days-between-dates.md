@@ -3,7 +3,7 @@ layout: post
 title: How to Count Days Between Two Dates (Manual Method)
 slug: how-to-count-days-between-dates
 date: '2026-10-23'
-last_modified_at: 2026-11-13
+last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
 category: How-To Guides
@@ -133,12 +133,39 @@ Three longer ranges, counted with the exclusive convention described above:
 | January 1, 2026 | December 31, 2026 | 364 |
 | December 25, 2019 | July 4, 2026 | 2,383 |
 | February 29, 2000 | February 29, 2024 | 8,766 |
+| May 17, 1972 | November 22, 2026 | 19,912 |
+| July 7, 1999 | November 22, 2026 | 10,000 |
+| April 5, 2026 | November 22, 2026 | 231 |
+
+The last three rows are counted to November 22, 2026. 19,912 days is 54 years, 6 months and 5 days, and the span contains 13 leap days (February 29, 1972 falls before the start date, so it does not count). 10,000 days ago from November 22, 2026 is Wednesday, July 7, 1999, which is 27 years, 4 months and 15 days. Easter 2026 fell on Sunday, April 5, 2026, so by November 22, 2026 it is 231 days ago, exactly 33 weeks.
 
 The last row is a useful sanity check: 24 years at 365 days each is 8,760, and the range contains 6 leap days (2004, 2008, 2012, 2016, 2020, and 2024), which brings the total to 8,766.
 
 ## The fast way
 
 Manual counting works, but month lengths and leap years make it error-prone. Our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the exact answer instantly, broken into days, weeks, business days, and years/months/days, and the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) adds or subtracts days from any date. For workdays only, with US federal holidays removed, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+
+## FAQ
+
+**Should I count the end date when counting days between dates?**
+
+By default, no. Most tools and conventions count the days between the two dates without including the end date, so January 1 to January 2 is 1 day. If you need both endpoints included, as with some billing or booking situations, add 1 to the result.
+
+**How many days are there between January 1 and December 31, 2026?**
+
+There are 364 days between January 1, 2026 and December 31, 2026 using the standard exclusive convention. That is one day short of a full year because 2026 is a common year of 365 days and the count stops one day before January 1, 2027.
+
+**How do I count business days between two dates?**
+
+Count only Monday through Friday and skip weekends, then subtract any public holidays that fall inside the range. Every complete week contributes exactly 5 business days, so count full weeks first and then handle the remaining days one by one.
+
+**Does February 29 count as a day between two dates?**
+
+Yes. Day counts use real calendar days, so if February 29 falls inside your range it adds one day. A range that crosses February in a leap year is one day longer than the same range in a common year.
+
+**Why is my day count off by one?**
+
+Almost always because of the inclusive versus exclusive convention. If you counted both the start and end dates, your result is exactly one higher than the standard count, which excludes the end date. Deciding the convention before you count prevents the discrepancy.
 
 ## Related guides
 
