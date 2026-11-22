@@ -73,7 +73,7 @@ schema: |
             "name": "How do I calculate the days until my next birthday?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Find the next occurrence of your birth month and day. If this year's birthday has already passed, use next year's date, then subtract today. For example, counted from Sunday, November 15, 2026, someone born on June 15 has their next birthday on Tuesday, June 15, 2027, which is 212 days away. Enter your date of birth on this page and the countdown does it live."
+              "text": "Find the next occurrence of your birth month and day. If this year's birthday has already passed, use next year's date, then subtract today. For example, counted from Sunday, November 22, 2026, someone born on June 15 has their next birthday on Tuesday, June 15, 2027, which is 205 days away. Enter your date of birth on this page and the countdown does it live."
             }
           },
           {
@@ -138,7 +138,7 @@ Your next birthday is the next occurrence of your birth month and day. The count
 
 ## Worked example: born June 15, 1990
 
-Take someone born on June 15, 1990. Their next birthday after November 12, 2026 is Tuesday, June 15, 2027, which is 215 days later, and they turn 37. The weekday moves because 365 days is 52 weeks plus one day, so a birthday lands one weekday later each year, or two weekdays later after a leap year.
+Take someone born on June 15, 1990. Their next birthday after November 22, 2026 is Tuesday, June 15, 2027, which is 205 days later, and they turn 37. The weekday moves because 365 days is 52 weeks plus one day, so a birthday lands one weekday later each year, or two weekdays later after a leap year.
 
 ## What weekday will your birthday be?
 
@@ -165,11 +165,11 @@ For example, someone born on June 15, 1990 had their golden birthday on Wednesda
 
 Take your birth month and day, then find the next time that date comes around:
 
-1. **Start from today.** Counted from Sunday, November 15, 2026, the next birthday for someone born on June 15 is in 2027, because June 15, 2026 has already passed.
+1. **Start from today.** Counted from Sunday, November 22, 2026, the next birthday for someone born on June 15 is in 2027, because June 15, 2026 has already passed.
 2. **If this year's birthday has already passed, use next year's date.** If it has not happened yet, use this year's date.
 3. **Subtract today from that date.** The result is the number of days until your next birthday.
 
-Worked example: someone born on June 15, 1990 has their next birthday on Tuesday, June 15, 2027, which is 212 days after November 15, 2026, and they turn 37. Enter your own date of birth in the countdown above and the tool does the same steps live, ticking down in days, hours, minutes, and seconds.
+Worked example: someone born on June 15, 1990 has their next birthday on Tuesday, June 15, 2027, which is 205 days after November 22, 2026, and they turn 37. Enter your own date of birth in the countdown above and the tool does the same steps live, ticking down in days, hours, minutes, and seconds.
 
 You can do the same count in a spreadsheet. Put your date of birth in cell A1 and use this formula, which works in both Excel and Google Sheets:
 
@@ -241,7 +241,7 @@ Both tools use the same date math, so they never disagree. Your next birthday fr
 </details>
 <details>
 <summary>How do I calculate the days until my next birthday?</summary>
-<p>Find the next occurrence of your birth month and day. If this year's birthday has already passed, use next year's date, then subtract today. For example, counted from Sunday, November 15, 2026, someone born on June 15 has their next birthday on Tuesday, June 15, 2027, which is 212 days away. Enter your date of birth above and the countdown does it live.</p>
+<p>Find the next occurrence of your birth month and day. If this year's birthday has already passed, use next year's date, then subtract today. For example, counted from Sunday, November 22, 2026, someone born on June 15 has their next birthday on Tuesday, June 15, 2027, which is 205 days away. Enter your date of birth above and the countdown does it live.</p>
 </details>
 <details>
 <summary>What is a golden birthday?</summary>
