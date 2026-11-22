@@ -134,6 +134,28 @@ Here is how the three rules play out across recent, upcoming, and century years:
 
 Over each 400-year cycle, the Gregorian rules produce exactly 97 leap years, which is what holds the average year at 365.2425 days.
 
+## FAQ
+
+**Is 2026 a leap year?**
+
+No. 2026 is not divisible by 4, so February 2026 has 28 days. The most recent leap year was 2024, and the next one is 2028.
+
+**How often does a leap year occur?**
+
+Usually every four years. Century years are the exception: a year divisible by 100 is only a leap year if it is also divisible by 400, which is why the Gregorian calendar produces 97 leap years in every 400-year cycle.
+
+**Was the year 2000 a leap year?**
+
+Yes. Although 2000 is a century year, it is divisible by 400, so the third rule applies and February 2000 had 29 days. The century years 1900 and 2100 fail that test and are not leap years.
+
+**Why does February get an extra day in a leap year?**
+
+Earth takes about 365.2422 days (the tropical year) to orbit the sun, roughly a quarter day more than the 365 days on the calendar. Adding February 29 every four years absorbs that extra time and keeps the calendar from drifting away from the seasons.
+
+**What birthday do February 29 babies celebrate in non-leap years?**
+
+They celebrate on February 28 or March 1, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents.
+
 ## Related guides
 
 - [How to Calculate Your Exact Age]({{ '/blog/how-to-calculate-age/' | relative_url }})
