@@ -3,7 +3,7 @@ layout: post
 title: "How Many Work Days in a Year? 2026 US Count"
 slug: how-many-work-days-in-a-year
 date: '2026-11-19'
-last_modified_at: 2026-11-19
+last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -44,7 +44,7 @@ faqs_raw: 'How many work days are in a year?
 
   How many work days have I worked so far this year?
 
-  222 business days from January 1 to November 19, 2026: 231 weekdays minus 9 federal holidays. There are 28 work days left in the year after November 19.
+  223 business days from January 1 to November 22, 2026: 231 weekdays minus 8 federal holidays. There are 27 work days left in the year after November 22.
 
   ---
 
@@ -139,11 +139,11 @@ December 2027 shows the 2027 quirk: 23 weekdays, but two days lost to Christmas 
 
 ## How many work days have I worked so far this year?
 
-From January 1 to November 19, 2026, there are 222 business days: 231 weekdays minus 9 federal holidays (New Year, Martin Luther King Jr. Day, Presidents Day, Memorial Day, Juneteenth, Independence Day observed on July 3, Labor Day, Columbus Day and Veterans Day).
+From January 1 to November 22, 2026, there are 223 business days: 231 weekdays minus 8 federal holidays (Martin Luther King Jr. Day, Presidents Day, Memorial Day, Juneteenth, Independence Day observed on July 3, Labor Day, Columbus Day and Veterans Day).
 
-That count is dated November 19, 2026, the publish date of this post, and it grows by one on every weekday. Check the live count on our [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) if you are reading this later. The same tool works as a days worked calculator: enter January 1 and any date, and it gives the business days between them. You can also check any two dates with our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
+That count is dated November 22, 2026, and it grows by one on every weekday. Check the live count on our [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) if you are reading this later. The same tool works as a days worked calculator: enter January 1 and any date, and it gives the business days between them. You can also check any two dates with our [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
 
-There are 28 work days left in the year after November 19: 6 in the rest of November and 22 in December. Thanksgiving on November 26 and Christmas Day on December 25 are the only holidays still to come.
+There are 27 work days left in the year after November 22: 5 in the rest of November and 22 in December. Thanksgiving on November 26 and Christmas Day on December 25 are the only holidays still to come.
 
 ## PTO math
 
@@ -183,7 +183,7 @@ A 4-day week in 2026 gives about 200 work days, but the exact figure depends on 
 
 **How many work days have I worked so far this year?**
 
-222 business days from January 1 to November 19, 2026: 231 weekdays minus 9 federal holidays. There are 28 work days left in the year after November 19.
+223 business days from January 1 to November 22, 2026: 231 weekdays minus 8 federal holidays. There are 27 work days left in the year after November 22.
 
 **How many work days are there in 2027?**
 
