@@ -98,7 +98,7 @@ schema: |
                     "name": "How do I count the days till a date?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 19, 2026, May 22, 2027 is 184 days away."
+                              "text": "Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 22, 2026, May 22, 2027 is 181 days away."
                     }
           },
           {
@@ -106,7 +106,7 @@ schema: |
                     "name": "How many days until New Year?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Counted from Thursday, November 19, 2026, there are 43 days until New Year, Friday, January 1, 2027. Enter January 1, 2027 above, or use the New Year 2027 preset, to watch the live countdown in days, hours, minutes, and seconds."
+                              "text": "Counted from Sunday, November 22, 2026, there are 40 days until New Year, Friday, January 1, 2027. Enter January 1, 2027 above, or use the New Year 2027 preset, to watch the live countdown in days, hours, minutes, and seconds."
                     }
           },
           {
@@ -115,6 +115,22 @@ schema: |
                     "acceptedAnswer": {
                               "@type": "Answer",
                               "text": "A countdown to midnight ends at 00:00, the first second of the next day. The most searched one is the New Year midnight: set the timer to January 1, 2027 at 00:00 and it reaches zero as the year turns. A countdown to a bare date already assumes midnight at the start of that date."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "What is an online countdown calculator?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "An online countdown calculator counts the days, hours, minutes and seconds from now to a date you pick, in your browser, with nothing to install. Pick a date above, or use a preset such as Thanksgiving 2026, and the live count ticks down in real time."
+                    }
+          },
+          {
+                    "@type": "Question",
+                    "name": "How do I count days till a date?",
+                    "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "Pick the date in the Countdown Timer above and read the days figure. For example, May 22, 2027 is 181 days away from November 22, 2026."
                     }
           }
   ]
@@ -184,23 +200,31 @@ Counting down to a birthday? The [Birthday Countdown]({{ '/birthday-countdown/' 
 
 ## Days until a date: worked examples
 
-The most common countdown question is simply "how many days till" a date. Counted from November 19, 2026:
+The most common countdown question is simply "how many days till" a date. Counted from November 22, 2026:
 
-- **How many days till May 22?** May 22, 2027 is 184 days away.
-- **How many days until June 10?** June 10, 2027 is 203 days away.
-- **How many days until October 1?** October 1, 2027 is 316 days away.
+- **How many days till May 22?** May 22, 2027 is 181 days away.
+- **How many days until June 10?** June 10, 2027 is 200 days away.
+- **How many days until October 1?** October 1, 2027 is 313 days away.
 
 Enter any of these dates above to watch the live countdown, or use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) for the plain day count without the ticking display. For quick picks like 7 days from today or 2 weeks from today, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster.
 
-If you are asking how many weeks until christmas, counted from November 19, 2026 the answer is 5 weeks and 1 day: Christmas Day, Friday, December 25, 2026, is 36 days away.
+If you are asking how many weeks until christmas, counted from November 22, 2026 the answer is 4 weeks and 5 days: Christmas Day, Friday, December 25, 2026, is 33 days away.
 
 ## Days until New Year
 
-How many days until new year? Counted from Thursday, November 19, 2026, there are 43 days until New Year, Friday, January 1, 2027. [Start the New Year 2027 countdown]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027) to watch it tick down live, or pick any New Year date above. January 1, 2027 is a Friday, so the holiday falls at the end of a working week in the US. For the full count and a week-by-week plan, read [How Many Days Until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
+How many days until new year? Counted from Sunday, November 22, 2026, there are 40 days until New Year, Friday, January 1, 2027. [Start the New Year 2027 countdown]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027) to watch it tick down live, or pick any New Year date above. January 1, 2027 is a Friday, so the holiday falls at the end of a working week in the US. For the full count and a week-by-week plan, read [How Many Days Until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
 
 ## Countdown to midnight
 
-A countdown to midnight ends at 00:00, the first second of the next day. The most searched one is the New Year midnight: set the timer to January 1, 2027 at 00:00 and it reaches zero as the year turns, the moment the Times Square ball drops at 11:59 PM Eastern on December 31, 2026. [Start the New Year midnight countdown]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027). For tonight, set the timer to tomorrow at 00:00. Counted from November 19, 2026, midnight tonight is Friday, November 20, 2026 at 00:00. A countdown to a bare date already assumes midnight at the start of that date, so picking January 1, 2027 without a time is the same midnight countdown..
+A countdown to midnight ends at 00:00, the first second of the next day. The most searched one is the New Year midnight: set the timer to January 1, 2027 at 00:00 and it reaches zero as the year turns, the moment the Times Square ball drops at 11:59 PM Eastern on December 31, 2026. [Start the New Year midnight countdown]({{ '/countdown-timer/' | relative_url }}?to=2027-01-01T00:00&label=New%20Year%202027). For tonight, set the timer to tomorrow at 00:00. Counted from November 22, 2026, midnight tonight is Monday, November 23, 2026 at 00:00. A countdown to a bare date already assumes midnight at the start of that date, so picking January 1, 2027 without a time is the same midnight countdown..
+
+## Online countdown calculator
+
+An online countdown calculator is a free tool that counts the days, hours, minutes and seconds from now to a date you pick, right in your browser, with nothing to install. This page is one: pick any future date above and the live count ticks down in real time.
+
+To use it, enter the date in the Countdown Timer above, or pick a preset such as Thanksgiving 2026 or New Year 2027. The timer shows the remaining days first, then hours, minutes and seconds underneath, and you can copy a share link to send the same countdown to anyone.
+
+For example, counted from November 22, 2026, May 22, 2027 is 181 days away. Enter that date above to watch the live countdown, or use the Date Difference Calculator for the plain day count without the ticking display.
 
 ## How the countdown stays accurate
 
@@ -276,11 +300,11 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 </details>
 <details>
 <summary>How do I count the days till a date?</summary>
-<p>Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 19, 2026, May 22, 2027 is 184 days away.</p>
+<p>Enter the date above and this online countdown calculator shows the days till date live, in days, hours, minutes, and seconds. For the plain number without the ticking display, the Date Difference Calculator gives the same day count. Example: counted from November 22, 2026, May 22, 2027 is 181 days away.</p>
 </details>
 <details>
 <summary>How many days until New Year?</summary>
-<p>Counted from Thursday, November 19, 2026, there are 43 days until New Year, Friday, January 1, 2027. Enter January 1, 2027 above, or use the New Year 2027 preset, to watch the live countdown in days, hours, minutes, and seconds.</p>
+<p>Counted from Sunday, November 22, 2026, there are 40 days until New Year, Friday, January 1, 2027. Enter January 1, 2027 above, or use the New Year 2027 preset, to watch the live countdown in days, hours, minutes, and seconds.</p>
 </details>
 <details>
 <summary>What is a countdown to midnight?</summary>
@@ -289,6 +313,14 @@ If your countdown crosses a daylight saving change, the day count stays correct 
 <details>
 <summary>Will it notify me when the countdown finishes?</summary>
 <p>The page shows a clear "time's up" state when the moment arrives, but browser pages cannot reliably play alarms after the tab is closed or the device sleeps: operating systems suspend background pages and may block the sound. Keep the tab open if you need the on-screen finish signal.</p>
+</details>
+<details>
+<summary>What is an online countdown calculator?</summary>
+<p>An online countdown calculator counts the days, hours, minutes and seconds from now to a date you pick, in your browser, with nothing to install. Pick a date above, or use a preset such as Thanksgiving 2026, and the live count ticks down in real time.</p>
+</details>
+<details>
+<summary>How do I count days till a date?</summary>
+<p>Pick the date in the Countdown Timer above and read the days figure. For example, May 22, 2027 is 181 days away from November 22, 2026.</p>
 </details>
 </div>
 
