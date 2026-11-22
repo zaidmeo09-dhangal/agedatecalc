@@ -3,7 +3,7 @@ layout: post
 title: "How Many Days Until Thanksgiving? 2026 Dates"
 slug: how-many-days-until-thanksgiving
 date: '2026-11-20'
-last_modified_at: 2026-11-20
+last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -19,14 +19,14 @@ secondary_keywords:
 - thanksgiving 2026 date
 - what day is thanksgiving
 meta_title: "How Many Days Until Thanksgiving? 2026 Dates"
-meta_description: "Thanksgiving is 6 days away on Thursday, November 26, 2026. Dates to 2030, the date rule, business days left, turkey thaw times and what is open."
-excerpt: "Thanksgiving is 6 days away on Thursday, November 26, 2026. Dates to 2030, the date rule, business days left, turkey thaw times and what is open."
+meta_description: "Thanksgiving is Thursday, November 26, 2026. Dates to 2030, the date rule, business days left, turkey thaw times and what is open."
+excerpt: "Thanksgiving is Thursday, November 26, 2026. Dates to 2030, the date rule, business days left, turkey thaw times and what is open."
 featured_image: /assets/images/how-many-days-until-thanksgiving.webp
 image_alt: Overhead view of a Thanksgiving dinner table with carved turkey, cranberry sauce, mashed potatoes and autumn leaves on a wooden table
 read_time: 6 min read
 faqs_raw: 'When is Thanksgiving 2026?
 
-  Thursday, November 26, 2026. There are 6 days until Thanksgiving from Friday, November 20, 2026.
+  Thursday, November 26, 2026. There are 4 days until Thanksgiving from Sunday, November 22, 2026.
 
   ---
 
@@ -44,7 +44,7 @@ faqs_raw: 'When is Thanksgiving 2026?
 
   How many business days are left before Thanksgiving?
 
-  3 business days from November 20, 2026: Monday, November 23, Tuesday, November 24, and Wednesday, November 25. Thanksgiving Day itself is a federal holiday.
+  3 business days from November 22, 2026: Monday, November 23, Tuesday, November 24, and Wednesday, November 25. Thanksgiving Day itself is a federal holiday.
 
   ---
 
@@ -64,11 +64,11 @@ tool_name: Countdown Timer
 
 <div class="prose" markdown="1">
 
-There are **6 days until Thanksgiving, Thursday, November 26, 2026**. That count is dated Friday, November 20, 2026, and it excludes today, the same after-today method used across this site. The rest of this post gives the dates to 2030, the rule that fixes the date, the business days left, a six-day planning timeline, turkey thaw times, and what is open and closed on the day. Watch the live ticking count on our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}?to=2026-11-26T00:00&label=Thanksgiving%202026), which has a ready-made Thanksgiving 2026 preset for November 26.
+There are **4 days until Thanksgiving, Thursday, November 26, 2026**. That count is dated Sunday, November 22, 2026, and it excludes today, the same after-today method used across this site. The rest of this post gives the dates to 2030, the rule that fixes the date, the business days left, a four-day planning timeline, turkey thaw times, and what is open and closed on the day. Watch the live ticking count on our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}?to=2026-11-26T00:00&label=Thanksgiving%202026), which has a ready-made Thanksgiving 2026 preset for November 26.
 
 ## How many days until Thanksgiving?
 
-Thanksgiving 2026 is 6 days away from November 20. The count is simple: November 21, 22, 23, 24, 25 and 26 are six days, and today is not counted. If you are reading this on another date, the live count on the Countdown Timer is the number to trust, because this post freezes its count at its publish date.
+Thanksgiving 2026 is 4 days away from November 22. The count is simple: November 23, 24, 25 and 26 are four days, and today is not counted. If you are reading this on another date, the live count on the Countdown Timer is the number to trust, because this post freezes its count at its publish date.
 
 ## Thanksgiving dates 2026 to 2030
 
@@ -96,16 +96,15 @@ The fourth-Thursday rule is law, not custom. President Lincoln proclaimed a nati
 
 ## Days, weeks and business days left
 
-From Friday, November 20, 2026, the countdown reads 6 days, 0 full weeks, and 3 [business days]({{ '/business-days-calculator/' | relative_url }}). The three business days are Monday, November 23, Tuesday, November 24, and Wednesday, November 25. Today, Friday, November 20, is not counted, and Thanksgiving Day itself is a federal holiday, so it is not a business day either.
+From Sunday, November 22, 2026, the countdown reads 4 days, 0 full weeks, and 3 [business days]({{ '/business-days-calculator/' | relative_url }}). The three business days are Monday, November 23, Tuesday, November 24, and Wednesday, November 25. Today, Sunday, November 22, is not counted, and Thanksgiving Day itself is a federal holiday, so it is not a business day either.
 
-That is the number that matters for errands and deliveries. Six calendar days sounds comfortable, but only three of them are working days, so anything that needs a weekday, a delivery slot, or an open office has to happen by Wednesday, November 25.
+That is the number that matters for errands and deliveries. Four calendar days sounds comfortable, but only three of them are working days, so anything that needs a weekday, a delivery slot, or an open office has to happen by Wednesday, November 25.
 
-## Thanksgiving planning timeline: 6 days out
+## Thanksgiving planning timeline: 4 days out
 
-Six days is enough time to shop, thaw and prep without rushing, as long as the turkey moves first.
+Four days is enough time to shop, thaw and prep without rushing, as long as the turkey moves first.
 
-- Friday, November 20: move a frozen turkey from the freezer to the fridge. A 12 to 16 pound turkey needs 3 to 4 days in the fridge, so one moved today is ready by November 23 to 24. Confirm the guest count and the seating plan today.
-- Saturday, November 21, and Sunday, November 22: buy everything that keeps: canned goods, baking supplies, drinks, paper goods and decorations. Check the oven, the roasting pan and the thermometer.
+- Sunday, November 22: move a frozen turkey from the freezer to the fridge. A 12 to 16 pound turkey needs 3 to 4 days in the fridge, so one moved today is ready by November 25 to 26. Confirm the guest count and the seating plan today. Buy everything that keeps: canned goods, baking supplies, drinks, paper goods and decorations. Check the oven, the roasting pan and the thermometer.
 - Monday, November 23: shop for fresh produce and dairy. Start any dish that keeps for two days, such as cranberry sauce.
 - Tuesday, November 24: bake pies and prep vegetables. Chill drinks and clear fridge space for the turkey and the leftovers.
 - Wednesday, November 25: finish cooking prep and set the table. This is the last full day before Thanksgiving, so keep the list short: pies in the oven, vegetables prepped, table set.
@@ -115,7 +114,7 @@ The timeline shrinks fast if the turkey is still frozen on Monday. That is the o
 
 ## Turkey thaw and cooking countdown
 
-The US Department of Agriculture gives two safe thaw methods, and the fridge method is the one to use with six days left.
+The US Department of Agriculture gives two safe thaw methods, and the fridge method is the one to use with four days left.
 
 | Turkey size | Fridge thaw | Cold water thaw |
 |---|---|---|
@@ -123,7 +122,7 @@ The US Department of Agriculture gives two safe thaw methods, and the fridge met
 | 16 pounds | 4 days | 8 hours |
 | 20 pounds | 4 to 5 days | 10 hours |
 
-The fridge rule is about 1 day per 4 to 5 pounds, so a 12 pound turkey needs 3 days and a 16 pound turkey needs 4 days. A 20 pound turkey needs 4 to 5 days, so it should be in the fridge by November 21. The cold water rule is 30 minutes per pound, with the water changed every 30 minutes, so a 12 pound turkey takes 6 hours and a 16 pound turkey takes 8 hours. Cold water is the fallback for a turkey that is still frozen on Wednesday, not the plan.
+The fridge rule is about 1 day per 4 to 5 pounds, so a 12 pound turkey needs 3 days and a 16 pound turkey needs 4 days. A 20 pound turkey needs 4 to 5 days, so it should be in the fridge by today, November 22, at the latest. The cold water rule is 30 minutes per pound, with the water changed every 30 minutes, so a 12 pound turkey takes 6 hours and a 16 pound turkey takes 8 hours. Cold water is the fallback for a turkey that is still frozen on Wednesday, not the plan.
 
 Cook the turkey to 165 F internal temperature, measured in the thickest part of the breast and the thigh. Let it rest for 20 minutes before carving, and refrigerate leftovers within 2 hours.
 
@@ -143,7 +142,7 @@ For planning, the point is the weekend shape. Thanksgiving Thursday, Black Frida
 
 **When is Thanksgiving 2026?**
 
-Thursday, November 26, 2026. There are 6 days until Thanksgiving from Friday, November 20, 2026.
+Thursday, November 26, 2026. There are 4 days until Thanksgiving from Sunday, November 22, 2026.
 
 **Is Thanksgiving always on a Thursday?**
 
@@ -155,7 +154,7 @@ Open the Countdown Timer, pick the Thanksgiving 2026 preset for November 26, and
 
 **How many business days are left before Thanksgiving?**
 
-3 business days from November 20, 2026: Monday, November 23, Tuesday, November 24, and Wednesday, November 25. Thanksgiving Day itself is a federal holiday.
+3 business days from November 22, 2026: Monday, November 23, Tuesday, November 24, and Wednesday, November 25. Thanksgiving Day itself is a federal holiday.
 
 **When is Thanksgiving 2027?**
 
