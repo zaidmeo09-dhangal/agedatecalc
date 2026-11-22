@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Contact AgeDateCalc | Feedback and Support
-meta_title: Contact AgeDateCalc
-description: Contact the AgeDateCalc team for bug reports, tool suggestions, or questions. We read every message.
+title: "Contact AgeDateCalc: Questions and Feedback"
+meta_title: "Contact AgeDateCalc: Questions and Feedback"
+description: "Contact the AgeDateCalc team for bug reports, tool suggestions, or questions about our free date and time calculators. We read every message."
 permalink: /contact/
 schema: |
   {
