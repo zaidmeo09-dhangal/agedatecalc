@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Privacy Policy | AgeDateCalc
-meta_title: Privacy Policy
+title: "Privacy Policy: How AgeDateCalc Handles Data"
+meta_title: "Privacy Policy: How AgeDateCalc Handles Data"
 description: How AgeDateCalc handles your data, cookies, and analytics. Our tools run in your browser, and we do not collect or sell your tool inputs.
 permalink: /privacy-policy/
 schema: |
