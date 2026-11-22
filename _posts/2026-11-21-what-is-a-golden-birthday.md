@@ -3,7 +3,7 @@ layout: post
 title: "What Is a Golden Birthday? Meaning and Dates"
 slug: what-is-a-golden-birthday
 date: '2026-11-21'
-last_modified_at: 2026-11-21
+last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -52,7 +52,7 @@ tool_name: Birthday Countdown
 
 <div class="prose" markdown="1">
 
-A golden birthday is the one birthday when your age matches the day of the month you were born. Turn 25 on the 25th, and that is your golden birthday. Today, Saturday, November 21, 2026, is a golden birthday for anyone born on November 21, 2005, who turns 21 today. Find your date in the chart below, or check our [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}).
+A golden birthday is the one birthday when your age matches the day of the month you were born. Turn 25 on the 25th, and that is your golden birthday. Today, Sunday, November 22, 2026, is a golden birthday for anyone born on November 22, 2004, who turns 22 today. Find your date in the chart below, or check our [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}).
 
 ## How to work out yours
 
@@ -104,9 +104,9 @@ Not every golden birthday feels the same. Days 1 to 12 all pass in childhood, so
 
 ## Golden birthdays still to come in 2026
 
-From today, November 21, 2026, five golden birthdays are still to come this year, and one is today.
+From today, November 22, 2026, five golden birthdays are still to come this year, and one is today.
 
-- Today, November 21: born November 21, 2005, turns 21.
+- Today, November 22: born November 22, 2004, turns 22.
 - November 25: born November 25, 2001, turns 25.
 - November 29: born November 29, 1997, turns 29.
 - December 10: born December 10, 2016, turns 10.
