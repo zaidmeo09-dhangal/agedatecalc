@@ -3,7 +3,7 @@ layout: post
 title: How Many Days Are in a Year? 365 vs 366 Explained
 slug: how-many-days-in-a-year
 date: '2026-10-24'
-last_modified_at: 2026-11-13
+last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
 category: Date Guides
@@ -41,7 +41,7 @@ faqs_raw: 'How many days are in a leap year?
 
   How many days into the year are we?
 
-  For example, on November 19, 2026, the day number is 323, which means 322 days have already passed and 42 days are left in the year. The number changes every day, so use the Date Difference Calculator for the live number. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
+  For example, on November 22, 2026, the day number is 326, which means 325 days have already passed and 39 days are left in the year. The number changes every day, so use the Date Difference Calculator for the live number. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
 
   ---
 
@@ -59,7 +59,13 @@ faqs_raw: 'How many days are in a leap year?
 
   How many days are in August?
 
-  August has 31 days, in every year. It is one of the seven 31-day months: January, March, May, July, August, October and December.'
+  August has 31 days, in every year. It is one of the seven 31-day months: January, March, May, July, August, October and December.
+
+  ---
+
+  Does a year ever have 366 days?
+
+  Yes. A leap year has 366 days, with February 29 as the extra day. 2026 has 365 days. The next leap year is 2028, then 2032. Any year divisible by 4 is a leap year, except century years, which must also be divisible by 400.'
 permalink: /blog/how-many-days-in-a-year/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
@@ -91,7 +97,7 @@ The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate
 
 ## How many days into the year are we?
 
-This is the question people ask mid-year: how many days into the year are we, or in other words, how many days are we in the year. Count the days from January 1 to the date you want. For example, on November 19, 2026, the day number is 323, which means 322 days have already passed and 42 days are left in the year. 2026 has 365 days, so day 323 is about 88.5 percent of the way through.
+This is the question people ask mid-year: how many days into the year are we, or in other words, how many days are we in the year. Count the days from January 1 to the date you want. For example, on November 22, 2026, the day number is 326, which means 325 days have already passed and 39 days are left in the year. 2026 has 365 days, so day 326 is about 89.3 percent of the way through.
 
 To find the day number for any date, enter January 1 of that year and your date in the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) and add 1 to the result, because the calculator counts the gap between the two dates and January 1 itself is day 1.
 
@@ -142,6 +148,40 @@ Our [Age Calculator]({{ '/age-calculator/' | relative_url }}) counts every leap 
 ## A year is not always 365 or 366 days
 
 Astronomers use several different "years." The tropical year (365.2422 days) is what the calendar tracks. The sidereal year (365.2564 days) measures one full orbit relative to the stars. A lunar year, 12 lunar months, is about 354 days, which is why lunar calendars drift about 11 days a year against the Gregorian calendar. And calendar history has oddities: when Britain adopted the Gregorian calendar in 1752, the year had only 355 days because 11 days were skipped outright. For every modern calculation, though, the answer stays 365 or 366.
+
+## FAQ
+
+**How many days are in a leap year?**
+
+A leap year has 366 days. The extra day is February 29, which is added to keep the calendar in step with Earth's orbit.
+
+**How often do leap years happen?**
+
+Leap years happen roughly every four years. A year is a leap year if it divides evenly by 4, except century years, which must also divide by 400. The most recent leap year was 2024, and the next one is 2028.
+
+**How many days are in 2026?**
+
+2026 has 365 days. It is a common year because 2026 does not divide evenly by 4, so February 2026 has 28 days.
+
+**How many days into the year are we?**
+
+For example, on November 22, 2026, the day number is 326, which means 325 days have already passed and 39 days are left in the year. The number changes every day, so use the Date Difference Calculator for the live number. To find the day number for any date, count the days from January 1 to that date, with January 1 as day 1.
+
+**Why does February have 29 days in a leap year?**
+
+Because Earth's orbit takes about 365.2422 days, not exactly 365. Adding February 29 roughly every four years makes up the difference and stops the calendar from drifting against the seasons.
+
+**How many weeks are in a year?**
+
+A common year has 52 weeks and 1 extra day, since 52 times 7 is 364. A leap year has 52 weeks and 2 extra days. Under the ISO week system, most years have 52 weeks, but a year has 53 ISO weeks when it starts on a Thursday, as 2026 does, or when a leap year starts on a Wednesday, as 2020 did.
+
+**How many days are in August?**
+
+August has 31 days, in every year. It is one of the seven 31-day months: January, March, May, July, August, October and December.
+
+**Does a year ever have 366 days?**
+
+Yes. A leap year has 366 days, with February 29 as the extra day. 2026 has 365 days. The next leap year is 2028, then 2032. Any year divisible by 4 is a leap year, except century years, which must also be divisible by 400.
 
 ## Related guides
 
