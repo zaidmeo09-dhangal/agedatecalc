@@ -140,6 +140,28 @@ A spreadsheet is right when the ages live in a list, for example a roster of emp
 
 <img src="{{ '/assets/images/how-to-calculate-age-in-excel-charts.webp' | relative_url }}" alt="A computer screen showing a candlestick chart with green and red bars" width="1200" height="630" loading="lazy">
 
+## FAQ
+
+**What is the formula to calculate age in Excel?**
+
+Put the date of birth in A2 and the end date in B2, then use =DATEDIF(A2, B2, "Y") for complete years. For the full breakdown in years, months, and days, combine DATEDIF with EDATE as shown in this guide, because Microsoft warns against the MD unit.
+
+**Why does DATEDIF not appear when I type it?**
+
+DATEDIF is a compatibility function kept for older Lotus 1-2-3 workbooks. Excel supports it, but it does not appear in autocomplete or the Insert Function dialog, so type the full name by hand.
+
+**Why do I get #VALUE! from DATEDIF?**
+
+The birth date cell usually holds text, not a real date. Test it with =ISNUMBER(A2). If it returns FALSE, convert the text to a date with DATEVALUE or by typing it in a format Excel recognizes, such as 6/15/1990.
+
+**Can I use DATEDIF in Google Sheets?**
+
+Yes. Google Sheets supports DATEDIF with the same units, and unlike Excel it lists the function in its help. The formulas in this guide work in both Excel and Google Sheets.
+
+**What is the fastest way to calculate an age?**
+
+Use our Age Calculator. Enter the date of birth and it gives the exact age, total days lived, the weekday born, and the next birthday countdown, with no formulas to type.
+
 ## Related guides
 
 - [How to Calculate Your Exact Age]({{ '/blog/how-to-calculate-age/' | relative_url }})
