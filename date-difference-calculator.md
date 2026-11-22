@@ -41,7 +41,7 @@ schema: |
             "name": "Is the end date included in the count?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "By default, the end date is counted but the start date is not. This is the standard exclusive convention: March 1 to March 2 is 1 day. If you need both days counted, tick the 'Include the end date' checkbox, or add 1 to the result. The two answers always differ by exactly one day."
+              "text": "By default, the end date is counted but the start date is not. This is the standard exclusive convention: March 1 to March 2 is 1 day. If you need both days counted, tick the 'Count both start and end dates (inclusive)' checkbox, or add 1 to the result. The two answers always differ by exactly one day."
             }
           },
           {
@@ -154,11 +154,11 @@ related_posts:
         <input type="date" id="dd-end">
       </div>
       <div class="field">
-        <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="dd-include-end" style="width:auto"> Include the end date in the count</label>
+        <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="dd-include-end" style="width:auto"> Count both start and end dates (inclusive)</label>
       </div>
       <button class="btn btn-primary btn-block" id="dd-btn" type="button">Calculate Difference</button>
       <div id="dd-result"></div>
-      <p class="result-note" style="font-size:.82rem;margin-top:12px">By default, counts the end date, not the start date. Tick "Include the end date" to count both days. Uses calendar days only, so time zones never affect the result.</p>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">By default, counts the end date, not the start date. Tick "Count both start and end dates (inclusive)" to count both days. Uses calendar days only, so time zones never affect the result.</p>
       <hr style="border:0;border-top:1px solid var(--border);margin:24px 0">
       <h2 style="font-size:1.15rem;margin-bottom:12px">Add or subtract days</h2>
       <div class="field">
@@ -263,7 +263,7 @@ This is the mode people reach for with searches like "90 days from today" or "30
 - **Age gaps:** the age difference between two people, or anyone's age on a specific date like a wedding or retirement day. For age from birth to today, the [Age Calculator]({{ '/age-calculator/' | relative_url }}) is faster.
 - **Project deadlines:** a contract signed October 18 with "delivery in 45 days" lands on December 2, 2026. Checking that in the calculator takes ten seconds and prevents an embarrassing miss.
 - **Anniversaries:** days since a wedding, a company founding, or any milestone. Round numbers like 100 days or 1,000 days make good excuses to celebrate.
-- **Pregnancy:** the standard estimate is 280 days (40 weeks) from the first day of the last period. Counted from January 1, 2026, that gives an estimated due date of October 8, 2026.
+- **Pregnancy:** the standard estimate is 280 days (40 weeks) from the first day of the last period. Counted from January 1, 2026, that gives an estimated due date of October 8, 2026. Estimate only. Confirm with your doctor.
 - **Trials and subscriptions:** a 90-day free trial started October 18, 2026 runs out on January 16, 2027. Set a reminder a few days earlier, not on the day.
 - **Travel gaps:** days between an outbound and a return flight, or between connecting trips when planning visas.
 
@@ -345,7 +345,7 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
 </details>
 <details>
 <summary>Is the end date included in the count?</summary>
-<p>Yes, by default the end date is counted but the start date is not. This is the standard exclusive convention used by spreadsheets and most date tools: March 1 to March 2 is 1 day. If your situation needs both days counted, for example a hotel stay priced per day or a period described as "from the 11th to the 25th inclusive," tick the "Include the end date" checkbox above the result, or add 1 to the result. The two answers always differ by exactly one day.</p>
+<p>Yes, by default the end date is counted but the start date is not. This is the standard exclusive convention used by spreadsheets and most date tools: March 1 to March 2 is 1 day. If your situation needs both days counted, for example a hotel stay priced per day or a period described as "from the 11th to the 25th inclusive," tick the "Count both start and end dates (inclusive)" checkbox above the result, or add 1 to the result. The two answers always differ by exactly one day.</p>
 </details>
 <details>
 <summary>Why do two date calculators give different answers?</summary>
