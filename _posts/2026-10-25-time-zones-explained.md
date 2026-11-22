@@ -159,6 +159,28 @@ For scheduling, the rule is simple: whenever a conversion crosses the Pacific, c
 7. **Send calendar invites, not chat messages.** Calendar files carry time zone data, so the invite lands at the right local hour on every device automatically.
 8. **Confirm the day for far-apart zones.** Anything spanning more than about 8 hours of offset can flip the calendar date. A one-line "that is Tuesday your time, right?" prevents the classic miss.
 
+## FAQ
+
+**How many time zones are there in the world?**
+
+The world is divided into 24 main time zones, each roughly 15 degrees of longitude wide. Some regions use half-hour or 45-minute offsets, so the number of distinct local times is higher than 24.
+
+**What is the difference between GMT and UTC?**
+
+On a clock they read the same. GMT is a time zone used in the UK during winter, while UTC is the precise scientific standard that all time zones are measured against.
+
+**How many time zones does the United States have?**
+
+The 50 states span six main time zones: Eastern, Central, Mountain, Pacific, Alaska, and Hawaii. Most states also observe daylight saving time, so their offsets change twice a year.
+
+**What does UTC-5 mean?**
+
+UTC-5 means a place is five hours behind Coordinated Universal Time. New York uses UTC-5 on standard time in winter and UTC-4 on daylight time in summer.
+
+**Why do some places not observe daylight saving time?**
+
+Hawaii skips daylight saving because it sits near the equator, where daylight hours barely change across the year. Arizona skips it for a different reason: extreme summer heat. An extra hour of evening sunlight would mean more air conditioning use, not less, so Arizona stays on Mountain Standard Time (UTC-7) year round, except the Navajo Nation, which does observe DST.
+
 ## Related guides
 
 - [AM/PM vs 24-Hour Clock]({{ '/blog/am-pm-vs-24-hour-clock/' | relative_url }})
