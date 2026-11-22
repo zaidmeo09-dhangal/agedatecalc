@@ -1,6 +1,6 @@
 ---
 layout: default
-meta_title: "Week Number Calculator: What Week Is It?"
+meta_title: "Week Number Calculator: What Week Is It Now?"
 description: Find the ISO week number of any date, with the week Monday to Sunday range and the day of the year. See what week it is now, free, no sign-up.
 permalink: /week-number-calculator/
 breadcrumb: Week Number Calculator
@@ -33,7 +33,7 @@ schema: |
             "name": "What week is it now?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "It depends on the date. Counted from Friday, November 13, 2026, this is ISO week 46 of 2026, running Monday, November 9 to Sunday, November 15, 2026. Enter any date above to find its week number."
+              "text": "It depends on the date. Counted from Sunday, November 22, 2026, this is ISO week 47 of 2026, running Monday, November 16 to Sunday, November 22, 2026. Enter any date above to find its week number."
             }
           },
           {
@@ -137,7 +137,7 @@ That Thursday rule is why the year of a week can differ from the year of the dat
 
 | Date | Weekday | ISO week | Week runs | Day of year |
 |---|---|---|---|---|
-| November 13, 2026 | Friday | Week 46 of 2026 | Monday, November 9 to Sunday, November 15, 2026 | Day 317 of 365 |
+| November 22, 2026 | Sunday | Week 47 of 2026 | Monday, November 16 to Sunday, November 22, 2026 | Day 326 of 365 |
 | January 1, 2026 | Thursday | Week 1 of 2026 | Monday, December 29, 2025 to Sunday, January 4, 2026 | Day 1 of 365 |
 | December 31, 2026 | Thursday | Week 53 of 2026 | Monday, December 28, 2026 to Sunday, January 3, 2027 | Day 365 of 365 |
 | December 29, 2025 | Monday | Week 1 of 2026 | Monday, December 29, 2025 to Sunday, January 4, 2026 | Day 363 of 365 |
@@ -145,7 +145,7 @@ That Thursday rule is why the year of a week can differ from the year of the dat
 
 ## How many weeks are in 2026?
 
-2026 has 53 ISO weeks. A year gets a 53rd week when it starts on a Thursday, and January 1, 2026 is a Thursday. The extra week sits at the end of the year: week 53 runs Monday, December 28, 2026 to Sunday, January 3, 2027. Most years have 52 ISO weeks. Counted from November 13, 2026, which is week 46, there are 8 weeks left in 2026 including the current week. A year with 53 weeks still has 365 days. See [how many days are in a year]({{ '/blog/how-many-days-in-a-year/' | relative_url }}) for the full count. For the day count to New Year, see [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
+2026 has 53 ISO weeks. A year gets a 53rd week when it starts on a Thursday, and January 1, 2026 is a Thursday. The extra week sits at the end of the year: week 53 runs Monday, December 28, 2026 to Sunday, January 3, 2027. Most years have 52 ISO weeks. Counted from November 22, 2026, which is week 47, there are 7 weeks left in 2026 including the current week. A year with 53 weeks still has 365 days. See [how many days are in a year]({{ '/blog/how-many-days-in-a-year/' | relative_url }}) for the full count. For the day count to New Year, see [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
 
 ## Where week numbers get used
 
@@ -159,7 +159,7 @@ To count the days between two dates instead of finding a week number, use the [D
 
 ## Week numbers in 2026
 
-2026 has 53 ISO weeks. The first week starts on Monday, December 29, 2025, and the last week ends on Sunday, January 3, 2027. As of November 15, 2026, we are in week 46.
+2026 has 53 ISO weeks. The first week starts on Monday, December 29, 2025, and the last week ends on Sunday, January 3, 2027. As of November 22, 2026, we are in week 47.
 
 | Week | Monday | Sunday |
 |---|---|---|
@@ -246,7 +246,7 @@ That returns the ISO week number, and it works in Excel 2013 and later and in Go
 <div class="faq">
 <details>
 <summary>What week is it now?</summary>
-<p>It depends on the date. Counted from Friday, November 13, 2026, this is ISO week 46 of 2026, running Monday, November 9 to Sunday, November 15, 2026. Enter any date above to find its week number.</p>
+<p>It depends on the date. Counted from Sunday, November 22, 2026, this is ISO week 47 of 2026, running Monday, November 16 to Sunday, November 22, 2026. Enter any date above to find its week number.</p>
 </details>
 <details>
 <summary>How many weeks are in 2026?</summary>
