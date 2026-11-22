@@ -515,7 +515,7 @@ That gives the date 30 days after the date in A1. For the count from today, use 
 
 `=TODAY()+30`
 
-The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 gives 7 days from today, and =TODAY()-30 gives 30 days ago. Format the result cell as a date if it shows a number instead. To add calendar months rather than days, use =EDATE(A1,3), which adds 3 months to the date in A1 and clamps to the last day of the month when needed. For counting only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). For the full method of counting between two fixed dates, see [how to count days between two dates]({{ '/blog/how-to-count-days-between-two-dates/' | relative_url }}).
+The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 gives 7 days from today, and =TODAY()-30 gives 30 days ago. Format the result cell as a date if it shows a number instead. To add calendar months rather than days, use =EDATE(A1,3), which adds 3 months to the date in A1 and clamps to the last day of the month when needed. For counting only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). For the full method of counting between two fixed dates, see [how to count days between two dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }}).
 
 ## Frequently asked questions
 
