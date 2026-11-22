@@ -84,7 +84,7 @@ This two week window catches people every year: the same 3:00 PM meeting arrives
 
 Daylight saving moves offsets twice a year, so the gap between two cities is not fixed. The US switches on the second Sunday in March and the first Sunday in November; the UK and the EU on the last Sunday in March and the last Sunday in October. In 2027 the US is on daylight saving from March 14 to November 7, and the UK and EU from March 28 to October 31.
 
-That mismatch creates two windows a year when the gap drops from 5 hours to 4: two weeks in spring, March 14 to March 28, 2027, and one week in autumn, October 31 to November 7, 2027. Always state the date with the time, and write the UTC offset next to it, for example 3:00 PM EDT (UTC-4). Our [When Does Daylight Saving Time End](/blog/when-does-daylight-saving-time-end/) post has the US dates.
+That mismatch creates two windows a year when the gap drops from 5 hours to 4: two weeks in spring, March 14 to March 28, 2027, and one week in autumn, October 31 to November 7, 2027. Always state the date with the time, and write the UTC offset next to it, for example 3:00 PM EDT (UTC-4). Our [When Does Daylight Saving Time End](/blog/when-does-daylight-saving-time-end/) post has the US end dates, and our [When Does Daylight Saving Time Start in 2027](/blog/when-does-daylight-saving-time-start-2027/) post has the spring start.
 
 ## Half-hour and 45-minute offsets
 
@@ -96,7 +96,7 @@ The UTC method handles these zones the same way, because the offset is just a nu
 
 Crossing the International Date Line changes the date as well as the time. Monday, July 20, 2026, 3:00 PM in Honolulu is Tuesday, July 21, 2026, 1:00 PM in Auckland. The clock times look close, 3:00 PM and 1:00 PM, but the real gap is 22 hours, and the two cities are on different days.
 
-Honolulu is UTC-10 and Auckland is on New Zealand Standard Time in July, UTC+12. So 3:00 PM Monday minus UTC-10 equals 1:00 AM Tuesday UTC, plus UTC+12 equals 1:00 PM Tuesday in Auckland. After every conversion, check the date, not just the time: landing on the wrong day is worse than landing an hour off.
+Honolulu is UTC-10 and Auckland is on New Zealand Standard Time in July, UTC+12. So 3:00 PM Monday minus UTC-10 equals 1:00 AM Tuesday UTC, plus UTC+12 equals 1:00 PM Tuesday in Auckland. After every conversion, check the date, not just the time: landing on the wrong day is worse than landing an hour off. If the date did move, the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) counts the exact days between the two dates.
 
 ## Abbreviations that lie
 
