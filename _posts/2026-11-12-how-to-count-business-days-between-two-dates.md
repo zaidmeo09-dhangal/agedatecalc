@@ -136,6 +136,28 @@ Payroll cutoffs, contract deadlines, shipping estimates, and notice periods all 
 
 For time zones, a deadline set in one zone can land on a different business day in another. Our [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}) checks the local date before you count.
 
+## FAQ
+
+**What counts as a business day?**
+
+A business day is a weekday, Monday to Friday, that is not a US federal holiday. Saturdays and Sundays never count. The 11 US federal holidays are also removed when the holidays option is on.
+
+**Does NETWORKDAYS count the start and end dates?**
+
+Yes. NETWORKDAYS counts both the start date and the end date when they are weekdays. That is one more than a count that starts the day after the start date, so check which convention your tool uses before you compare answers.
+
+**How many business days are in November 2026?**
+
+November 2026 has 21 weekdays. Thanksgiving falls on Thursday, November 26, 2026, so removing it leaves 20 business days.
+
+**Do state holidays count as business days?**
+
+Only if your count includes them. The federal list covers federal offices. State holidays, company holidays, and school closures are separate, so add your own list for those.
+
+**What is the fastest way to count business days?**
+
+Use our Business Days Calculator. Pick the two dates, keep the US federal holidays option on, and it counts workdays, shows the calendar days, and lists the holidays it subtracted.
+
 ## Related guides
 
 - [How to Count Days Between Two Dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }})
