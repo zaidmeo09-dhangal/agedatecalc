@@ -105,7 +105,23 @@ schema: |
             "name": "How many days ago was 2020?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "January 1, 2020 was 2,514 days ago as of November 19, 2026, and December 31, 2020 was 2,149 days ago. Enter the past date as the start date and today as the end date above, and the calculator gives the exact count. 2020 was a leap year, so the count includes February 29, 2020."
+              "text": "January 1, 2020 was 2,517 days ago as of November 22, 2026, and December 31, 2020 was 2,152 days ago. Enter the past date as the start date and today as the end date above, and the calculator gives the exact count. 2020 was a leap year, so the count includes February 29, 2020."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a dates calculator between two dates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A dates calculator between two dates counts the exact days, months and years between any two dates you pick. Enter the start date and the end date in the calculator above and it gives the answer in years, months and days, plus the total day count."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long is 19,912 days?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "19,912 days is 54 years, 6 months, and 5 days. Counted back from November 22, 2026, 19,912 days ago was Wednesday, May 17, 1972. The span includes 13 leap days."
             }
           }
         ]
@@ -255,13 +271,13 @@ Counting down to the holidays? See [how many days until New Year 2027]({{ '/blog
 
 ## How many days ago was 2020?
 
-January 1, 2020 was **2,514 days ago** as of November 19, 2026. December 31, 2020 was 2,149 days ago. To count it yourself, enter the past date as the start date and today as the end date above, and the calculator gives the exact day count.
+January 1, 2020 was **2,517 days ago** as of November 22, 2026. December 31, 2020 was 2,152 days ago. To count it yourself, enter the past date as the start date and today as the end date above, and the calculator gives the exact day count.
 
-More "how many days ago" answers, all counted the same way from November 19, 2026:
+More "how many days ago" answers, all counted the same way from November 22, 2026:
 
-- January 1, 2019 was 2,879 days ago
-- March 11, 2020 was 2,444 days ago
-- January 1, 2025 was 687 days ago
+- January 1, 2019 was 2,882 days ago
+- March 11, 2020 was 2,447 days ago
+- January 1, 2025 was 690 days ago
 
 2020 was a leap year, so every count that crosses it includes February 29, 2020. Two leap days fall inside the span from January 1, 2020 to today, February 29, 2020 and February 29, 2024, and both are in the count. For a recent date, like 30 days ago, the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}) is faster.
 
@@ -357,11 +373,19 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
 </details>
 <details>
 <summary>How many days ago was 2020?</summary>
-<p>January 1, 2020 was 2,514 days ago as of November 19, 2026, and December 31, 2020 was 2,149 days ago. Enter the past date as the start date and today as the end date above, and the calculator gives the exact count. 2020 was a leap year, so the count includes February 29, 2020.</p>
+<p>January 1, 2020 was 2,517 days ago as of November 22, 2026, and December 31, 2020 was 2,152 days ago. Enter the past date as the start date and today as the end date above, and the calculator gives the exact count. 2020 was a leap year, so the count includes February 29, 2020.</p>
 </details>
 <details>
 <summary>Does my time zone change the result?</summary>
 <p>No. This calculator works on calendar days only, so the result is identical everywhere in the world. Time zones only matter when a specific time of day is involved, such as a countdown that flips to the next day at midnight. If another tool shows a different answer for the same dates, its time zone or its counting basis is the likely cause.</p>
+</details>
+<details>
+<summary>What is a dates calculator between two dates?</summary>
+<p>A dates calculator between two dates counts the exact days, months and years between any two dates you pick. Enter the start date and the end date in the calculator above and it gives the answer in years, months and days, plus the total day count.</p>
+</details>
+<details>
+<summary>How long is 19,912 days?</summary>
+<p>19,912 days is 54 years, 6 months, and 5 days. Counted back from November 22, 2026, 19,912 days ago was Wednesday, May 17, 1972. The span includes 13 leap days.</p>
 </details>
 </div>
 
