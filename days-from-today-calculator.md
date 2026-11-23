@@ -436,6 +436,19 @@ These dates are fixed to November 22, 2026, and they move by one day every day. 
 
 120 days from today is Monday, March 22, 2027. That is 17 weeks and 1 day from Sunday, November 22, 2026, about four months. A 120-day plan that starts today ends on that date. Use the calculator above, or tap the 120 days quick pick, for the live answer.
 
+## 120 days from a date
+
+120 days is 17 weeks and 1 day, about four months. Pick any start date in the calculator above and add 120 days to get the answer. These worked examples show the result for the dates people search for most:
+
+| Start date | 120 days from that date | Weekday |
+|---|---|---|
+| October 14, 2026 (10/14/2026) | February 11, 2027 | Thursday |
+| July 16, 2026 (07/16/2026) | November 13, 2026 | Friday |
+| September 14, 2026 (09/14/2026) | January 12, 2027 | Tuesday |
+| August 5, 2026 (08/05/2026) | December 3, 2026 | Thursday |
+
+To find the number of days between any two fixed dates instead of counting forward, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}).
+
 ## 180 days from today
 
 180 days from today is Friday, May 21, 2027. That is 25 weeks and 5 days from Sunday, November 22, 2026, about six months. A 180-day visa stay, semester or half-year plan that starts today ends on that date. Use the calculator above, or tap the 180 days quick pick, for the live answer.
