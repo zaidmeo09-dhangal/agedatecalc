@@ -3,7 +3,7 @@ layout: post
 title: When Does Daylight Saving Time End in 2027?
 slug: when-does-daylight-saving-time-end
 date: '2026-10-26'
-last_modified_at: 2026-11-22
+last_modified_at: 2026-11-23
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -47,7 +47,18 @@ faqs_raw: 'Do we gain or lose an hour when daylight saving ends?
 
   When does daylight savings start again in 2027?
 
-  Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM. Our guide on when daylight savings starts in 2027 covers the spring change in full.'
+  Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM. Our guide on when daylight savings starts in 2027 covers the spring change in full.
+  ---
+
+  When is daylight savings 2027?
+
+  Daylight savings in 2027 runs from Sunday, March 14, 2027, when clocks spring forward at 2:00 AM, to Sunday, November 7, 2027, when clocks fall back at 2:00 AM. It lasts 238 days, exactly 34 weeks.
+
+  ---
+
+  When does daylight savings end in 2027?
+
+  Sunday, November 7, 2027, at 2:00 AM local time. Clocks fall back one hour to 1:00 AM, so the night is 25 hours long and you gain an extra hour of sleep. Daylight saving in 2027 started on Sunday, March 14, 2027.'
 permalink: /blog/when-does-daylight-saving-time-end/
 redirect_from:
   - /blog/when-does-daylight-saving-time-end-2026/
@@ -60,6 +71,16 @@ tool_name: Time Zone Converter
 In 2027, daylight saving time ends on **Sunday, November 7, at 2:00 AM local time**. At that moment clocks [fall back one hour](https://www.timeanddate.com/time/change/usa) to 1:00 AM, giving you an extra hour of sleep and marking the return to standard time for the winter. Daylight saving in 2027 runs from [Sunday, March 14]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }}) to Sunday, November 7. Most people search for it as daylight savings time, with an S, so this guide uses both spellings: the official name is daylight saving time, and daylight savings is the common spelling. Check the change in your own time zone with the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}).
 
 The 2026 switch was on November 1, 2026. The next one is November 7, 2027. Set a reminder now, because the devices you forget about are always the ones that stay wrong for a week.
+
+## Daylight savings 2027: start and end dates
+
+Daylight savings 2027 starts on Sunday, March 14, 2027, at 2:00 AM, when clocks spring forward to 3:00 AM, and ends on Sunday, November 7, 2027, at 2:00 AM, when clocks fall back to 1:00 AM. Daylight saving in 2027 lasts 238 days, exactly 34 weeks, under the US rule of the second Sunday in March to the first Sunday in November. See the spring change in our guide on [when daylight savings starts in 2027]({{ '/blog/when-does-daylight-saving-time-start-2027/' | relative_url }}).
+
+| Daylight savings 2027 | Date | Time |
+|---|---|---|
+| Starts (spring forward) | Sunday, March 14, 2027 | 2:00 AM local time |
+| Ends (fall back) | Sunday, November 7, 2027 | 2:00 AM local time |
+| Length | 238 days, exactly 34 weeks |  |
 
 ## What actually happens on November 7
 
@@ -133,6 +154,14 @@ No. Arizona stays on Mountain Standard Time (UTC-7) year-round, except the Navaj
 **When does daylight savings start again in 2027?**
 
 Sunday, March 14, 2027, at 2:00 AM local time, when clocks spring forward one hour to 3:00 AM. Our guide on when daylight savings starts in 2027 covers the spring change in full.
+
+**When is daylight savings 2027?**
+
+Daylight savings in 2027 runs from Sunday, March 14, 2027, when clocks spring forward at 2:00 AM, to Sunday, November 7, 2027, when clocks fall back at 2:00 AM. It lasts 238 days, exactly 34 weeks.
+
+**When does daylight savings end in 2027?**
+
+Sunday, November 7, 2027, at 2:00 AM local time. Clocks fall back one hour to 1:00 AM, so the night is 25 hours long and you gain an extra hour of sleep. Daylight saving in 2027 started on Sunday, March 14, 2027.
 
 ## Related guides
 
