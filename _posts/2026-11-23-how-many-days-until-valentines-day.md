@@ -24,31 +24,31 @@ excerpt: "Valentine's Day 2027 is 83 days away from November 23, 2026. Count the
 featured_image: /assets/images/how-many-days-until-valentines-day.webp
 image_alt: Close-up of red roses in full bloom
 read_time: 5 min read
-faqs_raw: 'What day of the week is Valentine's Day 2027?
+faqs_raw: 'What day of the week is Valentine''s Day 2027?
 
   Sunday, February 14, 2027. It falls on a weekend, so dinner bookings and flower deliveries land on a Sunday, not a weekday.
 
   ---
 
-  Is Valentine's Day always on February 14?
+  Is Valentine''s Day always on February 14?
 
   Yes. The date never moves. Only the weekday changes from year to year, by one day most years and by two after a leap day.
 
   ---
 
-  Is Valentine's Day a public holiday in the US?
+  Is Valentine''s Day a public holiday in the US?
 
   No. It is not a federal holiday. Schools and offices stay open, and it falls on a Sunday in 2027.
 
   ---
 
-  How many sleeps until Valentine's Day?
+  How many sleeps until Valentine''s Day?
 
   83 sleeps from November 23, 2026, the same as the day count. One sleep per night left until February 14, 2027.
 
   ---
 
-  When is the next Valentine's Day after 2027?
+  When is the next Valentine''s Day after 2027?
 
   Monday, February 14, 2028. After that it is Wednesday, February 14, 2029.'
 permalink: /blog/how-many-days-until-valentines-day/
