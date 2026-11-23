@@ -3,7 +3,7 @@ layout: post
 title: How Many Days Are in a Year? 365 vs 366 Explained
 slug: how-many-days-in-a-year
 date: '2026-10-24'
-last_modified_at: 2026-11-22
+last_modified_at: 2026-11-23
 status: Published
 author: AgeDateCalc Team
 category: Date Guides
@@ -65,7 +65,19 @@ faqs_raw: 'How many days are in a leap year?
 
   Does a year ever have 366 days?
 
-  Yes. A leap year has 366 days, with February 29 as the extra day. 2026 has 365 days. The next leap year is 2028, then 2032. Any year divisible by 4 is a leap year, except century years, which must also be divisible by 400.'
+  Yes. A leap year has 366 days, with February 29 as the extra day. 2026 has 365 days. The next leap year is 2028, then 2032. Any year divisible by 4 is a leap year, except century years, which must also be divisible by 400.
+
+  ---
+
+  What is a 366 days contract?
+
+  A 366 days contract is a contract period of 366 days, which is one leap year in length. A 366-day span ends on the same calendar date one year later only when it covers a February 29. For example, a contract starting February 29, 2028 runs 366 days to March 1, 2029, because February 28, 2029 is only 365 days later and 2029 has no February 29.
+
+  ---
+
+  2026 is 365 or 366 days?
+
+  2026 is 365 days, not 366 days. It is a common year because 2026 does not divide evenly by 4, so February 2026 has 28 days. The next year with 366 days is 2028, a leap year with February 29.'
 permalink: /blog/how-many-days-in-a-year/
 tool_url: /date-difference-calculator/
 tool_name: Date Difference Calculator
@@ -94,6 +106,31 @@ The full rule: [a year is a leap year if divisible by 4](https://www.timeanddate
 | 2028 | 366 | Yes |
 | 2029 | 365 | No |
 | 2030 | 365 | No |
+
+## 366 days in a year
+
+**Short answer:** a year has 366 days only when it is a leap year. A leap year adds February 29, so February has 29 days instead of 28 and the year total rises from 365 to 366. A common year has 365 days.
+
+Years have 366 days because Earth takes about 365.2422 days to orbit the Sun. Adding one day roughly every four years keeps the calendar in step with the seasons. A year is a leap year if it divides evenly by 4, except century years, which must also divide by 400. Check any year with the [Leap Year Calculator]({{ '/leap-year-calculator/' | relative_url }}).
+
+| Year | Days | Type |
+|---|---|---|
+| 2024 | 366 | Leap year |
+| 2025 | 365 | Common year |
+| 2026 | 365 | Common year |
+| 2027 | 365 | Common year |
+| 2028 | 366 | Leap year |
+| 2032 | 366 | Leap year |
+
+So 2026 is 365 days, not 366, and 2028 is the next year with 366 days. For the full list and what February 29 means for birthdays, see [Is 2028 a Leap Year?]({{ '/blog/is-2028-a-leap-year/' | relative_url }}).
+
+### 366 days contract
+
+A "366 days contract" means a contract period of 366 days, which is one leap year in length. It does not mean one calendar year in every case, because a calendar year is 365 days unless it is a leap year.
+
+How a 366-day span works depends on whether it covers a February 29. A 366-day span that starts on January 1, 2028 ends on January 1, 2029, the same calendar date one year later, because the span covers February 29, 2028. A 366-day span that starts after February 29, for example March 1, 2028, ends on March 2, 2029, one day later than the same calendar date, because that span covers no February 29.
+
+Worked example: a contract starting February 29, 2028 runs 366 days to March 1, 2029, not February 28, 2029. February 28, 2029 is only 365 days after February 29, 2028, because 2029 is not a leap year and has no February 29. So when a 366-day contract starts on February 29 itself, the end date falls one day past the February 28 anniversary.
 
 ## How many days into the year are we?
 
@@ -182,6 +219,14 @@ August has 31 days, in every year. It is one of the seven 31-day months: January
 **Does a year ever have 366 days?**
 
 Yes. A leap year has 366 days, with February 29 as the extra day. 2026 has 365 days. The next leap year is 2028, then 2032. Any year divisible by 4 is a leap year, except century years, which must also be divisible by 400.
+
+**What is a 366 days contract?**
+
+A 366 days contract is a contract period of 366 days, which is one leap year in length. A 366-day span ends on the same calendar date one year later only when it covers a February 29. For example, a contract starting February 29, 2028 runs 366 days to March 1, 2029, because February 28, 2029 is only 365 days later and 2029 has no February 29.
+
+**2026 is 365 or 366 days?**
+
+2026 is 365 days, not 366 days. It is a common year because 2026 does not divide evenly by 4, so February 2026 has 28 days. The next year with 366 days is 2028, a leap year with February 29.
 
 ## Related guides
 
