@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-22
 meta_title: "Business Days Calculator: Count Work Days"
 description: Count business days between two dates, or days worked since any date. Weekends and US federal holidays removed. Free, no sign-up.
 permalink: /business-days-calculator/
