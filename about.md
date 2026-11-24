@@ -2,7 +2,7 @@
 layout: default
 title: About AgeDateCalc | Free Date and Time Tools
 meta_title: About AgeDateCalc - Free Date and Time Tools
-description: Learn what AgeDateCalc is, who builds it, and how our ten free date and time tools work. No sign-up, no tracking, private by design.
+description: Learn what AgeDateCalc is, who builds it, and how our eleven free date and time tools work. No sign-up, no tracking, private by design.
 last_modified_at: 2026-11-24
 permalink: /about/
 schema: |
