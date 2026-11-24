@@ -115,8 +115,8 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "{{ page.title | escape }}",
-  "description": "{{ page.meta_description | default: page.description | escape }}",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.meta_description | default: page.description | jsonify }},
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
   "author": {
@@ -156,7 +156,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "{{ page.title | escape }}",
+      "name": {{ page.title | jsonify }},
       "item": "{{ page.url | absolute_url }}"
     }
   ]
@@ -184,7 +184,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "{{ page.breadcrumb | escape }}",
+      "name": {{ page.breadcrumb | jsonify }},
       "item": "{{ page.url | absolute_url }}"
     }
   ]
