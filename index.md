@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-19
 title: Age Date Calculator - Free Date and Time Tools
 meta_title: "Age Date Calculator - Free Date and Time Tools"
 description: "Age Date Calculator: find your exact age, count days between dates, run countdowns, use a stopwatch, and convert time zones. Free, no sign-up."
