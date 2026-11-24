@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-17
 title: Online Stopwatch with Lap Times - Free
 meta_title: "Online Stopwatch with Lap Times - Free & Precise"
 description: Free online stopwatch with lap and split times. Time workouts, study sessions and races with start, pause, reset and lap recording. No sign-up.
