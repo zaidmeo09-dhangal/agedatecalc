@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-19
 meta_title: "Time Duration Calculator: Hours Between Two Times"
 description: Find the time duration between two times in hours, minutes and seconds. Add or subtract time, handle overnight spans. Free, no sign-up.
 permalink: /time-duration-calculator/
