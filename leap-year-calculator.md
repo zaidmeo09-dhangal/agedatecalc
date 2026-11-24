@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-22
 meta_title: "Leap Year Calculator: Is This a Leap Year?"
 description: Check if any year is a leap year and list leap years in a range. See the three rules, the next leap year, and February 29 dates. Free, no sign-up.
 permalink: /leap-year-calculator/
