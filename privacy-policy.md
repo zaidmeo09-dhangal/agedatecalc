@@ -3,6 +3,7 @@ layout: default
 title: "Privacy Policy: How AgeDateCalc Handles Data"
 meta_title: "Privacy Policy: How AgeDateCalc Handles Data"
 description: How AgeDateCalc handles your data, cookies, and analytics. Our tools run in your browser, and we do not collect or sell your tool inputs.
+last_modified_at: 2026-11-24
 permalink: /privacy-policy/
 schema: |
   {
@@ -20,7 +21,7 @@ schema: |
     <span class="badge">Legal</span>
     <h1>Privacy Policy</h1>
     <p class="lead">How we handle your data, cookies, and advertising. Short and honest.</p>
-    <span class="update-badge">Last updated: November 11, 2026</span>
+    <span class="update-badge">Last updated: November 24, 2026</span>
   </div>
 </section>
 
@@ -30,6 +31,17 @@ schema: |
     <div class="legal-card legal-summary">
       <h2><span class="licon">⚡</span> Short version</h2>
       <p style="margin-bottom:0">Our tools run in your browser. We do not collect, store, or sell the dates you enter.</p>
+    </div>
+
+    <div class="legal-card">
+      <h2><span class="licon">📋</span> What data is collected</h2>
+      <p>We collect very little data. Here is the full list:</p>
+      <ul>
+        <li><strong>Google Analytics 4 (Measurement ID G-Q6NE2Q4XTM):</strong> pages viewed, browser and device information, and approximate location. This tells us which tools people use, so we know what to improve.</li>
+        <li><strong>Theme preference:</strong> stored in your browser local storage on your device, so the site remembers your light or dark theme. It is not sent to us.</li>
+        <li><strong>Contact email:</strong> your email address and your message, only when you email us. We use it only to reply to you.</li>
+      </ul>
+      <p style="margin-bottom:0">No accounts, no tool inputs collected. There is no account system on this site, and the dates and times you enter into the tools are never collected, stored, or sent to us.</p>
     </div>
 
     <div class="legal-card">
