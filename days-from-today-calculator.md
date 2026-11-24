@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-23
 meta_title: "Days From Today Calculator: Add or Subtract Days"
 description: Find the date 90, 60, 30 or any number of days from today, or count back. Add days, weeks, months or years. Free, no sign-up.
 permalink: /days-from-today-calculator/
