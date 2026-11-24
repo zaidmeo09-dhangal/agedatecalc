@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-22
 meta_title: "Birthday Countdown: Days Until Your Birthday"
 description: Count down to your next birthday in days, hours, minutes and seconds. See the weekday of your next birthday and the age you will turn. Free, no sign-up.
 permalink: /birthday-countdown/
