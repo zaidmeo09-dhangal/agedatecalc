@@ -3,6 +3,7 @@ layout: default
 title: "Terms of Service: Using AgeDateCalc Tools"
 meta_title: "Terms of Service: Using AgeDateCalc Tools"
 description: The terms for using AgeDateCalc's free date and time tools, including acceptable use, accuracy limits, and advertising disclosure.
+last_modified_at: 2026-11-24
 permalink: /terms/
 schema: |
   {
@@ -20,7 +21,7 @@ schema: |
     <span class="badge">Legal</span>
     <h1>Terms of Service</h1>
     <p class="lead">The simple rules for using our free date and time tools.</p>
-    <span class="update-badge">Last updated: October 18, 2026</span>
+    <span class="update-badge">Last updated: November 24, 2026</span>
   </div>
 </section>
 
@@ -35,12 +36,14 @@ schema: |
     <div class="legal-card">
       <h2><span class="licon">🧮</span> The tools</h2>
       <p>All calculators, timers, and converters on this site are provided free of charge for general informational purposes. While we work hard to keep every calculation accurate, including leap year and time zone handling, results are not guaranteed to be error-free.</p>
-      <p style="margin-bottom:0">Do not rely on our tools for decisions where an error could cause harm, such as legal deadlines, medical timing, or financial contracts. Always verify critical dates independently.</p>
+      <p style="margin-bottom:0">Results are estimates for general information only. Do not rely on our tools for decisions where an error could cause harm, such as legal deadlines, medical timing, or financial contracts. Always verify critical dates independently before acting on them.</p>
     </div>
 
     <div class="legal-card">
       <h2><span class="licon">✅</span> Acceptable use</h2>
-      <p style="margin-bottom:0">You agree not to misuse the site, attempt to disrupt it, or use it for any unlawful purpose.</p>
+      <p>Personal use is fine. You may use the tools for your own planning, study, work, and everyday questions, and you may link to our tools freely from your own website, blog, or social media.</p>
+      <p>Do not republish substantial portions of the site as your own, including copying our text, guides, or tool pages onto another website. Do not use automated scraping or send bulk requests that degrade the service for other visitors, and do not attempt to disrupt the site or access parts of it you were not given access to.</p>
+      <p style="margin-bottom:0">You agree not to misuse the site or use it for any unlawful purpose. If you are unsure whether a use is allowed, contact the AgeDateCalc Team first.</p>
     </div>
 
     <div class="legal-card">
