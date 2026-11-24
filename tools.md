@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-19
 title: All Free Date and Time Tools
 meta_title: "All Free Date and Time Tools in One Place"
 description: Browse every free date and time tool in one place. Age, business days, countdowns, stopwatch, time zones, leap years, birthdays. No sign-up.
