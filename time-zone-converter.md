@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-17
 meta_title: "Time Zone Converter - Convert Time Between World Time Zones"
 description: Convert any time between world time zones instantly. Compare cities, check UTC offsets and daylight saving changes. Free, no sign-up.
 permalink: /time-zone-converter/
