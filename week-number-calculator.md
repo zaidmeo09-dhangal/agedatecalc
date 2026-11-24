@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-22
 meta_title: "Week Number Calculator: What Week Is It Now?"
 description: Find the ISO week number of any date, with the week Monday to Sunday range and the day of the year. See what week it is now, free, no sign-up.
 permalink: /week-number-calculator/
