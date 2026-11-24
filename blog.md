@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-14
 title: Blog - Date and Time Guides | AgeDateCalc
 meta_title: Date and Time Blog - Free Guides and Tools
 description: Practical guides about age calculation, time zones, daylight saving, countdowns, and getting the most out of date and time tools.
