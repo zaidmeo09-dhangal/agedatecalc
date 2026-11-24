@@ -1,5 +1,6 @@
 ---
 layout: default
+last_modified_at: 2026-11-22
 meta_title: "Date Difference Calculator: Days Between Two Dates"
 description: Use this age calculator between two dates to find the age in years, months, and days, or count the exact days between them. Fast, free, no sign-up.
 permalink: /date-difference-calculator/
