@@ -96,7 +96,7 @@ The span holds 64 weekdays. Five of them are US federal holidays, which leaves *
 |---|---|---|---|
 | November 2026 | 5 | Thanksgiving (Nov 26) | 4 |
 | December 2026 | 23 | Christmas Day (Dec 25) | 22 |
-| January 2027 | 21 | New Years Day (Jan 1), Martin Luther King Jr. Day (Jan 19) | 19 |
+| January 2027 | 21 | New Years Day (Jan 1), Martin Luther King Jr. Day (Jan 18) | 19 |
 | February 2027 | 15 | Presidents Day (Feb 15) | 14 |
 | Total | 64 | 5 | 59 |
 
