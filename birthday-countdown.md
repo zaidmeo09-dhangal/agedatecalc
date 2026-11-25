@@ -119,7 +119,7 @@ related_posts:
       </div>
       <button class="btn btn-primary btn-block" id="bc-btn" type="button">Start My Countdown</button>
       <div id="bc-result"></div>
-      <p class="result-note" style="font-size:.82rem;margin-top:12px">Your date of birth never leaves your browser. The countdown runs on your local time.</p>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Your date of birth stays in your browser unless you click Copy share link, which puts it in the link URL. The countdown runs on your local time.</p>
       <p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="bc-share-btn">Copy share link</button> <span id="bc-share-msg" style="font-size:.85rem"></span></p>
     </div>
   </div>
@@ -345,17 +345,22 @@ Both tools use the same date math, so they never disagree. Your next birthday fr
     if(timer){ clearInterval(timer); }
     render(target, dob, ageTurns);
     timer = setInterval(function(){ render(target, dob, ageTurns); }, 1000);
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("dob", val);
-      window.history.replaceState(null, "", u.toString());
-    }catch(e){}
   });
   document.getElementById("bc-share-btn").addEventListener("click", function(){
     var msg = document.getElementById("bc-share-msg");
     function done(t){ if(msg){ msg.textContent = t; } }
+    var link = window.location.href;
+    try{
+      var dobVal = document.getElementById("bc-dob").value;
+      if(dobVal && /^\d{4}-\d{2}-\d{2}$/.test(dobVal)){
+        var u = new URL(window.location.href);
+        u.searchParams.set("dob", dobVal);
+        window.history.replaceState(null, "", u.toString());
+        link = u.toString();
+      }
+    }catch(e){}
     if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+      navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
     }else{ done("Copy this page URL to share."); }
   });
 
