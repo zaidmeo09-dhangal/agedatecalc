@@ -289,45 +289,11 @@ More "how many days ago" answers, all counted the same way from November 22, 202
 - **Leap years:** any period crossing February 2024 includes a 29th that 2025 and 2026 do not have.
 - **Times in different zones:** this tool counts whole calendar days. If your dates come with times in different time zones, convert them first with the [Time Zone Converter]({{ '/time-zone-converter/' | relative_url }}), then count the days.
 
-## US federal holidays 2026 and 2027
+## US federal holidays and business days
 
-Business-day math lives or dies on the holiday list. These are the US federal holidays under 5 U.S.C. 6103. When a holiday falls on a weekend, federal offices observe it on the nearest weekday (Friday for Saturday, Monday for Sunday), which is the date most US employers actually close.
+Business-day counts exclude the 11 US federal holidays under 5 U.S.C. 6103: New Year's Day, Martin Luther King Jr. Day, Presidents' Day, Memorial Day, Juneteenth, Independence Day, Labor Day, Columbus Day, Veterans Day, Thanksgiving, and Christmas Day. This calculator counts the weekdays in your range but does not subtract holidays, so subtract any observed holidays that fall inside the range yourself. The full holiday table for 2026 and 2027, with observed dates, lives on the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}), which subtracts them automatically.
 
-### 2026 federal holidays
-
-| Holiday | Date | Observed |
-|---|---|---|
-| New Year's Day | Thursday, January 1 | Jan 1 |
-| Martin Luther King Jr. Day | Monday, January 19 | Jan 19 |
-| Presidents' Day | Monday, February 16 | Feb 16 |
-| Memorial Day | Monday, May 25 | May 25 |
-| Juneteenth | Friday, June 19 | Jun 19 |
-| Independence Day | Saturday, July 4 | Friday, July 3 |
-| Labor Day | Monday, September 7 | Sep 7 |
-| Columbus Day | Monday, October 12 | Oct 12 |
-| Veterans Day | Wednesday, November 11 | Nov 11 |
-| Thanksgiving | Thursday, November 26 | Nov 26 |
-| Christmas Day | Friday, December 25 | Dec 25 |
-
-### 2027 federal holidays
-
-| Holiday | Date | Observed |
-|---|---|---|
-| New Year's Day | Friday, January 1 | Jan 1 |
-| Martin Luther King Jr. Day | Monday, January 18 | Jan 18 |
-| Presidents' Day | Monday, February 15 | Feb 15 |
-| Memorial Day | Monday, May 31 | May 31 |
-| Juneteenth | Saturday, June 19 | Friday, June 18 |
-| Independence Day | Sunday, July 4 | Monday, July 5 |
-| Labor Day | Monday, September 6 | Sep 6 |
-| Columbus Day | Monday, October 11 | Oct 11 |
-| Veterans Day | Thursday, November 11 | Nov 11 |
-| Thanksgiving | Thursday, November 25 | Nov 25 |
-| Christmas Day | Saturday, December 25 | Friday, December 24 |
-
-**Business days shortcut:** the calculator counts the weekdays in your range for you. It does not subtract holidays, so subtract the observed holidays that fall inside the range yourself. For a count that subtracts them automatically, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). Example: a project running Monday, November 23 to Friday, December 4, 2026 has 9 weekdays after the start date (November 24 to December 4). Subtract Thanksgiving (Nov 26) to get 8 business days.
-
-**Sources:** holiday dates and observed-date rules follow the US Office of Personnel Management (OPM.gov) federal holiday schedule and 5 U.S.C. 6103.
+Example: a project running Monday, November 23 to Friday, December 4, 2026 has 9 weekdays after the start date (November 24 to December 4). Subtract Thanksgiving (Nov 26) to get 8 business days.
 
 ## How to calculate years between 2 dates
 
@@ -472,7 +438,7 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
       '<div class="result-box"><span class="num">' + biz.toLocaleString() + '</span><span class="lbl">Business days</span></div>' +
       '</div>' +
       '<p class="result-note">From <strong>' + fmtDate(d1) + '</strong> to <strong>' + fmtDate(d2) + '</strong>' + (inc ? ' (end date included)' : '') + '.</p>' +
-      '<p class="result-note">Business days are weekdays (Monday to Friday)' + (inc ? ' including both dates' : ', excluding the start date and including the end date') + '. US federal holidays are not subtracted, see the holiday tables below.</p>' +
+      '<p class="result-note">Business days are weekdays (Monday to Friday)' + (inc ? ' including both dates' : ', excluding the start date and including the end date') + '. US federal holidays are not subtracted, see the Business Days Calculator for the full holiday list.</p>' +
       '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="dd-share-btn">Copy share link</button> <span id="dd-share-msg" style="font-size:.85rem"></span></p>';
     try{
       var u = new URL(window.location.href);
