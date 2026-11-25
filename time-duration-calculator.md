@@ -34,7 +34,7 @@ schema: |
             "name": "How do I calculate the time duration between two times?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Enter the start time and the end time. 9:00 AM to 5:00 PM is 8 hours. If the end time is earlier than the start time, the calculator counts it as the next day."
+              "text": "Enter the start time and the end time. 9:00 AM to 5:00 PM is 8 hours. If the end time falls on the next day, tick the overnight box and the calculator counts it as the next day."
             }
           },
           {
@@ -42,7 +42,7 @@ schema: |
             "name": "What is the time duration from 10 PM to 6 AM?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "8 hours. 10:00 PM to 6:00 AM the next day is 8 hours, counted overnight."
+              "text": "8 hours. 10:00 PM to 6:00 AM the next day is 8 hours, counted overnight with the overnight box ticked."
             }
           },
           {
@@ -74,7 +74,7 @@ schema: |
             "name": "Does the calculator handle overnight spans?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. If the end time is earlier than the start time, it counts as the next day and says so in the result. 11:45 PM to 12:15 AM is 30 minutes."
+              "text": "Yes. Tick the overnight box when the end time falls on the next day, and the calculator counts it as the next day and says so in the result. 11:45 PM to 12:15 AM is 30 minutes."
             }
           },
           {
@@ -113,9 +113,12 @@ related_posts:
         <label for="tdc-end">End date and time</label>
         <input type="datetime-local" id="tdc-end">
       </div>
+      <div class="field">
+        <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="tdc-overnight" style="width:auto"> End time is on the next day (overnight)</label>
+      </div>
       <button class="btn btn-primary btn-block" id="tdc-btn" type="button">Calculate Duration</button>
       <div id="tdc-result"></div>
-      <p class="result-note" style="font-size:.82rem;margin-top:12px">If the end time is earlier than the start time, it counts as the next day, and the result says so. Seconds are included when the times have them.</p>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">If the end time falls on the next day, tick "End time is on the next day (overnight)". The same start and end means 0. Seconds are included when the times have them.</p>
       <p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="tdc-share-btn">Copy share link</button> <span id="tdc-share-msg" style="font-size:.85rem"></span></p>
       <hr style="border:0;border-top:1px solid var(--border);margin:24px 0">
       <h2 style="font-size:1.15rem;margin-bottom:12px">Quick picks</h2>
@@ -139,7 +142,8 @@ related_posts:
 Enter a start date and time and an end date and time. The calculator subtracts the start from the end and shows the duration in days, hours, minutes and seconds, plus the totals in hours, minutes and seconds.
 
 - **Same day:** 9:00 AM to 5:00 PM is 8 hours.
-- **Overnight:** if the end time is earlier than the start time, it counts as the next day. 10:00 PM to 6:00 AM is 8 hours, not a negative number.
+- **Same start and end:** the duration is 0.
+- **Overnight:** tick "End time is on the next day (overnight)" when the end time falls on the next day. 10:00 PM to 6:00 AM is 8 hours, not a negative number.
 - **Across days:** pick different dates and the result includes full days. November 19, 2026 9:00 AM to November 21, 2026 5:30 PM is 2 days 8 hours 30 minutes.
 - **Totals:** the same duration is also shown as total hours with decimals, total minutes and total seconds, for payroll and billing.
 
@@ -158,7 +162,7 @@ The long example is 56.5 hours in total, or 3,390 minutes, or 203,400 seconds. T
 
 ## Overnight spans
 
-A duration that crosses midnight is the case most calculators get wrong. This one counts the end as the next day whenever it is earlier than the start, and says so in the result.
+A duration that crosses midnight is the case most calculators get wrong. Tick the overnight box and this one counts the end as the next day, and says so in the result. Without the box ticked, an end earlier than the start is rejected with a message instead of silently flipping to the next day.
 
 - **Night shift:** 10:00 PM to 6:00 AM is 8 hours.
 - **Short hop past midnight:** 11:45 PM to 12:15 AM is 30 minutes.
@@ -202,11 +206,11 @@ The square brackets around h stop Excel from resetting the hour count after 24 h
 <div class="faq">
 <details>
 <summary>How do I calculate the time duration between two times?</summary>
-<p>Enter the start time and the end time. 9:00 AM to 5:00 PM is 8 hours. If the end time is earlier than the start time, the calculator counts it as the next day.</p>
+<p>Enter the start time and the end time. 9:00 AM to 5:00 PM is 8 hours. If the end time falls on the next day, tick the overnight box and the calculator counts it as the next day.</p>
 </details>
 <details>
 <summary>What is the time duration from 10 PM to 6 AM?</summary>
-<p>8 hours. 10:00 PM to 6:00 AM the next day is 8 hours, counted overnight.</p>
+<p>8 hours. 10:00 PM to 6:00 AM the next day is 8 hours, counted overnight with the overnight box ticked.</p>
 </details>
 <details>
 <summary>How do I add time durations?</summary>
@@ -222,7 +226,7 @@ The square brackets around h stop Excel from resetting the hour count after 24 h
 </details>
 <details>
 <summary>Does the calculator handle overnight spans?</summary>
-<p>Yes. If the end time is earlier than the start time, it counts as the next day and says so in the result. 11:45 PM to 12:15 AM is 30 minutes.</p>
+<p>Yes. Tick the overnight box when the end time falls on the next day, and the calculator counts it as the next day and says so in the result. 11:45 PM to 12:15 AM is 30 minutes.</p>
 </details>
 <details>
 <summary>How do I calculate a datetime difference?</summary>
@@ -295,9 +299,19 @@ The square brackets around h stop Excel from resetting the hour count after 24 h
     var end = new Date(eRaw);
     if(isNaN(start.getTime()) || isNaN(end.getTime())){ out.innerHTML = '<p class="result-note">Please enter valid dates and times.</p>'; return; }
     var overnight = false;
-    if(end <= start){
-      end = new Date(end.getTime() + 86400000);
-      overnight = true;
+    var overnightBox = document.getElementById("tdc-overnight");
+    if(end < start){
+      if(overnightBox && overnightBox.checked){
+        end = new Date(end.getTime() + 86400000);
+        overnight = true;
+        if(end < start){
+          out.innerHTML = '<p class="result-note">The end is more than a day before the start, so even counting it as the next day does not work. Please pick an end date and time that comes after the start.</p>';
+          return;
+        }
+      } else {
+        out.innerHTML = '<p class="result-note">The end date and time is before the start. Pick an end that comes after the start, or tick "End time is on the next day (overnight)" if the end time falls on the next day.</p>';
+        return;
+      }
     }
     var totalSeconds = Math.round((end - start) / 1000);
     var totalHours = totalSeconds / 3600;
@@ -311,12 +325,6 @@ The square brackets around h stop Excel from resetting the hour count after 24 h
       '<div class="result-box"><span class="num">' + Math.round(totalMinutes).toLocaleString() + '</span><span class="lbl">Total minutes</span></div>' +
       '</div>' +
       '<p class="result-note">From <strong>' + fmtDT(start) + '</strong> to <strong>' + fmtDT(end) + '</strong> is <strong>' + dur + '</strong> (' + totalSeconds.toLocaleString() + ' seconds).</p>' + note;
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("start", sRaw);
-      u.searchParams.set("end", eRaw);
-      window.history.replaceState(null, "", u.toString());
-    }catch(e){}
   }
 
   function todayStr(offsetDays){
@@ -340,8 +348,21 @@ The square brackets around h stop Excel from resetting the hour count after 24 h
   document.getElementById("tdc-share-btn").addEventListener("click", function(){
     var msg = document.getElementById("tdc-share-msg");
     function done(t){ if(msg){ msg.textContent = t; } }
+    var link = window.location.href;
+    try{
+      var sRaw = document.getElementById("tdc-start").value;
+      var eRaw = document.getElementById("tdc-end").value;
+      var dtRe = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?$/;
+      if(sRaw && eRaw && dtRe.test(sRaw) && dtRe.test(eRaw)){
+        var u = new URL(window.location.href);
+        u.searchParams.set("start", sRaw);
+        u.searchParams.set("end", eRaw);
+        window.history.replaceState(null, "", u.toString());
+        link = u.toString();
+      }
+    }catch(e){}
     if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+      navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
     }else{ done("Copy this page URL to share."); }
   });
 
