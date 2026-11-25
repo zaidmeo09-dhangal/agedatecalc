@@ -34,7 +34,7 @@ schema: |
             "name": "How is exact age calculated?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total."
+              "text": "Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. Months land on calendar anchors, so a month from January 31 lands on the last day of February and the day count never goes negative. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total."
             }
           },
           {
@@ -82,7 +82,7 @@ schema: |
             "name": "Is my date of birth stored anywhere?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page."
+              "text": "No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page. The only exception is if you click Copy share link, which puts your birth date in the link URL."
             }
           },
           {
@@ -90,7 +90,7 @@ schema: |
             "name": "How do I calculate age by hand in years, months, and days?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year."
+              "text": "Count full years first, then full months on calendar anchors, then leftover days. A month from January 31 lands on the last day of February, so the day count never goes negative. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our step-by-step guide walks through harder cases like month ends."
             }
           },
           {
@@ -127,7 +127,7 @@ related_posts:
       </div>
       <button class="btn btn-primary btn-block" id="tool-calc-btn" type="button">Calculate My Age</button>
       <div id="tool-age-result"></div>
-      <p class="result-note" style="font-size:.82rem;margin-top:12px">Calendar dates only. No time-zone effects. Your birth date never leaves your browser.</p>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">Calendar dates only. No time-zone effects. Your birth date stays in your browser unless you click Copy share link, which puts it in the link URL.</p>
     </div>
   </div>
 </section>
@@ -152,12 +152,12 @@ Want to save or share the result? Use the Copy share link button to get a link t
 
 ## How the calculator counts your age
 
-The tool uses the borrowing method, the same one taught for manual age math:
+The tool counts whole calendar years, then whole calendar months, then leftover days:
 
 1. Count full years from the birth date first.
 2. Then count full months from where the years stopped.
 3. Then count the leftover days.
-4. If the day of the month would go negative, borrow days from the previous month's actual length (28, 29, 30, or 31, never an average).
+4. Months land on calendar anchors: a month from January 31 lands on the last day of February, so the leftover days never go negative.
 
 No approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method with harder cases, see our guide on [how to calculate your exact age]({{ '/blog/how-to-calculate-age/' | relative_url }}).
 
@@ -171,7 +171,7 @@ Born **June 15, 1990**, measured **October 19, 2026**:
 
 The answer is **36 years, 4 months, 4 days**, or **13,275 days** in total. June 15, 1990 was a Friday.
 
-Notice the borrow in action if we measured one day earlier, on October 14: the day subtraction (14 minus 15) goes negative, so we borrow September's 30 days, giving 3 months and 29 days instead. Adding days to a date instead? Try the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}).
+Notice the same count one day earlier, on October 14: three full months reach September 15, and 29 leftover days reach October 14, giving 3 months and 29 days instead. Adding days to a date instead? Try the [Days From Today Calculator]({{ '/days-from-today-calculator/' | relative_url }}).
 
 ## Born on February 29?
 
@@ -228,7 +228,7 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
 <div class="faq">
 <details>
 <summary>How is exact age calculated?</summary>
-<p>Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total.</p>
+<p>Subtract the birth date from the target date using calendar math: full years first, then full months, then leftover days. Months land on calendar anchors, so a month from January 31 lands on the last day of February and the day count never goes negative. Example: born June 15, 1990, measured October 19, 2026. That is 36 years, 4 months, and 4 days, or 13,275 days in total.</p>
 </details>
 <details>
 <summary>Can I find my age on a specific past or future date?</summary>
@@ -252,7 +252,7 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
 </details>
 <details>
 <summary>Is my date of birth stored anywhere?</summary>
-<p>No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page. Closing the tab erases it.</p>
+<p>No. The calculation runs entirely in your browser. Your birth date is never sent to a server, saved in a database, or used for anything except producing your result on the page. The only exception is if you click Copy share link, which puts your birth date in the link URL. Closing the tab erases it.</p>
 </details>
 <details>
 <summary>What year was I born in to turn 21?</summary>
@@ -260,7 +260,7 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
 </details>
 <details>
 <summary>How do I calculate age by hand in years, months, and days?</summary>
-<p>Write the target date above the birth date as year, month, day. Subtract day from day, borrowing the previous month's actual days if negative. Subtract month from month, borrowing 12 months if negative. Subtract year from year. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our <a href="/blog/how-to-calculate-age/">step-by-step guide</a> walks through harder cases like month ends.</p>
+<p>Count full years first, then full months on calendar anchors, then leftover days. A month from January 31 lands on the last day of February, so the day count never goes negative. Example: October 19, 2026 minus June 15, 1990 gives 36 years, 4 months, 4 days. Our <a href="/blog/how-to-calculate-age/">step-by-step guide</a> walks through harder cases like month ends.</p>
 </details>
 </div>
 
@@ -303,6 +303,35 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
     if(m === 1 && d === 29 && !isLeap(year)){ m = 2; d = 1; }
     return new Date(year, m, d);
   }
+  /* Shared date decomposition (same code in age-calculator.md, date-difference-calculator.md, assets/js/main.js).
+     Whole years, then whole months, then leftover days, counted on calendar anchors.
+     Adding months clamps to the last day of the target month, and a Feb 29
+     anniversary falls on Mar 1 in non-leap years, so no component ever goes negative. */
+  function isLeapYear(y){ return (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0); }
+  function makeDate(y, m, d){ var dt = new Date(0); dt.setFullYear(y, m, d); dt.setHours(0, 0, 0, 0); return dt; }
+  function daysInMonth(y, m){ return makeDate(y, m + 1, 0).getDate(); }
+  function utcDayNumber(d){ return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000; }
+  function addMonthsClamped(d, n){
+    var total = d.getFullYear() * 12 + d.getMonth() + n;
+    var y = Math.floor(total / 12), m = total - y * 12;
+    return makeDate(y, m, Math.min(d.getDate(), daysInMonth(y, m)));
+  }
+  function anniversaryOf(from, year){
+    var m = from.getMonth(), d = from.getDate();
+    if(m === 1 && d === 29 && !isLeapYear(year)){ return makeDate(year, 2, 1); }
+    return makeDate(year, m, Math.min(d, daysInMonth(year, m)));
+  }
+  function decomposeDates(from, to){
+    /* from must be on or before to; returns { years, months, days }, all >= 0. */
+    var y = 0;
+    while(anniversaryOf(from, from.getFullYear() + y + 1) <= to){ y += 1; }
+    var anchor = anniversaryOf(from, from.getFullYear() + y);
+    var mo = 0;
+    while(mo < 11 && addMonthsClamped(anchor, mo + 1) <= to){ mo += 1; }
+    anchor = addMonthsClamped(anchor, mo);
+    var d = Math.round(utcDayNumber(to) - utcDayNumber(anchor));
+    return { years: y, months: mo, days: d };
+  }
   function run(){
     var input = document.getElementById("tool-dob");
     var out = document.getElementById("tool-age-result");
@@ -311,18 +340,16 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
     var now = new Date();
     if(isNaN(dob.getTime()) || dob > now){ out.innerHTML = '<p class="result-note">Please enter a valid date of birth in the past.</p>'; return; }
 
-    var y = now.getFullYear() - dob.getFullYear();
-    var mo = now.getMonth() - dob.getMonth();
-    var d = now.getDate() - dob.getDate();
-    if(d < 0){ mo -= 1; d += new Date(now.getFullYear(), now.getMonth(), 0).getDate(); }
-    if(mo < 0){ y -= 1; mo += 12; }
+    var parts = decomposeDates(dob, now);
+    var y = parts.years, mo = parts.months, d = parts.days;
 
     var totalDays = Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(dob.getFullYear(), dob.getMonth(), dob.getDate())) / 86400000);
     var totalMonths = y * 12 + mo;
     var totalWeeks = Math.floor(totalDays / 7);
     var weekday = dob.toLocaleDateString("en-US", { weekday: "long" });
+    var todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     var next = bday(dob, now.getFullYear());
-    if(next <= now){ next = bday(dob, now.getFullYear() + 1); }
+    if(next < todayStart){ next = bday(dob, now.getFullYear() + 1); }
     var daysTo = Math.round((Date.UTC(next.getFullYear(), next.getMonth(), next.getDate()) - Date.UTC(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
     var nextStr = next.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
@@ -336,6 +363,7 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
       '<div class="result-box"><span class="num">' + daysTo + '</span><span class="lbl">Days to next birthday</span></div>' +
       '</div>' +
       '<p class="result-note">Your next birthday is on <strong>' + nextStr + '</strong>.</p>' +
+      (daysTo === 0 ? '<p class="result-note"><strong>Happy birthday!</strong> Today is your birthday.</p>' : '') +
       '<h3 style="margin:20px 0 4px;font-size:1.05rem">Your life in numbers</h3>' +
       '<div class="stat-grid">' +
       '<div class="stat-box"><span class="num" data-count="' + (totalDays * 24).toLocaleString() + '">0</span><span class="lbl">Hours lived</span></div>' +
@@ -364,15 +392,16 @@ Replace birth_date with the cell holding the date of birth. Microsoft warns agai
         requestAnimationFrame(step);
       });
     }, 50);
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("dob", input.value);
-      window.history.replaceState(null, "", u.toString());
-    }catch(e){}
     var shareBtn = document.getElementById("age-share-btn");
     if(shareBtn){
       shareBtn.addEventListener("click", function(){
-        var link = window.location.href;
+        var link;
+        try{
+          var u = new URL(window.location.href);
+          u.searchParams.set("dob", input.value);
+          window.history.replaceState(null, "", u.toString());
+          link = u.toString();
+        }catch(e){ link = window.location.href; }
         var msg = document.getElementById("age-share-msg");
         function done(t){ if(msg){ msg.textContent = t; } }
         if(navigator.clipboard && navigator.clipboard.writeText){
