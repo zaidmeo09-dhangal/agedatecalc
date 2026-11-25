@@ -345,13 +345,15 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
     var inc = document.getElementById("bd-include-end").checked;
     var exclHol = document.getElementById("bd-holidays").checked;
     var customMap = {};
+    var invalidCustom = [];
     var customRaw = document.getElementById("bd-custom").value || "";
     customRaw.split(/\r?\n/).forEach(function(line){
       var t = line.trim();
+      if(!t){ return; }
       var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(t);
-      if(!m){ return; }
+      if(!m){ if(invalidCustom.indexOf(t) === -1){ invalidCustom.push(t); } return; }
       var cd = new Date(t + "T00:00:00");
-      if(isNaN(cd) || cd.getFullYear() !== +m[1] || cd.getMonth() !== +m[2] - 1 || cd.getDate() !== +m[3]){ return; }
+      if(isNaN(cd) || cd.getFullYear() !== +m[1] || cd.getMonth() !== +m[2] - 1 || cd.getDate() !== +m[3]){ if(invalidCustom.indexOf(t) === -1){ invalidCustom.push(t); } return; }
       customMap[cd.toDateString()] = cd;
     });
     var hols = holidayMap(d1.getFullYear() - 1, d2.getFullYear() + 1);
@@ -385,6 +387,9 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
     }
     if(customList.length){
       holHtml += '<p class="result-note">Custom dates excluded: <strong>' + customList.map(function(d){ return fmtShort(d); }).join(", ") + '</strong>.</p>';
+    }
+    if(invalidCustom.length){
+      holHtml += '<p class="result-note">Not valid dates, so ignored: <strong>' + invalidCustom.map(function(x){ return x.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }).join(", ") + '</strong>. Use YYYY-MM-DD, one date per line.</p>';
     }
     out.innerHTML =
       '<div class="result-grid">' +
