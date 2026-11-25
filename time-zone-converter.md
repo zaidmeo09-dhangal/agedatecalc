@@ -66,7 +66,7 @@ schema: |
                     "name": "What happens during a daylight saving transition weekend?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "In spring the 2:00 AM hour does not exist; in fall the 1:00 AM hour happens twice."
+                              "text": "In spring the 2:00 AM hour does not exist; in fall the 1:00 AM hour happens twice. This converter tells you when a time does not exist, and asks you to pick the first or second occurrence when a time happens twice."
                     }
           },
           {
@@ -241,7 +241,7 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
 </details>
 <details>
 <summary>What happens during a daylight saving transition weekend?</summary>
-<p>In spring, clocks jump from 2:00 AM to 3:00 AM, so that hour does not exist. In fall, clocks fall back from 2:00 AM to 1:00 AM, so that hour happens twice. Conversions for times inside those windows are ambiguous, and most calendar tools resolve them automatically. If you schedule manually, avoid the 1:00-3:00 AM window on transition Sundays.</p>
+<p>In spring, clocks jump from 2:00 AM to 3:00 AM, so that hour does not exist. In fall, clocks fall back from 2:00 AM to 1:00 AM, so that hour happens twice. This converter stops and tells you when a time does not exist, and asks you to pick the first or second occurrence when a time happens twice, showing the UTC offset of each. If you schedule manually, avoid the 1:00-3:00 AM window on transition Sundays.</p>
 </details>
 <details>
 <summary>How do I handle recurring meetings across daylight saving changes?</summary>
@@ -359,35 +359,60 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
     return (asUtc - date.getTime()) / 60000;
   }
 
-  /* Interpret wall-clock components as being IN the given zone -> UTC instant */
-  function wallInZoneToUtc(y, mo, d, h, mi, tz){
-    var guess = Date.UTC(y, mo - 1, d, h, mi);
-    var off = zoneOffsetMinutes(tz, new Date(guess));
-    var utc = guess - off * 60000;
-    /* second pass for DST-edge correctness */
-    var off2 = zoneOffsetMinutes(tz, new Date(utc));
-    if(off2 !== off){ utc = guess - off2 * 60000; }
-    return new Date(utc);
+  /* Wall-clock components of an instant, as shown in a zone */
+  function wallPartsInZone(date, tz){
+    var dtf = new Intl.DateTimeFormat("en-US", {
+      timeZone: tz, year: "numeric", month: "2-digit", day: "2-digit",
+      hour: "2-digit", minute: "2-digit", hour12: false
+    });
+    var parts = {};
+    dtf.formatToParts(date).forEach(function(p){ parts[p.type] = p.value; });
+    return { y: +parts.year, mo: +parts.month, d: +parts.day, h: (+parts.hour) % 24, mi: +parts.minute };
   }
 
-  document.getElementById("tz-btn").addEventListener("click", function(){
+  function fmtOffset(mins){
+    var sign = mins < 0 ? "-" : "+";
+    var abs = Math.abs(mins);
+    var h = Math.floor(abs / 60), m = abs % 60;
+    return "UTC" + sign + h + (m ? ":" + (m < 10 ? "0" : "") + m : "");
+  }
+
+  function zoneTimeLabel(utc, tz){
+    return utc.toLocaleTimeString("en-US", { timeZone: tz, hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+  }
+
+  /* Resolve wall-clock components in a zone to UTC instant(s).
+     Returns { status: "ok", utc, offsetMinutes } for a normal time,
+     { status: "gap" } when the time never happens (spring-forward hour),
+     { status: "ambiguous", candidates: [{ utc, offsetMinutes }] } when it happens twice. */
+  function resolveWallTime(y, mo, d, h, mi, tz){
+    var guess = Date.UTC(y, mo - 1, d, h, mi);
+    var offsets = [];
+    [-12, -6, 0, 6, 12].forEach(function(dh){
+      var off = zoneOffsetMinutes(tz, new Date(guess + dh * 3600000));
+      if(offsets.indexOf(off) === -1){ offsets.push(off); }
+    });
+    var found = [];
+    offsets.forEach(function(off){
+      var utc = new Date(guess - off * 60000);
+      var w = wallPartsInZone(utc, tz);
+      if(w.y === y && w.mo === mo && w.d === d && w.h === h && w.mi === mi){
+        if(found.every(function(f){ return f.utc.getTime() !== utc.getTime(); })){
+          found.push({ utc: utc, offsetMinutes: off });
+        }
+      }
+    });
+    found.sort(function(a, b){ return a.utc - b.utc; });
+    if(found.length === 0){ return { status: "gap" }; }
+    if(found.length === 1){ return { status: "ok", utc: found[0].utc, offsetMinutes: found[0].offsetMinutes }; }
+    return { status: "ambiguous", candidates: found };
+  }
+
+  function showConversion(d){
     var out = document.getElementById("tz-result");
-    var val = document.getElementById("tz-datetime").value;
-    if(!val){ out.innerHTML = '<p class="result-note">Please pick a date and time.</p>'; return; }
-    var m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/.exec(val);
-    if(!m){ out.innerHTML = '<p class="result-note">Please enter a valid date and time.</p>'; return; }
     var from = fromSel.value, to = toSel.value;
     var fromName = fromSel.options[fromSel.selectedIndex].text;
     var toName = toSel.options[toSel.selectedIndex].text;
-    /* The entered time is in the FROM zone, not the device zone */
-    var d = wallInZoneToUtc(+m[1], +m[2], +m[3], +m[4], +m[5], from);
-    if(isNaN(d.getTime())){ out.innerHTML = '<p class="result-note">Please enter a valid date and time.</p>'; return; }
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("from", from); u.searchParams.set("to", to);
-      if(val){ u.searchParams.set("at", val); }
-      window.history.replaceState(null, "", u.toString());
-    }catch(e){}
     out.innerHTML =
       '<div class="result-box" style="margin-top:16px;text-align:left">' +
       '<p style="margin-bottom:8px"><strong>' + convertInZone(d, from) + '</strong><br><span style="color:var(--muted);font-size:.9rem">' + fromName + '</span></p>' +
@@ -400,11 +425,60 @@ Note how Phoenix shifts relative to New York between seasons while Los Angeles d
       tzShare.addEventListener("click", function(){
         var msg = document.getElementById("tz-share-msg");
         function done(t){ if(msg){ msg.textContent = t; } }
+        var link = window.location.href;
+        try{
+          var u = new URL(window.location.href);
+          u.searchParams.set("from", fromSel.value); u.searchParams.set("to", toSel.value);
+          var atVal = document.getElementById("tz-datetime").value;
+          if(atVal){ u.searchParams.set("at", atVal); }
+          window.history.replaceState(null, "", u.toString());
+          link = u.toString();
+        }catch(e){}
         if(navigator.clipboard && navigator.clipboard.writeText){
-          navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+          navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
         }else{ done("Copy this page URL to share."); }
       });
     }
+  }
+
+  document.getElementById("tz-btn").addEventListener("click", function(){
+    var out = document.getElementById("tz-result");
+    var val = document.getElementById("tz-datetime").value;
+    if(!val){ out.innerHTML = '<p class="result-note">Please pick a date and time.</p>'; return; }
+    var m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/.exec(val);
+    if(!m){ out.innerHTML = '<p class="result-note">Please enter a valid date and time.</p>'; return; }
+    var from = fromSel.value, to = toSel.value;
+    var fromName = fromSel.options[fromSel.selectedIndex].text;
+    /* The entered time is in the FROM zone, not the device zone */
+    var res = resolveWallTime(+m[1], +m[2], +m[3], +m[4], +m[5], from);
+    if(res.status === "gap"){
+      /* setUTCFullYear handles years 0-99 exactly; the Date constructor would map them to 1900-1999. */
+      var gapD = new Date(0);
+      gapD.setUTCFullYear(+m[1], +m[2] - 1, +m[3], 12);
+      var gapDate = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][gapD.getUTCDay()] +
+        ", " + ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][+m[2] - 1] +
+        " " + (+m[3]) + ", " + m[1];
+      out.innerHTML = '<p class="result-note"><strong>That time does not exist in ' + fromName + '.</strong> Clocks spring forward on ' + gapDate + ', jumping from 2:00 AM to 3:00 AM, so every time from 2:00 AM to 2:59 AM is skipped that day. Try 1:30 AM or 3:30 AM instead.</p>';
+      return;
+    }
+    if(res.status === "ambiguous"){
+      var btns = res.candidates.map(function(c, i){
+        var label = (i === 0 ? "First occurrence" : "Second occurrence") + ": " + zoneTimeLabel(c.utc, from) +
+          " (" + fmtOffset(c.offsetMinutes) + "), " + c.utc.toISOString().slice(11, 16) + " UTC";
+        return '<button type="button" class="btn btn-outline btn-sm" data-utc="' + c.utc.getTime() + '">' + label + '</button>';
+      }).join(" ");
+      out.innerHTML = '<p class="result-note"><strong>That time happens twice in ' + fromName + '.</strong> Clocks fall back that day, so pick which occurrence you mean:</p>' +
+        '<p style="display:flex;flex-wrap:wrap;gap:8px">' + btns + '</p>';
+      return;
+    }
+    showConversion(res.utc);
+  });
+
+  /* Choice buttons for ambiguous times carry their UTC instant in data-utc */
+  document.getElementById("tz-result").addEventListener("click", function(e){
+    var t = e.target;
+    var utcMs = t && t.getAttribute ? t.getAttribute("data-utc") : null;
+    if(utcMs){ showConversion(new Date(+utcMs)); }
   });
 
   try{
