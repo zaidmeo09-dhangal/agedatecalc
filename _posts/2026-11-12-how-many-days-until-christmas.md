@@ -3,7 +3,7 @@ layout: post
 title: "How Many Days Until Christmas? 2026 Countdown"
 slug: how-many-days-until-christmas
 date: '2026-11-12'
-last_modified_at: 2026-11-22
+last_modified_at: 2026-11-25
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -56,7 +56,27 @@ tool_name: Countdown Timer
 
 <div class="prose" markdown="1">
 
-On November 22, 2026, Christmas was **33 days away**. Christmas Day falls on **Friday, December 25, 2026**. That count is a dated example: it was correct on November 22, 2026, and it drops by one every day. For the live number right now, use our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}), which ticks down to Christmas in real time.
+On November 22, 2026, Christmas was **33 days away**. Christmas Day falls on **Friday, December 25, 2026**. That count is a dated example: it was correct on November 22, 2026, and it drops by one every day. For the live number, see the count below, or use our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}), which ticks down to Christmas in real time.
+
+<p id="xmas-live-count" class="result-note" style="text-align:center"><strong>Loading live count...</strong></p>
+
+<script>
+(function(){
+  "use strict";
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var target = new Date(today.getFullYear(), 11, 25);
+  var diff = Math.round((target - today) / 86400000);
+  if(diff < 0){
+    target = new Date(today.getFullYear() + 1, 11, 25);
+    diff = Math.round((target - today) / 86400000);
+  }
+  var weeks = Math.floor(diff / 7);
+  var days = diff % 7;
+  var el = document.getElementById("xmas-live-count");
+  el.innerHTML = "<strong>" + diff + " days</strong> until Christmas " + target.getFullYear() + " (" + weeks + " weeks and " + days + " days)";
+})();
+</script>
 
 ## How many days until Christmas 2026?
 
