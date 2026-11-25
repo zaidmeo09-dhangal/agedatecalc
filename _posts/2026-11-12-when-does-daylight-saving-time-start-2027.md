@@ -24,7 +24,7 @@ image_alt: Golden sunrise over misty green hills on a spring morning
 read_time: 5 min read
 faqs_raw: 'Is the Sunshine Protection Act law yet?
 
-  No. The House passed the Sunshine Protection Act (H.R. 139) on July 14, 2026, by 308 to 117. The Senate received it on July 15, 2026 and referred it to the Commerce Committee, but the Senate has not voted and it is not law.'
+  No. The House passed the Sunshine Protection Act (H.R. 139) on July 14, 2026, by 308 to 117. The Senate received it on July 15, 2026 and referred it to the Commerce Committee, but the Senate has not voted and it is not law. Bill: https://www.congress.gov/bill/119th-congress/house-bill/139'
 permalink: /blog/when-does-daylight-saving-time-start-2027/
 tool_url: /time-zone-converter/
 tool_name: Time Zone Converter
@@ -93,7 +93,7 @@ Spring forward, fall back. The 2027 dates are March 14 for the spring forward an
 
 **Is the Sunshine Protection Act law yet?**
 
-No. The House passed the Sunshine Protection Act (H.R. 139) on July 14, 2026, by 308 to 117. The Senate received it on July 15, 2026 and referred it to the Commerce Committee, but the Senate has not voted and it is not law.
+No. The House passed the Sunshine Protection Act (H.R. 139) on July 14, 2026, by 308 to 117. The Senate received it on July 15, 2026 and referred it to the Commerce Committee, but the Senate has not voted and it is not law. See the bill on [Congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/139).
 
 ## Related guides
 
