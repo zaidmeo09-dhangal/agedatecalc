@@ -301,7 +301,11 @@ Leap Day also carries an old tradition in Ireland and the UK: February 29 is the
     return y;
   }
   function feb29Weekday(y){
-    return new Date(y, 1, 29).toLocaleDateString("en-US", { weekday: "long" });
+    /* setUTCFullYear handles years 0-99 exactly; the Date constructor and
+       Date.UTC would both map them to 1900-1999. Noon UTC keeps the civil date. */
+    var d = new Date(0);
+    d.setUTCFullYear(y, 1, 29, 12);
+    return ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][d.getUTCDay()];
   }
 
   document.getElementById("ly-check-btn").addEventListener("click", function(){
