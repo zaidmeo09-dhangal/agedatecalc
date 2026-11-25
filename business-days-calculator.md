@@ -42,7 +42,7 @@ schema: |
             "name": "Is the start date counted?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "By default, no. The count starts the day after the start date and includes the end date, the same convention as our Date Difference Calculator. Tick the 'Include the end date' box to count both dates. For example, Monday January 5 to Friday January 9, 2026 gives 4 business days by default and 5 with the box ticked."
+              "text": "By default, no. The count starts the day after the start date and includes the end date, the same convention as our Date Difference Calculator. Tick the 'Count both dates' box to count both dates. For example, Monday January 5 to Friday January 9, 2026 gives 4 business days by default and 5 with the box ticked."
             }
           },
           {
@@ -105,14 +105,14 @@ related_posts:
         <input type="date" id="bd-end">
       </div>
       <div class="field">
-        <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="bd-include-end" style="width:auto"> Include the end date in the count</label>
+        <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="bd-include-end" style="width:auto"> Count both dates</label>
       </div>
       <div class="field">
         <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="bd-holidays" checked style="width:auto"> Exclude US federal holidays</label>
       </div>
       <button class="btn btn-primary btn-block" id="bd-btn" type="button">Count Business Days</button>
       <div id="bd-result"></div>
-      <p class="result-note" style="font-size:.82rem;margin-top:12px">By default, counts the end date, not the start date. Tick "Include the end date" to count both dates. Holidays use the observed dates from the tables below.</p>
+      <p class="result-note" style="font-size:.82rem;margin-top:12px">By default, counts the end date, not the start date. Tick "Count both dates" to include the start date too. Holidays use the observed dates from the tables below.</p>
       <p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="bd-share-btn">Copy share link</button> <span id="bd-share-msg" style="font-size:.85rem"></span></p>
     </div>
   </div>
@@ -138,11 +138,11 @@ The tool walks the calendar one day at a time from the day after the start date 
 2. Skip any day on the US federal holiday list, when the holidays option is on.
 3. Count every remaining day.
 
-The counting basis is the same as the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): the end date is counted, the start date is not. Tick "Include the end date" to count both dates. That is the one-day difference that causes most disagreements between tools.
+The counting basis is the same as the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): the end date is counted, the start date is not. Tick "Count both dates" to count both dates. That is the one-day difference that causes most disagreements between tools.
 
 ## Days worked calculator
 
-If you searched for a days worked calculator, this tool is it. Pick January 1 as the start date and today as the end date, and the business days result is the number of work days you have worked this year, with weekends and US federal holidays removed. To answer how many work days have i worked this year, counted from January 1, 2026 to November 22, 2026, the answer is 223 business days with holidays excluded, or 231 weekdays without the holiday subtraction. Worked this month, counted from November 1 to November 22, 2026, the answer is 14 business days with holidays excluded, or 15 weekdays without the holiday subtraction. Veterans Day, November 11, is a federal holiday, so it is removed from the business day count. Untick the holidays box if your employer does not observe federal holidays, and tick "Include the end date" if you want to count the first day of the year as a worked day too. The full method, with more worked examples, is in our guide on [how to count business days between two dates]({{ '/blog/how-to-count-business-days-between-two-dates/' | relative_url }}).
+If you searched for a days worked calculator, this tool is it. Pick January 1 as the start date and today as the end date, and the business days result is the number of work days you have worked this year, with weekends and US federal holidays removed. To answer how many work days have i worked this year, counted from January 1, 2026 to November 22, 2026, the answer is 223 business days with holidays excluded, or 231 weekdays without the holiday subtraction. Worked this month, counted from November 1 to November 22, 2026, the answer is 14 business days with holidays excluded, or 15 weekdays without the holiday subtraction. Veterans Day, November 11, is a federal holiday, so it is removed from the business day count. Untick the holidays box if your employer does not observe federal holidays, and tick "Count both dates" if you want to count the first day of the year as a worked day too. The full method, with more worked examples, is in our guide on [how to count business days between two dates]({{ '/blog/how-to-count-business-days-between-two-dates/' | relative_url }}).
 
 ## Worked example: Monday, January 5 to Friday, January 16, 2026
 
@@ -225,7 +225,7 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
 </details>
 <details>
 <summary>Is the start date counted?</summary>
-<p>By default, no. The count starts the day after the start date and includes the end date, the same convention as our Date Difference Calculator. Tick the 'Include the end date' box to count both dates. For example, Monday January 5 to Friday January 9, 2026 gives 4 business days by default and 5 with the box ticked.</p>
+<p>By default, no. The count starts the day after the start date and includes the end date, the same convention as our Date Difference Calculator. Tick the 'Count both dates' box to count both dates. For example, Monday January 5 to Friday January 9, 2026 gives 4 business days by default and 5 with the box ticked.</p>
 </details>
 <details>
 <summary>Which holidays are subtracted?</summary>
@@ -339,7 +339,7 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
     var inc = document.getElementById("bd-include-end").checked;
     var exclHol = document.getElementById("bd-holidays").checked;
     var hols = holidayMap(d1.getFullYear() - 1, d2.getFullYear() + 1);
-    var calDays = Math.round((d2 - d1) / DAY);
+    var calDays = Math.round((d2 - d1) / DAY) + (inc ? 1 : 0);
     var business = 0, weekend = 0, holCount = 0, holList = [];
     var cur = new Date(d1);
     if(!inc){ cur.setDate(cur.getDate() + 1); }
@@ -372,21 +372,27 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
       '</div>' +
       '<p class="result-note">From <strong>' + fmtDate(d1) + '</strong> to <strong>' + fmtDate(d2) + '</strong>' + (inc ? ' (both dates counted)' : '') + '.</p>' +
       holHtml;
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("from", s); u.searchParams.set("to", e);
-      if(inc){ u.searchParams.set("inc", "1"); } else { u.searchParams.delete("inc"); }
-      if(!exclHol){ u.searchParams.set("nohol", "1"); } else { u.searchParams.delete("nohol"); }
-      window.history.replaceState(null, "", u.toString());
-    }catch(e2){}
   }
 
   document.getElementById("bd-btn").addEventListener("click", run);
   document.getElementById("bd-share-btn").addEventListener("click", function(){
     var msg = document.getElementById("bd-share-msg");
     function done(t){ if(msg){ msg.textContent = t; } }
+    var link = window.location.href;
+    try{
+      var s = document.getElementById("bd-start").value;
+      var e = document.getElementById("bd-end").value;
+      if(s && e && /^\d{4}-\d{2}-\d{2}$/.test(s) && /^\d{4}-\d{2}-\d{2}$/.test(e)){
+        var u = new URL(window.location.href);
+        u.searchParams.set("from", s); u.searchParams.set("to", e);
+        if(document.getElementById("bd-include-end").checked){ u.searchParams.set("inc", "1"); } else { u.searchParams.delete("inc"); }
+        if(!document.getElementById("bd-holidays").checked){ u.searchParams.set("nohol", "1"); } else { u.searchParams.delete("nohol"); }
+        window.history.replaceState(null, "", u.toString());
+        link = u.toString();
+      }
+    }catch(e2){}
     if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+      navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
     }else{ done("Copy this page URL to share."); }
   });
 
