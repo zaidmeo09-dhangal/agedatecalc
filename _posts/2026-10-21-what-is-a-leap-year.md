@@ -49,8 +49,8 @@ faqs_raw: 'Is 2026 a leap year?
 
   They celebrate on February 28 or March 1, depending on local custom and law. The legal date varies by jurisdiction, so check local rules for official documents.'
 permalink: /blog/what-is-a-leap-year/
-tool_url: /age-calculator/
-tool_name: Age Calculator
+tool_url: /leap-year-calculator/
+tool_name: Leap Year Calculator
 ---
 
 <div class="prose" markdown="1">
