@@ -335,16 +335,16 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
 <p>Switch to add/subtract mode, pick a start date, and enter the days to add or subtract. This tool adds calendar days only. Adding 30 days to January 31 lands on March 2 in a common year, because January has 31 days.</p>
 </details>
 <details>
+<summary>Does my time zone change the result?</summary>
+<p>No. This calculator works on calendar days only, so the result is identical everywhere in the world. Time zones only matter when a specific time of day is involved, such as a countdown that flips to the next day at midnight. If another tool shows a different answer for the same dates, its time zone or its counting basis is the likely cause.</p>
+</details>
+<details>
 <summary>How do I calculate years between 2 dates?</summary>
 <p>Count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the borrowing for you.</p>
 </details>
 <details>
 <summary>How many days ago was 2020?</summary>
 <p>January 1, 2020 was 2,517 days ago as of November 22, 2026, and December 31, 2020 was 2,152 days ago. Enter the past date as the start date and today as the end date above, and the calculator gives the exact count. 2020 was a leap year, so the count includes February 29, 2020.</p>
-</details>
-<details>
-<summary>Does my time zone change the result?</summary>
-<p>No. This calculator works on calendar days only, so the result is identical everywhere in the world. Time zones only matter when a specific time of day is involved, such as a countdown that flips to the next day at midnight. If another tool shows a different answer for the same dates, its time zone or its counting basis is the likely cause.</p>
 </details>
 <details>
 <summary>What is a dates calculator between two dates?</summary>
