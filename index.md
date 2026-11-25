@@ -12,7 +12,7 @@ schema: |
         "@type": "WebSite",
         "name": "AgeDateCalc",
         "url": "https://agedatecalc.com/",
-        "description": "Free date and time tools: age calculator, date difference calculator, business days calculator, countdown timer, stopwatch, time zone converter, leap year calculator, birthday countdown, days from today calculator, and week number calculator."
+        "description": "Free date and time tools: age calculator, date difference calculator, business days calculator, countdown timer, stopwatch, time zone converter, leap year calculator, birthday countdown, days from today calculator, week number calculator, and time duration calculator."
       },
       {
         "@type": "FAQPage",
@@ -30,7 +30,7 @@ schema: |
             "name": "Do you store my dates or personal data?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. All calculations happen in your browser. Your dates of birth and other inputs are never sent to our servers or stored anywhere."
+              "text": "No. All calculations happen in your browser. Your dates of birth and other inputs stay in your browser unless you click Copy share link, which puts them in the link URL. They are never sent to our servers or stored anywhere else."
             }
           },
           {
@@ -137,7 +137,7 @@ schema: |
 <section class="section" id="tools">
   <div class="wrap">
     <h2 class="section-title">Our Tools</h2>
-    <p class="section-sub">Ten focused tools that do one job well. Pick one and get your answer.</p>
+    <p class="section-sub">Eleven focused tools that do one job well. Pick one and get your answer.</p>
     <div class="tools-grid">
       <a class="tool-card" href="{{ '/age-calculator/' | relative_url }}">
         <div class="tool-icon">🎂</div>
@@ -300,7 +300,7 @@ schema: |
       </details>
       <details>
         <summary>Do you store my dates or personal data?</summary>
-        <p>No. All calculations happen in your browser. Your dates of birth and other inputs are never sent to our servers or stored anywhere.</p>
+        <p>No. All calculations happen in your browser. Your dates of birth and other inputs stay in your browser unless you click Copy share link, which puts them in the link URL. They are never sent to our servers or stored anywhere else.</p>
       </details>
       <details>
         <summary>How accurate is the Age Calculator?</summary>
