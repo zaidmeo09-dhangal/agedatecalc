@@ -2,7 +2,7 @@
 layout: default
 title: About AgeDateCalc | Free Date and Time Tools
 meta_title: About AgeDateCalc - Free Date and Time Tools
-description: Learn what AgeDateCalc is, who builds it, and how our eleven free date and time tools work. No sign-up, no tracking, private by design.
+description: Learn what AgeDateCalc is, who builds it, and how our eleven free date and time tools work. No sign-up. Anonymous analytics only, and your dates stay in your browser unless you share them.
 last_modified_at: 2026-11-24
 permalink: /about/
 schema: |
@@ -29,7 +29,7 @@ schema: |
 
     <div class="legal-card legal-summary">
       <h2><span class="licon">👋</span> Who builds this</h2>
-      <p>AgeDateCalc is built and maintained by a small team that makes free online tools. Every tool is hand-built, tested with real dates, and checked against official sources before it goes live. The tools run entirely in your browser, so your dates are never sent or stored, and everything here is free on purpose.</p>
+      <p>AgeDateCalc is built and maintained by a small team that makes free online tools. Every tool is hand-built, tested with real dates, and checked against official sources before it goes live. The tools run entirely in your browser, so your dates stay on your device unless you click Copy share link, which puts them in the link URL. We measure anonymous page views with Google Analytics 4, and everything here is free on purpose.</p>
     </div>
 
     <div class="legal-card legal-summary">
@@ -47,7 +47,7 @@ schema: |
       <h2><span class="licon">🧰</span> What the tools do</h2>
       <p>Our tools cover the date and time questions people ask most often. The Age Calculator works out an exact age in years, months, and days. The Date Difference Calculator counts the days between any two dates. The Days From Today Calculator adds or subtracts days, weeks, months, or years from any date, and the Countdown Timer tracks an upcoming event live.</p>
       <p>For work and planning, the Business Days Calculator counts work days between dates, and the Week Number Calculator finds the ISO week number of any date. The Leap Year Calculator checks any year, the Birthday Countdown counts the days until your next birthday, and the Time Duration Calculator works out the hours between two times.</p>
-      <p style="margin-bottom:0">The Stopwatch times anything with lap splits, and the Time Zone Converter converts times across the world. Each tool runs entirely in your browser, so the dates you enter stay on your device.</p>
+      <p style="margin-bottom:0">The Stopwatch times anything with lap splits, and the Time Zone Converter converts times across the world. Each tool runs entirely in your browser, so the dates you enter stay on your device unless you choose to share a link.</p>
     </div>
 
     <div class="legal-card legal-summary">
@@ -137,7 +137,7 @@ schema: |
       <div class="feature">
         <div class="tool-icon" style="margin:0 auto">🛡️</div>
         <h3>Private by Design</h3>
-        <p>Tools run entirely in your browser. Your inputs are never sent anywhere or stored.</p>
+        <p>Tools run entirely in your browser. Your dates and inputs stay on your device unless you click Copy share link, which puts them in the link URL. We use Google Analytics 4 to measure anonymous page views only. See the <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a> for details.</p>
       </div>
     </div>
 
