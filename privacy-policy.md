@@ -2,7 +2,7 @@
 layout: default
 title: "Privacy Policy: How AgeDateCalc Handles Data"
 meta_title: "Privacy Policy: How AgeDateCalc Handles Data"
-description: How AgeDateCalc handles your data, cookies, and analytics. Our tools run in your browser, and we do not collect or sell your tool inputs.
+description: How AgeDateCalc handles your data, cookies, and analytics. Our tools run in your browser, and your tool inputs stay there unless you click Copy share link, which puts them in the link URL.
 last_modified_at: 2026-11-24
 permalink: /privacy-policy/
 schema: |
@@ -30,7 +30,7 @@ schema: |
 
     <div class="legal-card legal-summary">
       <h2><span class="licon">⚡</span> Short version</h2>
-      <p style="margin-bottom:0">Our tools run in your browser. We do not collect, store, or sell the dates you enter.</p>
+      <p style="margin-bottom:0">Our tools run in your browser. We do not collect, store, or sell the dates you enter. The only exception is if you click Copy share link, which puts the dates in the link URL, so only share it with people you trust.</p>
     </div>
 
     <div class="legal-card">
@@ -41,12 +41,12 @@ schema: |
         <li><strong>Theme preference:</strong> stored in your browser local storage on your device, so the site remembers your light or dark theme. It is not sent to us.</li>
         <li><strong>Contact email:</strong> your email address and your message, only when you email us. We use it only to reply to you.</li>
       </ul>
-      <p style="margin-bottom:0">No accounts, no tool inputs collected. There is no account system on this site, and the dates and times you enter into the tools are never collected, stored, or sent to us.</p>
+      <p style="margin-bottom:0">No accounts, no tool inputs collected by default. There is no account system on this site, and the dates and times you enter into the tools are not collected, stored, or sent to us. The exception is a share link: if you click Copy share link, the dates go into the page URL, and that URL is then visible to Google Analytics as the page address if the page is reloaded or the link is opened.</p>
     </div>
 
     <div class="legal-card">
       <h2><span class="licon">⌨️</span> Data you enter into tools</h2>
-      <p>Age, dates, and times you type into our calculators are processed locally in your web browser using JavaScript. This information is never transmitted to our servers, stored in a database, or shared with anyone.</p>
+      <p>Age, dates, and times you type into our calculators are processed locally in your web browser using JavaScript. This information is never transmitted to our servers, stored in a database, or shared with anyone. The only exception is the Copy share link button: it puts the dates into the link URL so the recipient sees the same calculation. Only click it if you are happy for anyone with the link to see those dates.</p>
     </div>
 
     <div class="legal-card">
@@ -67,12 +67,12 @@ schema: |
 
     <div class="legal-card">
       <h2><span class="licon">📊</span> Analytics</h2>
-      <p style="margin-bottom:0">We use Google Analytics 4 (Measurement ID G-Q6NE2Q4XTM) to understand which tools are popular, so we know what to improve. Google Analytics sets first-party cookies and collects visit data such as pages viewed, browser and device information, and approximate location, and sends it to Google. You can opt out at tools.google.com/dlpage/gaoptout.</p>
+      <p style="margin-bottom:0">We use Google Analytics 4 (Measurement ID G-Q6NE2Q4XTM) to understand which tools are popular, so we know what to improve. Google Analytics sets first-party cookies and collects visit data such as pages viewed, browser and device information, and approximate location, and sends it to Google. If a page is opened from a share link, its address includes the dates in that link, so those dates appear in analytics as part of the page address. You can opt out at tools.google.com/dlpage/gaoptout.</p>
     </div>
 
     <div class="legal-card">
       <h2><span class="licon">🧒</span> Children's privacy</h2>
-      <p style="margin-bottom:0">Our tools are general-purpose and do not target children specifically. The dates and times you enter into the tools are processed only in your browser and are not collected by us. Google Analytics visit data is handled as described in the Analytics section above.</p>
+      <p style="margin-bottom:0">Our tools are general-purpose and do not target children specifically. The dates and times you enter into the tools are processed only in your browser and are not collected by us, unless you click Copy share link, which puts them in the link URL. Google Analytics visit data is handled as described in the Analytics section above.</p>
     </div>
 
     <div class="legal-card">
