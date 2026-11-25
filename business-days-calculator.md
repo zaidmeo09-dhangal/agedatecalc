@@ -58,7 +58,7 @@ schema: |
             "name": "How do I count business days in Excel?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Use NETWORKDAYS. Put the start date in A2 and the end date in B2, then use =NETWORKDAYS(A2, B2) for weekdays only, or =NETWORKDAYS(A2, B2, holidays) with a list of holiday dates to subtract them too. Note that NETWORKDAYS counts both the start and end dates, so it gives one more than this calculator's default count."
+              "text": "Use NETWORKDAYS. Put the start date in A2 and the end date in B2, then use =NETWORKDAYS(A2, B2) for weekdays only, or =NETWORKDAYS(A2, B2, holidays) with a list of holiday dates to subtract them too. Note that NETWORKDAYS counts both endpoints only when each is a workday, a weekday that is not in the holiday list, so it gives one more than this calculator's default count when the start date is a workday. If the start date is a weekend day or a holiday, the two counts agree."
             }
           },
           {
@@ -110,6 +110,11 @@ related_posts:
       <div class="field">
         <label style="display:flex;align-items:center;gap:8px;font-weight:400"><input type="checkbox" id="bd-holidays" checked style="width:auto"> Exclude US federal holidays</label>
       </div>
+      <div class="field">
+        <label for="bd-custom">Custom holidays / excluded dates</label>
+        <textarea id="bd-custom" rows="3" placeholder="2026-12-28" style="width:100%"></textarea>
+        <p class="result-note" style="font-size:.82rem;margin-top:4px">One date per line, YYYY-MM-DD, e.g. a company holiday. Dates on a weekend or outside the range are ignored.</p>
+      </div>
       <button class="btn btn-primary btn-block" id="bd-btn" type="button">Count Business Days</button>
       <div id="bd-result"></div>
       <p class="result-note" style="font-size:.82rem;margin-top:12px">By default, counts the end date, not the start date. Tick "Count both dates" to include the start date too. Holidays use the observed dates from the tables below.</p>
@@ -128,7 +133,7 @@ A business day is a weekday, Monday to Friday, that is not a US federal holiday.
 
 ## How to use this calculator
 
-Pick a start date and an end date, then click Count Business Days. The result shows business days, total calendar days, weekend days in the range, and the exact holidays subtracted, with names and dates. If you only want weekdays without the holiday subtraction, untick "Exclude US federal holidays".
+Pick a start date and an end date, then click Count Business Days. The result shows business days, total calendar days, weekend days in the range, and the exact holidays subtracted, with names and dates. If you only want weekdays without the holiday subtraction, untick "Exclude US federal holidays". To exclude extra dates, such as company holidays, list them one per line in the custom holidays box; each date inside the range that falls on a weekday is subtracted too.
 
 ## How the count works
 
@@ -136,7 +141,8 @@ The tool walks the calendar one day at a time from the day after the start date 
 
 1. Skip Saturdays and Sundays.
 2. Skip any day on the US federal holiday list, when the holidays option is on.
-3. Count every remaining day.
+3. Skip any date listed in the custom holidays box, when it falls on a weekday inside the range.
+4. Count every remaining day.
 
 The counting basis is the same as the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}): the end date is counted, the start date is not. Tick "Count both dates" to count both dates. That is the one-day difference that causes most disagreements between tools.
 
@@ -212,7 +218,7 @@ Counting calendar days to a deadline instead of workdays? Use the [Days From Tod
 
 For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in B2:
 
-`=NETWORKDAYS(A2, B2)` counts weekdays only, and `=NETWORKDAYS(A2, B2, holidays)` subtracts a list of holiday dates as well. Note that NETWORKDAYS counts both the start and end dates, so it gives one more than this calculator's default count. For the same result, use `=NETWORKDAYS(A2, B2, holidays) - 1`. For the year-end count, see how many business days are left in 2026 in our guide on [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
+`=NETWORKDAYS(A2, B2)` counts weekdays only, and `=NETWORKDAYS(A2, B2, holidays)` subtracts a list of holiday dates as well. Note that NETWORKDAYS counts both endpoints only when each is a workday, a weekday that is not in the holiday list, so it gives one more than this calculator's default count when the start date is a workday. If the start date is a weekend day or a holiday, the two counts agree. When the start date is a workday, use `=NETWORKDAYS(A2, B2, holidays) - 1` for the same result. For the year-end count, see how many business days are left in 2026 in our guide on [how many days until New Year 2027]({{ '/blog/how-many-days-until-new-year/' | relative_url }}).
 
 ## Frequently asked questions
 
@@ -233,7 +239,7 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
 </details>
 <details>
 <summary>How do I count business days in Excel?</summary>
-<p>Use NETWORKDAYS. Put the start date in A2 and the end date in B2, then use =NETWORKDAYS(A2, B2) for weekdays only, or =NETWORKDAYS(A2, B2, holidays) with a list of holiday dates to subtract them too. Note that NETWORKDAYS counts both the start and end dates, so it gives one more than this calculator's default count.</p>
+<p>Use NETWORKDAYS. Put the start date in A2 and the end date in B2, then use =NETWORKDAYS(A2, B2) for weekdays only, or =NETWORKDAYS(A2, B2, holidays) with a list of holiday dates to subtract them too. Note that NETWORKDAYS counts both endpoints only when each is a workday, a weekday that is not in the holiday list, so it gives one more than this calculator's default count when the start date is a workday. If the start date is a weekend day or a holiday, the two counts agree.</p>
 </details>
 <details>
 <summary>How many work days have I worked this year?</summary>
@@ -338,9 +344,19 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
     if(d2 < d1){ var t = d1; d1 = d2; d2 = t; }
     var inc = document.getElementById("bd-include-end").checked;
     var exclHol = document.getElementById("bd-holidays").checked;
+    var customMap = {};
+    var customRaw = document.getElementById("bd-custom").value || "";
+    customRaw.split(/\r?\n/).forEach(function(line){
+      var t = line.trim();
+      var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(t);
+      if(!m){ return; }
+      var cd = new Date(t + "T00:00:00");
+      if(isNaN(cd) || cd.getFullYear() !== +m[1] || cd.getMonth() !== +m[2] - 1 || cd.getDate() !== +m[3]){ return; }
+      customMap[cd.toDateString()] = cd;
+    });
     var hols = holidayMap(d1.getFullYear() - 1, d2.getFullYear() + 1);
     var calDays = Math.round((d2 - d1) / DAY) + (inc ? 1 : 0);
-    var business = 0, weekend = 0, holCount = 0, holList = [];
+    var business = 0, weekend = 0, holCount = 0, holList = [], customList = [];
     var cur = new Date(d1);
     if(!inc){ cur.setDate(cur.getDate() + 1); }
     while(cur <= d2){
@@ -349,6 +365,10 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
       else if(exclHol && hols[cur.toDateString()]){
         holCount += 1;
         holList.push({ name: hols[cur.toDateString()], date: new Date(cur) });
+      }
+      else if(customMap[cur.toDateString()]){
+        holCount += 1;
+        customList.push(new Date(cur));
       }
       else { business += 1; }
       cur.setDate(cur.getDate() + 1);
@@ -362,6 +382,9 @@ For a spreadsheet, use NETWORKDAYS. Put the start date in A2 and the end date in
       }
     } else {
       holHtml = '<p class="result-note">US federal holidays were not subtracted (option off).</p>';
+    }
+    if(customList.length){
+      holHtml += '<p class="result-note">Custom dates excluded: <strong>' + customList.map(function(d){ return fmtShort(d); }).join(", ") + '</strong>.</p>';
     }
     out.innerHTML =
       '<div class="result-grid">' +
