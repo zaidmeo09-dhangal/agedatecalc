@@ -85,6 +85,20 @@ A handy check: AM comes before PM in the alphabet, and midnight comes before noo
 - Hour 12 stays 12 PM.
 - Hours 13 to 23: subtract 12 and add PM.
 
+<div class="calc-card">
+<p class="sub">Try it: type a time and see the conversion instantly.</p>
+<div class="field">
+<label for="ampm-12">12-hour time</label>
+<input type="text" id="ampm-12" placeholder="2:30 PM" autocomplete="off">
+</div>
+<p class="result-note" id="ampm-12-result">Example: 2:30 PM is 14:30.</p>
+<div class="field">
+<label for="ampm-24">24-hour time</label>
+<input type="text" id="ampm-24" placeholder="14:30" autocomplete="off">
+</div>
+<p class="result-note" id="ampm-24-result">Example: 14:30 is 2:30 PM.</p>
+</div>
+
 ## Military time: no colon, four digits
 
 Military time drops the colon and always uses four digits. 2:30 PM becomes 1430, 8:00 AM becomes 0800, and midnight is 0000. Spoken aloud, 1430 is "fourteen thirty" and 0800 is "zero eight hundred."
@@ -164,3 +178,51 @@ Because it removes all AM/PM ambiguity. In aviation, military orders, and medica
 - [Time Zones Explained]({{ '/blog/time-zones-explained/' | relative_url }})
 
 </div>
+
+<script>
+(function(){
+  "use strict";
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+  function to24(str){
+    var m = str.trim().match(/^(\d{1,2})(?::(\d{2}))?\s*([ap])\.?m\.?$/i);
+    if(!m) return null;
+    var h = parseInt(m[1], 10);
+    var min = m[2] === undefined ? 0 : parseInt(m[2], 10);
+    if(h < 1 || h > 12 || min > 59) return null;
+    if(m[3].toLowerCase() === "a"){ h = (h === 12) ? 0 : h; }
+    else { h = (h === 12) ? 12 : h + 12; }
+    return pad(h) + ":" + pad(min);
+  }
+  function to12(str){
+    var m = str.trim().match(/^(\d{1,2})(?::(\d{2}))?$/);
+    if(!m) return null;
+    var h = parseInt(m[1], 10);
+    var min = m[2] === undefined ? 0 : parseInt(m[2], 10);
+    if(h > 23 || min > 59) return null;
+    var ap = h < 12 ? "AM" : "PM";
+    var h12 = h % 12;
+    if(h12 === 0) h12 = 12;
+    return h12 + ":" + pad(min) + " " + ap;
+  }
+  var in12 = document.getElementById("ampm-12");
+  var out12 = document.getElementById("ampm-12-result");
+  var in24 = document.getElementById("ampm-24");
+  var out24 = document.getElementById("ampm-24-result");
+  if(in12 && out12){
+    in12.addEventListener("input", function(){
+      var v = in12.value.trim();
+      if(!v){ out12.textContent = "Example: 2:30 PM is 14:30."; return; }
+      var r = to24(v);
+      out12.innerHTML = r === null ? "Enter a time like 2:30 PM." : "<strong>" + v + "</strong> is <strong>" + r + "</strong>.";
+    });
+  }
+  if(in24 && out24){
+    in24.addEventListener("input", function(){
+      var v = in24.value.trim();
+      if(!v){ out24.textContent = "Example: 14:30 is 2:30 PM."; return; }
+      var r = to12(v);
+      out24.innerHTML = r === null ? "Enter a time like 14:30, from 00:00 to 23:59." : "<strong>" + v + "</strong> is <strong>" + r + "</strong>.";
+    });
+  }
+})();
+</script>
