@@ -26,24 +26,47 @@
     return new Date(year, m, d);
   }
 
+  /* Shared date decomposition (same code in age-calculator.md, date-difference-calculator.md, assets/js/main.js).
+     Whole years, then whole months, then leftover days, counted on calendar anchors.
+     Adding months clamps to the last day of the target month, and a Feb 29
+     anniversary falls on Mar 1 in non-leap years, so no component ever goes negative.
+     (isLeapYear is defined above and reused here.) */
+  function makeDate(y, m, d){ var dt = new Date(0); dt.setFullYear(y, m, d); dt.setHours(0, 0, 0, 0); return dt; }
+  function daysInMonth(y, m){ return makeDate(y, m + 1, 0).getDate(); }
+  function utcDayNumber(d){ return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000; }
+  function addMonthsClamped(d, n){
+    var total = d.getFullYear() * 12 + d.getMonth() + n;
+    var y = Math.floor(total / 12), m = total - y * 12;
+    return makeDate(y, m, Math.min(d.getDate(), daysInMonth(y, m)));
+  }
+  function anniversaryOf(from, year){
+    var m = from.getMonth(), d = from.getDate();
+    if(m === 1 && d === 29 && !isLeapYear(year)){ return makeDate(year, 2, 1); }
+    return makeDate(year, m, Math.min(d, daysInMonth(year, m)));
+  }
+  function decomposeDates(from, to){
+    /* from must be on or before to; returns { years, months, days }, all >= 0. */
+    var y = 0;
+    while(anniversaryOf(from, from.getFullYear() + y + 1) <= to){ y += 1; }
+    var anchor = anniversaryOf(from, from.getFullYear() + y);
+    var mo = 0;
+    while(mo < 11 && addMonthsClamped(anchor, mo + 1) <= to){ mo += 1; }
+    anchor = addMonthsClamped(anchor, mo);
+    var d = Math.round(utcDayNumber(to) - utcDayNumber(anchor));
+    return { years: y, months: mo, days: d };
+  }
+
   function calculateAge(dob){
     var now = new Date();
-    var years = now.getFullYear() - dob.getFullYear();
-    var months = now.getMonth() - dob.getMonth();
-    var days = now.getDate() - dob.getDate();
-
-    if(days < 0){
-      months -= 1;
-      var prevMonthDays = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
-      days += prevMonthDays;
-    }
-    if(months < 0){ years -= 1; months += 12; }
+    var parts = decomposeDates(dob, now);
+    var years = parts.years, months = parts.months, days = parts.days;
 
     var totalDays = Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(dob.getFullYear(), dob.getMonth(), dob.getDate())) / 86400000);
     var weekday = dob.toLocaleDateString("en-US", { weekday: "long" });
 
+    var todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     var next = birthdayThisYear(dob, now.getFullYear());
-    if(next <= now){ next = birthdayThisYear(dob, now.getFullYear() + 1); }
+    if(next < todayStart){ next = birthdayThisYear(dob, now.getFullYear() + 1); }
     var daysTo = Math.round((Date.UTC(next.getFullYear(), next.getMonth(), next.getDate()) - Date.UTC(now.getFullYear(), now.getMonth(), now.getDate())) / 86400000);
 
     return { years: years, months: months, days: days, totalDays: totalDays, weekday: weekday, daysTo: daysTo };
@@ -74,7 +97,8 @@
         '<div class="result-box"><span class="num">' + a.totalDays.toLocaleString() + '</span><span class="lbl">Total days</span></div>' +
         '<div class="result-box"><span class="num">' + a.weekday + '</span><span class="lbl">Born on</span></div>' +
         '<div class="result-box"><span class="num">' + a.daysTo + '</span><span class="lbl">Days to birthday</span></div>' +
-      '</div>';
+      '</div>' +
+      (a.daysTo === 0 ? '<p class="result-note"><strong>Happy birthday!</strong> Today is your birthday.</p>' : '');
   }
 
   if(calcBtn){ calcBtn.addEventListener("click", runAgeCalc); }
