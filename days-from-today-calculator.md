@@ -551,14 +551,6 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
       '<div class="result-box"><span class="num">' + away.toLocaleString() + '</span><span class="lbl">' + (dir === "ago" ? "Days in the past" : "Days away") + '</span></div>' +
       '</div>' +
       '<p class="result-note">' + n + " " + unitLabel(n, unit) + (dir === "ago" ? " before " : " after ") + "<strong>" + fmtDate(start) + "</strong> is <strong>" + fmtDate(result) + "</strong>.</p>";
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("start", s);
-      u.searchParams.set("n", String(n));
-      u.searchParams.set("unit", unit);
-      u.searchParams.set("dir", dir);
-      window.history.replaceState(null, "", u.toString());
-    }catch(e){}
   }
 
   document.getElementById("dft-btn").addEventListener("click", run);
@@ -573,8 +565,26 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
   document.getElementById("dft-share-btn").addEventListener("click", function(){
     var msg = document.getElementById("dft-share-msg");
     function done(t){ if(msg){ msg.textContent = t; } }
+    var link = window.location.href;
+    try{
+      var s = document.getElementById("dft-start").value;
+      var nRaw = document.getElementById("dft-num").value;
+      var n = parseInt(nRaw, 10);
+      var unit = document.getElementById("dft-unit").value;
+      var dir = document.getElementById("dft-dir").value;
+      if(s && /^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(n) && n >= 0 && n <= 10000 &&
+         ["days", "weeks", "months", "years"].indexOf(unit) !== -1 && ["from", "ago"].indexOf(dir) !== -1){
+        var u = new URL(window.location.href);
+        u.searchParams.set("start", s);
+        u.searchParams.set("n", String(n));
+        u.searchParams.set("unit", unit);
+        u.searchParams.set("dir", dir);
+        window.history.replaceState(null, "", u.toString());
+        link = u.toString();
+      }
+    }catch(e){}
     if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+      navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
     }else{ done("Copy this page URL to share."); }
   });
 
