@@ -23,7 +23,7 @@ image_alt: A wall clock on a wooden wall surrounded by orange autumn leaves in w
 read_time: 4 min read
 faqs_raw: 'Why do we still change the clocks?
 
-  The US has observed daylight saving under the Uniform Time Act of 1966, with the current March-to-November schedule set by the Energy Policy Act of 2005. The House passed the Sunshine Protection Act on July 14, 2026 (308 to 117), but the Senate has not voted and it is not law, so the twice-yearly clock change still applies under current law.'
+  The US has observed daylight saving under the Uniform Time Act of 1966, with the current March-to-November schedule set by the Energy Policy Act of 2005. The House passed the Sunshine Protection Act (H.R. 139) on July 14, 2026 (308 to 117), but the Senate has not voted and it is not law, so the twice-yearly clock change still applies under current law. Bill: https://www.congress.gov/bill/119th-congress/house-bill/139'
 permalink: /blog/when-does-daylight-saving-time-end/
 redirect_from:
   - /blog/when-does-daylight-saving-time-end-2026/
@@ -102,7 +102,7 @@ Want to see exactly how much time is left? Drop November 7, 2027, 2:00 AM into o
 
 **Why do we still change the clocks?**
 
-The US has observed daylight saving under the Uniform Time Act of 1966, with the current March-to-November schedule set by the Energy Policy Act of 2005. The House passed the Sunshine Protection Act on July 14, 2026 (308 to 117), but the Senate has not voted and it is not law, so the twice-yearly clock change still applies under current law.
+The US has observed daylight saving under the Uniform Time Act of 1966, with the current March-to-November schedule set by the Energy Policy Act of 2005. The House passed the Sunshine Protection Act (H.R. 139) on July 14, 2026 (308 to 117), but the Senate has not voted and it is not law, so the twice-yearly clock change still applies under current law. See the bill on [Congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/139).
 
 ## Related guides
 
