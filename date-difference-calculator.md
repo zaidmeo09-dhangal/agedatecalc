@@ -34,7 +34,7 @@ schema: |
             "name": "How do I calculate age between two dates in years, months, and days?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Count full years from the earlier date first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: August 22, 1985 to May 15, 1990 is 4 years, 8 months, 23 days."
+              "text": "Count full years from the earlier date first, then full months, then leftover days. Months land on calendar anchors, so a month from January 31 lands on the last day of February and the day count never goes negative. Example: August 22, 1985 to May 15, 1990 is 4 years, 8 months, 23 days."
             }
           },
           {
@@ -98,7 +98,7 @@ schema: |
             "name": "How do I calculate years between 2 dates?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the borrowing for you."
+              "text": "Count full years first, then full months, then leftover days. Months land on calendar anchors, so the day count never goes negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the counting for you."
             }
           },
           {
@@ -194,12 +194,12 @@ Use it for age gaps between two people, someone's age on a specific day, tenure,
 
 ## How the calculator counts years, months, and days
 
-The tool uses the borrowing method, the same one taught for manual age math:
+The tool counts whole calendar years, then whole calendar months, then leftover days:
 
 1. Count full years from the earlier date first.
 2. Then count full months from where the years stopped.
 3. Then count the leftover days.
-4. If the day of the month would go negative, borrow days from the previous month's actual length (28, 29, 30, or 31, never an average).
+4. Months land on calendar anchors: a month from January 31 lands on the last day of February, so the leftover days never go negative.
 
 It never uses approximations like 365.25 days per year, so month ends and leap years come out exact. For the full manual method, see our guide on [how to count days between two dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }}).
 
@@ -297,7 +297,7 @@ Example: a project running Monday, November 23 to Friday, December 4, 2026 has 9
 
 ## How to calculate years between 2 dates
 
-To calculate years between 2 dates, count full years first, then full months, then leftover days. Borrow from the previous month when the day would go negative. That is the same borrowing method this calculator uses, and it is why month ends and leap years come out exact.
+To calculate years between 2 dates, count full years first, then full months, then leftover days. Months land on calendar anchors, so the day count never goes negative. That is the same counting method this calculator uses, and it is why month ends and leap years come out exact.
 
 Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Five full years reach January 1, 1990, five more months reach June 1, 1990, and 14 days reach June 15. The same method works for any pair. Enter both dates above and the calculator does the borrowing for you. Wondering how many days a year holds? See [how many days in a year]({{ '/blog/how-many-days-in-a-year/' | relative_url }}).
 
@@ -308,7 +308,7 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
 <div class="faq">
 <details>
 <summary>How do I calculate age between two dates in years, months, and days?</summary>
-<p>Count full years from the earlier date first, then full months, then leftover days. If the day of the month would go negative, borrow days from the previous month's actual length. Example: August 22, 1985 to May 15, 1990. Four years reach August 22, 1989, eight more months reach April 22, 1990, and 23 days reach May 15, 1990. The answer is 4 years, 8 months, 23 days.</p>
+<p>Count full years from the earlier date first, then full months, then leftover days. Months land on calendar anchors, so a month from January 31 lands on the last day of February and the day count never goes negative. Example: August 22, 1985 to May 15, 1990. Four years reach August 22, 1989, eight more months reach April 22, 1990, and 23 days reach May 15, 1990. The answer is 4 years, 8 months, 23 days.</p>
 </details>
 <details>
 <summary>Is the end date included in the count?</summary>
@@ -340,7 +340,7 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
 </details>
 <details>
 <summary>How do I calculate years between 2 dates?</summary>
-<p>Count full years first, then full months, then leftover days, borrowing from the previous month when the day would go negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the borrowing for you.</p>
+<p>Count full years first, then full months, then leftover days. Months land on calendar anchors, so the day count never goes negative. Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 1,991 days in total. Enter both dates above and the calculator does the counting for you.</p>
 </details>
 <details>
 <summary>How many days ago was 2020?</summary>
@@ -395,6 +395,36 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
     return d.toLocaleDateString("en-US", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
   }
 
+  /* Shared date decomposition (same code in age-calculator.md, date-difference-calculator.md, assets/js/main.js).
+     Whole years, then whole months, then leftover days, counted on calendar anchors.
+     Adding months clamps to the last day of the target month, and a Feb 29
+     anniversary falls on Mar 1 in non-leap years, so no component ever goes negative. */
+  function isLeapYear(y){ return (y % 4 === 0 && y % 100 !== 0) || (y % 400 === 0); }
+  function makeDate(y, m, d){ var dt = new Date(0); dt.setFullYear(y, m, d); dt.setHours(0, 0, 0, 0); return dt; }
+  function daysInMonth(y, m){ return makeDate(y, m + 1, 0).getDate(); }
+  function utcDayNumber(d){ return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86400000; }
+  function addMonthsClamped(d, n){
+    var total = d.getFullYear() * 12 + d.getMonth() + n;
+    var y = Math.floor(total / 12), m = total - y * 12;
+    return makeDate(y, m, Math.min(d.getDate(), daysInMonth(y, m)));
+  }
+  function anniversaryOf(from, year){
+    var m = from.getMonth(), d = from.getDate();
+    if(m === 1 && d === 29 && !isLeapYear(year)){ return makeDate(year, 2, 1); }
+    return makeDate(year, m, Math.min(d, daysInMonth(year, m)));
+  }
+  function decomposeDates(from, to){
+    /* from must be on or before to; returns { years, months, days }, all >= 0. */
+    var y = 0;
+    while(anniversaryOf(from, from.getFullYear() + y + 1) <= to){ y += 1; }
+    var anchor = anniversaryOf(from, from.getFullYear() + y);
+    var mo = 0;
+    while(mo < 11 && addMonthsClamped(anchor, mo + 1) <= to){ mo += 1; }
+    anchor = addMonthsClamped(anchor, mo);
+    var d = Math.round(utcDayNumber(to) - utcDayNumber(anchor));
+    return { years: y, months: mo, days: d };
+  }
+
   document.getElementById("dd-btn").addEventListener("click", function(){
     var out = document.getElementById("dd-result");
     var s = document.getElementById("dd-start").value;
@@ -424,11 +454,8 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
     var weeks = Math.floor(days / 7), remDays = days % 7;
     var biz = businessDays(d1, d2, inc);
 
-    var y = d2e.getFullYear() - d1.getFullYear();
-    var mo = d2e.getMonth() - d1.getMonth();
-    var dd = d2e.getDate() - d1.getDate();
-    if(dd < 0){ mo -= 1; dd += new Date(d2e.getFullYear(), d2e.getMonth(), 0).getDate(); }
-    if(mo < 0){ y -= 1; mo += 12; }
+    var parts = decomposeDates(d1, d2e);
+    var y = parts.years, mo = parts.months, dd = parts.days;
 
     out.innerHTML =
       '<div class="result-grid">' +
@@ -440,20 +467,22 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
       '<p class="result-note">From <strong>' + fmtDate(d1) + '</strong> to <strong>' + fmtDate(d2) + '</strong>' + (inc ? ' (end date included)' : '') + '.</p>' +
       '<p class="result-note">Business days are weekdays (Monday to Friday)' + (inc ? ' including both dates' : ', excluding the start date and including the end date') + '. US federal holidays are not subtracted, see the Business Days Calculator for the full holiday list.</p>' +
       '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="dd-share-btn">Copy share link</button> <span id="dd-share-msg" style="font-size:.85rem"></span></p>';
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("from", s); u.searchParams.set("to", e);
-      if(document.getElementById("dd-include-end").checked){ u.searchParams.set("inc", "1"); } else { u.searchParams.delete("inc"); }
-      u.searchParams.delete("base"); u.searchParams.delete("days");
-      window.history.replaceState(null, "", u.toString());
-    }catch(e2){}
     var dshare = document.getElementById("dd-share-btn");
     if(dshare){
       dshare.addEventListener("click", function(){
         var msg = document.getElementById("dd-share-msg");
         function done(t){ if(msg){ msg.textContent = t; } }
+        var link = window.location.href;
+        try{
+          var u = new URL(window.location.href);
+          u.searchParams.set("from", s); u.searchParams.set("to", e);
+          if(document.getElementById("dd-include-end").checked){ u.searchParams.set("inc", "1"); } else { u.searchParams.delete("inc"); }
+          u.searchParams.delete("base"); u.searchParams.delete("days");
+          window.history.replaceState(null, "", u.toString());
+          link = u.toString();
+        }catch(e2){}
         if(navigator.clipboard && navigator.clipboard.writeText){
-          navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+          navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
         }else{ done("Copy this page URL to share."); }
       });
     }
@@ -467,13 +496,26 @@ Example: January 1, 1985 to June 15, 1990 is 5 years, 5 months, and 14 days, or 
     var d = new Date(b + "T00:00:00");
     if(isNaN(d)){ out.innerHTML = '<p class="result-note">Please enter a valid date.</p>'; return; }
     d.setDate(d.getDate() + n);
-    out.innerHTML = '<p class="result-note">Result: <strong>' + fmtDate(d) + '</strong></p>';
-    try{
-      var u2 = new URL(window.location.href);
-      u2.searchParams.set("base", b); u2.searchParams.set("days", String(n));
-      u2.searchParams.delete("from"); u2.searchParams.delete("to");
-      window.history.replaceState(null, "", u2.toString());
-    }catch(e3){}
+    out.innerHTML = '<p class="result-note">Result: <strong>' + fmtDate(d) + '</strong></p>' +
+      '<p class="result-note"><button type="button" class="btn btn-outline btn-sm" id="dd-add-share-btn">Copy share link</button> <span id="dd-add-share-msg" style="font-size:.85rem"></span></p>';
+    var daddShare = document.getElementById("dd-add-share-btn");
+    if(daddShare){
+      daddShare.addEventListener("click", function(){
+        var msg = document.getElementById("dd-add-share-msg");
+        function done(t){ if(msg){ msg.textContent = t; } }
+        var link = window.location.href;
+        try{
+          var u2 = new URL(window.location.href);
+          u2.searchParams.set("base", b); u2.searchParams.set("days", String(n));
+          u2.searchParams.delete("from"); u2.searchParams.delete("to");
+          window.history.replaceState(null, "", u2.toString());
+          link = u2.toString();
+        }catch(e3){}
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+        }else{ done("Copy this page URL to share."); }
+      });
+    }
   });
 
   try{
