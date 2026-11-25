@@ -3,7 +3,7 @@ layout: post
 title: "How Many Days Until New Year 2027? Countdown"
 slug: how-many-days-until-new-year
 date: '2026-11-17'
-last_modified_at: 2026-11-22
+last_modified_at: 2026-11-25
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -62,13 +62,33 @@ tool_name: Countdown Timer
 
 <div class="prose" markdown="1">
 
-On November 22, 2026, New Year 2027 is **40 days away**. New Year's Day falls on **Friday, January 1, 2027**, which is 5 full weeks and 5 days from today. That count is a dated example: it was correct on November 22, 2026, and it drops by one every day. For the live number right now, use our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}), which ticks down to midnight in real time.
+As a dated example, on November 22, 2026, New Year 2027 was **40 days away**. New Year's Day falls on **Friday, January 1, 2027**, which was 5 full weeks and 5 days from November 22, 2026. That count was correct on November 22, 2026, and it drops by one every day. For the live number, see the count below, or use our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}), which ticks down to midnight in real time.
+
+<p id="ny-live-count" class="result-note" style="text-align:center"><strong>Loading live count...</strong></p>
+
+<script>
+(function(){
+  "use strict";
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var target = new Date(today.getFullYear(), 0, 1);
+  var diff = Math.round((target - today) / 86400000);
+  if(diff < 0){
+    target = new Date(today.getFullYear() + 1, 0, 1);
+    diff = Math.round((target - today) / 86400000);
+  }
+  var weeks = Math.floor(diff / 7);
+  var days = diff % 7;
+  var el = document.getElementById("ny-live-count");
+  el.innerHTML = "<strong>" + diff + " days</strong> until New Year " + target.getFullYear() + " (" + weeks + " weeks and " + days + " days)";
+})();
+</script>
 
 ## How many days until New Year 2027?
 
 There are 40 days until New Year 2027 as of Sunday, November 22, 2026. New Year's Day is Friday, January 1, 2027. People who search for days until 2027 mean the same thing: the count to January 1, 2027.
 
-New Year's Eve is one day closer. December 31, 2026 is 39 days away. The two numbers differ by one because January 1 itself is the extra day: there are 39 days left in 2026 through December 31, and 40 days until January 1. If a page tells you 39 days until New Year, it is counting to New Year's Eve, not to New Year.
+New Year's Eve is one day closer. December 31, 2026 was 39 days away on November 22, 2026. The two numbers differ by one because January 1 itself is the extra day: there are 39 days left in 2026 through December 31, and 40 days until January 1. If a page tells you 39 days until New Year, it is counting to New Year's Eve, not to New Year.
 
 Christmas sits inside the same span. Christmas Day, Friday, December 25, 2026, is 33 days away on November 22, and New Year follows exactly 7 days later, on the same weekday.
 
@@ -113,6 +133,8 @@ New Year moves forward by one weekday most years, and by two after a leap year, 
 Kiribati is among the first places to reach midnight and American Samoa is among the last, about a day apart in real time.
 
 ## Week by week plan to New Year
+
+The plan below is worked from November 22, 2026, so each checkpoint is one Friday counting down from that date.
 
 | Checkpoint | Date | Do now |
 |---|---|---|
