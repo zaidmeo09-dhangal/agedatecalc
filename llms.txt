@@ -14,6 +14,7 @@
 - [Birthday Countdown](https://agedatecalc.com/birthday-countdown/): Days, hours, minutes, and seconds until your next birthday.
 - [Days From Today Calculator](https://agedatecalc.com/days-from-today-calculator/): Add or subtract days, weeks, months, or years from any date.
 - [Week Number Calculator](https://agedatecalc.com/week-number-calculator/): Find the ISO week number of any date, with the week's Monday to Sunday range.
+- [Time Duration Calculator](https://agedatecalc.com/time-duration-calculator/): Find the time between two times in hours, minutes and seconds, including overnight spans.
 
 ## Guides
 
