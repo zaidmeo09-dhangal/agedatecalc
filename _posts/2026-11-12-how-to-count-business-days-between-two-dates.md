@@ -30,7 +30,7 @@ faqs_raw: 'What counts as a business day?
 
   Does NETWORKDAYS count the start and end dates?
 
-  Yes. NETWORKDAYS counts both the start date and the end date when they are weekdays. That is one more than a count that starts the day after the start date, so check which convention your tool uses before you compare answers.
+  Yes, but only when each one is a workday. NETWORKDAYS counts an endpoint only if it is a weekday that is not on the holiday list. So the extra day over a count that starts the day after the start date appears only when the start date is a workday. If the start date is a Saturday, a Sunday or a holiday, it adds nothing, and the gap between the two counts can be 0. Same day start and end gives 1 on a weekday and 0 on a weekend day or a holiday, so check which convention your tool uses before you compare answers.
 
   ---
 
@@ -108,7 +108,7 @@ In Excel or Google Sheets, NETWORKDAYS does steps 2 and 3 in one formula. Put th
 
 `=NETWORKDAYS(A2, B2)`
 
-That counts weekdays only, both endpoints included. To subtract holidays, add a list of holiday dates as the third argument:
+That counts weekdays only, including each endpoint that is a workday. To subtract holidays, add a list of holiday dates as the third argument:
 
 `=NETWORKDAYS(A2, B2, holidays)`
 
@@ -116,13 +116,13 @@ That counts weekdays only, both endpoints included. To subtract holidays, add a 
 
 For a month total, point the formula at the first and last day of the month. November 2026 runs from November 1 to November 30, and `=NETWORKDAYS(DATE(2026,11,1), DATE(2026,11,30), DATE(2026,11,26))` returns **20**: 21 weekdays minus Thanksgiving on November 26, 2026.
 
-Two things to know about NETWORKDAYS. First, it counts both the start date and the end date, so it gives one more than a count that starts the day after the start date. Our [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) counts from the day after the start date by default, so for January 11 to January 22, 2027 it gives 8, and ticking the include box gives 9. Second, NETWORKDAYS ignores the holiday list unless the cells hold real dates, so check with `=ISNUMBER()` before you trust the answer.
+Two things to know about NETWORKDAYS. First, it counts an endpoint only when that day is a workday, a weekday that is not on the holiday list. When the start date is a workday it gives one more than a count that starts the day after the start date. But if the start date is a Saturday, a Sunday or a holiday, it adds nothing, so the gap can be 0. For example, NETWORKDAYS from Saturday, January 16 to Friday, January 22, 2027, with January 18 on the holiday list, returns 4, the same as a count that starts the day after the start date. A same day start and end returns 1 on a weekday and 0 on a weekend day or a holiday. Our [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) counts from the day after the start date by default, so for January 11 to January 22, 2027 it gives 8, and ticking the include box gives 9. Second, NETWORKDAYS ignores the holiday list unless the cells hold real dates, so check with `=ISNUMBER()` before you trust the answer.
 
 Two related functions cover the cases NETWORKDAYS does not. `=NETWORKDAYS.INTL(A2, B2, 1, holidays)` counts business days with a custom weekend, where 1 means Saturday and Sunday off and 11 means Sunday only. For the January 11 to January 22, 2027 example above it also returns 9. `=WORKDAY(A2, 30, holidays)` returns the date 30 business days after the start date: with January 4, 2027 in A2, it returns February 17, 2027, skipping weekends and the January 18 and February 15 holidays.
 
 ## Common mistakes
 
-- **Counting the start date twice or not at all.** Decide the convention first. NETWORKDAYS counts both endpoints. Our calculator counts from the day after the start date by default. Mixing the two gives an answer that is off by one.
+- **Counting the start date twice or not at all.** Decide the convention first. NETWORKDAYS counts each endpoint only when it is a workday. Our calculator counts from the day after the start date by default. Mixing the two gives an answer that is off by one.
 - **Subtracting a weekend holiday twice.** Juneteenth 2027 falls on Saturday, June 19, and is observed Friday, June 18. Subtract Friday, June 18 once. Do not also subtract Saturday, June 19, because Saturdays never count anyway.
 - **Forgetting that the observed day moves.** Independence Day 2027 is Sunday, July 4, but the day off is Monday, July 5. Counting July 4 as the holiday misses the real day off by one.
 - **Using calendar days for a deadline.** A 10 day delivery promise starting Friday, January 8, 2027 lands on Monday, January 18 if you count calendar days, but that is Martin Luther King Jr. Day, so the first real delivery day is Tuesday, January 19. Count business days for promises, calendar days for spans.
@@ -144,7 +144,7 @@ A business day is a weekday, Monday to Friday, that is not a US federal holiday.
 
 **Does NETWORKDAYS count the start and end dates?**
 
-Yes. NETWORKDAYS counts both the start date and the end date when they are weekdays. That is one more than a count that starts the day after the start date, so check which convention your tool uses before you compare answers.
+Yes, but only when each one is a workday. NETWORKDAYS counts an endpoint only if it is a weekday that is not on the holiday list. So the extra day over a count that starts the day after the start date appears only when the start date is a workday. If the start date is a Saturday, a Sunday or a holiday, it adds nothing, and the gap between the two counts can be 0. Same day start and end gives 1 on a weekday and 0 on a weekend day or a holiday, so check which convention your tool uses before you compare answers.
 
 **How many business days are in November 2026?**
 
