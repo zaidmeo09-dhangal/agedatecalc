@@ -31,14 +31,6 @@ schema: |
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is 28 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "28 days after today. Counted from Sunday, November 22, 2026, 28 days from today is Sunday, December 20, 2026. Enter today as the start date, 28 as the number, days as the unit, and from now as the direction."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "How do I calculate 30 days from today?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -67,14 +59,6 @@ schema: |
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. Choose ago as the direction and the calculator counts back. 30 days ago from November 22, 2026 is Friday, October 23, 2026, and 120 days ago is Saturday, July 25, 2026. Weeks, months, and years work the same way in ago mode."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 45 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 45 days from today is Wednesday, January 6, 2027. Enter 45 as the number, days as the unit, and from now as the direction above for the live answer."
             }
           },
           {
@@ -111,30 +95,6 @@ schema: |
           },
           {
             "@type": "Question",
-            "name": "Is sixty days from today the same as 60 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Sixty days from today is the same date as 60 days from today. Counted from Sunday, November 22, 2026, sixty days from today is Thursday, January 21, 2027."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 21 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 21 days from today is Sunday, December 13, 2026. That is exactly 3 weeks."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 120 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 120 days from today is Monday, March 22, 2027. That is 17 weeks and 1 day, about four months."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "What is 180 days from today?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -143,82 +103,10 @@ schema: |
           },
           {
             "@type": "Question",
-            "name": "What is 14 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 14 days from today is Sunday, December 6, 2026. That is exactly 2 weeks. Enter 14 as the number, days as the unit, and from now as the direction on this page for the live answer."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 10 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 10 days from today is Wednesday, December 2, 2026. That is 1 week and 3 days from today."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "What is 7 days from today?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Counted from Sunday, November 22, 2026, 7 days from today is Sunday, November 29, 2026. That is exactly 1 week."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 15 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 15 days from today is Monday, December 7, 2026. That is 2 weeks and 1 day from today."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 20 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 20 days from today is Saturday, December 12, 2026. That is 2 weeks and 6 days from today."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 35 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 35 days from today is Sunday, December 27, 2026. That is exactly 5 weeks."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 50 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 50 days from today is Monday, January 11, 2027. That is 7 weeks and 1 day from today."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 25 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 25 days from today is Thursday, December 17, 2026. That is 3 weeks and 4 days from today."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 22 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 22 days from today is Monday, December 14, 2026. That is 3 weeks and 1 day from today."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is 150 days from today?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Counted from Sunday, November 22, 2026, 150 days from today is Wednesday, April 21, 2027. That is 21 weeks and 3 days, about five months."
             }
           },
           {
@@ -537,10 +425,6 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
 
 <div class="faq">
 <details>
-<summary>What is 28 days from today?</summary>
-<p>28 days after today. Counted from Sunday, November 22, 2026, 28 days from today is Sunday, December 20, 2026. Enter today as the start date, 28 as the number, days as the unit, and from now as the direction.</p>
-</details>
-<details>
 <summary>How do I calculate 30 days from today?</summary>
 <p>Pick today as the start date, enter 30, choose days, and pick from now. 30 days from November 22, 2026 is Tuesday, December 22, 2026. The same steps work for any number: change 30 to 7, 15, 60, or 90 and the result updates.</p>
 </details>
@@ -555,10 +439,6 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
 <details>
 <summary>Can I subtract days to find a past date?</summary>
 <p>Yes. Choose ago as the direction and the calculator counts back. 30 days ago from November 22, 2026 is Friday, October 23, 2026, and 120 days ago is Saturday, July 25, 2026. Weeks, months, and years work the same way in ago mode.</p>
-</details>
-<details>
-<summary>What is 45 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 45 days from today is Wednesday, January 6, 2027. Enter 45 as the number, days as the unit, and from now as the direction above for the live answer.</p>
 </details>
 <details>
 <summary>What is 100 days from today?</summary>
@@ -577,60 +457,12 @@ The same formulas work in Google Sheets. Change 30 to any number: =TODAY()+7 giv
 <p>Counted from Sunday, November 22, 2026, 60 days from today is Thursday, January 21, 2027. That is 8 weeks and 4 days, about two months.</p>
 </details>
 <details>
-<summary>Is sixty days from today the same as 60 days from today?</summary>
-<p>Yes. Sixty days from today is the same date as 60 days from today. Counted from Sunday, November 22, 2026, sixty days from today is Thursday, January 21, 2027.</p>
-</details>
-<details>
-<summary>What is 21 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 21 days from today is Sunday, December 13, 2026. That is exactly 3 weeks.</p>
-</details>
-<details>
-<summary>What is 120 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 120 days from today is Monday, March 22, 2027. That is 17 weeks and 1 day, about four months.</p>
-</details>
-<details>
 <summary>What is 180 days from today?</summary>
 <p>Counted from Sunday, November 22, 2026, 180 days from today is Friday, May 21, 2027. That is 25 weeks and 5 days, about six months.</p>
 </details>
 <details>
-<summary>What is 14 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 14 days from today is Sunday, December 6, 2026. That is exactly 2 weeks. Enter 14 as the number, days as the unit, and from now as the direction on this page for the live answer.</p>
-</details>
-<details>
-<summary>What is 10 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 10 days from today is Wednesday, December 2, 2026. That is 1 week and 3 days from today.</p>
-</details>
-<details>
 <summary>What is 7 days from today?</summary>
 <p>Counted from Sunday, November 22, 2026, 7 days from today is Sunday, November 29, 2026. That is exactly 1 week.</p>
-</details>
-<details>
-<summary>What is 15 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 15 days from today is Monday, December 7, 2026. That is 2 weeks and 1 day from today.</p>
-</details>
-<details>
-<summary>What is 20 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 20 days from today is Saturday, December 12, 2026. That is 2 weeks and 6 days from today.</p>
-</details>
-<details>
-<summary>What is 35 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 35 days from today is Sunday, December 27, 2026. That is exactly 5 weeks.</p>
-</details>
-<details>
-<summary>What is 50 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 50 days from today is Monday, January 11, 2027. That is 7 weeks and 1 day from today.</p>
-</details>
-<details>
-<summary>What is 25 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 25 days from today is Thursday, December 17, 2026. That is 3 weeks and 4 days from today.</p>
-</details>
-<details>
-<summary>What is 22 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 22 days from today is Monday, December 14, 2026. That is 3 weeks and 1 day from today.</p>
-</details>
-<details>
-<summary>What is 150 days from today?</summary>
-<p>Counted from Sunday, November 22, 2026, 150 days from today is Wednesday, April 21, 2027. That is 21 weeks and 3 days, about five months.</p>
 </details>
 <details>
 <summary>What is 10 business days from today?</summary>
