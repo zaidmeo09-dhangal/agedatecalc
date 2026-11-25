@@ -347,8 +347,7 @@ That returns the ISO week number, and it works in Excel 2013 and later and in Go
     var iso = isoWeek(d);
     var mon = mondayOf(d);
     var sun = new Date(mon); sun.setDate(sun.getDate() + 6);
-    var start = new Date(d.getFullYear(), 0, 0);
-    var doy = Math.floor((d - start) / DAY);
+    var doy = Math.round((Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) - Date.UTC(d.getFullYear(), 0, 1)) / DAY) + 1;
     var yearLen = (d.getFullYear() % 4 === 0 && (d.getFullYear() % 100 !== 0 || d.getFullYear() % 400 === 0)) ? 366 : 365;
     var totalWeeks = weeksInYear(iso.year);
     var weeksLeft = totalWeeks - iso.week + 1;
@@ -359,19 +358,24 @@ That returns the ISO week number, and it works in Excel 2013 and later and in Go
       '<div class="result-box"><span class="num">' + weeksLeft + '</span><span class="lbl">Weeks left in ' + iso.year + '</span></div>' +
       '</div>' +
       '<p class="result-note"><strong>' + fmtDate(d) + '</strong> is in ISO week <strong>' + iso.week + ' of ' + iso.year + '</strong>, running <strong>' + fmtDate(mon) + '</strong> to <strong>' + fmtDate(sun) + '</strong>.</p>';
-    try{
-      var u = new URL(window.location.href);
-      u.searchParams.set("date", v);
-      window.history.replaceState(null, "", u.toString());
-    }catch(e){}
   }
 
   document.getElementById("wn-btn").addEventListener("click", run);
   document.getElementById("wn-share-btn").addEventListener("click", function(){
     var msg = document.getElementById("wn-share-msg");
     function done(t){ if(msg){ msg.textContent = t; } }
+    var link = window.location.href;
+    try{
+      var v = document.getElementById("wn-date").value;
+      if(v && /^\d{4}-\d{2}-\d{2}$/.test(v)){
+        var u = new URL(window.location.href);
+        u.searchParams.set("date", v);
+        window.history.replaceState(null, "", u.toString());
+        link = u.toString();
+      }
+    }catch(e){}
     if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(window.location.href).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
+      navigator.clipboard.writeText(link).then(function(){ done("Link copied!"); }, function(){ done("Copy failed, copy the URL manually."); });
     }else{ done("Copy this page URL to share."); }
   });
 
