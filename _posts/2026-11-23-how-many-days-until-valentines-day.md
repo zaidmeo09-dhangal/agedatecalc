@@ -3,7 +3,7 @@ layout: post
 title: "How Many Days Until Valentine's Day? 2027 Dates"
 slug: how-many-days-until-valentines-day
 date: '2026-11-23'
-last_modified_at: 2026-11-23
+last_modified_at: 2026-11-25
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -58,11 +58,31 @@ tool_name: Countdown Timer
 
 <div class="prose" markdown="1">
 
-There are 83 days until Valentine's Day, Sunday, February 14, 2027, counted from today, Monday, November 23, 2026. Today is not counted, and the count runs to the start of February 14. Check the live number on our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}).
+As a dated example, there were 83 days until Valentine's Day, Sunday, February 14, 2027, counted from Monday, November 23, 2026. That date is not counted, and the count runs to the start of February 14. For the live number, see the count below, or check our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}).
+
+<p id="val-live-count" class="result-note" style="text-align:center"><strong>Loading live count...</strong></p>
+
+<script>
+(function(){
+  "use strict";
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var target = new Date(today.getFullYear(), 1, 14);
+  var diff = Math.round((target - today) / 86400000);
+  if(diff < 0){
+    target = new Date(today.getFullYear() + 1, 1, 14);
+    diff = Math.round((target - today) / 86400000);
+  }
+  var weeks = Math.floor(diff / 7);
+  var days = diff % 7;
+  var el = document.getElementById("val-live-count");
+  el.innerHTML = "<strong>" + diff + " days</strong> until Valentine's Day " + target.getFullYear() + " (" + weeks + " weeks and " + days + " days)";
+})();
+</script>
 
 ## Weeks, weekdays and business days left
 
-83 days is 11 weeks and 6 days. Inside that span there are 59 weekdays, 24 weekend days and 55 US business days. The business day count removes four federal holidays: Thanksgiving on Thursday, November 26, 2026, Christmas on Friday, December 25, 2026, New Year's Day on Friday, January 1, 2027, and Martin Luther King Jr. Day on Monday, January 18, 2027. If you are ordering for delivery or booking time off, the business day count is the one that matters, not the plain day count.
+In that November 23, 2026 example, 83 days is 11 weeks and 6 days. Inside that span there are 59 weekdays, 24 weekend days and 55 US business days. The business day count removes four federal holidays: Thanksgiving on Thursday, November 26, 2026, Christmas on Friday, December 25, 2026, New Year's Day on Friday, January 1, 2027, and Martin Luther King Jr. Day on Monday, January 18, 2027. If you are ordering for delivery or booking time off, the business day count is the one that matters, not the plain day count.
 
 ## Valentine's Day dates, 2027 to 2031
 
@@ -86,9 +106,9 @@ Start the whole plan in January, not in February. January gives you the full cho
 
 ## Why some pages show a different count
 
-If you search this question you will see different numbers on different pages, and most of them are wrong for the same reason: stale counts. One countdown page still shows 252 days, because it is counting from June 7, 2026, not from today. Another still carries sections computed from August 7, 2026. A count that was right in June is wrong in November, and a page that never recomputes its number will keep showing the old one.
+If you search this question you will see different numbers on different pages, and most of them are wrong for the same reason: stale counts. One countdown page still shows 252 days, because it is counting from June 7, 2026, not from November 23, 2026. Another still carries sections computed from August 7, 2026. A count that was right in June is wrong in November, and a page that never recomputes its number will keep showing the old one.
 
-Three checks tell you whether a count is fresh. First, the page states the date it counted from. Second, the number matches a simple subtraction: February 14, 2027 minus today. Third, the weekday matches: February 14, 2027 is a Sunday, so a page that says Monday has the wrong year or the wrong date. The [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) runs the same subtraction, so you can check any count in seconds.
+Three checks tell you whether a count is fresh. First, the page states the date it counted from. Second, the number matches a simple subtraction: February 14, 2027 minus the date you are counting from. Third, the weekday matches: February 14, 2027 is a Sunday, so a page that says Monday has the wrong year or the wrong date. The [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) runs the same subtraction, so you can check any count in seconds.
 
 ## Is Valentine's Day a public holiday?
 
@@ -96,11 +116,11 @@ No, not in the United States. Valentine's Day is a cultural date, not a federal 
 
 ## How to count it yourself
 
-The date never moves, so the count is one subtraction. Take February 14, 2027 and subtract today, November 23, 2026. November has 7 days left after today, December has 31, January has 31, and February adds 14. That is 7 plus 31 plus 31 plus 14, which is 83 days. The weekday advances by one most years and by two after a leap day, because a leap year adds a day before February 14, not after it. That is why 2027 is a Sunday, 2028 is a Monday, and 2029 skips Tuesday and lands on Wednesday, because 2028 is a leap year.
+The date never moves, so the count is one subtraction. Take February 14, 2027 and subtract the example date, November 23, 2026. November has 7 days left after that date, December has 31, January has 31, and February adds 14. That is 7 plus 31 plus 31 plus 14, which is 83 days. The weekday advances by one most years and by two after a leap day, because a leap year adds a day before February 14, not after it. That is why 2027 is a Sunday, 2028 is a Monday, and 2029 skips Tuesday and lands on Wednesday, because 2028 is a leap year.
 
 ## What to do with the time left
 
-Eleven weeks is enough time to plan properly and short enough to lose if you wait. Use the first month for the big choice, the dinner or the trip, because those have the fewest slots. Use January for the order that needs delivery, and check the delivery date at the time you order. Use the last week for the card and the small details, and confirm the booking and the delivery on the Friday before, February 12, 2027. If you are counting down with someone, the same count works for both of you: 83 days, 11 weeks and 6 days, 55 business days.
+On November 23, 2026, eleven weeks was enough time to plan properly and short enough to lose if you wait. Use the first month for the big choice, the dinner or the trip, because those have the fewest slots. Use January for the order that needs delivery, and check the delivery date at the time you order. Use the last week for the card and the small details, and confirm the booking and the delivery on the Friday before, February 12, 2027. If you are counting down with someone, the same count works for both of you: on November 23, 2026 it was 83 days, 11 weeks and 6 days, 55 business days.
 
 ## FAQ
 
