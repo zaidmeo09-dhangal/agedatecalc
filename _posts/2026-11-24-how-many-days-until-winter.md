@@ -3,7 +3,7 @@ layout: post
 title: "How Many Days Until Winter? 2026 Solstice Date"
 slug: how-many-days-until-winter
 date: '2026-11-24'
-last_modified_at: 2026-11-24
+last_modified_at: 2026-11-25
 status: Published
 author: AgeDateCalc Team
 category: Time Guides
@@ -58,11 +58,31 @@ tool_name: Countdown Timer
 
 <div class="prose" markdown="1">
 
-There are 27 days until winter, Monday, December 21, 2026, counted from today, Tuesday, November 24, 2026. Today is not counted, and the count runs to the start of December 21. Check the live number on our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}).
+As a dated example, there were 27 days until winter in the Northern Hemisphere, Monday, December 21, 2026, counted from Tuesday, November 24, 2026. That date is not counted, and the count runs to the start of December 21. The solstice itself is a separate instant, later that day: 3:50 p.m. EST in New York, which is 20:50 UTC on December 21, 2026. For the live number, see the count below, or check our [Countdown Timer]({{ '/countdown-timer/' | relative_url }}).
+
+<p id="winter-live-count" class="result-note" style="text-align:center"><strong>Loading live count...</strong></p>
+
+<script>
+(function(){
+  "use strict";
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  var target = new Date(today.getFullYear(), 11, 21);
+  var diff = Math.round((target - today) / 86400000);
+  if(diff < 0){
+    target = new Date(today.getFullYear() + 1, 11, 21);
+    diff = Math.round((target - today) / 86400000);
+  }
+  var weeks = Math.floor(diff / 7);
+  var days = diff % 7;
+  var el = document.getElementById("winter-live-count");
+  el.innerHTML = "<strong>" + diff + " days</strong> until the first day of winter " + target.getFullYear() + " (" + weeks + " weeks and " + days + " days)";
+})();
+</script>
 
 ## Two first days of winter, three weeks apart
 
-Winter has two start dates, and that is why pages give two different answers. Meteorological winter starts on Tuesday, December 1, 2026, which is 7 days from today, exactly 1 week. Astronomical winter starts on Monday, December 21, 2026, which is 27 days from today. The two dates are 20 days apart.
+Winter has two start dates, and that is why pages give two different answers. Meteorological winter starts on Tuesday, December 1, 2026, which is 7 days from November 24, 2026, exactly 1 week. Astronomical winter starts on Monday, December 21, 2026, which is 27 days from November 24, 2026. The two dates are 20 days apart.
 
 Meteorological winter is the calendar definition. Forecasters count winter as December, January and February, the three coldest months, so it always starts on December 1 and always ends on the last day of February. Astronomical winter is set by the tilt of the Earth. It begins at the December solstice, the moment the North Pole is tilted farthest from the sun, and it ends at the March equinox.
 
@@ -86,11 +106,11 @@ The date is December 21 everywhere in the Americas, because the instant falls in
 
 ## Weeks, weekdays and business days left
 
-27 days is 3 weeks and 6 days. Inside that span there are 19 weekdays, 8 weekend days and 18 US business days. The business day count removes one federal holiday, Thanksgiving on Thursday, November 26, 2026. Black Friday, Friday, November 27, 2026, is not a federal holiday, so it counts as a business day, and so does every other weekday in the span.
+In that November 24, 2026 example, 27 days is 3 weeks and 6 days. Inside that span there are 19 weekdays, 8 weekend days and 18 US business days. The business day count removes one federal holiday, Thanksgiving on Thursday, November 26, 2026. Black Friday, Friday, November 27, 2026, is not a federal holiday, so it counts as a business day, and so does every other weekday in the span.
 
-To December 1, the meteorological start, the count is simpler: 7 days, 1 week, 5 weekdays and 2 weekend days. No federal holiday falls in that week except Thanksgiving itself, on November 26, so the business day count to December 1 is 4.
+From November 24, 2026, to December 1, the meteorological start, the count is simpler: 7 days, 1 week, 5 weekdays and 2 weekend days. No federal holiday falls in that week except Thanksgiving itself, on November 26, so the business day count to December 1 is 4.
 
-If you are counting work days to a winter deadline, use the business day count, not the plain day count. If you are counting down with a child, the sleeps count is the one that lands: 27 sleeps to the solstice, 7 sleeps to December 1.
+If you are counting work days to a winter deadline, use the business day count, not the plain day count. If you are counting down with a child, the sleeps count is the one that lands: in that November 24 example, 27 sleeps to the solstice, 7 sleeps to December 1.
 
 ## Winter dates, 2026 to 2030
 
@@ -110,17 +130,17 @@ The 2027 solstice is the latest of the five in Eastern time, at 9:42 p.m., and t
 
 Meteorological winter is the three calendar months, December, January and February, 90 days in total (31 + 31 + 28). Astronomical winter runs from the solstice to the spring equinox, 89 days from December 21, 2026 to March 20, 2027. By the exact instants, from the solstice at 20:50 UTC on December 21 to the spring equinox at 20:24 UTC on March 20, 2027, it is 88 days and 23 hours.
 
-So winter ends twice as well. Meteorological winter ends on Sunday, February 28, 2027. Astronomical winter ends at the spring equinox on Saturday, March 20, 2027. The gap between the two ends is 20 days, the same as the gap between the two starts. Christmas falls inside winter either way: Christmas Day, Friday, December 25, 2026, is 4 days after the solstice and 31 days from today, November 24.
+So winter ends twice as well. Meteorological winter ends on Sunday, February 28, 2027. Astronomical winter ends at the spring equinox on Saturday, March 20, 2027. The gap between the two ends is 20 days, the same as the gap between the two starts. Christmas falls inside winter either way: Christmas Day, Friday, December 25, 2026, is 4 days after the solstice and, in that November 24, 2026 dated example, 31 days from November 24.
 
 ## Why some pages say December 1, December 20 or December 22
 
 December 1 is the meteorological start, and it is correct under that definition. December 20 is wrong for 2026, and December 22 is the UTC date of the 2027 solstice, not the 2026 one, so a page listing it for 2026 has mixed up the years.
 
-Three checks tell you whether a count is fresh. First, the page states the date it counted from. Second, the number matches a simple subtraction: December 21, 2026 minus today. Third, the solstice time matches the US Naval Observatory figure, 20:50 UTC, 3:50 p.m. EST. The [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) runs the same subtraction, so you can check any count in seconds.
+Three checks tell you whether a count is fresh. First, the page states the date it counted from. Second, the number matches a simple subtraction: December 21, 2026 minus the date you are counting from. Third, the solstice time matches the US Naval Observatory figure, 20:50 UTC, 3:50 p.m. EST. The [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) runs the same subtraction, so you can check any count in seconds.
 
 ## How to count it yourself
 
-The date is fixed, so the count is one subtraction. Take December 21, 2026 and subtract today, November 24, 2026. November has 6 days left after today, and December adds 21. That is 6 plus 21, which is 27 days. For the meteorological start, take December 1 and subtract today: November has 6 days left after today, and December adds 1, which is 7 days.
+The date is fixed, so the count is one subtraction. Take December 21, 2026 and subtract the example date, November 24, 2026. November has 6 days left after that date, and December adds 21. That is 6 plus 21, which is 27 days. For the meteorological start, take December 1 and subtract November 24, 2026: November has 6 days left after that date, and December adds 1, which is 7 days.
 
 In a spreadsheet, the same count is one formula. In Excel or Google Sheets, type =DATE(2026,12,21)-TODAY() for the solstice, or =DATE(2026,12,1)-TODAY() for December 1. For business days only, use =NETWORKDAYS(TODAY()+1,DATE(2026,12,21)) and then remove Thanksgiving, which NETWORKDAYS does not know is a holiday unless you list it. The [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}) counts them with the federal holidays already removed.
 
