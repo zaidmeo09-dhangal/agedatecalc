@@ -6,7 +6,7 @@ date: '2026-10-20'
 last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
-category: How-To Guides
+category: Age & Birthday
 tags:
 - age calculator
 - calculate age manually
