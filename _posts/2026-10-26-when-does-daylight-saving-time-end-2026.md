@@ -6,7 +6,7 @@ date: '2026-10-26'
 last_modified_at: 2026-11-23
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Time & Time Zones
 tags:
 - daylight saving time
 - fall back
