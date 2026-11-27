@@ -6,7 +6,7 @@ date: '2026-11-18'
 last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Countdowns
 tags:
 - days left in the year
 - days until New Year
