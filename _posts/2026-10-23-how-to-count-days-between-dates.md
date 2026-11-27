@@ -6,7 +6,7 @@ date: '2026-10-23'
 last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
-category: How-To Guides
+category: Date Arithmetic
 tags:
 - days between dates
 - date difference
