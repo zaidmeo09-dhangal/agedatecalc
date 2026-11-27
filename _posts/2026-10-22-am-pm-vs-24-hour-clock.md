@@ -6,7 +6,7 @@ date: '2026-10-22'
 last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Time & Time Zones
 tags:
 - 24 hour clock
 - military time
