@@ -6,7 +6,7 @@ date: '2026-11-19'
 last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Business Days
 tags:
 - work days in a year
 - business days in a year
