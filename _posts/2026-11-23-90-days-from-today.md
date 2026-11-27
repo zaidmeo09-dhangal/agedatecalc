@@ -6,7 +6,7 @@ date: '2026-11-23'
 last_modified_at: 2026-11-23
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Date Arithmetic
 tags:
 - 90 days from today
 - what is 90 days from today
