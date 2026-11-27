@@ -259,10 +259,10 @@ Leap years work the same way. February 29, 2028 plus 1 year is February 28, 2029
 - **Travel:** a 14-day trip starting today ends 2 weeks from today. Count back from a return flight the same way.
 - **Trials and subscriptions:** a 30-day free trial started today ends 30 days from today. Set the reminder a few days earlier.
 - **Payroll and notice periods:** a 60-day notice or a 90-day probation period lands on a fixed date. Ago mode answers "what date was 60 days before today?" for backdated paperwork.
-- **Business days:** 10 business days from today is Monday, December 7, 2026. Thanksgiving, November 26, is a federal holiday, so it does not count. Count workdays only with the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
+- **Business days:** Counted from Sunday, November 22, 2026, 10 business days from today was Monday, December 7, 2026. Thanksgiving, November 26, is a federal holiday, so it does not count. Count workdays only with the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}).
 - **Anniversaries and milestones:** 100 days back from today or 33 months ago from today are the round numbers people search for when marking a start date.
 
-To measure the gap between two fixed dates instead of counting from today, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To count only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). Counting down to that date instead? Start a live countdown with the [Countdown Timer]({{ '/countdown-timer/' | relative_url }}).
+To measure the gap between two fixed dates instead of counting from today, use the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}). To count only workdays, use the [Business Days Calculator]({{ '/business-days-calculator/' | relative_url }}). Counting down to that date instead? Start a live countdown with the [Countdown Timer]({{ '/countdown-timer/' | relative_url }}). If the two points include clock times and you need the span in hours and minutes, use the [Time Duration Calculator]({{ '/time-duration-calculator/' | relative_url }}).
 
 ## Days from today at a glance
 
@@ -295,35 +295,35 @@ These dates are fixed to November 22, 2026, and they move by one day every day. 
 
 ## 90 days from today
 
-90 days from today is Saturday, February 20, 2027. That is 12 weeks and 6 days from Sunday, November 22, 2026, about three months. A 90-day probation period, payment term, or trial that starts today ends on that date. Use the calculator above, or tap the 90 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 90 days from today was Saturday, February 20, 2027. That is 12 weeks and 6 days from that date, about three months. A 90-day probation period, payment term, or trial that starts on that date ends on February 20, 2027. Use the calculator above, or tap the 90 days quick pick, for the live answer. For the dedicated page on this count, with the quarter breakdown and the business days, see the [90 days from today page]({{ '/blog/90-days-from-today/' | relative_url }}).
 
 ## 60 days from today
 
-60 days from today is Thursday, January 21, 2027. That is 8 weeks and 4 days from Sunday, November 22, 2026, about two months. A 60-day notice period starting today ends on that date.
+Counted from Sunday, November 22, 2026, 60 days from today was Thursday, January 21, 2027. That is 8 weeks and 4 days from that date, about two months. A 60-day notice period starting on that date ends on January 21, 2027.
 
 ## 30 days from today
 
-30 days from today is Tuesday, December 22, 2026. That is 4 weeks and 2 days from Sunday, November 22, 2026. A 30-day free trial started today ends on that date, so set the reminder a few days earlier.
+Counted from Sunday, November 22, 2026, 30 days from today was Tuesday, December 22, 2026. That is 4 weeks and 2 days from that date. A 30-day free trial started on that date ends on December 22, 2026, so set the reminder a few days earlier.
 
 ## 45 days from today
 
-45 days from today is Wednesday, January 6, 2027. That is 6 weeks and 3 days from Sunday, November 22, 2026. A 45-day window starting today ends on that date.
+Counted from Sunday, November 22, 2026, 45 days from today was Wednesday, January 6, 2027. That is 6 weeks and 3 days from that date. A 45-day window starting on that date ends on January 6, 2027.
 
 ## 14 days from today
 
-14 days from today is Sunday, December 6, 2026. That is exactly 2 weeks from Sunday, November 22, 2026. A 14-day trip or two-week window that starts today ends on that date. Use the calculator above, or tap the 2 weeks quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 14 days from today was Sunday, December 6, 2026. That is exactly 2 weeks from that date. A 14-day trip or two-week window that starts on that date ends on December 6, 2026. Use the calculator above, or tap the 2 weeks quick pick, for the live answer.
 
 ## 28 days from today
 
-28 days from today is Sunday, December 20, 2026. That is exactly 4 weeks from Sunday, November 22, 2026. A 28-day cycle or four-week plan that starts today ends on that date. Use the calculator above, or tap the 28 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 28 days from today was Sunday, December 20, 2026. That is exactly 4 weeks from that date. A 28-day cycle or four-week plan that starts on that date ends on December 20, 2026. Use the calculator above, or tap the 28 days quick pick, for the live answer.
 
 ## 21 days from today
 
-21 days from today is Sunday, December 13, 2026. That is exactly 3 weeks from Sunday, November 22, 2026. A 21-day habit, course or trial that starts today ends on that date. Use the calculator above, or tap the 21 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 21 days from today was Sunday, December 13, 2026. That is exactly 3 weeks from that date. A 21-day habit, course or trial that starts on that date ends on December 13, 2026. Use the calculator above, or tap the 21 days quick pick, for the live answer.
 
 ## 120 days from today
 
-120 days from today is Monday, March 22, 2027. That is 17 weeks and 1 day from Sunday, November 22, 2026, about four months. A 120-day plan that starts today ends on that date. Use the calculator above, or tap the 120 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 120 days from today was Monday, March 22, 2027. That is 17 weeks and 1 day from that date, about four months. A 120-day plan that starts on that date ends on March 22, 2027. Use the calculator above, or tap the 120 days quick pick, for the live answer.
 
 ## 120 days from a date
 
@@ -340,47 +340,47 @@ To find the number of days between any two fixed dates instead of counting forwa
 
 ## 180 days from today
 
-180 days from today is Friday, May 21, 2027. That is 25 weeks and 5 days from Sunday, November 22, 2026, about six months. A 180-day visa stay, semester or half-year plan that starts today ends on that date. Use the calculator above, or tap the 180 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 180 days from today was Friday, May 21, 2027. That is 25 weeks and 5 days from that date, about six months. A 180-day visa stay, semester or half-year plan that starts on that date ends on May 21, 2027. Use the calculator above, or tap the 180 days quick pick, for the live answer.
 
 ## 10 days from today
 
-10 days from today is Wednesday, December 2, 2026. That is 1 week and 3 days from Sunday, November 22, 2026. A 10-day trip or deadline that starts today ends on that date. Use the calculator above, or tap the 10 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 10 days from today was Wednesday, December 2, 2026. That is 1 week and 3 days from that date. A 10-day trip or deadline that starts on that date ends on December 2, 2026. Use the calculator above, or tap the 10 days quick pick, for the live answer.
 
 ## 7 days from today
 
-7 days from today is Sunday, November 29, 2026. That is exactly 1 week from Sunday, November 22, 2026. A one-week deadline or trip that starts today ends on that date. Use the calculator above, or tap the 7 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 7 days from today was Sunday, November 29, 2026. That is exactly 1 week from that date. A one-week deadline or trip that starts on that date ends on November 29, 2026. Use the calculator above, or tap the 7 days quick pick, for the live answer.
 
 ## 100 days from today
 
-100 days from today is Tuesday, March 2, 2027. That is 14 weeks and 2 days from Sunday, November 22, 2026, about three months. A 100-day plan or countdown that starts today ends on that date. Use the calculator above, or tap the 100 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 100 days from today was Tuesday, March 2, 2027. That is 14 weeks and 2 days from that date, about three months. A 100-day plan or countdown that starts on that date ends on March 2, 2027. Use the calculator above, or tap the 100 days quick pick, for the live answer.
 
 ## 15 days from today
 
-15 days from today is Monday, December 7, 2026. That is 2 weeks and 1 day from Sunday, November 22, 2026. A 15-day trial or half-month deadline that starts today ends on that date. Use the calculator above, or tap the 15 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 15 days from today was Monday, December 7, 2026. That is 2 weeks and 1 day from that date. A 15-day trial or half-month deadline that starts on that date ends on December 7, 2026. Use the calculator above, or tap the 15 days quick pick, for the live answer.
 
 ## 35 days from today
 
-35 days from today is Sunday, December 27, 2026. That is exactly 5 weeks from Sunday, November 22, 2026. A 35-day plan that starts today ends on that date. Use the calculator above, or tap the 35 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 35 days from today was Sunday, December 27, 2026. That is exactly 5 weeks from that date. A 35-day plan that starts on that date ends on December 27, 2026. Use the calculator above, or tap the 35 days quick pick, for the live answer.
 
 ## 20 days from today
 
-20 days from today is Saturday, December 12, 2026. That is 2 weeks and 6 days from Sunday, November 22, 2026. A 20-day window that starts today ends on that date. Use the calculator above, or tap the 20 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 20 days from today was Saturday, December 12, 2026. That is 2 weeks and 6 days from that date. A 20-day window that starts on that date ends on December 12, 2026. Use the calculator above, or tap the 20 days quick pick, for the live answer.
 
 ## 50 days from today
 
-50 days from today is Monday, January 11, 2027. That is 7 weeks and 1 day from Sunday, November 22, 2026, about seven weeks. A 50-day plan that starts today ends on that date. Use the calculator above, or tap the 50 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 50 days from today was Monday, January 11, 2027. That is 7 weeks and 1 day from that date, about seven weeks. A 50-day plan that starts on that date ends on January 11, 2027. Use the calculator above, or tap the 50 days quick pick, for the live answer.
 
 ## 25 days from today
 
-25 days from today is Thursday, December 17, 2026. That is 3 weeks and 4 days from Sunday, November 22, 2026. A 25-day countdown that starts today ends on that date. Use the calculator above, or tap the 25 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 25 days from today was Thursday, December 17, 2026. That is 3 weeks and 4 days from that date. A 25-day countdown that starts on that date ends on December 17, 2026. Use the calculator above, or tap the 25 days quick pick, for the live answer.
 
 ## 22 days from today
 
-22 days from today is Monday, December 14, 2026. That is 3 weeks and 1 day from Sunday, November 22, 2026. A 22-day plan that starts today ends on that date. Use the calculator above, or tap the 22 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 22 days from today was Monday, December 14, 2026. That is 3 weeks and 1 day from that date. A 22-day plan that starts on that date ends on December 14, 2026. Use the calculator above, or tap the 22 days quick pick, for the live answer.
 
 ## 150 days from today
 
-150 days from today is Wednesday, April 21, 2027. That is 21 weeks and 3 days from Sunday, November 22, 2026, about five months. A 150-day plan or countdown that starts today ends on that date. Use the calculator above, or tap the 150 days quick pick, for the live answer.
+Counted from Sunday, November 22, 2026, 150 days from today was Wednesday, April 21, 2027. That is 21 weeks and 3 days from that date, about five months. A 150-day plan or countdown that starts on that date ends on April 21, 2027. Use the calculator above, or tap the 150 days quick pick, for the live answer.
 
 ## Days from today in weeks and months
 
