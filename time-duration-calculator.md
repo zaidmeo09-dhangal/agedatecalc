@@ -171,7 +171,7 @@ A duration that crosses midnight is the case most calculators get wrong. Tick th
 
 ## Calculate a datetime difference
 
-This tool takes a date and a time for both points, so it also answers datetime differences. Enter the start datetime and the end datetime and the result covers the full span: November 19, 2026 9:00 AM to November 21, 2026 5:30 PM is 2 days 8 hours 30 minutes, which is 56.5 hours or 3,390 minutes. For a gap between two dates with no times, the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the answer in years, months and days.
+This tool takes a date and a time for both points, so it also answers datetime differences. Enter the start datetime and the end datetime and the result covers the full span: November 19, 2026 9:00 AM to November 21, 2026 5:30 PM is 2 days 8 hours 30 minutes, which is 56.5 hours or 3,390 minutes. For a gap between two dates with no times, the [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) gives the answer in years, months and days. The manual method, including the inclusive versus exclusive trap, is in our [guide to counting days between dates]({{ '/blog/how-to-count-days-between-dates/' | relative_url }}).
 
 ## Adding time durations
 
