@@ -197,7 +197,7 @@ Jump straight in with a pre-built countdown. Each link opens the timer already s
 - [Valentine's Day 2027, February 14]({{ '/countdown-timer/' | relative_url }}?to=2027-02-14T00:00&label=Valentine%27s%20Day%202027)
 - [Independence Day 2027, July 4]({{ '/countdown-timer/' | relative_url }}?to=2027-07-04T00:00&label=Independence%20Day%202027)
 
-Counting down to a birthday? The [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}) starts from your date of birth and shows the age you will turn.
+For the full Valentine's Day breakdown, with the weeks, weekdays and business days left, see the [Valentine's Day 2027 count]({{ '/blog/how-many-days-until-valentines-day/' | relative_url }}). Counting down to a birthday? The [Birthday Countdown]({{ '/birthday-countdown/' | relative_url }}) starts from your date of birth and shows the age you will turn.
 
 ## Days until a date: worked examples
 
@@ -250,7 +250,7 @@ A second check: from Independence Day, July 4, 2027 to New Year, January 1, 2028
 
 ## Countdown vs timer: which do you need?
 
-A **countdown** targets a calendar moment: Christmas morning, a launch at 9 AM, a flight departure. A **timer** counts down a duration from now: 25 minutes, 2 hours. This page does the first. For the second, a duration timer or the [Stopwatch]({{ '/stopwatch/' | relative_url }}) page's timing features are the right tools.
+A **countdown** targets a calendar moment: Christmas morning, a launch at 9 AM, a flight departure. A **timer** counts down a duration from now: 25 minutes, 2 hours. This page does the first. For the second, the [Time Duration Calculator]({{ '/time-duration-calculator/' | relative_url }}) measures the span between two clock times, and the [Stopwatch]({{ '/stopwatch/' | relative_url }}) times it live.
 
 ## Common uses
 
