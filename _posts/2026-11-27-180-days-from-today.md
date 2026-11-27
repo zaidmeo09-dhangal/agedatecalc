@@ -6,7 +6,7 @@ date: '2026-11-27'
 last_modified_at: 2026-11-27
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Date Arithmetic
 tags:
 - 180 days from today
 - 180 days from now
