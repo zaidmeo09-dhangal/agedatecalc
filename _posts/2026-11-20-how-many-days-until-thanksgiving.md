@@ -92,7 +92,7 @@ For 2026: the Thursdays in November are November 5, 12, 19 and 26. The first Thu
 
 Thanksgiving is the fourth Thursday, and in years with five Thursdays it is not the last Thursday. November 2026 has only four Thursdays, November 5, 12, 19 and 26, so in 2026 the fourth Thursday, November 26, is also the last Thursday. The difference shows in years with five Thursdays. November 2028 has five Thursdays: November 2, 9, 16, 23 and 30. Thanksgiving 2028 is November 23, the fourth, not November 30, the last. November 2029 is the same: five Thursdays, November 1, 8, 15, 22 and 29, and Thanksgiving is November 22, a full week before the last Thursday.
 
-The fourth-Thursday rule is law, not custom. President Lincoln proclaimed a national Thanksgiving in 1863, and Congress fixed it as the fourth Thursday in November in 1941. The 1621 harvest feast in Plymouth is the origin story most people know, but the date itself comes from the 1941 law.
+The fourth-Thursday rule is law, not custom. President Lincoln proclaimed a national Thanksgiving in 1863, and Congress [fixed it as the fourth Thursday in November in 1941](https://www.govinfo.gov/content/pkg/STATUTE-55/pdf/STATUTE-55-Pg862.pdf). The 1621 harvest feast in Plymouth is the origin story most people know, but the date itself comes from the 1941 law.
 
 ## Days, weeks and business days left
 
