@@ -120,7 +120,7 @@ Check whether February 29 falls between your dates. In the example above, 2026 i
 ## Four edge cases to know
 
 - **Month-end rollover:** one month after January 31 is February 28 in a common year (February 29 in a leap year), not March 3. Adding a month means landing on the same day number in the next month, or the last day of that month when the day does not exist.
-- **The DST caveat:** a 24-hour span across a clock change is not 24 hours. From noon on Saturday, March 13, 2027 to noon on Sunday, March 14, 2027 is 23 hours, because the clocks spring forward. From noon on Saturday, November 6, 2027 to noon on Sunday, November 7, 2027 is 25 hours, because the clocks fall back. Day counts ignore this, but hour counts do not.
+- **The DST caveat:** a 24-hour span across a clock change is not 24 hours. From noon on Saturday, March 13, 2027 to noon on Sunday, March 14, 2027 is 23 hours, because the clocks spring forward. From noon on Saturday, November 6, 2027 to noon on Sunday, November 7, 2027 is 25 hours, because the clocks fall back. Day counts ignore this, but hour counts do not, so measure the span with the [Time Duration Calculator]({{ '/time-duration-calculator/' | relative_url }}).
 - **ISO weeks:** a year has 52 ISO weeks, except years that start on a Thursday, like 2026, and leap years that start on a Wednesday, like 2020, which have 53. The extra week matters when you count weeks instead of days: 2026 has 53 ISO weeks, 2027 has 52.
 - **Same date and reversed dates:** the same date twice is 0 days. If the end date comes before the start date, the answer is negative: December 20 to December 25, 2026 is 5 days, but December 25 to December 20 is minus 5 days. Swap the dates if you need a positive count.
 
