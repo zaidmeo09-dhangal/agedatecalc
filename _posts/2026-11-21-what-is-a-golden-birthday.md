@@ -6,7 +6,7 @@ date: '2026-11-21'
 last_modified_at: 2026-11-22
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Age & Birthday
 tags:
 - what is a golden birthday
 - golden birthday calculator
