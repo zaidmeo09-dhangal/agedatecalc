@@ -6,7 +6,7 @@ date: '2026-11-12'
 last_modified_at: 2026-11-25
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Countdowns
 tags:
 - days until Christmas
 - Christmas countdown
