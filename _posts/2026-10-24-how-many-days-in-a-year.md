@@ -6,7 +6,7 @@ date: '2026-10-24'
 last_modified_at: 2026-11-23
 status: Published
 author: AgeDateCalc Team
-category: Date Guides
+category: Calendar
 tags:
 - days in a year
 - leap year
