@@ -147,6 +147,6 @@ It changes the date as well as the time. A time late in the day on one side of t
 
 Look up the offset that applied on that exact date, because daylight saving moves offsets twice a year. The IANA time zone database holds the full history of every offset change.
 
-Sources: [IANA Time Zone Database](https://www.iana.org/time-zones) and NIST.
+Sources: [IANA Time Zone Database](https://www.iana.org/time-zones) and [NIST](https://www.nist.gov/pml/time-and-frequency-division).
 
 </div>
