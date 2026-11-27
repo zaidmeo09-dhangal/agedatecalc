@@ -149,7 +149,7 @@ Tip: use the **Copy laps** button to save your laps before hitting Reset, becaus
 
 This stopwatch measures elapsed time from real timestamps using the browser's high-resolution clock. It does not count ticks, so it cannot drift: even if the browser slows the visible display in a background tab to save battery, the readout jumps to the correct elapsed time the moment you return.
 
-The browser's `performance.now()` clock resolves down to 100 microseconds in standard browsing (finer in isolated contexts), which is far more precise than the hundredth-second display. The approach follows the same measurement principles documented in NIST Special Publication 960-12 on time and frequency measurement.
+The browser's `performance.now()` clock resolves down to 100 microseconds in standard browsing (finer in isolated contexts), which is far more precise than the hundredth-second display. The approach follows the same measurement principles documented in [NIST Special Publication 960-12](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=50659) on time and frequency measurement.
 
 ## Lap times vs split times
 
