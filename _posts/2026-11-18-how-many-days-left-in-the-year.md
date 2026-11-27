@@ -83,7 +83,7 @@ Want the number for any other date? Check it with our [Date Difference Calculato
 
 ## What day of the year is it today?
 
-November 22, 2026 is day 326 of 365. That means 89.3% of the year is done and 10.7% is left. It is ISO week 47 of 53, and we are in the fourth quarter, which started on October 1.
+November 22, 2026 is day 326 of 365. That means 89.3% of the year is done and 10.7% is left. It is [ISO week 47]({{ '/week-number-calculator/' | relative_url }}) of 53, and we are in the fourth quarter, which started on October 1.
 
 Quote the percent when someone asks how far through the year we are. Use the day count when you are planning, because 39 days is a deadline and 89.3% is not. Both come from the same fact: 2026 is not a leap year, so it has 365 days, and November 22 is the 326th of them.
 
@@ -114,7 +114,7 @@ Only two federal holidays are left in 2026, and both fall inside the 39 days:
 - Thanksgiving: Thursday, November 26, 2026
 - Christmas Day: Friday, December 25, 2026
 
-New Year's Eve, Thursday, December 31, is not a federal holiday, so it counts as a business day. New Year's Day, Friday, January 1, 2027, is a federal holiday, but it belongs to next year, so it does not reduce the 2026 business-day count. If you are planning time off, those two holidays plus the weekends around them are the only free days left in the year.
+New Year's Eve, Thursday, December 31, is not a federal holiday, so it counts as a business day. New Year's Day, Friday, January 1, 2027, is a federal holiday, but it belongs to next year, so it does not reduce the 2026 business-day count. If you are planning time off, those two holidays plus the weekends around them are the only free days left in the year. Winter begins on Monday, December 21, 2026, four days before Christmas; see the [winter countdown]({{ '/blog/how-many-days-until-winter/' | relative_url }}) for the live count.
 
 ## Days left on the first of each month
 
