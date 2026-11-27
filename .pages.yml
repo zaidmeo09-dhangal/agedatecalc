@@ -44,16 +44,19 @@ content:
       - name: author
         label: Author
         type: string
-        default: Zaid
+        default: AgeDateCalc Team
       - name: category
         label: Category
         type: select
         required: true
         options:
           values:
-            - Date Guides
-            - Time Guides
-            - How-To Guides
+            - Age & Birthday
+            - Date Arithmetic
+            - Business Days
+            - Calendar
+            - Time & Time Zones
+            - Countdowns
       - name: tags
         label: Tags
         type: string
