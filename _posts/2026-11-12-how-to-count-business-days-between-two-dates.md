@@ -6,7 +6,7 @@ date: '2026-11-12'
 last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
-category: How-To Guides
+category: Business Days
 tags:
 - business days calculator
 - count business days
