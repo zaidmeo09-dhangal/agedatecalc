@@ -6,7 +6,7 @@ date: '2026-10-21'
 last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
-category: Date Guides
+category: Calendar
 tags:
 - leap year
 - february 29
