@@ -152,7 +152,7 @@ Pick the source time zone and the time, pick the target zone, and the converter 
 
 Use UTC as a pivot. First convert your time to UTC by reversing your zone's offset, then apply the target zone's offset.
 
-Worked example with this time zone converter's logic: 2:00 PM in California in January (PST, UTC-8) to Berlin. Add 8 hours to reach 10:00 PM UTC, then add 1 hour for Berlin (CET, UTC+1). The answer is 11:00 PM the same day. Going through UTC avoids the sign errors of direct subtraction.
+Worked example with this time zone converter's logic: 2:00 PM in California in January (PST, UTC-8) to Berlin. Add 8 hours to reach 10:00 PM UTC, then add 1 hour for Berlin (CET, UTC+1). The answer is 11:00 PM the same day. Going through UTC avoids the sign errors of direct subtraction. For the full step-by-step method, see our [guide on how to convert time zones]({{ '/blog/how-to-convert-time-zones/' | relative_url }}).
 
 ## US time zones at a glance
 
