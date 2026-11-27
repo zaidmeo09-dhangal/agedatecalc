@@ -34,7 +34,7 @@ schema: |
 
     <div class="legal-card legal-summary">
       <h2><span class="licon">💡</span> Why we exist</h2>
-      <p>AgeDateCalc started with a simple observation: questions like "how old am I exactly?" or "how many days until my exam?" come up all the time, and the answers should be one click away. So we built a small collection of focused tools that do exactly that, nothing more, nothing less.</p>
+      <p>AgeDateCalc started with a simple observation: questions like "how old am I exactly?" or "how many days until my exam?" come up all the time, and the answers should be one click away. So we built a <a href="{{ '/tools/' | relative_url }}">small collection of focused tools</a> that do exactly that, nothing more, nothing less.</p>
     </div>
 
     <div class="legal-card legal-summary">
