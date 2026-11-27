@@ -6,7 +6,7 @@ date: '2026-11-12'
 last_modified_at: 2026-11-23
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Time & Time Zones
 tags:
 - daylight saving time 2027
 - spring forward
