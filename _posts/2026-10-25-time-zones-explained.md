@@ -6,7 +6,7 @@ date: '2026-10-25'
 last_modified_at: 2026-11-13
 status: Published
 author: AgeDateCalc Team
-category: Time Guides
+category: Time & Time Zones
 tags:
 - time zones
 - UTC
