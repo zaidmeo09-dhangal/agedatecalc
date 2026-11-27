@@ -151,7 +151,7 @@ If you were born on February 29, your birthday only exists in leap years. In non
 
 ## What is a golden birthday?
 
-Your golden birthday is the birthday where you turn the age of your birth day number. Born on the 15th, your golden birthday is the day you turn 15. Born on the 7th, it is the day you turn 7. It happens once in a lifetime, and it is the one birthday people look up with a golden birthday calculator.
+Your golden birthday is the birthday where you turn the age of your birth day number. Born on the 15th, your golden birthday is the day you turn 15. Born on the 7th, it is the day you turn 7. It happens once in a lifetime, and it is the one birthday people look up with a golden birthday calculator. For the full explanation, with the rule, the lucky-birthday idea and worked examples, see our [guide on what a golden birthday is]({{ '/blog/what-is-a-golden-birthday/' | relative_url }}).
 
 For example, someone born on June 15, 1990 had their golden birthday on Wednesday, June 15, 2005, the day they turned 15. To find yours, take your birth day number and add it to your birth year: born on the 25th of any month in 2001, your golden birthday falls in 2026. Enter your date of birth above and the result shows your golden birthday too.
 
