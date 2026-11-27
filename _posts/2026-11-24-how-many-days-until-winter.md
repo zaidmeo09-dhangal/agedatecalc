@@ -90,7 +90,7 @@ Both answers are correct, and they answer different questions. If you are asking
 
 ## The exact solstice instant
 
-A solstice is not a whole day. It is one exact moment, the same instant everywhere on Earth, and the local clock time depends on your time zone. The winter solstice of 2026 happens on Monday, December 21, 2026 at 20:50 UTC, which is 3:50 p.m. EST in New York and 12:50 p.m. PST in Los Angeles. That time comes from the US Naval Observatory, via timeanddate.com.
+A solstice is not a whole day. It is one exact moment, the same instant everywhere on Earth, and the local clock time depends on your time zone. The winter solstice of 2026 happens on Monday, December 21, 2026 at 20:50 UTC, which is 3:50 p.m. EST in New York and 12:50 p.m. PST in Los Angeles. That time comes from the US Naval Observatory, via [timeanddate.com](https://www.timeanddate.com/calendar/december-solstice.html).
 
 | Place | Solstice time, Monday, December 21, 2026 |
 |---|---|
@@ -136,7 +136,7 @@ So winter ends twice as well. Meteorological winter ends on Sunday, February 28,
 
 December 1 is the meteorological start, and it is correct under that definition. December 20 is wrong for 2026, and December 22 is the UTC date of the 2027 solstice, not the 2026 one, so a page listing it for 2026 has mixed up the years.
 
-Three checks tell you whether a count is fresh. First, the page states the date it counted from. Second, the number matches a simple subtraction: December 21, 2026 minus the date you are counting from. Third, the solstice time matches the US Naval Observatory figure, 20:50 UTC, 3:50 p.m. EST. The [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) runs the same subtraction, so you can check any count in seconds.
+Three checks tell you whether a count is fresh. First, the page states the date it counted from. Second, the number matches a simple subtraction: December 21, 2026 minus the date you are counting from. Third, the solstice time matches the US Naval Observatory figure, [20:50 UTC, 3:50 p.m. EST](https://www.timeanddate.com/calendar/december-solstice.html). The [Date Difference Calculator]({{ '/date-difference-calculator/' | relative_url }}) runs the same subtraction, so you can check any count in seconds.
 
 ## How to count it yourself
 
